@@ -1,0 +1,107 @@
+{
+    "moduleId": 8,
+    "moduleTitle": "Data Structures II: Dictionaries & Sets",
+    "moduleGoal": "Handle key-value pairs and unique collections efficiently.",
+    "outcomes": [
+        "Model real-world objects using Dictionaries",
+        "Optimize lookups with Sets",
+        "Handle nested data structures via JSON concepts"
+    ],
+    "chapters": [
+        {
+            "chapterId": 1,
+            "chapterTitle": "Dictionaries: Key-Value Pairs",
+            "topics": [
+                "Creating Dictionaries {}",
+                "Accessing values (Keys vs .get())",
+                "Adding and Updating entries",
+                "Deleting entries (pop, del)",
+                "Iterating (keys, values, items)"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "Can two keys be identical in a dictionary?",
+                    "What happens if you access a missing key using []?",
+                    "What does the .get() method do?",
+                    "Are dictionaries ordered in Python 3.7+?",
+                    "Which data types can be keys?"
+                ],
+                "practical": [
+                    "Create a 'student' dictionary with Name, Age, and Major.",
+                    "Access the Major using .get().",
+                    "Add a new key 'GPA' with value 3.8.",
+                    "Loop through the dictionary and print 'Key: Value'.",
+                    "Check if 'Age' exists as a key."
+                ]
+            }
+        },
+        {
+            "chapterId": 2,
+            "chapterTitle": "Sets: Mathematics in Python",
+            "topics": [
+                "Creating Sets (unordered, unique)",
+                "Adding and Removing items",
+                "Set Operations: Union (|), Intersection (&)",
+                "Difference (-) and Symmetric Difference (^)",
+                "Removing duplicates from a List"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "Can a set contain duplicates?",
+                    "Is a set ordered (can you index it)?",
+                    "What operator performs Union?",
+                    "How do you create an empty set?",
+                    "What is the fastest way to deduplicate a list?"
+                ],
+                "practical": [
+                    "Create a set of your favorite colors.",
+                    "Add a duplicate color and print the set.",
+                    "Find common numbers between set A {1,2,3} and set B {3,4,5}.",
+                    "Convert a list [1, 2, 2, 3] to a Set.",
+                    "Remove 'Red' from your set safely."
+                ]
+            }
+        },
+        {
+            "chapterId": 3,
+            "chapterTitle": "Nesting Data Structures",
+            "topics": [
+                "List of Dictionaries",
+                "Dictionary of Lists",
+                "Deeply nested access",
+                "Modeling JSON-like data",
+                "Validation strategies"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "How do you access the first item of a list inside a dictionary?",
+                    "Can you have a dictionary inside a list?",
+                    "What is a practical use case for nested data?",
+                    "How do you iterate through a list of dictionaries?",
+                    "Does deep nesting affect readability?"
+                ],
+                "practical": [
+                    "Create a list of 3 students (dictionaries).",
+                    "Print the name of the second student.",
+                    "Create a 'classroom' dict where keys are subjects and values are lists of students.",
+                    "Add a student to the 'Math' list in your structure.",
+                    "Print all students in 'Science'."
+                ]
+            }
+        }
+    ],
+    "moduleProject": {
+        "title": "Contact Book App",
+        "description": "Store contacts in a Dictionary where names are Keys and numbers are Values (or nested dicts for more info). Implement Search functionality.",
+        "steps": [
+            "Init `contacts = {}`.",
+            "Menu: Add, Search, Delete, List.",
+            "Add: Check if key exists using `.get()`, if not, add.",
+            "Search: Input name, display number if found.",
+            "Use efficient dictionary lookups (O(1))."
+        ]
+    }
+}

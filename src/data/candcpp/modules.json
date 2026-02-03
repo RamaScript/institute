@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "title": "Project Setup & Makefile",
+        "file": "src/data/candcpp/module1.json"
+    },
+    {
+        "id": 2,
+        "title": "Memory Management",
+        "file": "src/data/candcpp/module2.json"
+    },
+    {
+        "id": 3,
+        "title": "Pointers & References",
+        "file": "src/data/candcpp/module3.json"
+    },
+    {
+        "id": 4,
+        "title": "Data Structures I",
+        "file": "src/data/candcpp/module4.json"
+    },
+    {
+        "id": 5,
+        "title": "Data Structures II",
+        "file": "src/data/candcpp/module5.json"
+    },
+    {
+        "id": 6,
+        "title": "Algorithms & Complexity",
+        "file": "src/data/candcpp/module6.json"
+    },
+    {
+        "id": 7,
+        "title": "Object Oriented C++",
+        "file": "src/data/candcpp/module7.json"
+    },
+    {
+        "id": 8,
+        "title": "Advanced C++ Features",
+        "file": "src/data/candcpp/module8.json"
+    },
+    {
+        "id": 9,
+        "title": "Network Programming",
+        "file": "src/data/candcpp/module9.json"
+    },
+    {
+        "id": 10,
+        "title": "Multithreading",
+        "file": "src/data/candcpp/module10.json"
+    },
+    {
+        "id": 11,
+        "title": "Final Project & Best Practices",
+        "file": "src/data/candcpp/module11.json"
+    }
+]

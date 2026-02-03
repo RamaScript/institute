@@ -1,0 +1,107 @@
+{
+    "moduleId": 12,
+    "moduleTitle": "OOP Level 2: Advanced Concepts",
+    "moduleGoal": "Scale your code architecture using Inheritance and Polymorphism.",
+    "outcomes": [
+        "Reuse code with Inheritance",
+        "Override parent methods (Polymorphism)",
+        "Use proper Encapsulation"
+    ],
+    "chapters": [
+        {
+            "chapterId": 1,
+            "chapterTitle": "Inheritance",
+            "topics": [
+                "Parent and Child classes",
+                "Inheriting attributes and methods",
+                "The `super()` function",
+                "Method Overriding",
+                "Checking relationships (isinstance, issubclass)"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What key advantage does inheritance provide?",
+                    "What is a Base Class?",
+                    "Does a child class inherit the constructor?",
+                    "How do you call the parent constructor?",
+                    "Can a class inherit from multiple classes?"
+                ],
+                "practical": [
+                    "Create a parent class `Animal` and child `Dog`.",
+                    "Add a `speak()` method to Animal ('Sound') and override in Dog ('Bark').",
+                    "Use `super().__init__()` in a child class.",
+                    "Create a hierarchy: `Vehicle` -> `Car` -> `ElectricCar`.",
+                    "Check if `my_tesla` is an instance of `Vehicle`."
+                ]
+            }
+        },
+        {
+            "chapterId": 2,
+            "chapterTitle": "Encapsulation & Access Modifiers",
+            "topics": [
+                "Public members",
+                "Protected members (_underscore)",
+                "Private members (__double_underscore)",
+                "Name Mangling",
+                "Getters and Setters (@property)"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "Is true privacy possible in Python?",
+                    "What does a single underscore prefix signal?",
+                    "What does a double underscore prefix do?",
+                    "What is a Setter method?",
+                    "Why should you not access private members directly?"
+                ],
+                "practical": [
+                    "Create a class with a private attribute `__password`.",
+                    "Try to access it directly and observe the error.",
+                    "Create a getter method to safely retrieve it.",
+                    "Use the `@property` decorator for a `radius` attribute.",
+                    "Implement validation in a setter (e.g., age cannot be negative)."
+                ]
+            }
+        },
+        {
+            "chapterId": 3,
+            "chapterTitle": "Polymorphism & Magic Methods",
+            "topics": [
+                "Duck Typing ('If it walks like a duck...')",
+                "Operator Overloading",
+                "Magic Methods: `__str__`, `__len__`, `__add__`",
+                "Implementing len() for custom objects",
+                "Making classes printable"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What is Polymorphism?",
+                    "What method controls how an object looks when printed?",
+                    "What method controls the `+` operator?",
+                    "What is Duck Typing?",
+                    "Can you override `==` behavior?"
+                ],
+                "practical": [
+                    "Implement `__str__` for your Car class.",
+                    "Create a `Vector` class and implement `__add__` to add vectors.",
+                    "Implement `__len__` for a custom `Playlist` class.",
+                    "Override `__eq__` to compare two objects by value.",
+                    "Print your object directly."
+                ]
+            }
+        }
+    ],
+    "moduleProject": {
+        "title": "Library Management System",
+        "description": "Build a system with `Library`, `Book`, and `Member` classes. Use Inheritance for `User` -> `Member`/`Admin`. Use encapsulation for tracking fines.",
+        "steps": [
+            "Class `Book`: title, author, isbn, is_borrowed.",
+            "Class `Member`: name, borrowed_books list.",
+            "Class `Library`: list of books, method `lend_book(isbn, member)`.",
+            "Handle errors (Book not found, already borrowed).",
+            "Use `__str__` to list books nicely."
+        ]
+    }
+}

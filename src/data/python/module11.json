@@ -1,0 +1,107 @@
+{
+    "moduleId": 11,
+    "moduleTitle": "OOP Level 1: Classes & Objects",
+    "moduleGoal": "Transition from procedural coding to Object-Oriented Programming.",
+    "outcomes": [
+        "Define Classes and Objects",
+        "Understand the `self` keyword",
+        "Implement Constructors (`__init__`)"
+    ],
+    "chapters": [
+        {
+            "chapterId": 1,
+            "chapterTitle": "The Blueprint Concept",
+            "topics": [
+                "Class vs Object (Blueprint vs House)",
+                "Defining a Class (class Keyword)",
+                "Instantiation (Creating objects)",
+                "Attributes (Variables inside classes)",
+                "Methods (Functions inside classes)"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What is the difference between a Class and an Object?",
+                    "How do you instantiate a class in Python?",
+                    "What is an instance variable?",
+                    "Do all methods need to accept arguments?",
+                    "Convention regarding class names (PascalCase)."
+                ],
+                "practical": [
+                    "Define an empty class `Car`.",
+                    "Create two objects `car1` and `car2` from `Car`.",
+                    "Manually assign attributes (color, model) to `car1`.",
+                    "Print the attribute value of an object.",
+                    "Check the type of your object instance."
+                ]
+            }
+        },
+        {
+            "chapterId": 2,
+            "chapterTitle": "The Constructor (__init__)",
+            "topics": [
+                "Purpose of `__init__`",
+                "Initializing attributes automatically",
+                "The `self` parameter explained",
+                "Default values in constructors",
+                "Destructors (conceptual)"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "When is `__init__` called?",
+                    "What does `self` represent?",
+                    "Can a class have multiple `__init__` methods?",
+                    "What happens if you forget `self` in method definition?",
+                    "What are Dunder methods?"
+                ],
+                "practical": [
+                    "Update `Car` class with an `__init__` method.",
+                    "Initialize `make`, `model`, and `year`.",
+                    "Add a method `start_engine()` that prints 'Vroom!'.",
+                    "Create a `Student` class that takes name and grades.",
+                    "Create an object `p1 = Person('Alice')`."
+                ]
+            }
+        },
+        {
+            "chapterId": 3,
+            "chapterTitle": "Instance vs Class Variables",
+            "topics": [
+                "Instance Variables (Unique to object)",
+                "Class Variables (Shared by all)",
+                "Modifying Class variables",
+                "Namespace awareness",
+                "When to use which?"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "Where are Class Variables defined?",
+                    "If you change a Class Variable, does it affect all objects?",
+                    "Can an instance override a class variable?",
+                    "How do you access a Class Variable?",
+                    "What is shared state?"
+                ],
+                "practical": [
+                    "Create a `Employee` class with a class variable `company_name`.",
+                    "Create 3 employees and print their company.",
+                    "Change `company_name` globally and check all objects.",
+                    "Create an instance count variable that increments on `__init__`.",
+                    "Verify that instance variables do not conflict with class variables."
+                ]
+            }
+        }
+    ],
+    "moduleProject": {
+        "title": "Bank Account System",
+        "description": "Design a `BankAccount` class. Objects should accept an owner name and initial balance. Implement methods to Deposit, Withdraw, and Check Balance.",
+        "steps": [
+            "Define `__init__(self, owner, balance)`.",
+            "Method `deposit(amount)`: increases balance.",
+            "Method `withdraw(amount)`: checks funds, decreases balance.",
+            "Protect balance from direct access (intro to encapsulation concept).",
+            "Test with multiple accounts."
+        ]
+    }
+}

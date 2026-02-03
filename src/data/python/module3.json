@@ -1,0 +1,107 @@
+{
+    "moduleId": 3,
+    "moduleTitle": "Operators & User Input Handling",
+    "moduleGoal": "Learn to perform operations on data and interact with the user.",
+    "outcomes": [
+        "Perform arithmetic and logical operations",
+        "Take dynamic user input",
+        "Understand Operator Precedence"
+    ],
+    "chapters": [
+        {
+            "chapterId": 1,
+            "chapterTitle": "Arithmetic & assignment",
+            "topics": [
+                "Basic Math (+, -, *, /)",
+                "Floor Division (//)",
+                "Modulus (%)",
+                "Exponentiation (**)",
+                "Compound Assignment (+=, -=)"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What is the difference between / and //?",
+                    "What does the % operator return?",
+                    "What is the result of 2 ** 3?",
+                    "Explain 'x += 5'.",
+                    "Does Python support x++ or x--?"
+                ],
+                "practical": [
+                    "Calculate the area of a rectangle with length 10 and width 5.",
+                    "Find the remainder when 100 is divided by 7.",
+                    "Calculate 2 raised to the power of 10.",
+                    "Use compound assignment to double a variable's value.",
+                    "Determine if a number is even or odd using Modulus."
+                ]
+            }
+        },
+        {
+            "chapterId": 2,
+            "chapterTitle": "Comparison & Logical Operators",
+            "topics": [
+                "Comparisons (==, !=, >, <, >=, <=)",
+                "Logical AND, OR, NOT",
+                "Truth Tables",
+                "Chaining comparisons (1 < x < 10)",
+                "Identity Operators (is, is not)"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What does Comparison return? (True/False)",
+                    "What is the result of 'True and False'?",
+                    "What is the result of 'not True'?",
+                    "Explain the difference between == and is.",
+                    "Can you chain comparisons in Python?"
+                ],
+                "practical": [
+                    "Check if 10 is greater than 5.",
+                    "Check if 'apple' is equal to 'Apple'.",
+                    "Verify if a number is between 10 and 20 using chaining.",
+                    "Use 'and' to check if age > 18 and has_id == True.",
+                    "Use 'not' to reverse a boolean decision."
+                ]
+            }
+        },
+        {
+            "chapterId": 3,
+            "chapterTitle": "Interactive Programs with input()",
+            "topics": [
+                "The input() function function execution pause",
+                "Prompting the user",
+                "Converting Input types immediately",
+                "Handling simple Input errors (conceptual)",
+                "Building a calculator flow"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What data type does input() return by default?",
+                    "Why must we cast input meant for math?",
+                    "How do you display a message inside input()?",
+                    "What happens if a user enters text when you expect a number?",
+                    "How do you remove whitespace from input?"
+                ],
+                "practical": [
+                    "Ask the user for their name and greet them.",
+                    "Ask for birth year, calculate age, and print it.",
+                    "Ask for two numbers and print their sum.",
+                    "Create a tip calculator (Bill amount * 0.15).",
+                    "Ask for a float and print its square."
+                ]
+            }
+        }
+    ],
+    "moduleProject": {
+        "title": "The Age Gate",
+        "description": "Create a script that asks for Name and Birth Year. Calculate Age. Print 'Access Granted' if Age >= 18, and compare it to a logic check.",
+        "steps": [
+            "Get 'Current Year' (hardcode or use datetime if advanced).",
+            "Input Birth Year (convert to int).",
+            "Calculate Age = Current - Birth.",
+            "Store `is_adult = Age >= 18`.",
+            "Print the user details and the `is_adult` status."
+        ]
+    }
+}

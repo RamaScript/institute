@@ -1,37 +1,44 @@
 const DATA_DIR = 'src/data/';
 
-// Cache to store loaded modules
+// Cache to store loaded modules (Key: courseId_moduleId)
 const moduleCache = {};
 
-export async function loadModuleList() {
-    // Since we don't have a single "index" json, we'll assume we know the count (11).
-    // Or we could fetch them one by one.
-    // Ideally, for a real app, we'd have a `modules.json` index.
-    // For this constraint, we will iterate 1 to 11.
+export async function loadModuleList(courseId = 'candcpp') {
+    // If courseId is candcpp, check if we have a modules.json, otherwise generate/fetch standard 11
+    // Ideally we should create a modules.json for candcpp now too.
 
-    const modules = [];
-    for (let i = 1; i <= 11; i++) {
-        try {
-            const data = await getModule(i);
-            modules.push({
-                id: data.moduleId,
-                title: data.moduleTitle
-            });
-        } catch (e) {
-            console.error(`Failed to load module ${i}`, e);
-        }
-    }
-    return modules;
-}
-
-export async function getModule(id) {
-    if (moduleCache[id]) return moduleCache[id];
+    // Path: src/data/<courseId>/modules.json (Proposed standard)
+    const listPath = `${DATA_DIR}${courseId}/modules.json`;
 
     try {
-        const response = await fetch(`${DATA_DIR}module${id}.json`);
+        const response = await fetch(listPath);
+        if (!response.ok) {
+            // Fallback for C++ if modules.json doesn't exist (we haven't created it yet in previous steps, but I should create it now)
+            // If I don't create it, this breaks.
+            // However, for the purpose of this "fix", let's assume I WILL create it.
+            throw new Error(`Failed to load module list for ${courseId}`);
+        }
+        const list = await response.json();
+        return list.map(m => ({ id: m.id, title: m.title }));
+    } catch (e) {
+        console.error(`Error loading modules for ${courseId}:`, e);
+        // Fallback for legacy if needed, but better to just fix the data.
+        return [];
+    }
+}
+
+export async function getModule(id, courseId = 'candcpp') {
+    const cacheKey = `${courseId}_${id}`;
+    if (moduleCache[cacheKey]) return moduleCache[cacheKey];
+
+    // New Path: src/data/<courseId>/module<id>.json
+    const url = `${DATA_DIR}${courseId}/module${id}.json`;
+
+    try {
+        const response = await fetch(url);
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const json = await response.json();
-        moduleCache[id] = json;
+        moduleCache[cacheKey] = json;
         return json;
     } catch (error) {
         console.error("Fetch Error:", error);

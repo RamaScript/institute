@@ -1,4 +1,4 @@
-export function renderSidebar(modules, activeModuleId) {
+export function renderSidebar(modules, activeModuleId, courseId = 'candcpp') {
     const navContainer = document.getElementById('module-list');
     if (!navContainer) return;
 
@@ -15,7 +15,7 @@ export function renderSidebar(modules, activeModuleId) {
     const listHtml = modules.map(m => {
         const isActive = m.id == activeModuleId ? 'active' : '';
         return `
-            <a href="#course/candcpp/module/${m.id}" class="nav-link ${isActive}" data-id="${m.id}">
+            <a href="#course/${courseId}/module/${m.id}" class="nav-link ${isActive}" data-id="${m.id}">
                 Module ${m.id}: ${m.title}
             </a>
         `;

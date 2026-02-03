@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1,
+        "title": "Introduction to Python & Environment Breakdown",
+        "file": "src/data/python/module1.json"
+    },
+    {
+        "id": 2,
+        "title": "Python Basics: Variables & Data Types",
+        "file": "src/data/python/module2.json"
+    },
+    {
+        "id": 3,
+        "title": "Operators & User Input Handling",
+        "file": "src/data/python/module3.json"
+    },
+    {
+        "id": 4,
+        "title": "Control Flow: Decision Making",
+        "file": "src/data/python/module4.json"
+    },
+    {
+        "id": 5,
+        "title": "Loops & Iterations Mastery",
+        "file": "src/data/python/module5.json"
+    },
+    {
+        "id": 6,
+        "title": "Strings & Advanced Formatting",
+        "file": "src/data/python/module6.json"
+    },
+    {
+        "id": 7,
+        "title": "Data Structures I: Lists & Tuples",
+        "file": "src/data/python/module7.json"
+    },
+    {
+        "id": 8,
+        "title": "Data Structures II: Dictionaries & Sets",
+        "file": "src/data/python/module8.json"
+    },
+    {
+        "id": 9,
+        "title": "Functions, Recursion & Scope",
+        "file": "src/data/python/module9.json"
+    },
+    {
+        "id": 10,
+        "title": "File Handling & Error Management",
+        "file": "src/data/python/module10.json"
+    },
+    {
+        "id": 11,
+        "title": "OOP Level 1: Classes & Objects",
+        "file": "src/data/python/module11.json"
+    },
+    {
+        "id": 12,
+        "title": "OOP Level 2: Advanced Concepts",
+        "file": "src/data/python/module12.json"
+    },
+    {
+        "id": 13,
+        "title": "Project I: Task Management System",
+        "file": "src/data/python/module13.json"
+    },
+    {
+        "id": 14,
+        "title": "Project II: Web Scraper (BS4)",
+        "file": "src/data/python/module14.json"
+    },
+    {
+        "id": 15,
+        "title": "Capstone: Full Stack Data App",
+        "file": "src/data/python/module15.json"
+    }
+]

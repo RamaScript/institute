@@ -13,7 +13,7 @@ export const courses = [
         description: 'Data science, automation, and web development with Python.',
         tags: ['Data Science', 'Web'],
         icon: '🐍',
-        isAvailable: false // Placeholder
+        isAvailable: true
     },
     {
         id: 'dsa',

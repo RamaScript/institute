@@ -1,0 +1,107 @@
+{
+    "moduleId": 15,
+    "moduleTitle": "Capstone: Full Stack Data App",
+    "moduleGoal": "The Final Test. Combine OOP, File I/O, Web Scraping, and Data Analysis into one cohesive application.",
+    "outcomes": [
+        "Design a modular system",
+        "Integrate multiple external libraries",
+        "Deploy a functional data dashboard implementation"
+    ],
+    "chapters": [
+        {
+            "chapterId": 1,
+            "chapterTitle": "Capstone Planning",
+            "topics": [
+                "Defining requirements",
+                "Designing the Class Hierarchy (Scraper, Analyzer, Reporter)",
+                "Choosing libraries (Pandas, Matplotlib, Requests)",
+                "Project Directory Structure",
+                "Virtual Environment setup"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What is the first step in a large project?",
+                    "Why use classes for components like the Scraper?",
+                    "Where should raw data be stored?",
+                    "What is `requirements.txt`?",
+                    "How to version control this project?"
+                ],
+                "practical": [
+                    "Create the folder structure.",
+                    "Initialize Git.",
+                    "Create `requirements.txt`.",
+                    "Draw the flow diagram (Scrape -> CSV -> Pandas -> Plot).",
+                    "Setup the empty class files."
+                ]
+            }
+        },
+        {
+            "chapterId": 2,
+            "chapterTitle": "Component Implementation",
+            "topics": [
+                "Building the `CryptoScraper` class",
+                "Building the `DataProcessor` class (Pandas)",
+                "Building the `Visualizer` class (Basic Plots)",
+                "Wiring components together in `main.py`",
+                "Logging instead of print"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "Why pass data as arguments between classes?",
+                    "What is a DataFrame?",
+                    "How to handle network failure in the scraper?",
+                    "Why use logging libraries?",
+                    "Test Driven Development (TDD) basics."
+                ],
+                "practical": [
+                    "Implement the Scraper to fetch CoinGecko/YahooFinance dummy data.",
+                    "Save data to CSV.",
+                    "Load CSV into Pandas DataFrame.",
+                    "Calculate the average price.",
+                    "Generate a simple line chart image."
+                ]
+            }
+        },
+        {
+            "chapterId": 3,
+            "chapterTitle": "Final Polish & Documentation",
+            "topics": [
+                "Adding command-line arguments (argparse)",
+                "Writing a README.md",
+                "Code comments and type hinting",
+                "Packaging (setup.py conceptual)",
+                "Refactoring for readability"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What is argparse used for?",
+                    "What should go in a README?",
+                    "Why is Type Hinting useful in large projects?",
+                    "How do you share this project?",
+                    "Self-Code Review process."
+                ],
+                "practical": [
+                    "Add a CLI flag `--limit` to control how many items to scrape.",
+                    "Write a detailed README.",
+                    "Add Docstrings to all methods.",
+                    "Run a linter (flake8) if installed.",
+                    "Zip the project for submission."
+                ]
+            }
+        }
+    ],
+    "moduleProject": {
+        "title": "CryptoTrak 3000",
+        "description": "A complete application that fetches live Cryptocurrency prices, saves them to history, calculates moving averages, and generates a trend graph image.",
+        "steps": [
+            "1. Scraper: Fetches Top 10 coins + prices.",
+            "2. Storage: Appends to `history.csv` with timestamp.",
+            "3. Analysis: Finds the 'Gainer of the Day'.",
+            "4. Viz: Generates `trend.png` showing price history.",
+            "5. Interface: CLI menu to trigger these actions."
+        ]
+    }
+}

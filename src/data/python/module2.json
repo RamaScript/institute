@@ -1,0 +1,106 @@
+{
+    "moduleId": 2,
+    "moduleTitle": "Python Basics: Variables & Data Types",
+    "moduleGoal": "Master the fundamental building blocks of data storage and manipulation.",
+    "outcomes": [
+        "Manage data using variables",
+        "Differentiate strict Data Types",
+        "Perform Type Casting"
+    ],
+    "chapters": [
+        {
+            "chapterId": 1,
+            "chapterTitle": "Variables & Memory",
+            "topics": [
+                "What is a Variable? (Label vs Box)",
+                "Variable Naming Conventions (snake_case)",
+                "Dynamic Typing in Python",
+                "Reassigning Variables",
+                "Deleting Variables (del)"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What allows Python to change a variable's type dynamically?",
+                    "What is snake_case?",
+                    "Are Python variable names case-sensitive?",
+                    "Which keyword deletes a variable?",
+                    "Can a variable name start with a number?"
+                ],
+                "practical": [
+                    "Assign the value 10 to a variable 'x', then reassign it to 'Ten'.",
+                    "Create variables for your name, age, and country.",
+                    "Swap two variables without using a third variable.",
+                    "Try to use a reserved keyword (like 'if') as a variable name.",
+                    "Delete a variable and try to print it."
+                ]
+            }
+        },
+        {
+            "chapterId": 2,
+            "chapterTitle": "Primitive Data Types",
+            "topics": [
+                "Integers (int)",
+                "Floating-point numbers (float)",
+                "Strings (str)",
+                "Booleans (bool)",
+                "Checking types with type()"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What is the type of the value 3.14?",
+                    "What are the two possible values of a Boolean?",
+                    "How is a string defined in Python?",
+                    "What does type() return?",
+                    "Is 'False' (string) the same as False (boolean)?"
+                ],
+                "practical": [
+                    "Define an integer, a float, and a string.",
+                    "Print the type of each variable using type().",
+                    "Create a boolean variable 'is_python_fun' and set it to True.",
+                    "Assign 100 to 'score' and 100.0 to 'rating'. Check if their types are equal.",
+                    "Store a sentence with both single and double quotes."
+                ]
+            }
+        },
+        {
+            "chapterId": 3,
+            "chapterTitle": "Type Casting & Conversion",
+            "topics": [
+                "Implicit Type Conversion",
+                "Explicit Type Casting",
+                "int(), float(), str(), bool() functions",
+                "Loss of data during casting",
+                "Input always returns string"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What is Type Casting?",
+                    "What happens if you convert 3.99 to an integer?",
+                    "What is the result of bool(0)?",
+                    "Why does input() always return a string?",
+                    "Can you convert the string 'Hello' to an integer?"
+                ],
+                "practical": [
+                    "Convert integer 50 to a float.",
+                    "Convert float 99.99 to an integer.",
+                    "Convert integer 123 to a string.",
+                    "Cast '25' (string) to an int and add 5 to it.",
+                    "Verify the truthiness of an empty string using bool()."
+                ]
+            }
+        }
+    ],
+    "moduleProject": {
+        "title": "The Data Card",
+        "description": "Create a script that stores details of a fictional character (Name, Level, Health, Is_Alive) in variables and prints a 'Character Stats' card.",
+        "steps": [
+            "Define variables with appropriate types.",
+            "Cast the Level (int) to String for concatenation if needed (or use comma separation).",
+            "Print a bordered format.",
+            "Ensure all data types are used correctly."
+        ]
+    }
+}

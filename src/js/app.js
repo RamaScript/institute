@@ -50,64 +50,62 @@ class App {
         if (!hash || hash === '#home') {
             landingView.classList.remove('hidden');
             syllabusView.classList.add('hidden');
+            this.currentCourseId = null; // Reset current course
             renderLandingPage();
             return;
         }
 
-        // Route: Course/Syllabus View (#course/candcpp/...)
-        if (hash.startsWith('#course/candcpp')) {
+        // Route: Course/Syllabus View (#course/candcpp/... or #course/python/...)
+        if (hash.startsWith('#course/')) {
+            const parts = hash.split('/');
+            // hash format: #course/<courseId>/module/<moduleId> or #course/<courseId>
+            // parts[0] = #course
+            // parts[1] = courseId (candcpp or python)
+            // parts[2] = literal "module" (optional)
+            // parts[3] = moduleId (optional)
+
+            const courseId = parts[1];
+            const moduleId = (parts[2] === 'module' && parts[3]) ? parts[3] : null;
+
             landingView.classList.add('hidden');
             syllabusView.classList.remove('hidden');
 
-            // Lazy load sidebar data if not already loaded
-            if (!this.isSyllabusLoaded) {
-                this.modules = await loadModuleList();
-                this.isSyllabusLoaded = true;
+            // Load sidebar data if course changed or not loaded
+            if (this.currentCourseId !== courseId) {
+                this.modules = await loadModuleList(courseId);
+                this.currentCourseId = courseId;
+                // Render sidebar strictly after loading new list
+                renderSidebar(this.modules, moduleId, courseId);
+            } else {
+                // Just update active state if same course
+                renderSidebar(this.modules, moduleId, courseId);
             }
 
-            // Extract Module ID from hash: #course/candcpp/module:1
-            // or maybe just #course/candcpp (show welcome)
-            // Let's support the old style #module=1 but inside the course prefix if possible
-            // Or adapt to a new schema: #course/candcpp/module/1
-
-            // For now, let's keep it compatible with the previous module links if they were #module=1
-            // But we changed the card to link to #course/candcpp
-            // We need to handle:
-            // 1. #course/candcpp -> Show Sidebar + Welcome Screen
-            // 2. #course/candcpp/module/1 -> Show Sidebar + Module 1
-
-            // Let's try to parse:
-            const moduleMatch = hash.match(/\/module\/(\d+)/);
-            const moduleId = moduleMatch ? moduleMatch[1] : null;
-
-            renderSidebar(this.modules, moduleId);
-
             if (moduleId) {
-                await this.loadAndRenderModule(moduleId);
+                await this.loadAndRenderModule(moduleId, courseId);
                 // Close sidebar on mobile
                 const sidebar = document.getElementById('sidebar');
                 if (window.innerWidth <= 768 && sidebar) {
                     sidebar.classList.remove('open');
                 }
             } else {
-                // Show Welcome Screen (Default content in HTML)
-                // Ensure content area is reset if coming from a module
+                // Show Welcome Screen
                 const contentArea = document.getElementById('content-area');
-                if (!contentArea.querySelector('.welcome-screen')) {
-                    contentArea.innerHTML = `
-                        <div class="welcome-screen">
-                            <h2>Welcome to the C & C++ Master Course</h2>
-                            <p>Select a module from the sidebar to begin your journey.</p>
-                        </div>
-                     `;
-                }
+                const welcomeTitle = courseId === 'python' ? 'Python Mastery' : 'C & C++ Master Course';
+
+                contentArea.innerHTML = `
+                    <div class="welcome-screen">
+                        <h2>Welcome to ${welcomeTitle}</h2>
+                        <p>Select a module from the sidebar to begin your journey.</p>
+                    </div>
+                `;
             }
         }
     }
 
-    async loadAndRenderModule(id) {
+    async loadAndRenderModule(id, courseId) {
         try {
-            const data = await getModule(id);
+            const data = await getModule(id, courseId);
             renderModuleView(data);
             window.scrollTo(0, 0);
         } catch (err) {

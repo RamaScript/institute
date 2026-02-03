@@ -1,0 +1,107 @@
+{
+    "moduleId": 9,
+    "moduleTitle": "Functions, Recursion & Scope",
+    "moduleGoal": "Write modular, reusable, and clean code using Functions.",
+    "outcomes": [
+        "Define and call Functions",
+        "Understand Return values vs Print",
+        "Master Variable Scope (Local vs Global)"
+    ],
+    "chapters": [
+        {
+            "chapterId": 1,
+            "chapterTitle": "Defining Functions",
+            "topics": [
+                "def keyword",
+                "Parameters and Arguments",
+                "Return statement",
+                "Docstrings",
+                "Default Arguments"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What keyword defines a function?",
+                    "What is the difference between a parameter and an argument?",
+                    "What does a function return if no return statement is present?",
+                    "Why use functions?",
+                    "What is a docstring?"
+                ],
+                "practical": [
+                    "Write a function `greet(name)` that prints 'Hello, {name}'.",
+                    "Write `add(a, b)` that returns the sum.",
+                    "Create a function with a default parameter `country='Earth'`.",
+                    "Call a function using keyword arguments.",
+                    "Write a function that returns True if a number is even."
+                ]
+            }
+        },
+        {
+            "chapterId": 2,
+            "chapterTitle": "Advanced Arguments (*args, **kwargs)",
+            "topics": [
+                "Positional vs Keyword arguments",
+                "*args (Variable positional arguments)",
+                "**kwargs (Variable keyword arguments)",
+                "Unpacking arguments",
+                "Scope: Local vs Global"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What does *args allow you to do?",
+                    "What data type is *args inside the function?",
+                    "What data type is **kwargs?",
+                    "What is the 'global' keyword?",
+                    "Why are global variables generally discouraged?"
+                ],
+                "practical": [
+                    "Write a function `sum_all(*args)` that sums any number of inputs.",
+                    "Write `print_info(**kwargs)` that prints key-value pairs.",
+                    "Demonstrate local scope: Define 'x' inside a function and try to print it outside.",
+                    "Modify a global variable inside a function using 'global'.",
+                    "Pass a list to a function using unpacking (*list)."
+                ]
+            }
+        },
+        {
+            "chapterId": 3,
+            "chapterTitle": "Lambda & Recursion",
+            "topics": [
+                "Lambda Functions (Anonymous)",
+                "Map and Filter basics",
+                "Recursion (Base case & Recursive step)",
+                "Factorial example",
+                "Pros and cons of recursion"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What is a lambda function?",
+                    "What are the two essential parts of a recursive function?",
+                    "What happens if there is no base case?",
+                    "When should you use lambda?",
+                    "What is a Stack Overflow (in context of recursion)?"
+                ],
+                "practical": [
+                    "Write a lambda to square a number.",
+                    "Use map() with lambda to double a list of numbers.",
+                    "Write a recursive function to check for a palindrome.",
+                    "Write a recursive factorial function.",
+                    "Filter even numbers from a list using filter() and lambda."
+                ]
+            }
+        }
+    ],
+    "moduleProject": {
+        "title": "Modular Quiz Engine",
+        "description": "Create a quiz game structured with functions. Separate logic for 'Asking Question', 'Checking Answer', and 'Calculating Score'.",
+        "steps": [
+            "Define `ask_question(prompt, correct_answer)` -> checks and returns boolean.",
+            "List of questions (dicts).",
+            "Loop through list and call `ask_question`.",
+            "Keep track of score.",
+            "Final function `show_results(score, total)`."
+        ]
+    }
+}

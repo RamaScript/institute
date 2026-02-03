@@ -1,0 +1,107 @@
+{
+    "moduleId": 7,
+    "moduleTitle": "Data Structures I: Lists & Tuples",
+    "moduleGoal": "Organize data effectively using Python's core sequence types.",
+    "outcomes": [
+        "Manage dynamic lists of data",
+        "Understand Mutability vs Immutability",
+        "Sort and Search collections"
+    ],
+    "chapters": [
+        {
+            "chapterId": 1,
+            "chapterTitle": "Mastering Lists",
+            "topics": [
+                "Creating Lists",
+                "Accessing Elements",
+                "Adding Data (append, insert, extend)",
+                "Removing Data (pop, remove, del)",
+                "List Mutability"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "Can a list contain different data types?",
+                    "What is the difference between append() and extend()?",
+                    "What does pop() return?",
+                    "What happens if you remove an element that doesn't exist?",
+                    "How do you empty a list?"
+                ],
+                "practical": [
+                    "Create a shopping list with 5 items.",
+                    "Add 'Milk' to the end.",
+                    "Insert 'Eggs' at the beginning.",
+                    "Remove the second item.",
+                    "Pop the last item and print it."
+                ]
+            }
+        },
+        {
+            "chapterId": 2,
+            "chapterTitle": "List Operations & Slicing",
+            "topics": [
+                "Slicing Lists (sub-lists)",
+                "Sorting (sort vs sorted)",
+                "Reversing a list",
+                "Checking membership (in, not in)",
+                "Copying lists (shallow copy warning)"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "Does sort() modify the original list?",
+                    "How do you check if 'Apple' is in a list?",
+                    "What is the difference between list1 = list2 and list1 = list2.copy()?",
+                    "How do you sort a list in descending order?",
+                    "What is the syntax for slicing lists?"
+                ],
+                "practical": [
+                    "Create a list of numbers [5, 1, 8, 3]. Sort it.",
+                    "Check if 10 is in your list.",
+                    "Create a copy of your list and modify the copy. Check the original.",
+                    "Get the first 3 items using slicing.",
+                    "Reverse the list using slicing [::-1]."
+                ]
+            }
+        },
+        {
+            "chapterId": 3,
+            "chapterTitle": "Tuples: The Immutable Cousins",
+            "topics": [
+                "Defining Tuples ()",
+                "When to use Tuples vs Lists",
+                "Tuple Unpacking",
+                "Single element tuple trap (1,)",
+                "Converting between List and Tuple"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "Can you add an item to a tuple?",
+                    "Why are tuples faster than lists?",
+                    "How do you define a tuple with one item?",
+                    "What is tuple unpacking?",
+                    "Can a tuple contain a mutable list?"
+                ],
+                "practical": [
+                    "Create a tuple of coordinates (x, y).",
+                    "Try to change the first value and observe the error.",
+                    "Unpack a tuple of (Name, Age) into two variables.",
+                    "Convert a list of user IDs to a tuple.",
+                    "Create a list inside a tuple and modify the list."
+                ]
+            }
+        }
+    ],
+    "moduleProject": {
+        "title": "To-Do List Manager (CLI)",
+        "description": "Build a command-line app to manage tasks. Store tasks in a List. Allow adding, removing (by index or name), and viewing tasks.",
+        "steps": [
+            "Initialize an empty list `tasks = []`.",
+            "Loop a menu: Add, Remove, View, Exit.",
+            "Add: `tasks.append()`.",
+            "Remove: Show list with index, use `tasks.pop(index)`.",
+            "View: Iterate and print with numbering (enumerate)."
+        ]
+    }
+}

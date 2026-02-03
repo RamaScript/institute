@@ -1,0 +1,108 @@
+{
+    "moduleId": 14,
+    "moduleTitle": "Project II: Web Scraper (BS4)",
+    "moduleGoal": "Fetch real-world data from the internet and process it.",
+    "outcomes": [
+        "Understand HTTP Requests (GET)",
+        "Parse HTML DOM with BeautifulSoup",
+        "Export messy web data to CSV"
+    ],
+    "chapters": [
+        {
+            "chapterId": 1,
+            "chapterTitle": "Web Fundamentals & Requests",
+            "topics": [
+                "How the Web Works (Client-Server)",
+                "HTML Structure (Tags, IDs, Classes)",
+                "The `requests` library",
+                "Status Codes (200, 404, 500)",
+                "User-Agent spoofing"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What represents a successful HTTP request?",
+                    "What is the <div class='...'> used for?",
+                    "Why do we need a User-Agent?",
+                    "What library handles HTTP in Python?",
+                    "What is robots.txt?"
+                ],
+                "practical": [
+                    "Install `requests` and `beautifulsoup4`.",
+                    "Fetch `http://example.com` and print the status code.",
+                    "Print the raw HTML content (.text).",
+                    "Try to fetch a non-existent page.",
+                    "Inspect a webpage element in your browser DevTools."
+                ]
+            }
+        },
+        {
+            "chapterId": 2,
+            "chapterTitle": "Parsing with BeautifulSoup",
+            "topics": [
+                "Creating the Soup object",
+                "Finding elements: `.find()` vs `.find_all()`",
+                "Extracting text `.get_text()`",
+                "Extracting attributes (href, src)",
+                "Navigating the tree (parent/children)"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What parser does BS4 usually use?",
+                    "How do you find a div by its ID?",
+                    "What does .find_all() return?",
+                    "How do you get the URL from an <a href='...'> tag?",
+                    "What happens if .find() finds nothing?"
+                ],
+                "practical": [
+                    "Parse the example.com HTML.",
+                    "Extract the main `<h1>` title text.",
+                    "Find all paragraph `<p>` tags.",
+                    "Target a specific class name on a dummy site.",
+                    "Extract all links on a page."
+                ]
+            }
+        },
+        {
+            "chapterId": 3,
+            "chapterTitle": "Data Export pipeline",
+            "topics": [
+                "Structuring scraped data into Dicts",
+                "Handling missing data fields",
+                "Using the `csv` module",
+                "Writing headers and rows",
+                "Delays and Politeness (`time.sleep`)"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "Why should we add a delay between requests?",
+                    "What is the advantage of CSV for data?",
+                    "How to handle a missing price on a product page?",
+                    "What is the DictWriter class?",
+                    "Ethical scraping guidelines."
+                ],
+                "practical": [
+                    "Create a list of dictionaries with dummy data.",
+                    "Write said list to a CSV file.",
+                    "Scrape a quote website (quotes.toscrape.com) for quotes and authors.",
+                    "Handle cases where a quote has no tags.",
+                    "Run the scraper for 5 pages."
+                ]
+            }
+        }
+    ],
+    "moduleProject": {
+        "title": "E-Commerce Price Tracker",
+        "description": "Build a bot that scrapes a book store (books.toscrape.com). Extract Book Title, Price, and Availability. Save all data to `books.csv`.",
+        "steps": [
+            "Target the main product list container.",
+            "Iterate through each book article.",
+            "Extract Title (h3 > a), Price (p.price_color), Availability.",
+            "Clean the price string (remove currency symbol).",
+            "Write to CSV.",
+            "Bonus: Check multiple pages."
+        ]
+    }
+}

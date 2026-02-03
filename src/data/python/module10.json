@@ -1,0 +1,107 @@
+{
+    "moduleId": 10,
+    "moduleTitle": "File Handling & Error Management",
+    "moduleGoal": "Interact with the operating system files and write robust, crash-proof code.",
+    "outcomes": [
+        "Read and Write text files persistently",
+        "Use Context Managers (with)",
+        "Handle Runtime Errors gracefully"
+    ],
+    "chapters": [
+        {
+            "chapterId": 1,
+            "chapterTitle": "Reading & Writing Files",
+            "topics": [
+                "The open() function",
+                "Modes: 'r' (read), 'w' (write), 'a' (append)",
+                "Reading: .read(), .readline(), .readlines()",
+                "Writing: .write()",
+                "Closing files manually (.close())"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What happens if you open a non-existent file in 'r' mode?",
+                    "What happens if you open a file in 'w' mode (does it overwrite)?",
+                    "What does 'a' mode do?",
+                    "Why is it important to close files?",
+                    "What does .readlines() return?"
+                ],
+                "practical": [
+                    "Create a file 'data.txt' and write your name into it.",
+                    "Read 'data.txt' and print the content.",
+                    "Append a new line 'I love Python' to 'data.txt'.",
+                    "Read a file line by line using a loop.",
+                    "Overwrite the file with new content."
+                ]
+            }
+        },
+        {
+            "chapterId": 2,
+            "chapterTitle": "Context Managers (The 'with' statement)",
+            "topics": [
+                "Syntax of 'with open(...) as f'",
+                "Automatic resource management",
+                "Why 'with' is best practice",
+                "Working with Paths (intro)",
+                "Checking file existence"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What does the 'with' statement handle automatically?",
+                    "Do you need to call .close() inside a 'with' block?",
+                    "Can you open multiple files in one 'with' statement?",
+                    "What happens if an error occurs inside the 'with' block?",
+                    "Is 'with' limited to only file handling?"
+                ],
+                "practical": [
+                    "Rewrite your previous file writing code using 'with'.",
+                    "Open two files, read from one and write to the other (Copy).",
+                    "Try to read a file that doesn't exist inside a with block.",
+                    "Check if a file is closed after the with block (f.closed).",
+                    "Count the number of lines in a file."
+                ]
+            }
+        },
+        {
+            "chapterId": 3,
+            "chapterTitle": "Error Handling (Try/Except)",
+            "topics": [
+                "Types of Errors (Syntax vs Runtime)",
+                "Try, Except, Else, Finally blocks",
+                "Catching specific exceptions (ValueError, FileNotFoundError)",
+                "Raising exceptions (raise)",
+                "Debugging basics"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What block catches the error?",
+                    "When does the 'finally' block run?",
+                    "What is the risk of using 'except Exception:' (bare except)?",
+                    "When does the 'else' block run in error handling?",
+                    "How do you manually trigger an error?"
+                ],
+                "practical": [
+                    "Write a division program that handles ZeroDivisionError.",
+                    "Handle invalid user input (e.g., entering text for age).",
+                    "Try to open a missing file and handle FileNotFoundError.",
+                    "Use 'finally' to print 'Execution Complete'.",
+                    "Raise a ValueError if a user inputs a negative age."
+                ]
+            }
+        }
+    ],
+    "moduleProject": {
+        "title": "Log Analyzer & Reporter",
+        "description": "Read a 'server.log' file (you verify/create it). Count how many 'ERROR' and 'WARNING' lines exist. Write a summary to 'report.txt'.",
+        "steps": [
+            "Create a dummy `server.log` with random Error/Info lines.",
+            "Open log in Read mode.",
+            "Iterate lines, check `if 'ERROR' in line`.",
+            "Count occurrences.",
+            "Write results to `report.txt` using proper formatting."
+        ]
+    }
+}

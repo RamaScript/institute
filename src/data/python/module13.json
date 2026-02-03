@@ -1,0 +1,107 @@
+{
+    "moduleId": 13,
+    "moduleTitle": "Project I: Task Management System",
+    "moduleGoal": "Apply Files, Functions, and OOP to build a persistent CLI application.",
+    "outcomes": [
+        "Structure a multi-file project",
+        "Persist data using JSON",
+        "Implement comprehensive CRUD operations"
+    ],
+    "chapters": [
+        {
+            "chapterId": 1,
+            "chapterTitle": "Project Architecture",
+            "topics": [
+                "Separation of Concerns (Data vs Logic vs UI)",
+                "Designing the `Task` class",
+                "Designing the `TaskManager` class",
+                "Planning the storage format (tasks.json)",
+                "Setting up the project folder structure"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "Why separate UI from Logic?",
+                    "What attributes should a Task have?",
+                    "How will we handle unique IDs for tasks?",
+                    "What modes will we need for file handling?",
+                    "How to handle JSON decode errors?"
+                ],
+                "practical": [
+                    "Create `main.py`, `models.py`, and `utils.py`.",
+                    "Define the Task class in `models.py`.",
+                    "Create a dummy JSON file and try to load it.",
+                    "Sketch the menu flow on paper.",
+                    "Write the main loop skeleton."
+                ]
+            }
+        },
+        {
+            "chapterId": 2,
+            "chapterTitle": "Implementation: Logic Layer",
+            "topics": [
+                "Implementing `add_task()`",
+                "Implementing `list_tasks()` with filtering",
+                "Implementing `complete_task()`",
+                "Saving to JSON on every change",
+                "Loading from JSON on startup"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "How do you convert a generic object to a dictionary?",
+                    "What is serialization?",
+                    "How to safely overwrite the data file?",
+                    "How to find a task by ID efficiently?",
+                    "How to date-stamp a task?"
+                ],
+                "practical": [
+                    "Write the `to_dict()` method for Task class.",
+                    "Implement the save/load methods in TaskManager.",
+                    "Test adding a task and restarting the script.",
+                    "Implement logic to mark a task as 'Done'.",
+                    "Handle the case where the JSON file is empty/corrupt."
+                ]
+            }
+        },
+        {
+            "chapterId": 3,
+            "chapterTitle": "Implementation: User Interface",
+            "topics": [
+                "Building a stylized Menu",
+                "Handling User Input robustly",
+                "Formatted printing of tasks (Tabular)",
+                "Adding filters (Show All vs Show Pending)",
+                "Deleting Tasks"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What is a CLI?",
+                    "How to clear the screen in Python?",
+                    "How to align text columns?",
+                    "User Experience (UX) in terminal apps.",
+                    "Why confirm before deletion?"
+                ],
+                "practical": [
+                    "Use formatted strings to print a table header.",
+                    "Implement a 'Press Enter to Continue' pause.",
+                    "Add color codes (ANSI) for status (Green for Done).",
+                    "Implement the Delete feature with confirmation.",
+                    "Finalize the application loop."
+                ]
+            }
+        }
+    ],
+    "moduleProject": {
+        "title": "TaskMaster v1.0",
+        "description": "The complete source code for the Task Management System. It must support Adding, Viewing, Completing, and Deleting tasks, with data saved purely in JSON.",
+        "steps": [
+            "Ensure all imports work (local modules).",
+            "Verify data persistence.",
+            "Check error handling (try/except around inputs).",
+            "Polish the UI text.",
+            "Create a README instructions file."
+        ]
+    }
+}

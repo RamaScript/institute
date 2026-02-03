@@ -1,0 +1,108 @@
+{
+    "moduleId": 5,
+    "moduleTitle": "Loops & Iterations Mastery",
+    "moduleGoal": "Automate repetitive tasks using For and While loops.",
+    "outcomes": [
+        "Master the `for` loop and `range()` function",
+        "Control `while` loops safely",
+        "Use Break and Continue keywords"
+    ],
+    "chapters": [
+        {
+            "chapterId": 1,
+            "chapterTitle": "The While Loop",
+            "topics": [
+                "Concept of Iteration",
+                "Syntax of `while`",
+                "Infinite loops (The danger zone)",
+                "Incrementing/Decrementing counters",
+                "Input validation loops"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "When should you use a while loop over a for loop?",
+                    "What causes an infinite loop?",
+                    "How do you stop a while loop manually?",
+                    "What is a sentinel value?",
+                    "Can a while loop run zero times?"
+                ],
+                "practical": [
+                    "Print numbers from 1 to 10 using while.",
+                    "Create a countdown from 10 to 1.",
+                    "Keep asking the user for input until they type 'exit'.",
+                    "Sum numbers from 1 to 100.",
+                    "Print the multiplication table of 5."
+                ]
+            }
+        },
+        {
+            "chapterId": 2,
+            "chapterTitle": "The For Loop & Range",
+            "topics": [
+                "Syntax of `for item in sequence`",
+                "The `range(start, stop, step)` function",
+                "Iterating over strings",
+                "The concept of iterables",
+                "Looping with index (conceptual)"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What does range(5) generate?",
+                    "Is the 'stop' value in range() inclusive?",
+                    "What works as an iterable in Python?",
+                    "How does range(1, 10, 2) work?",
+                    "Can you iterate over a number (int)?"
+                ],
+                "practical": [
+                    "Print numbers 0 to 4 using range().",
+                    "Print even numbers from 0 to 20.",
+                    "Iterate over your name and print each letter.",
+                    "Calculate the factorial of 5 using a for loop.",
+                    "Print a sequence like 10, 20, 30... 100."
+                ]
+            }
+        },
+        {
+            "chapterId": 3,
+            "chapterTitle": "Loop Control & Nesting",
+            "topics": [
+                "The `break` statement",
+                "The `continue` statement",
+                "Nested Loops (Loops inside loops)",
+                "The `else` clause in loops",
+                "Performance considerations (intro)"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What does `break` do?",
+                    "What does `continue` do?",
+                    "When does the `else` block of a loop execute?",
+                    "How many times does the inner loop run in a nested loop?",
+                    "Can you break out of a nested loop instantly?"
+                ],
+                "practical": [
+                    "Find the first number divisible by 7 in range 1-100 and break.",
+                    "Print numbers 1-10 but skip 5 (continue).",
+                    "Create a 3x3 grid of asterisks using nested loops.",
+                    "Search for a letter in a string and break if found.",
+                    "Implement a 'Login Retry' system max 3 attempts."
+                ]
+            }
+        }
+    ],
+    "moduleProject": {
+        "title": "Number Guessing Game",
+        "description": "The computer picks a random number (use a fixed one for now or random). The user has 5 attempts to guess it. Provide 'Higher' or 'Lower' feedback.",
+        "steps": [
+            "Set `target = 42`.",
+            "Loop 5 times (for loop).",
+            "Ask for a guess.",
+            "If correct, print 'Won' and Break.",
+            "If wrong, print hints.",
+            "Use loop `else` to print 'Game Over' if never guessed."
+        ]
+    }
+}

@@ -1,0 +1,107 @@
+{
+    "moduleId": 6,
+    "moduleTitle": "Strings & Advanced Formatting",
+    "moduleGoal": "Master text manipulation, slicing, and professional output formatting.",
+    "outcomes": [
+        "Manipulate text using string methods",
+        "Perform advanced Slicing operations",
+        "Format strings dynamically (f-strings)"
+    ],
+    "chapters": [
+        {
+            "chapterId": 1,
+            "chapterTitle": "String Basics & Slicing",
+            "topics": [
+                "String Indexing (Positive & Negative)",
+                "Slicing Syntax [start:stop:step]",
+                "String Immutability",
+                "Concatenation vs Repetition",
+                "len() function"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What is the index of the first character in a string?",
+                    "How do you access the last character using negative indexing?",
+                    "Can you change a character in a string via assignment?",
+                    "What does 'Hello'[::-1] do?",
+                    "What is the result of 'A' + 'B' * 3?"
+                ],
+                "practical": [
+                    "Print the first and last letter of your name.",
+                    "Reverse the string 'Python' using slicing.",
+                    "Extract the word 'World' from 'Hello World' using slicing.",
+                    "Print every second letter of 'Supercalifragilistic'.",
+                    "Try to change s[0] = 'X' and observe the error."
+                ]
+            }
+        },
+        {
+            "chapterId": 2,
+            "chapterTitle": "Essential String Methods",
+            "topics": [
+                "Case manipulation (upper, lower, title)",
+                "Cleaning input (strip, lstrip, rstrip)",
+                "Finding substrings (find, index, replace)",
+                "Splitting and Joining",
+                "Checking content (isdigit, isalpha)"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What is the difference between find() and index()?",
+                    "What does strip() remove by default?",
+                    "What data type does split() return?",
+                    "How do you join a list of words into a sentence?",
+                    "What does isalnum() check?"
+                ],
+                "practical": [
+                    "Convert 'python' to 'PYTHON' and 'Python'.",
+                    "Clean the string '  user_input  ' to 'user_input'.",
+                    "Replace 'Java' with 'Python' in a sentence.",
+                    "Split 'apple,banana,grape' into a list.",
+                    "Verify if a user input contains only numbers."
+                ]
+            }
+        },
+        {
+            "chapterId": 3,
+            "chapterTitle": "Advanced Formatting (f-strings)",
+            "topics": [
+                "f-strings syntax (f'...')",
+                "Expression evaluation inside f-strings",
+                "Number formatting (decimals, padding)",
+                "Escape characters (newline, tab, quotes)",
+                "Raw Strings (r'...')"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "How do you start an f-string?",
+                    "How do you limit a float to 2 decimal places in an f-string?",
+                    "What is a raw string used for?",
+                    "How do you print a literal curly brace in an f-string?",
+                    "What escape sequence creates a new line?"
+                ],
+                "practical": [
+                    "Print 'My name is [Name] and I am [Age]' using f-string.",
+                    "Format the value of PI (3.14159) to '3.14'.",
+                    "Print a table row with aligned columns using padding.",
+                    "Print a Windows file path using a raw string.",
+                    "Perform math inside an f-string (e.g., f'10 + 5 = {10+5}')."
+                ]
+            }
+        }
+    ],
+    "moduleProject": {
+        "title": "Password Strength Validator",
+        "description": "Create a script that takes a password and analyzes its strength based on length, case, numbers, and special characters.",
+        "steps": [
+            "Input a password.",
+            "Check Length >= 8.",
+            "Check for Uppercase and Lowercase (using loops or sets).",
+            "Check for Numbers.",
+            "Provide specific feedback: 'Too short', 'Missing number', or 'Strong Password!'."
+        ]
+    }
+}

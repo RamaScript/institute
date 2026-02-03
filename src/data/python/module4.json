@@ -1,0 +1,107 @@
+{
+    "moduleId": 4,
+    "moduleTitle": "Control Flow: Decision Making",
+    "moduleGoal": "Write smart programs that can make choices based on conditions.",
+    "outcomes": [
+        "Master if-elif-else structures",
+        "Handle nested conditions",
+        "Use Ternary Operators"
+    ],
+    "chapters": [
+        {
+            "chapterId": 1,
+            "chapterTitle": "The If Statement",
+            "topics": [
+                "Syntax of 'if' and indentation",
+                "The Boolean condition",
+                "The 'else' fallback",
+                "Common indentation errors",
+                "Pass keyword"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What is the colon (:) used for in an if statement?",
+                    "What happens if the condition is False and there is no else?",
+                    "Can you have an 'else' without an 'if'?",
+                    "What is the 'pass' keyword?",
+                    "How many tabs/spaces define a block in Python?"
+                ],
+                "practical": [
+                    "Write a script to check if a number is positive or negative.",
+                    "Check if a user entered password equals 'secret123'.",
+                    "Write a program that prints 'Pass' if score > 50 else 'Fail'.",
+                    "Use 'pass' in an empty if block.",
+                    "Check if a number is divisible by 5."
+                ]
+            }
+        },
+        {
+            "chapterId": 2,
+            "chapterTitle": "Multiple Conditions (elif)",
+            "topics": [
+                "The 'elif' chain",
+                "Checking multiple mutually exclusive conditions",
+                "Order of evaluation",
+                "Optimizing logic trees",
+                "Range checking"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What does 'elif' stand for?",
+                    "Can you use multiple 'elif' blocks?",
+                    "If the first 'if' is true, do the 'elif' blocks run?",
+                    "Is 'else' mandatory after 'elif'?",
+                    "How does Python evaluate a chain of conditions?"
+                ],
+                "practical": [
+                    "Write a Grading System: 90+ A, 80+ B, 70+ C, else F.",
+                    "Create a simple menu: 1. Start, 2. Settings, 3. Exit.",
+                    "Determine if a number is Positive, Negative, or Zero.",
+                    "Check traffic light colors: Red->Stop, Green->Go, Yellow->Wait.",
+                    "Basic Rock-Paper-Scissors Logic."
+                ]
+            }
+        },
+        {
+            "chapterId": 3,
+            "chapterTitle": "Nested Logic & Ternary",
+            "topics": [
+                "Nesting if statements inside if statements",
+                "Complex logic management",
+                "The Ternary Operator (One-line if-else)",
+                "Short-circuit evaluation",
+                "Logical complexity limitations"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What is a nested if?",
+                    "Write the syntax for Python's ternary operator.",
+                    "Can you nest conditions indefinitely?",
+                    "Why is excessive nesting bad?",
+                    "What value triggers short-circuit in 'OR'?"
+                ],
+                "practical": [
+                    "Check if a number is even, AND if it's greater than 10 (Nested).",
+                    "Write a one-liner to assign 'Adult' or 'Minor' to a variable status.",
+                    "Validate a login: Check username, THEN check password.",
+                    "Find the largest of three numbers using nested logic.",
+                    "Prevent division by zero using an if check before dividing."
+                ]
+            }
+        }
+    ],
+    "moduleProject": {
+        "title": "Text-Based Adventure Game",
+        "description": "Build a 'Choose Your Own Adventure' game. The user starts at a crossroads and makes choices that lead to different outcomes (Win/Death).",
+        "steps": [
+            "Ask 'Left or Right?'.",
+            "If Left -> Encounter a bear. Ask 'Run or Fight?'.",
+            "If Right -> Find a treasure. Win!",
+            "Use nested if/elif/else to handle the story logic.",
+            "Handle invalid inputs (e.g., user types 'Up')."
+        ]
+    }
+}

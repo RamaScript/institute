@@ -1,0 +1,107 @@
+{
+    "moduleId": 1,
+    "moduleTitle": "Introduction to Python & Environment Setup",
+    "moduleGoal": "Understand the Python ecosystem, install the necessary tools, and write your first script.",
+    "outcomes": [
+        "Install Python & VS Code correctly",
+        "Understand the Interpreter vs Compiler concept",
+        "Run scripts via Command Line"
+    ],
+    "chapters": [
+        {
+            "chapterId": 1,
+            "chapterTitle": "Python & The Tech Landscape",
+            "topics": [
+                "History of Python (Guido van Rossum)",
+                "Why Python? (Web, Data, AI, Scripting)",
+                "Python 2 vs Python 3",
+                "Compiled vs Interpreted languages",
+                "The Zen of Python (import this)"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "Who created Python and in which year?",
+                    "What is the difference between a high-level and low-level language?",
+                    "Explain the term 'Interpreted Language'.",
+                    "What is PEP 8?",
+                    "Why is Python preferred for AI and Machine Learning?"
+                ],
+                "practical": [
+                    "Open your terminal and check the python version.",
+                    "Run 'import this' in the Python shell and write down the first line.",
+                    "Find out where Python is installed on your system path.",
+                    "Launch the interactive Python shell (REPL).",
+                    "Exit the REPL using the correct command."
+                ]
+            }
+        },
+        {
+            "chapterId": 2,
+            "chapterTitle": "Setting Up Your Dev Environment",
+            "topics": [
+                "Installing Python on Windows/Mac/Linux",
+                "Setting up System PATH variables",
+                "Installing VS Code & Extensions",
+                "Using the Terminal (cd, ls, mkdir)",
+                "Creating your first workspace"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What is an IDE?",
+                    "Why do we need to add Python to the System PATH?",
+                    "What is the file extension for Python scripts?",
+                    "What does the command 'cd ..' do?",
+                    "Name two popular text editors for Python."
+                ],
+                "practical": [
+                    "Install the Python extension in VS Code.",
+                    "Create a folder named 'Python_Mastery' on your desktop using the terminal.",
+                    "Open this folder in VS Code via command line ('code .').",
+                    "Change your VS Code theme to 'Dark Modern'.",
+                    "Open the Integrated Terminal in VS Code."
+                ]
+            }
+        },
+        {
+            "chapterId": 3,
+            "chapterTitle": "Your First Python Script",
+            "topics": [
+                "The print() function used for output",
+                "Writing a hello_world.py file",
+                "Running files via 'python filename.py'",
+                "Comments in Python (#)",
+                "Understanding Syntax Errors"
+            ],
+            "assignment": {
+                "totalQuestions": 10,
+                "theory": [
+                    "What function is used to display output to the console?",
+                    "How do you write a single-line comment in Python?",
+                    "What happens if you miss a closing parenthesis in print()?",
+                    "Does Python explicitly require semicolons?",
+                    "What is a Syntax Error?"
+                ],
+                "practical": [
+                    "Create a file 'hello.py' and print 'Hello, World!'.",
+                    "Write a script that prints your name and favorite color on separate lines.",
+                    "Write a comment identifying yourself as the author.",
+                    "Deliberately cause a syntax error and run the script to see the output.",
+                    "Print an ASCII art triangle using multiple print statements."
+                ]
+            }
+        }
+    ],
+    "moduleProject": {
+        "title": "The Setup Script",
+        "description": "Create a Python script that prints a 'System Check' report. It should visually verify that your environment is ready.",
+        "steps": [
+            "Print a banner like '--- SYSTEM CHECK ---'.",
+            "Print 'Python Version: [Manual Text for now]'.",
+            "Print 'IDE: VS Code'.",
+            "Print 'Status: Ready to Code!'.",
+            "Use comments to explain each step."
+        ]
+    }
+}
