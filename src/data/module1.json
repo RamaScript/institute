@@ -1,0 +1,185 @@
+{
+  "moduleId": 1,
+  "moduleTitle": "Programming Fundamentals (C Language)",
+  "moduleGoal": "Build the programmer mindset and understand how C programs are written, compiled, and executed.",
+  "outcomes": [
+    "Write and run basic C programs",
+    "Understand compilation flow",
+    "Use variables, data types, and basic I/O correctly"
+  ],
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Introduction to Programming & C Language",
+      "topics": [
+        "What is programming?",
+        "Why C language exists",
+        "Where C is used (OS, embedded, compilers)",
+        "High-level vs low-level languages",
+        "Compiler vs Interpreter",
+        "C program execution flow",
+        "Writing first C program",
+        "Common beginner mistakes"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is programming?",
+          "Why is C called a procedural language?",
+          "Difference between compiler and interpreter.",
+          "Why is C still relevant today?",
+          "What is source code?",
+          "What is machine code?",
+          "Explain the steps of program execution.",
+          "What is GCC?",
+          "What happens if compilation fails?",
+          "Why is C faster than many languages?"
+        ],
+        "practical": [
+          "Write a program to print Hello World",
+          "Write a program to print your name, age, and city",
+          "Write a program to print numbers from 1 to 5 (without loops)",
+          "Write a program with a syntax error and fix it",
+          "Write a program that prints a sentence in two lines",
+          "Write a program that prints your college name in a box",
+          "Modify Hello World to print your name instead",
+          "Write a program that prints today’s date",
+          "Write a program that prints “C Programming Started”",
+          "Compile and run a program and note the output"
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Structure of a C Program",
+      "topics": [
+        "Header files (stdio.h)",
+        "main() function",
+        "Return type of main",
+        "Statements and blocks",
+        "Semicolons and syntax rules",
+        "Comments (single & multi-line)",
+        "Preprocessor directives",
+        "Code readability basics"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is the purpose of #include<stdio.h>?",
+          "Why is main() mandatory?",
+          "What is the return type of main()?",
+          "What happens if main() is missing?",
+          "What is a statement?",
+          "Why is semicolon important in C?",
+          "Difference between single-line and multi-line comments.",
+          "What is a block in C?",
+          "What is a preprocessor?",
+          "Why are comments important?"
+        ],
+        "practical": [
+          "Write a C program showing all parts of structure",
+          "Add comments explaining each line of code",
+          "Write a program without semicolons and fix errors",
+          "Write a program with multiple statements",
+          "Write a program using both comment types",
+          "Remove stdio.h and observe the error",
+          "Modify return value of main",
+          "Write a program with nested blocks",
+          "Write a program with wrong indentation and fix it",
+          "Rewrite an unreadable program to clean code"
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Variables, Data Types & Constants",
+      "topics": [
+        "What is a variable?",
+        "Data types: int, float, char, double",
+        "Variable declaration & initialization",
+        "Rules for naming variables",
+        "Constants (const, #define)",
+        "Size of data types",
+        "Type conversion (implicit)",
+        "Common data type mistakes"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a variable?",
+          "Difference between declaration and initialization.",
+          "List basic data types in C.",
+          "What is a constant?",
+          "Difference between const and #define.",
+          "What is type conversion?",
+          "Why is char stored as number?",
+          "What happens if variable is not initialized?",
+          "What are valid variable names?",
+          "Why data types are important?"
+        ],
+        "practical": [
+          "Declare and print an integer variable",
+          "Declare float and print with 2 decimals",
+          "Declare char and print ASCII value",
+          "Swap two numbers using variables",
+          "Calculate sum of two numbers",
+          "Calculate area of a circle",
+          "Declare a constant PI and use it",
+          "Convert int to float and print",
+          "Write program showing wrong variable naming (commented)",
+          "Print size of all data types"
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Input & Output in C",
+      "topics": [
+        "printf() function",
+        "Format specifiers (%d, %f, %c)",
+        "scanf() function",
+        "Taking multiple inputs",
+        "Output formatting",
+        "Escape sequences (\\n, \\t)",
+        "Common I/O mistakes",
+        "Input buffer issues (intro)"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is printf()?",
+          "What is scanf()?",
+          "Difference between input and output.",
+          "What are format specifiers?",
+          "Why & is used in scanf()?",
+          "What is an escape sequence?",
+          "Difference between %f and %lf.",
+          "What happens if format specifier is wrong?",
+          "Why input order matters?",
+          "Common mistakes in scanf()."
+        ],
+        "practical": [
+          "Take integer input and print it",
+          "Take float input and print it",
+          "Take character input and print it",
+          "Take two numbers and print sum",
+          "Take name and age and print formatted output",
+          "Use \\n and \\t in output",
+          "Take three values in one scanf",
+          "Print output in aligned format",
+          "Write program with wrong specifier and fix it",
+          "Build a mini input-output demo"
+        ]
+      }
+    }
+  ],
+  "moduleProject": {
+    "title": "Student Information System (Basic)",
+    "description": "Take student name, roll number, age, marks. Display neatly formatted output. Use variables, constants, scanf/printf, and clean structure.",
+    "rules": [
+      "No loops",
+      "No conditions",
+      "Clean indentation mandatory"
+    ]
+  }
+}

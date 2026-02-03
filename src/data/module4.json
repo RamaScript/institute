@@ -1,0 +1,183 @@
+{
+  "moduleId": 4,
+  "moduleTitle": "Arrays & Strings (C Language)",
+  "moduleGoal": "Make students understand collections of data + contiguous memory, not just single variables.",
+  "outcomes": [
+    "Work confidently with 1D & 2D arrays",
+    "Manipulate strings safely",
+    "Solve real problems using arrays",
+    "Avoid common memory mistakes",
+    "Practice Ratio: ~80% practical / 20% theory"
+  ],
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Introduction to Arrays (1D Arrays)",
+      "topics": [
+        "What is an array?",
+        "Why arrays are needed",
+        "Array declaration & initialization",
+        "Indexing & bounds",
+        "Traversing arrays using loops",
+        "Input/output in arrays",
+        "Common array mistakes (out-of-bounds)"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is an array?",
+          "Why indexing starts from 0 in C?",
+          "What happens if index goes out of bounds?",
+          "Difference between variable and array?"
+        ],
+        "practical": [
+          "Declare and print an array of 5 integers",
+          "Take array input from user",
+          "Print array elements using loop",
+          "Find sum of array elements",
+          "Find average of array elements",
+          "Find maximum element in array",
+          "Find minimum element in array",
+          "Count even numbers in array",
+          "Count odd numbers in array",
+          "Search an element in array",
+          "Reverse an array",
+          "Copy one array into another",
+          "Print array in reverse order",
+          "Replace all negative numbers with zero",
+          "Find second largest element",
+          "Identify and fix out-of-bounds error"
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Advanced Array Operations",
+      "topics": [
+        "Sorting basics (logic, not library)",
+        "Linear search",
+        "Frequency counting",
+        "Array insertion",
+        "Array deletion",
+        "Merging arrays",
+        "Time complexity (intro only)"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is linear search?",
+          "Why sorting is important?",
+          "Difference between search and sort?",
+          "What is time complexity (basic idea)?"
+        ],
+        "practical": [
+          "Sort array in ascending order",
+          "Sort array in descending order",
+          "Linear search implementation",
+          "Count frequency of each element",
+          "Find duplicate elements",
+          "Remove duplicate elements",
+          "Insert element at specific position",
+          "Delete element from specific position",
+          "Merge two arrays",
+          "Split array into two halves",
+          "Find common elements in two arrays",
+          "Rotate array left by 1",
+          "Rotate array right by 1",
+          "Find pair with given sum",
+          "Rearrange array (even then odd)",
+          "Trace sorting steps manually"
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "2D Arrays (Matrices)",
+      "topics": [
+        "What is 2D array?",
+        "Row & column concept",
+        "Declaration & initialization",
+        "Input/output of matrices",
+        "Nested loops with 2D arrays",
+        "Common matrix mistakes"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a 2D array?",
+          "Difference between 1D and 2D array?",
+          "Why nested loops are required?",
+          "Memory layout of 2D array (conceptual)"
+        ],
+        "practical": [
+          "Input and print a matrix",
+          "Add two matrices",
+          "Subtract two matrices",
+          "Multiply two matrices",
+          "Transpose a matrix",
+          "Print diagonal elements",
+          "Sum of diagonal elements",
+          "Check identity matrix",
+          "Check symmetric matrix",
+          "Count zero elements",
+          "Row-wise sum",
+          "Column-wise sum",
+          "Find largest element in matrix",
+          "Matrix using user-defined size",
+          "Convert 2D array to 1D",
+          "Trace matrix multiplication logic"
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Strings in C",
+      "topics": [
+        "What is a string?",
+        "Character array vs string literal",
+        "Null character \\0",
+        "String input/output",
+        "Built-in string functions",
+        "Common string mistakes",
+        "Buffer overflow (intro)"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a string in C?",
+          "Why \\0 is important?",
+          "Difference between char array and string literal?",
+          "What is buffer overflow?",
+          "Why gets() is dangerous?"
+        ],
+        "practical": [
+          "Declare and print a string",
+          "Take string input using scanf",
+          "Take string input using fgets",
+          "Find length of string (without function)",
+          "Reverse a string",
+          "Check palindrome string",
+          "Copy one string to another",
+          "Compare two strings",
+          "Count vowels and consonants",
+          "Count words in a string",
+          "Convert string to uppercase",
+          "Convert string to lowercase",
+          "Remove spaces from string",
+          "Concatenate two strings",
+          "Identify and fix string overflow bug"
+        ]
+      }
+    }
+  ],
+  "moduleProject": {
+    "title": "Marks Analysis System",
+    "description": "A console-based application to analyze student marks using arrays and strings. Features include storing student names & marks, calculating totals, averages, highest/lowest marks, and displaying a formatted report.",
+    "rules": [
+      "No functions yet beyond basics",
+      "No pointers",
+      "Proper array bounds",
+      "Clean logic only"
+    ]
+  }
+}

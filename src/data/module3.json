@@ -1,0 +1,176 @@
+{
+  "moduleId": 3,
+  "moduleTitle": "Functions & Modular Programming (C Language)",
+  "moduleGoal": "Teach students how to break problems into reusable blocks instead of dumping everything inside main().",
+  "outcomes": [],
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Introduction to Functions",
+      "topics": [
+        "What is a function?",
+        "Why functions are needed",
+        "Function declaration (prototype)",
+        "Function definition",
+        "Function calling",
+        "Return type",
+        "Void functions",
+        "Common beginner mistakes"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a function?",
+          "Why should we avoid writing all code in main()?",
+          "Difference between declaration and definition.",
+          "What is return type?",
+          "What is a void function?"
+        ],
+        "practical": [
+          "Write a function to print “Hello World”",
+          "Write a function to add two numbers",
+          "Write a function to subtract two numbers",
+          "Write a function to multiply two numbers",
+          "Write a function to divide two numbers",
+          "Write a function to check even or odd",
+          "Write a function to find square of a number",
+          "Write a function to print your details",
+          "Write a function without return value",
+          "Write a function with return value",
+          "Call a function multiple times",
+          "Write separate functions for sum and average",
+          "Create a menu using functions",
+          "Identify error in a function-based code",
+          "Rewrite a main()-only program using functions"
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Function Arguments & Return Values",
+      "topics": [
+        "Arguments vs parameters",
+        "Passing single argument",
+        "Passing multiple arguments",
+        "Returning values",
+        "Nested function calls",
+        "Common mistakes with return"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What are function parameters?",
+          "Difference between arguments and parameters.",
+          "Can a function return multiple values?",
+          "What happens if return is missing?",
+          "Why return type must match value?"
+        ],
+        "practical": [
+          "Function to find maximum of two numbers",
+          "Function to find minimum of two numbers",
+          "Function to calculate simple interest",
+          "Function to convert Celsius to Fahrenheit",
+          "Function to calculate factorial",
+          "Function to check prime number",
+          "Function to check palindrome number",
+          "Function to count digits of a number",
+          "Function to reverse a number",
+          "Function calling another function",
+          "Function returning result used in calculation",
+          "Write program using multiple return statements",
+          "Create calculator using functions",
+          "Rewrite loop-based logic into functions",
+          "Fix return-type mismatch error"
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Call by Value (Core C Concept)",
+      "topics": [
+        "What is call by value?",
+        "Memory behavior during function call",
+        "Why original value doesn’t change",
+        "Scope of variables",
+        "Common misconceptions"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is call by value?",
+          "Why values don’t change after function call?",
+          "What is variable scope?",
+          "Difference between local and global variables.",
+          "What happens to variables after function ends?",
+          "Why C uses call by value by default?"
+        ],
+        "practical": [
+          "Swap two numbers using call by value",
+          "Observe why swap fails",
+          "Modify values inside function and print",
+          "Check scope of variables",
+          "Global vs local variable example",
+          "Pass value and print memory behavior (logical)",
+          "Use same variable name in different functions",
+          "Function that modifies value but doesn’t return",
+          "Function that modifies value and returns it",
+          "Pass constant to function",
+          "Multiple function calls with same argument",
+          "Identify call-by-value behavior in code",
+          "Predict output of given function code",
+          "Rewrite explanation in comments"
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Recursion (Controlled Exposure)",
+      "topics": [
+        "What is recursion?",
+        "Base condition",
+        "Recursive call",
+        "Stack behavior (conceptual)",
+        "When NOT to use recursion",
+        "Recursion vs loop"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is recursion?",
+          "What is base condition?",
+          "What happens if base condition is missing?",
+          "Why recursion can be dangerous?",
+          "Difference between recursion and loop.",
+          "When should recursion be avoided?"
+        ],
+        "practical": [
+          "Recursive function to print numbers 1 to N",
+          "Recursive function to find factorial",
+          "Recursive function to find sum of digits",
+          "Recursive function to calculate power",
+          "Recursive function to reverse a number",
+          "Recursive Fibonacci series",
+          "Convert loop-based factorial to recursion",
+          "Convert recursion to loop",
+          "Identify missing base condition",
+          "Trace recursive calls manually",
+          "Predict output of recursive code",
+          "Limit recursion depth",
+          "Compare loop vs recursion output",
+          "Add comments explaining recursion flow"
+        ]
+      }
+    }
+  ],
+  "moduleProject": {
+    "title": "Menu-Driven Utility Toolkit",
+    "description": "A console application containing multiple utilities using functions only. Features include Calculator, Number utilities (prime, factorial, palindrome), and Conversion utilities.",
+    "rules": [
+      "No arrays",
+      "No pointers",
+      "No copy-paste logic",
+      "Every task must be a function",
+      "Clean naming & structure mandatory"
+    ]
+  }
+}

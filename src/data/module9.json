@@ -1,0 +1,183 @@
+{
+  "moduleId": 9,
+  "moduleTitle": "Inheritance & Polymorphism (Core OOP)",
+  "moduleGoal": "Teach code reuse, extensibility, and runtime behavior—not just syntax tricks.",
+  "outcomes": [
+    "Design class hierarchies",
+    "Use inheritance correctly (not abuse it)",
+    "Apply polymorphism with virtual functions",
+    "Understand runtime vs compile-time binding",
+    "Avoid classic OOP mistakes",
+    "Practice Ratio: ~70–75% practical / 25–30% theory"
+  ],
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Inheritance Basics",
+      "topics": [
+        "What is inheritance?",
+        "Base class & derived class",
+        "public inheritance (why default matters)",
+        "Code reuse vs copy-paste",
+        "protected members",
+        "“is-a” relationship",
+        "Common inheritance misuse"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is inheritance?",
+          "Why inheritance is used?",
+          "Difference between base and derived class?",
+          "What is an “is-a” relationship?",
+          "Difference between public and protected inheritance?",
+          "When inheritance should NOT be used?"
+        ],
+        "practical": [
+          "Create base class Person",
+          "Derive class Student from Person",
+          "Access base class members in derived class",
+          "Add function in base, use in derived",
+          "Add function only in derived",
+          "Use protected data member",
+          "Show code reuse using inheritance",
+          "Compare inheritance vs duplicate code",
+          "Create base class Employee",
+          "Derive Manager class",
+          "Add salary calculation",
+          "Call base class function from derived",
+          "Predict output of inherited code",
+          "Fix wrong inheritance access error"
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Types of Inheritance",
+      "topics": [
+        "Single inheritance",
+        "Multilevel inheritance",
+        "Hierarchical inheritance",
+        "Why multiple inheritance is dangerous (intro)",
+        "Real-world modeling examples"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is single inheritance?",
+          "What is multilevel inheritance?",
+          "What is hierarchical inheritance?",
+          "Why multiple inheritance is risky?",
+          "Where multilevel inheritance is used?"
+        ],
+        "practical": [
+          "Single inheritance example",
+          "Multilevel inheritance example",
+          "Hierarchical inheritance example",
+          "Add functions at each level",
+          "Observe constructor call order",
+          "Observe destructor call order",
+          "Override function in derived class",
+          "Call base version explicitly",
+          "Print inheritance hierarchy output",
+          "Fix wrong inheritance chain",
+          "Compare two inheritance models",
+          "Predict output before execution",
+          "Add comments explaining flow",
+          "Convert flat class into hierarchy",
+          "Identify bad inheritance design"
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Function Overriding & virtual",
+      "topics": [
+        "Function overriding",
+        "Base class pointer → derived object",
+        "Runtime polymorphism",
+        "virtual keyword",
+        "Late binding",
+        "override keyword (best practice)",
+        "Why destructors should be virtual"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is function overriding?",
+          "What is polymorphism?",
+          "Difference between compile-time and runtime polymorphism?",
+          "Why virtual is required?",
+          "What is late binding?",
+          "Why base destructors should be virtual?"
+        ],
+        "practical": [
+          "Override function in derived class",
+          "Call derived function using base pointer (without virtual)",
+          "Observe wrong behavior",
+          "Fix using virtual",
+          "Use override keyword",
+          "Create base pointer to derived object",
+          "Demonstrate runtime polymorphism",
+          "Print correct function output",
+          "Create virtual destructor",
+          "Observe destructor call order",
+          "Fix memory leak using virtual destructor",
+          "Predict polymorphic output",
+          "Compare virtual vs non-virtual",
+          "Comment polymorphism flow clearly"
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Abstract Classes & Pure Virtual Functions",
+      "topics": [
+        "What is abstraction?",
+        "Pure virtual function",
+        "Abstract class",
+        "Interface-like design in C++",
+        "When abstraction is necessary",
+        "Design rules"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is abstraction?",
+          "What is a pure virtual function?",
+          "Can we create object of abstract class?",
+          "Why abstract classes exist?",
+          "Difference between abstract class and normal class?"
+        ],
+        "practical": [
+          "Create abstract base class",
+          "Add pure virtual function",
+          "Derive class and implement function",
+          "Use base class pointer",
+          "Demonstrate abstraction",
+          "Create Shape abstract class",
+          "Derive Circle, Rectangle",
+          "Calculate area polymorphically",
+          "Store derived objects using base pointer",
+          "Fix incomplete implementation error",
+          "Predict output of abstract code",
+          "Convert normal class to abstract",
+          "Design interface-style class",
+          "Add comments explaining abstraction",
+          "Clean bad abstract design"
+        ]
+      }
+    }
+  ],
+  "moduleProject": {
+    "title": "Employee Payroll System (Polymorphic Design)",
+    "description": "A clean OOP system using inheritance and polymorphism. Features include an abstract base class Employee, derived FullTime/PartTime classes, virtual functions for salary calculation, and runtime polymorphism.",
+    "rules": [
+      "No switch-case for type handling",
+      "No duplicated salary logic",
+      "Virtual functions mandatory",
+      "Clean inheritance hierarchy",
+      "Proper destructors"
+    ]
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "moduleId": 6,
+  "moduleTitle": "Structures & File Handling (Real-World C)",
+  "moduleGoal": "Teach students how to model real data and store it permanently.",
+  "outcomes": [],
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Structures (struct)",
+      "topics": [
+        "Why structures are needed",
+        "Defining a structure",
+        "Declaring structure variables",
+        "Accessing members (. operator)",
+        "Array of structures",
+        "Nested structures (intro)",
+        "typedef with structures",
+        "Common structure mistakes"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a structure?",
+          "Difference between structure and variable?",
+          "Why structures are important?",
+          "What is typedef?",
+          "Can a structure contain different data types?"
+        ],
+        "practical": [
+          "Define a structure for a student",
+          "Input and display structure data",
+          "Store multiple students using array of structures",
+          "Display all student records",
+          "Find student with highest marks",
+          "Update student marks",
+          "Use typedef for structure",
+          "Pass structure to function",
+          "Return structure from function",
+          "Nested structure example",
+          "Search student by roll number",
+          "Delete a record logically (flag-based)",
+          "Sort students by marks",
+          "Print formatted structure output",
+          "Fix incorrect structure access code"
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Structures with Pointers",
+      "topics": [
+        "Pointer to structure",
+        "Arrow operator (->)",
+        "Dynamic access logic (conceptual)",
+        "Passing structure pointers to functions",
+        "Real-world usage"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is pointer to structure?",
+          "Difference between . and ->",
+          "Why use structure pointers?",
+          "When structure pointers are preferred?"
+        ],
+        "practical": [
+          "Declare pointer to structure",
+          "Access members using pointer",
+          "Modify structure data using pointer",
+          "Pass structure pointer to function",
+          "Update structure inside function",
+          "Array of structures using pointer",
+          "Search record using structure pointer",
+          "Pointer-based structure traversal",
+          "Compare structure copy vs pointer",
+          "Fix arrow operator misuse",
+          "Print structure addresses",
+          "Menu-driven structure program",
+          "Use pointer to update multiple fields",
+          "Predict output of structure-pointer code",
+          "Trace memory layout logically",
+          "Add comments explaining flow"
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "File Handling Basics",
+      "topics": [
+        "What is a file?",
+        "File modes (r, w, a)",
+        "File pointers (FILE *)",
+        "fopen, fclose",
+        "Writing to file",
+        "Reading from file",
+        "File handling errors"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is file handling?",
+          "Difference between w and a mode?",
+          "What happens if file doesn’t exist?",
+          "Why fclose() is important?",
+          "What is file pointer?"
+        ],
+        "practical": [
+          "Create a file and write text",
+          "Read data from file",
+          "Append data to file",
+          "Copy content from one file to another",
+          "Count number of lines in file",
+          "Count characters in file",
+          "Handle file open failure",
+          "Write numbers to file",
+          "Read numbers from file",
+          "Overwrite file content",
+          "Display file content on screen",
+          "Use multiple files",
+          "Fix file pointer error",
+          "Predict output of file code",
+          "Add comments explaining file flow"
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "File Handling with Structures",
+      "topics": [
+        "Writing structure to file",
+        "Reading structure from file",
+        "Binary vs text files (intro)",
+        "Record-based storage",
+        "Updating file records (logic)",
+        "File-based CRUD design"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Why store structures in files?",
+          "Difference between text and binary file?",
+          "What is record-based storage?",
+          "Why file-based update is tricky?",
+          "Where is this used in real systems?"
+        ],
+        "practical": [
+          "Write structure data to file",
+          "Read structure data from file",
+          "Store multiple records in file",
+          "Display all records from file",
+          "Search record in file",
+          "Append new record",
+          "Modify record logic (rewrite file)",
+          "Delete record logic",
+          "Count total records",
+          "File-based menu system",
+          "Validate file operations",
+          "Debug file-structure mismatch",
+          "Predict file output",
+          "Comment file logic step-by-step",
+          "Clean up messy file code"
+        ]
+      }
+    }
+  ],
+  "moduleProject": {
+    "title": "Library Management System (C)",
+    "description": "A book management system using structures and file handling. Features include adding, viewing, searching, updating, and deleting books with persistent file storage.",
+    "rules": [
+      "Structures + files required",
+      "No global data dumping",
+      "Pointer usage where required",
+      "Proper error handling",
+      "Clean modular logic"
+    ]
+  }
+}

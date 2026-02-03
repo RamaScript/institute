@@ -1,0 +1,205 @@
+{
+  "moduleId": 2,
+  "moduleTitle": "Control Flow & Logic Building (C Language)",
+  "moduleGoal": "Train the brain to think in conditions and repetitions, not random statements.",
+  "outcomes": [],
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Operators & Expressions",
+      "topics": [
+        "Arithmetic operators",
+        "Relational operators",
+        "Logical operators"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Difference between = and ==",
+          "What is operator precedence?",
+          "Difference between ++i and i++",
+          "What is a logical operator?",
+          "What is an expression?",
+          "Why operator precedence matters?"
+        ],
+        "practical": [
+          "Program to add, subtract, multiply, divide two numbers",
+          "Check whether a number is positive or negative using operators",
+          "Compare two numbers and print the greater one",
+          "Check equality of two numbers",
+          "Demonstrate pre-increment and post-increment",
+          "Program to check even or odd",
+          "Use logical AND to check number in range",
+          "Use logical OR in a condition",
+          "Program to check divisibility by 5 and 11",
+          "Write expression and print result",
+          "Program showing operator precedence",
+          "Convert temperature Celsius to Fahrenheit",
+          "Swap two numbers using arithmetic operators",
+          "Identify and fix operator misuse in a given code"
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Decision Making (if, else, nested)",
+      "topics": [
+        "if statement",
+        "if-else",
+        "Nested if-else",
+        "Multiple conditions",
+        "Common condition mistakes",
+        "Real-world decision logic"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is decision making?",
+          "When to use nested if?",
+          "Difference between single and multiple conditions",
+          "What happens if condition is false?",
+          "Common mistakes in if-else"
+        ],
+        "practical": [
+          "Check whether a number is even or odd",
+          "Check whether a person is eligible to vote",
+          "Check whether a number is positive, negative, or zero",
+          "Find largest of two numbers",
+          "Find largest of three numbers",
+          "Check leap year",
+          "Calculate grade based on marks",
+          "Check pass or fail (multiple subjects)",
+          "Calculate bonus based on salary",
+          "Electricity bill calculation (basic slab)",
+          "Check triangle validity",
+          "Identify type of triangle",
+          "Calculate profit or loss",
+          "Simple login validation",
+          "Menu-based program using if-else"
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "switch-case Statement",
+      "topics": [
+        "Why switch exists",
+        "switch syntax",
+        "case and break",
+        "default case",
+        "When NOT to use switch",
+        "switch vs if-else"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is switch?",
+          "Why break is important?",
+          "What happens without break?",
+          "Role of default",
+          "Difference between switch and if-else"
+        ],
+        "practical": [
+          "Menu-based calculator",
+          "Print day of week using number",
+          "Print month name using number",
+          "Simple ATM menu",
+          "Vowel or consonant checker",
+          "Arithmetic operation using switch",
+          "Area calculation menu",
+          "Temperature converter menu",
+          "Simple game menu",
+          "Switch without default – observe behavior",
+          "Switch with fall-through logic",
+          "Program using nested switch",
+          "Menu-driven student options",
+          "Rewrite if-else code using switch",
+          "Identify and fix missing break error"
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Loops (for, while, do-while)",
+      "topics": [
+        "Why loops exist",
+        "for loop",
+        "while loop",
+        "do-while loop",
+        "Loop differences",
+        "Infinite loops",
+        "Loop mistakes"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Difference between for and while",
+          "When to use do-while",
+          "What is infinite loop?",
+          "Common loop mistakes"
+        ],
+        "practical": [
+          "Print numbers 1 to 10",
+          "Print numbers 10 to 1",
+          "Sum of first N natural numbers",
+          "Print even numbers up to N",
+          "Print odd numbers up to N",
+          "Multiplication table",
+          "Factorial of a number",
+          "Count digits in a number",
+          "Reverse a number",
+          "Check palindrome number",
+          "Fibonacci series",
+          "Prime number check",
+          "Print pattern (stars)",
+          "Nested loop pattern",
+          "Sum of digits",
+          "Use all three loops for same problem"
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "Loop Control (break, continue)",
+      "topics": [
+        "break statement",
+        "continue statement",
+        "Loop termination",
+        "Real-world usage",
+        "Avoiding misuse"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is break?",
+          "What is continue?",
+          "Difference between break and continue",
+          "When not to use them?"
+        ],
+        "practical": [
+          "Stop loop when number becomes 5",
+          "Skip printing number 5",
+          "Break on user input",
+          "Continue on invalid input",
+          "Prime number check using break",
+          "Menu loop until exit",
+          "Password retry system",
+          "Number guessing game",
+          "Loop until correct input",
+          "Skip negative numbers",
+          "Count positive numbers only",
+          "Break nested loop",
+          "Continue nested loop",
+          "Infinite loop with exit condition",
+          "Menu-driven loop program",
+          "Identify misuse of break/continue"
+        ]
+      }
+    }
+  ],
+  "moduleProject": {
+    "title": "Smart Console Calculator",
+    "description": "A menu-driven program using if-else, switch, loops, break, and continue. Features include multiple operations, input validation, and repeating menus until exit.",
+    "rules": []
+  }
+}

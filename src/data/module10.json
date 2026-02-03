@@ -1,0 +1,185 @@
+{
+  "moduleId": 10,
+  "moduleTitle": "STL (Standard Template Library)",
+  "moduleGoal": "Make students productive, not heroic.\nThey should stop writing manual arrays, loops, and sorting garbage.",
+  "outcomes": [
+    "Use STL containers correctly",
+    "Iterate safely and cleanly",
+    "Apply STL algorithms instead of custom logic",
+    "Write shorter, safer, faster C++ code",
+    "Practice Ratio: ~75–80% practical / 20–25% theory"
+  ],
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Introduction to STL & vector",
+      "topics": [
+        "What is STL?",
+        "Why STL exists",
+        "Containers vs Algorithms vs Iterators",
+        "vector basics",
+        "Dynamic resizing",
+        "Access methods ([], at)",
+        "Common vector mistakes"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is STL?",
+          "Why STL is preferred over raw arrays?",
+          "What is a container?",
+          "Difference between array and vector?",
+          "Why vector is dynamic?"
+        ],
+        "practical": [
+          "Create vector of integers",
+          "Add elements using push_back",
+          "Print vector using loop",
+          "Print vector using iterator",
+          "Find size of vector",
+          "Access elements using []",
+          "Access elements using at",
+          "Remove last element",
+          "Clear vector",
+          "Input elements from user",
+          "Find sum of vector elements",
+          "Find max element",
+          "Reverse vector",
+          "Sort vector",
+          "Convert array to vector"
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Iterators (The Right Way to Traverse)",
+      "topics": [
+        "What is an iterator?",
+        "Why iterators exist",
+        "begin() and end()",
+        "Iterator vs index",
+        "auto keyword",
+        "Common iterator mistakes"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is an iterator?",
+          "Why iterators are safer than indexes?",
+          "What does end() point to?",
+          "Why auto is used with iterators?"
+        ],
+        "practical": [
+          "Traverse vector using iterator",
+          "Traverse using auto",
+          "Modify elements using iterator",
+          "Find element using iterator",
+          "Count elements greater than X",
+          "Reverse traversal using iterator",
+          "Compare iterator vs index loop",
+          "Use iterator with string vector",
+          "Print iterator addresses (conceptual)",
+          "Fix invalid iterator bug",
+          "Predict iterator loop output",
+          "Use iterator inside function",
+          "Remove element using iterator logic",
+          "Iterate const vector",
+          "Debug iterator misuse",
+          "Comment iterator flow clearly"
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "STL Algorithms (<algorithm>)",
+      "topics": [
+        "Why algorithms matter",
+        "sort",
+        "find",
+        "count",
+        "max_element, min_element",
+        "reverse",
+        "binary_search",
+        "Algorithm + iterator relationship"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What are STL algorithms?",
+          "Why algorithms are better than manual logic?",
+          "What does sort() need?",
+          "Why iterators are used in algorithms?",
+          "When binary search can be used?"
+        ],
+        "practical": [
+          "Sort vector using sort",
+          "Find element using find",
+          "Count occurrences of value",
+          "Find max element",
+          "Find min element",
+          "Reverse vector",
+          "Check if element exists",
+          "Use binary search",
+          "Compare manual sort vs STL sort",
+          "Sort in descending order",
+          "Use algorithm on string vector",
+          "Predict algorithm output",
+          "Fix wrong iterator range",
+          "Chain multiple algorithms",
+          "Rewrite old logic using STL"
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Associative Containers (map, set)",
+      "topics": [
+        "What is associative container?",
+        "set basics",
+        "map basics",
+        "Key–value concept",
+        "Automatic sorting",
+        "Searching efficiency",
+        "When NOT to use map/set"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a set?",
+          "What is a map?",
+          "Difference between map and vector?",
+          "Why map keys are unique?",
+          "When map is better than vector?"
+        ],
+        "practical": [
+          "Create set of integers",
+          "Insert duplicate values in set",
+          "Observe automatic sorting",
+          "Search element in set",
+          "Create map of student marks",
+          "Insert key–value pairs",
+          "Access value using key",
+          "Iterate map using iterator",
+          "Count frequency using map",
+          "Delete element from map",
+          "Check key existence",
+          "Use map with string keys",
+          "Convert vector to map frequency",
+          "Predict map output order",
+          "Fix wrong key access bug"
+        ]
+      }
+    }
+  ],
+  "moduleProject": {
+    "title": "Task Manager using STL",
+    "description": "A console-based task manager using STL containers & algorithms. Features include storing tasks using vector, task categories using map, and search/sort/filter functionality.",
+    "rules": [
+      "No raw arrays",
+      "No manual sort/search",
+      "STL algorithms only",
+      "Iterators mandatory",
+      "Clean, modern C++ style"
+    ]
+  }
+}

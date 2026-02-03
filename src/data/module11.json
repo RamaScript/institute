@@ -1,0 +1,151 @@
+{
+  "moduleId": 11,
+  "moduleTitle": "File Handling, Mini-DB & Capstone",
+  "moduleGoal": "Teach data persistence, clean separation of concerns, and how to ship a non-toy C++ program.",
+  "outcomes": [
+    "Read/write files safely",
+    "Serialize/deserialize objects",
+    "Build a small file-backed system",
+    "Apply STL + OOP together",
+    "Produce a capstone-level project",
+    "Practice Ratio: ~75% practical / 25% theory"
+  ],
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "File Handling Basics (Text Files)",
+      "topics": [
+        "Why persistence matters",
+        "fstream, ifstream, ofstream",
+        "Open modes",
+        "Writing text data",
+        "Reading line by line",
+        "Error handling (is_open)",
+        "Common file pitfalls"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Why file storage is needed?",
+          "Difference: input vs output stream?",
+          "What happens if file doesn’t exist?",
+          "Why close files?",
+          "Text vs binary (high level)?"
+        ],
+        "practical": [
+          "Write text to file",
+          "Read file content",
+          "Append data",
+          "Count lines",
+          "Count words",
+          "Copy file content",
+          "Handle file open failure",
+          "Read using getline",
+          "Overwrite vs append demo",
+          "Read until EOF",
+          "Use multiple files",
+          "Fix missing close bug",
+          "Predict file output",
+          "Add comments explaining flow",
+          "Clean a messy file program"
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "File Handling with Classes (Serialization – Simple)",
+      "topics": [
+        "Saving object state",
+        "Loading object state",
+        "Text-based serialization",
+        "Consistent format design",
+        "Versioning (intro)",
+        "Validation on load"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is serialization?",
+          "Why serialize objects?",
+          "Risks of bad file format?",
+          "Why validation is needed?",
+          "Text vs binary tradeoffs?"
+        ],
+        "practical": [
+          "Save class data to file",
+          "Load class data from file",
+          "Save multiple objects",
+          "Load list of objects",
+          "Validate malformed file",
+          "Handle missing fields",
+          "Use delimiter format",
+          "Change format safely",
+          "Reload after program restart",
+          "Debug corrupted data",
+          "Use STL containers for storage",
+          "Predict loaded output",
+          "Add version header",
+          "Comment format clearly",
+          "Refactor serialization code"
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Mini File-Based Database (CRUD)",
+      "topics": [
+        "CRUD concepts",
+        "Indexing basics (logical)",
+        "Search strategies",
+        "Update via rewrite",
+        "Delete via rewrite",
+        "Consistency rules"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is CRUD?",
+          "Why updates need rewrite?",
+          "Why indexing matters?",
+          "Risks of file corruption?",
+          "How to keep data consistent?"
+        ],
+        "practical": [
+          "Create record",
+          "Read all records",
+          "Search by key",
+          "Update a record",
+          "Delete a record",
+          "Rewrite file safely",
+          "Backup before write",
+          "Restore on failure",
+          "Validate inputs",
+          "Menu-driven CRUD",
+          "Use vector as in-memory cache",
+          "Sync memory  file",
+          "Predict CRUD outputs",
+          "Debug duplicate records",
+          "Clean CRUD architecture"
+        ]
+      }
+    }
+  ],
+  "moduleProject": {
+    "title": "Student / Inventory / Library Management System (C++)",
+    "description": "Choose ONE domain (Student / Inventory / Library) and build it with the same architecture: OOP design (classes, encapsulation), STL containers (vector, map), and File-based persistence (Full CRUD).",
+    "rules": [
+      "No global state",
+      "No C-style I/O",
+      "No god-classes",
+      "Separation: Model / Storage / UI",
+      "Error handling everywhere",
+      "Restart program → data must persist",
+      "Evaluation Checklist",
+      "Code clarity",
+      "Correct OOP usage",
+      "File safety",
+      "STL usage",
+      "Edge-case handling"
+    ]
+  }
+}

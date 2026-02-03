@@ -1,0 +1,175 @@
+{
+  "moduleId": 5,
+  "moduleTitle": "Pointers & Memory Management (C Language)",
+  "moduleGoal": "Make students understand memory, not fear it.",
+  "outcomes": [],
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Pointer Basics (Address & Dereference)",
+      "topics": [
+        "What is memory?",
+        "Address-of operator (&)",
+        "Pointer declaration",
+        "Pointer initialization",
+        "Dereferencing (*)",
+        "Pointer to pointer (intro)",
+        "Common pointer mistakes"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a pointer?",
+          "What does & operator do?",
+          "What does * operator do?",
+          "Why pointers are powerful in C?"
+        ],
+        "practical": [
+          "Declare an integer variable and print its address",
+          "Declare a pointer and store address of variable",
+          "Print value using pointer",
+          "Modify variable value using pointer",
+          "Print address of pointer itself",
+          "Use pointer with different variable",
+          "Declare pointer without initialization – observe issue",
+          "Correct uninitialized pointer bug",
+          "Pointer with char variable",
+          "Pointer with float variable",
+          "Print value and address side by side",
+          "Pointer reassignment example",
+          "Pointer pointing to same variable twice",
+          "Explain output of pointer-based code",
+          "Predict output before running",
+          "Comment code explaining each pointer step"
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Call by Reference (Why Swap Finally Works)",
+      "topics": [
+        "Call by value recap",
+        "Call by reference using pointers",
+        "Passing pointers to functions",
+        "Modifying original values",
+        "Real-world usage"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is call by reference?",
+          "Why swap fails in call by value?",
+          "How pointers enable call by reference?",
+          "When should call by reference be used?"
+        ],
+        "practical": [
+          "Swap two numbers using pointers",
+          "Compare call by value vs call by reference",
+          "Modify variable inside function using pointer",
+          "Increment value using function and pointer",
+          "Input value via pointer",
+          "Write function to change multiple values",
+          "Pass pointer to function and print result",
+          "Predict output of pointer-function code",
+          "Fix broken swap program",
+          "Use pointer to update array element",
+          "Function returning result via pointer",
+          "Menu-driven example using pointers",
+          "Trace pointer flow step-by-step",
+          "Explain memory diagram in comments",
+          "Convert call-by-value code to reference",
+          "Debug wrong pointer parameter"
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Pointers & Arrays (Deadly Combo)",
+      "topics": [
+        "Array name as pointer",
+        "Pointer arithmetic",
+        "Traversing array using pointer",
+        "Difference: arr[i] vs *(arr+i)",
+        "Pointer increment/decrement",
+        "Common array-pointer bugs"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "How array name behaves like pointer?",
+          "What is pointer arithmetic?",
+          "Difference between arr[i] and *(arr+i)?",
+          "Why arrays and pointers are linked?"
+        ],
+        "practical": [
+          "Traverse array using pointer",
+          "Print array using pointer increment",
+          "Find sum of array using pointer",
+          "Find max element using pointer",
+          "Reverse array using pointer",
+          "Modify array elements using pointer",
+          "Access array using *(arr+i)",
+          "Compare loop vs pointer traversal",
+          "Pointer-based search in array",
+          "Count even numbers using pointer",
+          "Swap array elements using pointer",
+          "Pass array to function using pointer",
+          "Function to update array via pointer",
+          "Debug array-pointer misuse",
+          "Predict pointer-based array output",
+          "Explain memory layout with comments"
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Pointer to Pointer & Basic Memory Safety",
+      "topics": [
+        "Pointer to pointer (**)",
+        "Why pointer to pointer exists",
+        "Visualizing multi-level pointers",
+        "NULL pointer",
+        "Dangling pointer (intro)",
+        "Pointer safety rules"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is pointer to pointer?",
+          "Why double pointer is used?",
+          "What is NULL pointer?",
+          "What is dangling pointer?",
+          "Why pointer safety matters?"
+        ],
+        "practical": [
+          "Declare pointer to pointer",
+          "Access value using double pointer",
+          "Modify value using double pointer",
+          "Print addresses at all levels",
+          "Assign NULL to pointer",
+          "Check NULL pointer before use",
+          "Demonstrate dangling pointer (safe demo)",
+          "Fix dangling pointer bug",
+          "Pointer reassignment example",
+          "Compare pointer vs double pointer",
+          "Predict output of double pointer code",
+          "Trace pointer levels manually",
+          "Add comments explaining pointer chain",
+          "Convert single pointer code to double pointer",
+          "Identify unsafe pointer usage"
+        ]
+      }
+    }
+  ],
+  "moduleProject": {
+    "title": "Memory-Based Data Manager",
+    "description": "A console program that manages data using pointers only. Features include inputting numbers using pointers, modifying data via functions (call by reference), array processing using pointer traversal, and a menu-driven flow.",
+    "rules": [
+      "No global variables",
+      "No array indexing (arr[i] NOT allowed in core logic)",
+      "Pointer arithmetic only",
+      "Proper NULL checks",
+      "Clean comments explaining memory flow"
+    ]
+  }
+}

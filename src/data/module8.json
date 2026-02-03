@@ -1,0 +1,187 @@
+{
+  "moduleId": 8,
+  "moduleTitle": "Transition from C to C++ + OOP Basics",
+  "moduleGoal": "Move students from procedural thinking (C) to object-oriented thinking (C++) without confusion.",
+  "outcomes": [
+    "Understand why C++ exists",
+    "Write basic C++ programs",
+    "Create and use classes & objects",
+    "Apply encapsulation correctly",
+    "Stop writing C-style C++ (very important)",
+    "Practice Ratio: ~70% practical / 30% theory"
+  ],
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "From C to C++ (Mindset Shift)",
+      "topics": [
+        "Why C++ was created",
+        "C vs C++ (conceptual, not religious war)",
+        "Procedural vs Object-Oriented programming",
+        "Basic C++ program structure",
+        "iostream, cin, cout",
+        "namespace std",
+        "C-style vs C++-style I/O",
+        "Common beginner mistakes in C++"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Why was C++ created?",
+          "Difference between C and C++ (conceptual)",
+          "What is Object-Oriented Programming?",
+          "Why iostream replaces stdio.h?",
+          "What is namespace std?",
+          "Why mixing C and C++ style is bad?"
+        ],
+        "practical": [
+          "Write first C++ program using cout",
+          "Take input using cin",
+          "Rewrite a C program into C++",
+          "Use std::cout without using namespace std",
+          "Use multiple cout statements",
+          "Print formatted output",
+          "Take multiple inputs using cin",
+          "Compare printf vs cout (code)",
+          "Fix a C-style C++ program",
+          "Write program showing procedural approach in C++",
+          "Identify bad C-style habits",
+          "Convert scanf/printf to cin/cout",
+          "Predict output of C++ code",
+          "Comment differences clearly"
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Introduction to Classes & Objects",
+      "topics": [
+        "What is a class?",
+        "What is an object?",
+        "Class syntax",
+        "Data members",
+        "Member functions",
+        "Creating objects",
+        "Accessing members",
+        "Real-world mapping"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a class?",
+          "What is an object?",
+          "Difference between class and structure?",
+          "Why classes are needed?",
+          "How class improves code organization?"
+        ],
+        "practical": [
+          "Create a simple class Student",
+          "Add data members (name, roll, marks)",
+          "Create object of class",
+          "Assign values to object members",
+          "Display object data",
+          "Add member function to display data",
+          "Add member function to input data",
+          "Create multiple objects",
+          "Compare structure vs class code",
+          "Use object inside main",
+          "Write class for Rectangle",
+          "Calculate area using member function",
+          "Create class for BankAccount",
+          "Access object data safely",
+          "Rewrite procedural code into class-based"
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Encapsulation & Access Specifiers",
+      "topics": [
+        "What is encapsulation?",
+        "public, private, protected",
+        "Data hiding",
+        "Why data should be private",
+        "Getter and setter functions",
+        "Common encapsulation mistakes"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is encapsulation?",
+          "Why data hiding is important?",
+          "Difference between public and private?",
+          "What happens if data is public?",
+          "Why getters/setters are used?",
+          "Can private members be accessed directly?"
+        ],
+        "practical": [
+          "Make class data members private",
+          "Access data using public functions",
+          "Create getter function",
+          "Create setter function",
+          "Validate data inside setter",
+          "Prevent invalid input using encapsulation",
+          "Modify private data safely",
+          "Attempt to access private data (observe error)",
+          "Fix encapsulation violation",
+          "Compare public vs private behavior",
+          "Design encapsulated BankAccount",
+          "Add deposit and withdraw methods",
+          "Prevent negative balance",
+          "Comment encapsulation benefits"
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Constructors & Destructors (Object Lifecycle)",
+      "topics": [
+        "What is a constructor?",
+        "Default constructor",
+        "Parameterized constructor",
+        "Constructor overloading (intro)",
+        "What is a destructor?",
+        "When destructor is called",
+        "Object lifecycle"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a constructor?",
+          "Why constructor name is same as class?",
+          "Difference between default and parameterized constructor?",
+          "What is destructor?",
+          "When destructor is executed?"
+        ],
+        "practical": [
+          "Create class with default constructor",
+          "Print message inside constructor",
+          "Create parameterized constructor",
+          "Initialize data using constructor",
+          "Create multiple constructors",
+          "Observe constructor call order",
+          "Create destructor with message",
+          "Observe destructor call",
+          "Constructor vs setter comparison",
+          "Initialize object at creation time",
+          "Rewrite class using constructor",
+          "Design Student with constructor",
+          "Create object inside block and observe destructor",
+          "Predict constructor/destructor output",
+          "Comment lifecycle clearly"
+        ]
+      }
+    }
+  ],
+  "moduleProject": {
+    "title": "Bank Account Management System (OOP)",
+    "description": "A clean, class-based C++ program demonstrating true OOP basics. Features: BankAccount class with private members, public methods for create/deposit/withdraw/balance, constructors, and proper encapsulation.",
+    "rules": [
+      "No global variables",
+      "No struct",
+      "No C-style I/O",
+      "Proper encapsulation mandatory",
+      "Clean class design"
+    ]
+  }
+}

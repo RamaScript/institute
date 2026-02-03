@@ -1,0 +1,175 @@
+{
+  "moduleId": 7,
+  "moduleTitle": "Dynamic Memory Allocation (Heap, malloc, free)",
+  "moduleGoal": "Teach students how memory is allocated at runtime, how to control it, and how to not crash programs.",
+  "outcomes": [],
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Stack vs Heap (Mental Model First)",
+      "topics": [
+        "What is memory layout (stack vs heap)",
+        "Limitations of static memory",
+        "Why dynamic memory exists",
+        "Lifetime of stack vs heap memory",
+        "Common memory myths"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is stack memory?",
+          "What is heap memory?",
+          "Difference between stack and heap?",
+          "Why arrays declared normally have fixed size?",
+          "What happens when stack memory ends?",
+          "Why heap memory must be managed manually?"
+        ],
+        "practical": [
+          "Declare static array and show limitation",
+          "Try large static array and observe behavior",
+          "Write comments explaining memory layout",
+          "Compare lifetime of local variable vs heap pointer",
+          "Predict output after function ends",
+          "Explain memory with diagram (in comments)",
+          "Identify stack-based bug",
+          "Identify heap-based bug",
+          "Rewrite static code idea using dynamic approach",
+          "Trace variable lifetime manually",
+          "Explain why recursion uses stack heavily",
+          "Modify code to reduce stack usage",
+          "Explain memory flow line-by-line",
+          "Mark stack vs heap variables in code"
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "malloc() and free()",
+      "topics": [
+        "What is malloc",
+        "Syntax and return type",
+        "sizeof usage",
+        "Typecasting malloc",
+        "Freeing memory using free",
+        "NULL pointer check",
+        "Common malloc mistakes"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What does malloc() do?",
+          "Why does malloc return void*?",
+          "Why sizeof is important?",
+          "What happens if malloc fails?",
+          "Why free() is mandatory?"
+        ],
+        "practical": [
+          "Allocate memory for single integer",
+          "Store and print value using malloc",
+          "Free allocated memory",
+          "Access memory after free (observe issue)",
+          "Fix use-after-free bug",
+          "Check NULL pointer after malloc",
+          "Allocate memory for float",
+          "Allocate memory for char",
+          "Reassign pointer after free",
+          "Write safe malloc wrapper logic",
+          "Predict output of malloc code",
+          "Debug missing free bug",
+          "Add comments explaining heap usage",
+          "Convert static variable to dynamic",
+          "Rewrite code using malloc properly"
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Dynamic Arrays",
+      "topics": [
+        "Dynamic array concept",
+        "Allocating array using malloc",
+        "Accessing elements using pointer arithmetic",
+        "Dynamic array input/output",
+        "Releasing array memory",
+        "Common indexing mistakes"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is dynamic array?",
+          "Why dynamic arrays are better than static?",
+          "How size is decided at runtime?",
+          "Why pointer arithmetic is needed?"
+        ],
+        "practical": [
+          "Create dynamic array of N integers",
+          "Input elements dynamically",
+          "Print dynamic array",
+          "Find sum of dynamic array",
+          "Find maximum element",
+          "Find minimum element",
+          "Sort dynamic array",
+          "Reverse dynamic array",
+          "Search element dynamically",
+          "Pass dynamic array to function",
+          "Modify dynamic array in function",
+          "Free array memory correctly",
+          "Predict output after free",
+          "Debug dynamic array overflow",
+          "Convert static array code to dynamic",
+          "Explain pointer arithmetic with comments"
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "calloc() and realloc()",
+      "topics": [
+        "Difference between malloc and calloc",
+        "Zero-initialization",
+        "realloc concept",
+        "Expanding memory",
+        "Shrinking memory",
+        "realloc pitfalls"
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Difference between malloc and calloc?",
+          "When to use calloc?",
+          "What is realloc?",
+          "What happens if realloc fails?",
+          "Why realloc can be dangerous?"
+        ],
+        "practical": [
+          "Allocate array using calloc",
+          "Observe zero-initialized memory",
+          "Compare malloc vs calloc output",
+          "Increase array size using realloc",
+          "Add new elements after realloc",
+          "Shrink array using realloc",
+          "Preserve old data after realloc",
+          "Handle realloc failure safely",
+          "Fix realloc misuse bug",
+          "Dynamic list growth example",
+          "Menu-driven dynamic array",
+          "Predict realloc behavior",
+          "Debug memory overwrite bug",
+          "Comment realloc flow clearly",
+          "Convert fixed-size program to resizable"
+        ]
+      }
+    }
+  ],
+  "moduleProject": {
+    "title": "Dynamic Student Record Manager",
+    "description": "A console program that manages student records using dynamic memory only. Features include a dynamic array of students, adding/viewing students, resizing storage when needed, and freeing all memory on exit.",
+    "rules": [
+      "No fixed-size arrays",
+      "No global variables",
+      "malloc, calloc, realloc, free required",
+      "NULL checks everywhere",
+      "No memory leaks (must pass Valgrind-style logic)"
+    ]
+  }
+}
