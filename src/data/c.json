@@ -1,0 +1,1133 @@
+{
+  "courseId": "c",
+  "courseTitle": "C Programming",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Introduction to Programming & C Language",
+      "topics": [
+        {
+          "topicTitle": "Programming Fundamentals",
+          "subtopics": [
+            "What is Programming?",
+            "Why do we need programming?",
+            "Problem solving approach",
+            "Logical thinking in programming",
+            "Algorithm",
+            "Flowchart",
+            "Pseudocode",
+            "Converting real-life problems into programming logic"
+          ]
+        },
+        {
+          "topicTitle": "Introduction to C Language",
+          "subtopics": [
+            "History of C language",
+            "Features of C language",
+            "Applications of C language",
+            "Advantages of C language",
+            "C program structure",
+            "Header files",
+            "main() function",
+            "Comments in C",
+            "Compilation process",
+            "Execution process"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is programming? Explain with an example.",
+          "Explain algorithm and flowchart.",
+          "Explain the difference between compiler and interpreter.",
+          "Explain the structure of a C program.",
+          "Explain the compilation and execution process."
+        ],
+        "practical": [
+          "Write a program to print \"Hello World\".",
+          "Write a program to print your name, age, and city.",
+          "Write a program to print multiple lines using printf().",
+          "Create an algorithm to add two numbers.",
+          "Create a flowchart to check whether a number is positive or negative.",
+          "Write a program to print student details.",
+          "Write a program to print your college details.",
+          "Write a program to print a simple pattern using printf().",
+          "Write a program to display your daily schedule.",
+          "Write a program to print a simple introduction.",
+          "Write a program with single-line and multi-line comments.",
+          "Write a program to display arithmetic expressions.",
+          "Write a program to print values of multiple variables.",
+          "Write a program to create a basic menu display.",
+          "Write a program showing the basic structure of C."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Variables, Data Types & Constants",
+      "topics": [
+        {
+          "topicTitle": "Variables",
+          "subtopics": [
+            "What are variables?",
+            "Need of variables",
+            "Variable declaration",
+            "Variable initialization",
+            "Naming rules",
+            "Scope of variables"
+          ]
+        },
+        {
+          "topicTitle": "Data Types",
+          "subtopics": [
+            "int",
+            "float",
+            "double",
+            "char",
+            "void",
+            "Size of data types",
+            "Range of data types"
+          ]
+        },
+        {
+          "topicTitle": "Constants",
+          "subtopics": [
+            "What are constants?",
+            "Creating constants",
+            "#define",
+            "const keyword"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a variable?",
+          "Explain different data types in C.",
+          "Difference between variable and constant.",
+          "Explain local and global variables.",
+          "Explain rules for naming variables."
+        ],
+        "practical": [
+          "Write a program to store and print integer value.",
+          "Write a program to store and print float value.",
+          "Write a program to store and print character value.",
+          "Write a program using all basic data types.",
+          "Find size of different data types using sizeof().",
+          "Create a program to store student marks.",
+          "Create a program to store employee details.",
+          "Create a program to calculate simple interest.",
+          "Create a program to calculate compound interest.",
+          "Write a program to calculate area of circle.",
+          "Write a program to calculate area of rectangle.",
+          "Write a program to convert Celsius into Fahrenheit.",
+          "Write a program using constants.",
+          "Write a program using #define.",
+          "Write a program to swap two numbers."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Input and Output in C",
+      "topics": [
+        {
+          "topicTitle": "Output Functions",
+          "subtopics": [
+            "printf()",
+            "Format specifiers",
+            "Escape sequences",
+            "Formatting output"
+          ]
+        },
+        {
+          "topicTitle": "Input Functions",
+          "subtopics": [
+            "scanf()",
+            "Taking user input",
+            "Multiple inputs",
+            "Input formatting"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain printf().",
+          "Explain scanf().",
+          "Explain format specifiers.",
+          "Explain escape sequences.",
+          "Difference between input and output functions."
+        ],
+        "practical": [
+          "Write a program to take two numbers and print their sum.",
+          "Write a program to take three numbers and find average.",
+          "Write a program to take student details and display them.",
+          "Write a program to take employee salary and display it.",
+          "Write a program to calculate total marks.",
+          "Write a program to calculate percentage.",
+          "Write a program to calculate simple interest.",
+          "Write a program to calculate area of different shapes.",
+          "Write a program to take user age and display it.",
+          "Write a program to convert kilometers into meters.",
+          "Write a program to convert minutes into seconds.",
+          "Write a program to take product details and display bill.",
+          "Write a program to print formatted output.",
+          "Write a program using different escape sequences.",
+          "Write a program for basic calculator input/output."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Operators in C",
+      "topics": [
+        {
+          "topicTitle": "Arithmetic Operators",
+          "subtopics": [
+            "Addition (+)",
+            "Subtraction (-)",
+            "Multiplication (*)",
+            "Division (/)",
+            "Modulus (%)"
+          ]
+        },
+        {
+          "topicTitle": "Relational Operators",
+          "subtopics": [">", "<", ">=", "<=", "==", "!="]
+        },
+        {
+          "topicTitle": "Logical Operators",
+          "subtopics": ["AND (&&)", "OR (||)", "NOT (!)"]
+        },
+        {
+          "topicTitle": "Other Operators",
+          "subtopics": [
+            "Assignment operators",
+            "Increment operators",
+            "Decrement operators",
+            "Conditional operator",
+            "Bitwise operators",
+            "Operator precedence"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain arithmetic operators.",
+          "Explain relational operators.",
+          "Explain logical operators.",
+          "Explain operator precedence.",
+          "Explain increment and decrement operators."
+        ],
+        "practical": [
+          "Write a program for addition of two numbers.",
+          "Write a program for subtraction.",
+          "Write a program for multiplication.",
+          "Write a program for division.",
+          "Write a program to find remainder.",
+          "Write a program to swap two numbers.",
+          "Write a program to check greater number using operators.",
+          "Write a program to check even or odd.",
+          "Write a program to check positive or negative.",
+          "Write a program using logical operators.",
+          "Write a program using increment operator.",
+          "Write a program using decrement operator.",
+          "Write a program using ternary operator.",
+          "Write a program using bitwise operators.",
+          "Create a calculator using operators."
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "Conditional Statements in C",
+      "topics": [
+        {
+          "topicTitle": "Decision Making",
+          "subtopics": [
+            "Need of decision making",
+            "if statement",
+            "if-else statement",
+            "Nested if statement",
+            "else-if ladder"
+          ]
+        },
+        {
+          "topicTitle": "switch Case",
+          "subtopics": [
+            "switch syntax",
+            "case",
+            "break statement",
+            "default case",
+            "switch vs if-else"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Why do we need decision-making statements?",
+          "Explain if statement.",
+          "Difference between if-else and switch case.",
+          "Explain else-if ladder.",
+          "Explain the use of break statement."
+        ],
+        "practical": [
+          "Write a program to check whether a number is even or odd.",
+          "Write a program to check whether a number is positive, negative, or zero.",
+          "Write a program to find the largest of two numbers.",
+          "Write a program to find the largest of three numbers.",
+          "Write a program to check voting eligibility.",
+          "Write a program to check whether a year is leap year.",
+          "Write a program to check whether a character is vowel or consonant.",
+          "Write a program to check whether a character is alphabet, digit, or special character.",
+          "Write a program to calculate grade based on marks.",
+          "Write a program to calculate electricity bill.",
+          "Write a program to calculate discount based on purchase amount.",
+          "Create a calculator using switch case.",
+          "Create a menu-driven program using switch case.",
+          "Write a program to check profit or loss.",
+          "Write a program to find the type of triangle using sides."
+        ]
+      }
+    },
+    {
+      "chapterId": 6,
+      "chapterTitle": "Loops in C",
+      "topics": [
+        {
+          "topicTitle": "Loop Fundamentals",
+          "subtopics": [
+            "Need of loops",
+            "Repeating statements",
+            "Loop structure",
+            "Infinite loop concept"
+          ]
+        },
+        {
+          "topicTitle": "for Loop",
+          "subtopics": [
+            "for loop syntax",
+            "Initialization",
+            "Condition",
+            "Increment/decrement",
+            "Nested for loop"
+          ]
+        },
+        {
+          "topicTitle": "while Loop",
+          "subtopics": [
+            "while loop syntax",
+            "Entry controlled loop",
+            "Loop conditions"
+          ]
+        },
+        {
+          "topicTitle": "do-while Loop",
+          "subtopics": [
+            "do-while syntax",
+            "Exit controlled loop",
+            "Difference between while and do-while"
+          ]
+        },
+        {
+          "topicTitle": "Loop Applications",
+          "subtopics": ["Number problems", "Pattern printing", "Logic building"]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [],
+        "patternPrinting": {
+          "totalQuestions": 25,
+          "patterns": [
+            {
+              "name": "Square Star Pattern",
+              "output": ["* * * *", "* * * *", "* * * *", "* * * *"]
+            },
+            {
+              "name": "Hollow Square",
+              "output": ["* * * *", "*     *", "*     *", "* * * *"]
+            },
+            {
+              "name": "Right Triangle Star",
+              "output": ["*", "* *", "* * *", "* * * *"]
+            },
+            {
+              "name": "Inverted Right Triangle",
+              "output": ["* * * *", "* * *", "* *", "*"]
+            },
+            {
+              "name": "Pyramid Star Pattern",
+              "output": ["   *", "  * *", " * * *", "* * * *"]
+            },
+            {
+              "name": "Inverted Pyramid",
+              "output": ["* * * *", " * * *", "  * *", "   *"]
+            },
+            {
+              "name": "Diamond Pattern",
+              "output": [
+                "   *",
+                "  * *",
+                " * * *",
+                "* * * *",
+                " * * *",
+                "  * *",
+                "   *"
+              ]
+            },
+            {
+              "name": "Hollow Diamond",
+              "output": [
+                "   *",
+                "  * *",
+                " *   *",
+                "*     *",
+                " *   *",
+                "  * *",
+                "   *"
+              ]
+            },
+            {
+              "name": "Half Pyramid Numbers",
+              "output": ["1", "1 2", "1 2 3", "1 2 3 4"]
+            },
+            {
+              "name": "Inverted Half Pyramid Numbers",
+              "output": ["1 2 3 4", "1 2 3", "1 2", "1"]
+            },
+            {
+              "name": "Floyd Triangle",
+              "output": ["1", "2 3", "4 5 6", "7 8 9 10"]
+            },
+            {
+              "name": "Number Pyramid",
+              "output": ["   1", "  2 2", " 3 3 3", "4 4 4 4"]
+            },
+            {
+              "name": "Inverted Number Pyramid",
+              "output": ["4 4 4 4", " 3 3 3", "  2 2", "   1"]
+            },
+            {
+              "name": "Mirrored Right Triangle",
+              "output": ["      *", "    * *", "  * * *", "* * * *"]
+            },
+            {
+              "name": "Hollow Right Triangle",
+              "output": ["*", "* *", "*   *", "* * * *"]
+            },
+            {
+              "name": "Butterfly Pattern",
+              "output": [
+                "*       *",
+                "* *   * *",
+                "* * * * *",
+                "* *   * *",
+                "*       *"
+              ]
+            },
+            {
+              "name": "Hollow Butterfly",
+              "output": [
+                "*       *",
+                "* *   * *",
+                "*   *   *",
+                "* *   * *",
+                "*       *"
+              ]
+            },
+            {
+              "name": "Zig Zag Pattern",
+              "output": ["  *   *   *", "*   *   *   *", "  *   *   *"]
+            },
+            {
+              "name": "0-1 Triangle",
+              "output": ["1", "0 1", "1 0 1", "0 1 0 1"]
+            },
+            {
+              "name": "Concentric Square",
+              "output": [
+                "4 4 4 4 4 4 4",
+                "4 3 3 3 3 3 4",
+                "4 3 2 2 2 3 4",
+                "4 3 2 1 2 3 4",
+                "4 3 2 2 2 3 4",
+                "4 3 3 3 3 3 4",
+                "4 4 4 4 4 4 4"
+              ]
+            },
+            {
+              "name": "X Pattern",
+              "output": [
+                "*     *",
+                " *   *",
+                "  * *",
+                "  * *",
+                " *   *",
+                "*     *"
+              ]
+            },
+            {
+              "name": "Plus Pattern",
+              "output": ["    *", "    *", "* * * * *", "    *", "    *"]
+            },
+            {
+              "name": "Cross Pattern",
+              "output": [
+                "*     *",
+                " *   *",
+                "  * *",
+                "  * *",
+                " *   *",
+                "*     *"
+              ]
+            },
+            {
+              "name": "Increasing-Decreasing Triangle",
+              "output": ["1", "1 2", "1 2 3", "1 2", "1"]
+            }
+          ]
+        },
+        "practical": [
+          "Print numbers from 1 to 100.",
+          "Print numbers from 100 to 1.",
+          "Print all even numbers between 1 to 100.",
+          "Print all odd numbers between 1 to 100.",
+          "Find sum of first N numbers.",
+          "Find factorial of a number.",
+          "Print multiplication table of a number.",
+          "Count digits of a number.",
+          "Reverse a number.",
+          "Find sum of digits of a number.",
+          "Check palindrome number.",
+          "Check Armstrong number.",
+          "Print Fibonacci series.",
+          "Check prime number.",
+          "Print prime numbers between two ranges.",
+          "Find HCF/GCD of two numbers.",
+          "Find LCM of two numbers.",
+          "Print star patterns.",
+          "Print number patterns.",
+          "Create a menu-driven loop program."
+        ]
+      }
+    },
+    {
+      "chapterId": 7,
+      "chapterTitle": "Functions in C",
+      "topics": [
+        {
+          "topicTitle": "Function Basics",
+          "subtopics": [
+            "What is a function?",
+            "Advantages of functions",
+            "Function declaration",
+            "Function definition",
+            "Function calling",
+            "Function execution flow"
+          ]
+        },
+        {
+          "topicTitle": "Function Parameters",
+          "subtopics": [
+            "Parameters",
+            "Arguments",
+            "Return type",
+            "void function"
+          ]
+        },
+        {
+          "topicTitle": "Types of Functions",
+          "subtopics": [
+            "Function with no arguments and no return value",
+            "Function with arguments and no return value",
+            "Function with no arguments and return value",
+            "Function with arguments and return value"
+          ]
+        },
+        {
+          "topicTitle": "Advanced Functions",
+          "subtopics": [
+            "Call by value",
+            "Call by reference",
+            "Passing arrays to functions"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a function?",
+          "Why do we use functions?",
+          "Difference between parameter and argument.",
+          "Explain return type.",
+          "Difference between call by value and call by reference."
+        ],
+        "practical": [
+          "Create a function to add two numbers.",
+          "Create a function to find maximum number.",
+          "Create a function to check even or odd.",
+          "Create a function to calculate factorial.",
+          "Create a function to calculate power.",
+          "Create a function to check prime number.",
+          "Create a function to reverse a number.",
+          "Create a function to calculate sum of digits.",
+          "Create a function to check palindrome.",
+          "Create a function to swap two numbers.",
+          "Create a function to calculate area of circle.",
+          "Create a function to calculate simple interest.",
+          "Create a function to find GCD.",
+          "Create a function to find LCM.",
+          "Create a menu-driven calculator using functions."
+        ]
+      }
+    },
+    {
+      "chapterId": 8,
+      "chapterTitle": "Recursion in C",
+      "topics": [
+        {
+          "topicTitle": "Introduction to Recursion",
+          "subtopics": [
+            "What is recursion?",
+            "Recursive function",
+            "Base condition",
+            "Recursive call",
+            "Function stack"
+          ]
+        },
+        {
+          "topicTitle": "Recursion Problems",
+          "subtopics": [
+            "Factorial using recursion",
+            "Fibonacci using recursion",
+            "Sum of numbers",
+            "Reverse using recursion",
+            "Pattern recursion"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is recursion?",
+          "Why is base condition required?",
+          "Difference between loop and recursion.",
+          "Explain recursive function execution.",
+          "What happens if base condition is missing?"
+        ],
+        "practical": [
+          "Write factorial using recursion.",
+          "Write Fibonacci series using recursion.",
+          "Find sum of first N numbers using recursion.",
+          "Find power of a number using recursion.",
+          "Reverse a number using recursion.",
+          "Find sum of digits using recursion.",
+          "Count digits using recursion.",
+          "Check palindrome using recursion.",
+          "Find GCD using recursion.",
+          "Print numbers from 1 to N using recursion.",
+          "Print numbers from N to 1 using recursion.",
+          "Print Fibonacci till N terms using recursion.",
+          "Solve tower of Hanoi problem.",
+          "Create recursive pattern printing program.",
+          "Solve any mathematical problem using recursion."
+        ]
+      }
+    },
+    {
+      "chapterId": 9,
+      "chapterTitle": "Arrays in C",
+      "topics": [
+        {
+          "topicTitle": "Introduction to Arrays",
+          "subtopics": [
+            "What is an array?",
+            "Need of arrays",
+            "Array declaration",
+            "Array initialization",
+            "Memory allocation in arrays",
+            "Indexing concept",
+            "Accessing array elements"
+          ]
+        },
+        {
+          "topicTitle": "One Dimensional Arrays",
+          "subtopics": [
+            "Creating 1D arrays",
+            "Traversing arrays",
+            "Taking array input",
+            "Printing array elements",
+            "Updating array elements"
+          ]
+        },
+        {
+          "topicTitle": "Array Searching",
+          "subtopics": [
+            "Linear Search",
+            "Searching elements",
+            "Finding frequency of elements"
+          ]
+        },
+        {
+          "topicTitle": "Array Operations",
+          "subtopics": [
+            "Insertion",
+            "Deletion",
+            "Copying arrays",
+            "Merging arrays",
+            "Sorting basics"
+          ]
+        },
+        {
+          "topicTitle": "Two Dimensional Arrays",
+          "subtopics": [
+            "Matrix concept",
+            "2D array declaration",
+            "Matrix input/output",
+            "Row operations",
+            "Column operations"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is an array?",
+          "Why do we use arrays?",
+          "Explain indexing in arrays.",
+          "Difference between normal variable and array.",
+          "Explain 1D and 2D arrays."
+        ],
+        "practical": [
+          "Store and print elements of an array.",
+          "Find sum of array elements.",
+          "Find average of array elements.",
+          "Find largest element in an array.",
+          "Find smallest element in an array.",
+          "Reverse an array.",
+          "Copy one array into another array.",
+          "Count even and odd numbers in an array.",
+          "Search an element using linear search.",
+          "Find frequency of each element.",
+          "Sort an array in ascending order.",
+          "Sort an array in descending order.",
+          "Merge two arrays.",
+          "Add two matrices.",
+          "Multiply two matrices."
+        ]
+      }
+    },
+    {
+      "chapterId": 10,
+      "chapterTitle": "Strings in C",
+      "topics": [
+        {
+          "topicTitle": "String Basics",
+          "subtopics": [
+            "What is a string?",
+            "Character array",
+            "String declaration",
+            "String initialization",
+            "Taking string input",
+            "Printing strings"
+          ]
+        },
+        {
+          "topicTitle": "String Handling Functions",
+          "subtopics": ["strlen()", "strcpy()", "strcat()", "strcmp()"]
+        },
+        {
+          "topicTitle": "String Operations",
+          "subtopics": [
+            "String traversal",
+            "Reverse string",
+            "Compare strings",
+            "Copy strings",
+            "Count characters"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a string in C?",
+          "Difference between character and string.",
+          "Explain null character.",
+          "Explain string functions.",
+          "Difference between strcpy() and strcat()."
+        ],
+        "practical": [
+          "Take a string input and print it.",
+          "Find length of string without strlen().",
+          "Find length using strlen().",
+          "Copy one string into another.",
+          "Concatenate two strings.",
+          "Compare two strings.",
+          "Reverse a string.",
+          "Check palindrome string.",
+          "Count vowels in a string.",
+          "Count words in a string.",
+          "Count uppercase and lowercase characters.",
+          "Remove spaces from string.",
+          "Find frequency of each character.",
+          "Convert lowercase string to uppercase.",
+          "Check whether two strings are anagrams."
+        ]
+      }
+    },
+    {
+      "chapterId": 11,
+      "chapterTitle": "Pointers in C",
+      "topics": [
+        {
+          "topicTitle": "Pointer Fundamentals",
+          "subtopics": [
+            "Memory address",
+            "Pointer variable",
+            "Address operator (&)",
+            "Dereference operator (*)",
+            "Pointer declaration",
+            "Pointer initialization"
+          ]
+        },
+        {
+          "topicTitle": "Pointers with Variables",
+          "subtopics": [
+            "Accessing values using pointers",
+            "Updating values using pointers",
+            "Multiple pointers"
+          ]
+        },
+        {
+          "topicTitle": "Pointers with Arrays",
+          "subtopics": [
+            "Array address",
+            "Pointer arithmetic",
+            "Traversing array using pointer"
+          ]
+        },
+        {
+          "topicTitle": "Pointers with Functions",
+          "subtopics": [
+            "Passing pointer to function",
+            "Call by reference",
+            "Returning pointer"
+          ]
+        },
+        {
+          "topicTitle": "Dynamic Memory Allocation",
+          "subtopics": ["malloc()", "calloc()", "realloc()", "free()"]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a pointer?",
+          "Why are pointers used?",
+          "Explain address and dereference operators.",
+          "Difference between call by value and call by reference.",
+          "Explain dynamic memory allocation."
+        ],
+        "practical": [
+          "Create a pointer variable and print value.",
+          "Print address of a variable.",
+          "Update variable value using pointer.",
+          "Swap two numbers using pointers.",
+          "Add two numbers using pointers.",
+          "Traverse an array using pointers.",
+          "Find sum of array using pointers.",
+          "Pass pointer to a function.",
+          "Return pointer from function.",
+          "Create dynamic integer array using malloc().",
+          "Create dynamic array using calloc().",
+          "Resize memory using realloc().",
+          "Free allocated memory.",
+          "Create dynamic student record.",
+          "Create dynamic calculator using pointers."
+        ]
+      }
+    },
+    {
+      "chapterId": 12,
+      "chapterTitle": "Structures in C",
+      "topics": [
+        {
+          "topicTitle": "Structure Basics",
+          "subtopics": [
+            "What is structure?",
+            "Need of structures",
+            "Creating structure",
+            "Structure members",
+            "Accessing structure data"
+          ]
+        },
+        {
+          "topicTitle": "Advanced Structures",
+          "subtopics": [
+            "Array of structures",
+            "Nested structures",
+            "Passing structure to function",
+            "Pointer to structure"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a structure?",
+          "Difference between array and structure.",
+          "Explain structure members.",
+          "Explain nested structure.",
+          "Explain pointer to structure."
+        ],
+        "practical": [
+          "Create student structure.",
+          "Store and display employee details.",
+          "Create book structure.",
+          "Store multiple students using array of structures.",
+          "Find student with highest marks.",
+          "Create bank account structure.",
+          "Create product billing structure.",
+          "Pass structure to function.",
+          "Use pointer with structure.",
+          "Create nested structure.",
+          "Create library management structure.",
+          "Create hospital patient structure.",
+          "Create employee salary system.",
+          "Search record using structure.",
+          "Update structure record."
+        ]
+      }
+    },
+    {
+      "chapterId": 13,
+      "chapterTitle": "File Handling in C",
+      "topics": [
+        {
+          "topicTitle": "Introduction to File Handling",
+          "subtopics": [
+            "What is a file?",
+            "Need of file handling",
+            "Types of files",
+            "Text files",
+            "Binary files",
+            "File pointer"
+          ]
+        },
+        {
+          "topicTitle": "File Operations",
+          "subtopics": [
+            "Opening a file",
+            "Closing a file",
+            "Reading a file",
+            "Writing a file",
+            "Appending data"
+          ]
+        },
+        {
+          "topicTitle": "File Handling Functions",
+          "subtopics": [
+            "fopen()",
+            "fclose()",
+            "fprintf()",
+            "fscanf()",
+            "fgetc()",
+            "fputc()",
+            "fgets()",
+            "fputs()"
+          ]
+        },
+        {
+          "topicTitle": "Advanced File Handling",
+          "subtopics": [
+            "File modes: r, w, a, r+, w+, a+",
+            "Working with binary files",
+            "Storing structures in files"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is file handling?",
+          "Why do we need files?",
+          "Difference between text file and binary file.",
+          "Explain file modes in C.",
+          "Explain file pointer."
+        ],
+        "practical": [
+          "Create a file and write data into it.",
+          "Read data from a file.",
+          "Append data into an existing file.",
+          "Count number of characters in a file.",
+          "Count number of words in a file.",
+          "Count number of lines in a file.",
+          "Copy content from one file to another.",
+          "Search a word inside a file.",
+          "Replace a word in a file.",
+          "Store student details in a file.",
+          "Read student details from a file.",
+          "Store employee records in a file.",
+          "Update employee record in a file.",
+          "Delete a record from a file.",
+          "Create a file-based record management system."
+        ]
+      }
+    },
+    {
+      "chapterId": 14,
+      "chapterTitle": "Preprocessor Directives & Storage Classes",
+      "topics": [
+        {
+          "topicTitle": "Preprocessor Directives",
+          "subtopics": [
+            "What are preprocessor directives?",
+            "#include",
+            "#define",
+            "Macros",
+            "Conditional compilation"
+          ]
+        },
+        {
+          "topicTitle": "Storage Classes",
+          "subtopics": ["auto", "register", "static", "extern"]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What are preprocessor directives?",
+          "Explain #include.",
+          "Explain macros.",
+          "Explain storage classes.",
+          "Difference between static and auto variables."
+        ],
+        "practical": [
+          "Create a program using #define.",
+          "Create a macro for square calculation.",
+          "Create a macro for maximum of two numbers.",
+          "Use conditional compilation.",
+          "Create a program using static variable.",
+          "Create a program using auto variable.",
+          "Create a program using register variable.",
+          "Create a program using extern variable.",
+          "Create a header file.",
+          "Use custom header file in program.",
+          "Create reusable functions using macros.",
+          "Create a constant using preprocessor.",
+          "Create a program using multiple directives.",
+          "Create a small utility library.",
+          "Combine preprocessor concepts in one program."
+        ]
+      }
+    },
+    {
+      "chapterId": 15,
+      "chapterTitle": "Final C Language Practice & Problem Solving",
+      "topics": [
+        {
+          "topicTitle": "Logic Building",
+          "subtopics": [
+            "Problem analysis",
+            "Breaking problems into smaller parts",
+            "Optimized thinking",
+            "Debugging basics"
+          ]
+        },
+        {
+          "topicTitle": "C Programming Revision",
+          "subtopics": [
+            "Variables",
+            "Conditions",
+            "Loops",
+            "Functions",
+            "Arrays",
+            "Pointers",
+            "Structures",
+            "File Handling"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [],
+        "practical": [
+          "Create a menu-driven calculator.",
+          "Create student marks management system.",
+          "Create employee salary calculator.",
+          "Create banking transaction program.",
+          "Create inventory management system.",
+          "Create number guessing game.",
+          "Create quiz application.",
+          "Create ATM simulation.",
+          "Create contact management system.",
+          "Create library record system.",
+          "Create billing system.",
+          "Create hospital management system.",
+          "Create railway ticket booking simulation.",
+          "Create password-based login system.",
+          "Create text file analyzer.",
+          "Create expense tracker.",
+          "Create attendance management system.",
+          "Create simple game using C logic.",
+          "Create record management using structures and files.",
+          "Create a complete mini project."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Student Management System",
+      "concepts": ["Variables", "Functions", "Structures", "File Handling"],
+      "features": [
+        "Add student",
+        "View student",
+        "Search student",
+        "Update student",
+        "Delete student"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Banking Management System",
+      "concepts": ["Functions", "Structures", "File Handling"],
+      "features": [
+        "Create account",
+        "Deposit money",
+        "Withdraw money",
+        "Check balance",
+        "Transaction history"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Library Management System",
+      "concepts": ["Arrays", "Structures", "Files"],
+      "features": ["Add books", "Issue books", "Return books", "Search books"]
+    },
+    {
+      "projectId": 4,
+      "projectTitle": "Quiz Application",
+      "concepts": ["Conditions", "Loops", "Functions", "File Handling"],
+      "features": ["Multiple questions", "Score calculation", "Result storage"]
+    },
+    {
+      "projectId": 5,
+      "projectTitle": "Inventory/Billing Management System",
+      "concepts": ["Structures", "Arrays", "File Handling"],
+      "features": [
+        "Add products",
+        "Update stock",
+        "Generate bill",
+        "Store records"
+      ]
+    }
+  ]
+}

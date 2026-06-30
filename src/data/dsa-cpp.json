@@ -1,0 +1,991 @@
+{
+  "courseId": "dsa-cpp",
+  "courseTitle": "DSA in C++",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "DSA Foundations & Problem Solving Mindset",
+      "topics": [
+        {
+          "topicTitle": "What is DSA and Why It Exists",
+          "subtopics": [
+            "Definition of Data Structures",
+            "Definition of Algorithms",
+            "Difference between data structure and algorithm",
+            "Why companies test DSA in interviews",
+            "Real-world usage of DSA in systems like Google, Amazon, Facebook",
+            "Problem solving vs writing code",
+            "How DSA improves logical thinking"
+          ]
+        },
+        {
+          "topicTitle": "Time and Space Complexity",
+          "subtopics": [
+            "Why performance matters in programming",
+            "Big-O notation basics",
+            "O(1), O(log n), O(n), O(n log n), O(n^2)",
+            "Best case, average case, worst case",
+            "How to calculate time complexity step by step",
+            "Space complexity meaning",
+            "Tradeoff between time and space"
+          ]
+        },
+        {
+          "topicTitle": "Problem Solving Approach",
+          "subtopics": [
+            "Brute force approach",
+            "Optimized approach thinking",
+            "Constraint analysis",
+            "Breaking problems into steps",
+            "Pattern recognition in problems",
+            "Dry run technique",
+            "Edge case handling"
+          ]
+        },
+        {
+          "topicTitle": "Recursion Basics (Foundation Only)",
+          "subtopics": [
+            "What is recursion",
+            "Function call stack concept",
+            "Base condition importance",
+            "Recursive vs iterative thinking",
+            "How recursion builds a tree of calls",
+            "Stack overflow concept"
+          ]
+        }
+      ],
+      "assignment": {
+        "theory": [
+          "What is DSA and why is it important?",
+          "Difference between data structure and algorithm?",
+          "Explain Big-O notation.",
+          "What is time complexity vs space complexity?",
+          "Why is recursion dependent on stack memory?",
+          "What happens if base condition is not defined?"
+        ],
+        "practical": [
+          "Find time complexity of simple loops",
+          "Write factorial using recursion",
+          "Write Fibonacci using recursion",
+          "Convert recursive solution into iteration",
+          "Dry run recursive function manually",
+          "Find sum of first N numbers using recursion",
+          "Reverse a number using recursion",
+          "Check palindrome using recursion",
+          "Analyze nested loop complexity",
+          "Simulate recursion call stack manually"
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Arrays (Core Data Structure)",
+      "topics": [
+        {
+          "topicTitle": "Array Fundamentals",
+          "subtopics": [
+            "What is an array",
+            "Memory layout of arrays",
+            "Indexing concept (0-based indexing)",
+            "Static vs dynamic arrays",
+            "Why arrays give fast access (O(1))"
+          ]
+        },
+        {
+          "topicTitle": "Array Operations",
+          "subtopics": [
+            "Traversal",
+            "Insertion",
+            "Deletion",
+            "Searching",
+            "Updating elements"
+          ]
+        },
+        {
+          "topicTitle": "Basic Array Problem Solving",
+          "subtopics": [
+            "Brute force approach on arrays",
+            "Nested loop problems",
+            "Finding patterns in arrays",
+            "Constraints-based thinking"
+          ]
+        }
+      ],
+      "assignment": {
+        "theory": [
+          "Why arrays are stored in contiguous memory?",
+          "Why array access is O(1)?",
+          "Difference between array and linked list?",
+          "What is brute force approach?",
+          "Why arrays are important in DSA?"
+        ],
+        "practical": [
+          "Find largest element in array",
+          "Find smallest element in array",
+          "Reverse array",
+          "Find sum of array elements",
+          "Linear search implementation",
+          "Count even and odd numbers",
+          "Find second largest element",
+          "Remove duplicates (basic approach)",
+          "Rotate array",
+          "Move zeroes to end"
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Sorting Algorithms & Searching Techniques",
+      "topics": [
+        {
+          "topicTitle": "Sorting Basics",
+          "subtopics": [
+            "What is sorting and why it is needed",
+            "Stable vs unstable sorting",
+            "In-place vs extra space sorting",
+            "Why sorting is used before solving problems",
+            "Time complexity comparison of sorting algorithms"
+          ]
+        },
+        {
+          "topicTitle": "Basic Sorting Algorithms",
+          "subtopics": [
+            "Bubble Sort (logic + optimization idea)",
+            "Selection Sort",
+            "Insertion Sort",
+            "When to use each sorting technique",
+            "Optimization by early exit"
+          ]
+        },
+        {
+          "topicTitle": "Searching Techniques",
+          "subtopics": [
+            "Linear search",
+            "Binary search concept",
+            "Requirement for binary search (sorted array)",
+            "Iterative vs recursive binary search",
+            "Time complexity comparison"
+          ]
+        },
+        {
+          "topicTitle": "Binary Search Variations",
+          "subtopics": [
+            "First occurrence in array",
+            "Last occurrence in array",
+            "Lower bound concept",
+            "Upper bound concept",
+            "Search in rotated sorted array (intro idea)"
+          ]
+        }
+      ],
+      "assignment": {
+        "theory": [
+          "Why sorting is important before binary search?",
+          "Difference between stable and unstable sorting?",
+          "Why binary search is O(log n)?",
+          "Difference between linear search and binary search?",
+          "Why sorted data improves performance?"
+        ],
+        "practical": [
+          "Implement bubble sort",
+          "Implement selection sort",
+          "Implement insertion sort",
+          "Perform linear search",
+          "Perform binary search (iterative)",
+          "Perform binary search (recursive)",
+          "Find first occurrence of element",
+          "Find last occurrence of element",
+          "Implement lower bound logic",
+          "Implement upper bound logic"
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Recursion & Backtracking (Interview Core Pattern Thinking)",
+      "topics": [
+        {
+          "topicTitle": "Recursion Deep Foundation",
+          "subtopics": [
+            "What is recursion (function calling itself)",
+            "Base condition importance",
+            "Recursive stack memory visualization",
+            "Function call stack behavior",
+            "Recursion tree concept",
+            "How to think recursively (break problem into same subproblems)"
+          ]
+        },
+        {
+          "topicTitle": "Types of Recursion Patterns",
+          "subtopics": [
+            "Linear recursion",
+            "Tree recursion",
+            "Head recursion",
+            "Tail recursion",
+            "Direct vs indirect recursion"
+          ]
+        },
+        {
+          "topicTitle": "Classic Recursion Problems",
+          "subtopics": [
+            "Factorial",
+            "Fibonacci sequence",
+            "Sum of digits",
+            "Reverse a number/string",
+            "Power calculation (a^b)",
+            "Print increasing/decreasing sequence"
+          ]
+        },
+        {
+          "topicTitle": "Backtracking Introduction",
+          "subtopics": [
+            "What is backtracking",
+            "Decision tree concept",
+            "Choice → Explore → Undo approach",
+            "Difference between recursion and backtracking",
+            "State space tree visualization"
+          ]
+        },
+        {
+          "topicTitle": "Backtracking Problems (Basic Level)",
+          "subtopics": [
+            "Generate all subsets",
+            "Generate permutations",
+            "N-Queens problem (intro level idea)",
+            "Maze path finding",
+            "Rat in a maze (basic concept)"
+          ]
+        }
+      ],
+      "assignment": {
+        "theory": [
+          "What is recursion and why is it used?",
+          "What is a base condition?",
+          "Difference between recursion and iteration?",
+          "What is backtracking?",
+          "Why backtracking uses 'undo' step?",
+          "What is recursion tree?"
+        ],
+        "practical": [
+          "Write factorial using recursion",
+          "Write Fibonacci using recursion",
+          "Print numbers from N to 1 recursively",
+          "Print numbers from 1 to N recursively",
+          "Reverse a string using recursion",
+          "Calculate power using recursion",
+          "Generate all subsets of a string",
+          "Generate all permutations of a string",
+          "Solve maze path (basic grid recursion)",
+          "Simulate recursion tree manually for factorial"
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "Arrays Advanced Patterns (Two Pointers, Sliding Window, Prefix Sum)",
+      "topics": [
+        {
+          "topicTitle": "Pattern Thinking in Arrays",
+          "subtopics": [
+            "Why brute force fails in large constraints",
+            "How to recognize array patterns",
+            "Optimization mindset",
+            "Reducing nested loops into single pass solutions"
+          ]
+        },
+        {
+          "topicTitle": "Two Pointer Technique",
+          "subtopics": [
+            "What is two pointer approach",
+            "Left and right pointer concept",
+            "Sorted array applications",
+            "Opposite direction pointers",
+            "Same direction pointers",
+            "When to use two pointers"
+          ]
+        },
+        {
+          "topicTitle": "Sliding Window Technique",
+          "subtopics": [
+            "Fixed size window",
+            "Variable size window",
+            "Expanding and shrinking window",
+            "Subarray problems optimization",
+            "Window sum technique"
+          ]
+        },
+        {
+          "topicTitle": "Prefix Sum Technique",
+          "subtopics": [
+            "What is prefix sum array",
+            "Range sum queries optimization",
+            "Precomputation idea",
+            "Avoiding repeated calculations",
+            "Difference array concept (intro)"
+          ]
+        },
+        {
+          "topicTitle": "Core Array Problems",
+          "subtopics": [
+            "Subarray sum problems",
+            "Maximum subarray (Kadane idea intro)",
+            "Pair sum problems",
+            "Longest subarray conditions",
+            "Counting subarrays"
+          ]
+        }
+      ],
+      "assignment": {
+        "theory": [
+          "Why brute force is inefficient?",
+          "What is two pointer technique?",
+          "What is sliding window?",
+          "Why prefix sum improves performance?",
+          "When should we use array patterns?"
+        ],
+        "practical": [
+          "Find pair with given sum (two pointers)",
+          "Reverse array using two pointers",
+          "Remove duplicates using two pointers",
+          "Maximum sum subarray (brute force + optimized idea)",
+          "Fixed size sliding window sum",
+          "Longest subarray with sum K (basic idea)",
+          "Prefix sum array creation",
+          "Range sum query using prefix sum",
+          "Count subarrays with given sum (basic)",
+          "Move zeroes using two pointers"
+        ]
+      }
+    },
+    {
+      "chapterId": 6,
+      "chapterTitle": "Stack (LIFO Structure & Expression Problems)",
+      "topics": [
+        {
+          "topicTitle": "Stack Basics",
+          "subtopics": [
+            "What is stack (LIFO)",
+            "Push and pop operations",
+            "Top element concept",
+            "Stack using array and linked list",
+            "Real world examples of stack"
+          ]
+        },
+        {
+          "topicTitle": "Stack Applications",
+          "subtopics": [
+            "Balanced parentheses problem",
+            "Expression evaluation basics",
+            "Undo/redo systems",
+            "Function call stack concept",
+            "Parsing expressions"
+          ]
+        },
+        {
+          "topicTitle": "Monotonic Stack (Intro)",
+          "subtopics": [
+            "What is monotonic stack",
+            "Increasing stack",
+            "Decreasing stack",
+            "Why used in next greater element problems"
+          ]
+        }
+      ],
+      "assignment": {
+        "theory": [
+          "What is stack and where is it used?",
+          "Why stack is called LIFO?",
+          "What is function call stack?",
+          "What is balanced parentheses problem?",
+          "Why stack is useful in expression evaluation?"
+        ],
+        "practical": [
+          "Implement stack using array",
+          "Push and pop operations",
+          "Check balanced parentheses",
+          "Evaluate simple expression (concept)",
+          "Next greater element (basic)",
+          "Reverse string using stack",
+          "Check palindrome using stack",
+          "Simulate recursion using stack",
+          "Convert expression idea using stack",
+          "Find stock span (intro level)"
+        ]
+      }
+    },
+    {
+      "chapterId": 7,
+      "chapterTitle": "Queue, Deque & Priority Queue (Heap Basics)",
+      "topics": [
+        {
+          "topicTitle": "Queue Basics",
+          "subtopics": [
+            "What is queue (FIFO principle)",
+            "Enqueue and dequeue operations",
+            "Front and rear concept",
+            "Queue implementation using array and linked list",
+            "Real-world examples (task scheduling, printers)"
+          ]
+        },
+        {
+          "topicTitle": "Types of Queue",
+          "subtopics": [
+            "Simple queue",
+            "Circular queue",
+            "Deque (double-ended queue)",
+            "Priority queue concept"
+          ]
+        },
+        {
+          "topicTitle": "Deque Applications",
+          "subtopics": [
+            "Insert/delete from both ends",
+            "Sliding window maximum idea",
+            "Palindrome checking using deque",
+            "Efficient queue operations"
+          ]
+        },
+        {
+          "topicTitle": "Priority Queue (Heap Concept Intro)",
+          "subtopics": [
+            "What is priority queue",
+            "Max heap vs min heap concept",
+            "How priority queue differs from normal queue",
+            "Use cases in scheduling problems",
+            "Basic heap intuition (tree structure idea)"
+          ]
+        }
+      ],
+      "assignment": {
+        "theory": [
+          "What is queue and where is it used?",
+          "Difference between stack and queue?",
+          "What is circular queue?",
+          "Why priority queue is useful?",
+          "What is deque?"
+        ],
+        "practical": [
+          "Implement queue using array",
+          "Implement queue operations (enqueue/dequeue)",
+          "Check queue empty/full conditions",
+          "Implement circular queue",
+          "Use deque for sliding window max (basic idea)",
+          "Reverse queue using stack",
+          "Implement priority queue usage (STL simulation)",
+          "Simulate printer job queue",
+          "Check palindrome using deque",
+          "Basic scheduling simulation using queue"
+        ]
+      }
+    },
+    {
+      "chapterId": 8,
+      "chapterTitle": "Linked List (Core Dynamic Data Structure)",
+      "topics": [
+        {
+          "topicTitle": "Linked List Basics",
+          "subtopics": [
+            "What is linked list",
+            "Node structure (data + next pointer)",
+            "Memory allocation (non-contiguous)",
+            "Singly vs doubly linked list",
+            "Why linked list is used instead of array"
+          ]
+        },
+        {
+          "topicTitle": "Operations on Linked List",
+          "subtopics": [
+            "Insertion at head",
+            "Insertion at tail",
+            "Deletion by value",
+            "Traversal",
+            "Searching element"
+          ]
+        },
+        {
+          "topicTitle": "Types of Linked List",
+          "subtopics": [
+            "Singly linked list",
+            "Doubly linked list",
+            "Circular linked list"
+          ]
+        },
+        {
+          "topicTitle": "Important Linked List Patterns",
+          "subtopics": [
+            "Fast and slow pointer technique",
+            "Finding middle of linked list",
+            "Detect cycle (Floyd’s algorithm)",
+            "Reverse linked list",
+            "Merge two sorted linked lists"
+          ]
+        }
+      ],
+      "assignment": {
+        "theory": [
+          "What is linked list?",
+          "Difference between array and linked list?",
+          "Why linked list is dynamic?",
+          "What is fast and slow pointer?",
+          "Why cycle detection is important?"
+        ],
+        "practical": [
+          "Create singly linked list",
+          "Insert at beginning and end",
+          "Delete a node",
+          "Traverse linked list",
+          "Reverse linked list",
+          "Find middle element",
+          "Detect cycle in linked list",
+          "Merge two sorted linked lists",
+          "Remove duplicates",
+          "Find length of linked list"
+        ]
+      }
+    },
+    {
+      "chapterId": 9,
+      "chapterTitle": "Trees (Binary Tree Fundamentals & Traversals)",
+      "topics": [
+        {
+          "topicTitle": "Tree Basics",
+          "subtopics": [
+            "What is a tree data structure",
+            "Root, node, parent, child concept",
+            "Leaf nodes",
+            "Height and depth of tree",
+            "Why trees are used in real systems"
+          ]
+        },
+        {
+          "topicTitle": "Binary Tree Basics",
+          "subtopics": [
+            "What is binary tree",
+            "Types of binary tree",
+            "Full binary tree",
+            "Complete binary tree",
+            "Perfect binary tree"
+          ]
+        },
+        {
+          "topicTitle": "Tree Traversals",
+          "subtopics": [
+            "Inorder traversal (Left → Root → Right)",
+            "Preorder traversal (Root → Left → Right)",
+            "Postorder traversal (Left → Right → Root)",
+            "Level order traversal (BFS)",
+            "Recursive vs iterative traversal"
+          ]
+        },
+        {
+          "topicTitle": "Core Tree Concepts",
+          "subtopics": [
+            "Recursion in trees",
+            "Tree as recursive structure",
+            "Height calculation",
+            "Diameter concept (basic idea)",
+            "Subtree concept"
+          ]
+        }
+      ],
+      "assignment": {
+        "theory": [
+          "What is a tree data structure?",
+          "Difference between tree and graph?",
+          "What is binary tree?",
+          "Why recursion is used in tree traversal?",
+          "Difference between inorder, preorder and postorder?"
+        ],
+        "practical": [
+          "Create binary tree manually",
+          "Implement inorder traversal",
+          "Implement preorder traversal",
+          "Implement postorder traversal",
+          "Level order traversal using queue",
+          "Find height of binary tree",
+          "Count number of nodes",
+          "Find leaf nodes",
+          "Mirror a binary tree (basic idea)",
+          "Sum of all nodes in tree"
+        ]
+      }
+    },
+    {
+      "chapterId": 10,
+      "chapterTitle": "Binary Search Tree (BST - Interview Core)",
+      "topics": [
+        {
+          "topicTitle": "BST Basics",
+          "subtopics": [
+            "What is Binary Search Tree",
+            "Left < Root < Right rule",
+            "Why BST is useful",
+            "Search efficiency in BST"
+          ]
+        },
+        {
+          "topicTitle": "BST Operations",
+          "subtopics": [
+            "Insertion in BST",
+            "Deletion in BST",
+            "Searching in BST",
+            "Finding minimum and maximum element"
+          ]
+        },
+        {
+          "topicTitle": "BST Properties",
+          "subtopics": [
+            "Inorder traversal of BST gives sorted order",
+            "Balanced vs unbalanced BST",
+            "Worst case degeneration (linked list case)"
+          ]
+        },
+        {
+          "topicTitle": "BST Interview Problems",
+          "subtopics": [
+            "Validate BST",
+            "Lowest Common Ancestor (LCA)",
+            "Kth smallest element",
+            "Floor and ceiling in BST"
+          ]
+        }
+      ],
+      "assignment": {
+        "theory": [
+          "What is BST?",
+          "Why BST is faster than normal tree?",
+          "What happens if BST is unbalanced?",
+          "Why inorder traversal is sorted?",
+          "What is LCA in BST?"
+        ],
+        "practical": [
+          "Insert nodes in BST",
+          "Search element in BST",
+          "Delete node in BST",
+          "Find min and max in BST",
+          "Validate BST",
+          "Find LCA of two nodes",
+          "Find kth smallest element",
+          "Floor and ceiling in BST",
+          "Inorder traversal of BST",
+          "Build BST from array"
+        ]
+      }
+    },
+    {
+      "chapterId": 11,
+      "chapterTitle": "Heap (Priority Queue & Advanced Ordering)",
+      "topics": [
+        {
+          "topicTitle": "Heap Basics",
+          "subtopics": [
+            "What is a heap data structure",
+            "Complete binary tree property",
+            "Max heap vs min heap",
+            "Why heap is used in priority queue"
+          ]
+        },
+        {
+          "topicTitle": "Heap Operations",
+          "subtopics": [
+            "Insertion in heap",
+            "Deletion (extract max/min)",
+            "Heapify process",
+            "Time complexity of heap operations"
+          ]
+        },
+        {
+          "topicTitle": "Heap Representations",
+          "subtopics": [
+            "Array representation of heap",
+            "Parent-child index relations",
+            "1-based vs 0-based indexing"
+          ]
+        },
+        {
+          "topicTitle": "Heap Applications",
+          "subtopics": [
+            "Priority scheduling systems",
+            "K largest / K smallest elements",
+            "Heap sort algorithm",
+            "Median in running stream (intro idea)"
+          ]
+        }
+      ],
+      "assignment": {
+        "theory": [
+          "What is a heap?",
+          "Difference between heap and BST?",
+          "Why heap is used in priority queue?",
+          "What is heapify?",
+          "Why heap sort is O(n log n)?"
+        ],
+        "practical": [
+          "Implement priority queue usage",
+          "Insert elements into heap",
+          "Delete root from heap",
+          "Build max heap from array",
+          "Find K largest elements",
+          "Find K smallest elements",
+          "Heap sort implementation",
+          "Simulate priority scheduling",
+          "Find median using two heaps (idea level)",
+          "Convert array into heap"
+        ]
+      }
+    },
+    {
+      "chapterId": 12,
+      "chapterTitle": "Hashing (Fast Lookup & Frequency Optimization)",
+      "topics": [
+        {
+          "topicTitle": "Hashing Basics",
+          "subtopics": [
+            "What is hashing",
+            "Hash function concept",
+            "Key-value mapping",
+            "Why hashing is fast (O(1) average)"
+          ]
+        },
+        {
+          "topicTitle": "Hash Tables",
+          "subtopics": [
+            "unordered_map in C++",
+            "unordered_set in C++",
+            "Collision concept",
+            "Handling collisions (basic idea)"
+          ]
+        },
+        {
+          "topicTitle": "Frequency & Mapping Problems",
+          "subtopics": [
+            "Counting frequency of elements",
+            "Finding duplicates",
+            "First non-repeating element",
+            "Character frequency in strings"
+          ]
+        },
+        {
+          "topicTitle": "Advanced Hashing Use Cases",
+          "subtopics": [
+            "Subarray sum problems using hashmap",
+            "Two sum problem",
+            "Prefix sum + hashing",
+            "Sliding window optimization using hash"
+          ]
+        }
+      ],
+      "assignment": {
+        "theory": [
+          "What is hashing?",
+          "Why hashing is faster than arrays in lookup?",
+          "What is collision?",
+          "Difference between map and unordered_map?",
+          "Why hashing is important in interviews?"
+        ],
+        "practical": [
+          "Count frequency of array elements",
+          "Find duplicates in array",
+          "Two sum problem using hashmap",
+          "First non-repeating character",
+          "Subarray sum equals K",
+          "Character frequency in string",
+          "Find missing number using hashing",
+          "Remove duplicates using set",
+          "Group elements by frequency",
+          "Sliding window frequency tracking"
+        ]
+      }
+    },
+    {
+      "chapterId": 13,
+      "chapterTitle": "Graphs (BFS, DFS & Core Graph Algorithms)",
+      "topics": [
+        {
+          "topicTitle": "Graph Basics",
+          "subtopics": [
+            "What is a graph",
+            "Vertices and edges",
+            "Directed vs undirected graph",
+            "Weighted vs unweighted graph",
+            "Real-world graph examples"
+          ]
+        },
+        {
+          "topicTitle": "Graph Representation",
+          "subtopics": [
+            "Adjacency matrix",
+            "Adjacency list",
+            "Edge list",
+            "When to use which representation"
+          ]
+        },
+        {
+          "topicTitle": "Graph Traversal",
+          "subtopics": [
+            "Breadth First Search (BFS)",
+            "Depth First Search (DFS)",
+            "Visited array concept",
+            "Queue usage in BFS",
+            "Recursion in DFS"
+          ]
+        },
+        {
+          "topicTitle": "Core Graph Problems",
+          "subtopics": [
+            "Connected components",
+            "Cycle detection in graph",
+            "Bipartite graph check",
+            "Shortest path in unweighted graph"
+          ]
+        },
+        {
+          "topicTitle": "Advanced Graph Algorithms (Intro)",
+          "subtopics": [
+            "Dijkstra algorithm (shortest path)",
+            "Topological sorting",
+            "Basic idea of minimum spanning tree"
+          ]
+        }
+      ],
+      "assignment": {
+        "theory": [
+          "What is a graph?",
+          "Difference between BFS and DFS?",
+          "Why visited array is needed?",
+          "Difference between directed and undirected graph?",
+          "Where graphs are used in real life?"
+        ],
+        "practical": [
+          "Implement graph using adjacency list",
+          "Perform BFS traversal",
+          "Perform DFS traversal",
+          "Detect cycle in undirected graph",
+          "Find connected components",
+          "Check bipartite graph",
+          "Shortest path in unweighted graph",
+          "Implement simple Dijkstra (basic)",
+          "Topological sort (intro implementation)",
+          "Count number of islands problem"
+        ]
+      }
+    },
+    {
+      "chapterId": 14,
+      "chapterTitle": "Dynamic Programming (Optimization Master Technique)",
+      "topics": [
+        {
+          "topicTitle": "DP Fundamentals",
+          "subtopics": [
+            "What is dynamic programming",
+            "Overlapping subproblems",
+            "Optimal substructure",
+            "Why DP is used for optimization problems",
+            "Difference between recursion and DP"
+          ]
+        },
+        {
+          "topicTitle": "DP Approaches",
+          "subtopics": [
+            "Memoization (top-down DP)",
+            "Tabulation (bottom-up DP)",
+            "Space optimization idea",
+            "State definition in DP"
+          ]
+        },
+        {
+          "topicTitle": "Basic DP Problems",
+          "subtopics": [
+            "Fibonacci DP",
+            "Climbing stairs problem",
+            "Min cost climbing stairs",
+            "House robber problem"
+          ]
+        },
+        {
+          "topicTitle": "Advanced DP Problems",
+          "subtopics": [
+            "0/1 Knapsack problem",
+            "Subset sum problem",
+            "Longest common subsequence (LCS)",
+            "Longest increasing subsequence (LIS)",
+            "Coin change problem"
+          ]
+        }
+      ],
+      "assignment": {
+        "theory": [
+          "What is dynamic programming?",
+          "Why DP is better than recursion?",
+          "Difference between memoization and tabulation?",
+          "What are overlapping subproblems?",
+          "What is optimal substructure?"
+        ],
+        "practical": [
+          "Fibonacci using DP",
+          "Climbing stairs problem",
+          "House robber problem",
+          "0/1 knapsack (basic implementation)",
+          "Subset sum problem",
+          "Longest common subsequence",
+          "Longest increasing subsequence",
+          "Coin change problem",
+          "Min cost path problem",
+          "Rod cutting problem (basic)"
+        ]
+      }
+    },
+    {
+      "chapterId": 16,
+      "chapterTitle": "Interview Preparation & System Thinking",
+      "topics": [
+        {
+          "topicTitle": "Coding Interview Strategy",
+          "subtopics": [
+            "How companies evaluate candidates",
+            "DSA rounds structure",
+            "Importance of consistency over memorization",
+            "Why speed + accuracy matters",
+            "Behavior during interview"
+          ]
+        },
+        {
+          "topicTitle": "Revision Strategy",
+          "subtopics": [
+            "How to revise DSA efficiently",
+            "Spaced repetition approach",
+            "Problem repetition strategy",
+            "Mistake tracking system",
+            "Building confidence through repetition"
+          ]
+        },
+        {
+          "topicTitle": "Real World Thinking",
+          "subtopics": [
+            "How DSA is used in real systems",
+            "Backend systems and scalability",
+            "Choosing correct data structure in production",
+            "Tradeoffs in real applications",
+            "Thinking like a software engineer"
+          ]
+        }
+      ],
+      "assignment": {
+        "theory": [
+          "How do companies evaluate coding candidates?",
+          "Why consistency matters more than talent?",
+          "What is the best way to revise DSA?",
+          "How is DSA used in real-world systems?",
+          "What makes a good software engineer?"
+        ],
+        "practical": [
+          "Solve mixed difficulty problems daily",
+          "Simulate full interview round",
+          "Optimize brute force solutions",
+          "Explain solution before coding",
+          "Write clean structured code under time limit"
+        ]
+      }
+    }
+  ]
+}

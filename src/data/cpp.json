@@ -1,0 +1,689 @@
+{
+  "courseId": "cpp",
+  "courseTitle": "C++ Programming",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "C++ Core Fundamentals (Language + Execution Model)",
+      "topics": [
+        {
+          "topicTitle": "C++ Program Execution Flow",
+          "subtopics": [
+            "Source code to executable lifecycle",
+            "Preprocessor (#include, macros)",
+            "Compilation phase (syntax → assembly)",
+            "Linking phase (object file merging)",
+            "Execution in memory",
+            "Why compiled languages are faster"
+          ]
+        },
+        {
+          "topicTitle": "Structure of a C++ Program",
+          "subtopics": [
+            "main() function role",
+            "Header files and libraries",
+            "Namespaces (std)",
+            "Comments and code readability",
+            "Basic program structure rules"
+          ]
+        },
+        {
+          "topicTitle": "Input / Output System",
+          "subtopics": [
+            "cin and cout",
+            "iostream library",
+            "endl vs \\n performance difference",
+            "Basic formatting output",
+            "Input buffering concept (basic idea)"
+          ]
+        },
+        {
+          "topicTitle": "Variables and Data Types",
+          "subtopics": [
+            "int, float, double, char, bool",
+            "Signed vs unsigned behavior",
+            "Type casting (implicit and explicit)",
+            "Variable scope (local/global)",
+            "Memory size of data types"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 14,
+        "theory": [
+          "Explain full compilation process of C++ program.",
+          "Why main function is mandatory?",
+          "Difference between cout and printf.",
+          "What is namespace std?",
+          "Why data types matter in programming?"
+        ],
+        "practical": [
+          "Hello World program",
+          "Take input and display user details",
+          "Swap two numbers",
+          "Simple calculator using cin/cout",
+          "Find size of all data types",
+          "Demonstrate type casting",
+          "Show difference between local and global variables",
+          "Print formatted output using iomanip",
+          "Program showing use of endl vs \\n"
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Object Oriented Programming (OOP) Basics",
+      "topics": [
+        {
+          "topicTitle": "Introduction to OOP",
+          "subtopics": [
+            "What is Object Oriented Programming",
+            "Difference between procedural and OOP approach",
+            "Real-world modeling concept",
+            "Why OOP is used in industry"
+          ]
+        },
+        {
+          "topicTitle": "Classes and Objects",
+          "subtopics": [
+            "Class definition",
+            "Object creation",
+            "Accessing members",
+            "Data hiding concept",
+            "Encapsulation idea (basic)"
+          ]
+        },
+        {
+          "topicTitle": "Access Modifiers",
+          "subtopics": [
+            "public",
+            "private",
+            "protected",
+            "Why data hiding is important"
+          ]
+        },
+        {
+          "topicTitle": "Constructors",
+          "subtopics": [
+            "Default constructor",
+            "Parameterized constructor",
+            "Constructor overloading",
+            "Object initialization flow"
+          ]
+        },
+        {
+          "topicTitle": "Destructor",
+          "subtopics": [
+            "What is destructor",
+            "Memory cleanup concept",
+            "When destructor is called"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 14,
+        "theory": [
+          "What is OOP and why it is needed?",
+          "Difference between class and object?",
+          "What is encapsulation?",
+          "Why constructors are used?",
+          "What is destructor role?"
+        ],
+        "practical": [
+          "Create Student class and store details",
+          "Create Employee class system",
+          "Bank account class with deposit/withdraw",
+          "Demonstrate constructor overloading",
+          "Create object array of students",
+          "Show use of public/private members",
+          "Create simple calculator using class",
+          "Demonstrate constructor execution flow",
+          "Write program showing destructor call"
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Encapsulation & Abstraction (Core OOP Design Thinking)",
+      "topics": [
+        {
+          "topicTitle": "Encapsulation",
+          "subtopics": [
+            "Binding data and methods together",
+            "Class as a unit of encapsulation",
+            "Data hiding using private members",
+            "Getter and setter methods",
+            "Real-world analogy (capsule example)"
+          ]
+        },
+        {
+          "topicTitle": "Abstraction",
+          "subtopics": [
+            "Hiding internal implementation details",
+            "Exposing only required functionality",
+            "Difference between abstraction and encapsulation",
+            "Real-world abstraction examples (ATM, car, mobile)",
+            "Why abstraction improves system design"
+          ]
+        },
+        {
+          "topicTitle": "Design Thinking in OOP",
+          "subtopics": [
+            "How to model real-world problems into classes",
+            "Identifying attributes vs behaviors",
+            "Breaking complex systems into objects",
+            "Reusability mindset"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 14,
+        "theory": [
+          "What is encapsulation and why is it used?",
+          "Difference between abstraction and encapsulation?",
+          "Why is data hiding important in software design?",
+          "Give real-life examples of abstraction.",
+          "How does OOP improve code maintainability?"
+        ],
+        "practical": [
+          "Create class with private data and getters/setters",
+          "Bank account system using encapsulation",
+          "Student system with controlled access",
+          "ATM simulation using abstraction concept",
+          "Product system with hidden internal logic",
+          "Employee system with salary encapsulation",
+          "Create menu-driven system using classes",
+          "Demonstrate data hiding with examples",
+          "Create secure login system using encapsulation"
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Inheritance (Code Reusability Master Concept)",
+      "topics": [
+        {
+          "topicTitle": "Basics of Inheritance",
+          "subtopics": [
+            "What is inheritance",
+            "Parent class and child class",
+            "Code reusability concept",
+            "Is-a relationship",
+            "Why inheritance is used in OOP"
+          ]
+        },
+        {
+          "topicTitle": "Types of Inheritance",
+          "subtopics": [
+            "Single inheritance",
+            "Multilevel inheritance",
+            "Multiple inheritance",
+            "Hierarchical inheritance",
+            "Hybrid inheritance (concept only)"
+          ]
+        },
+        {
+          "topicTitle": "Access in Inheritance",
+          "subtopics": [
+            "public inheritance behavior",
+            "protected inheritance concept",
+            "private inheritance concept",
+            "Access control in derived classes"
+          ]
+        },
+        {
+          "topicTitle": "Constructor Behavior in Inheritance",
+          "subtopics": [
+            "Base class constructor call order",
+            "Derived class constructor execution",
+            "Constructor chaining concept",
+            "Destructor order in inheritance"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 14,
+        "theory": [
+          "What is inheritance and why is it used?",
+          "Difference between single and multiple inheritance?",
+          "What is IS-A relationship?",
+          "Why constructor order matters in inheritance?",
+          "What are limitations of multiple inheritance?"
+        ],
+        "practical": [
+          "Create base class and derived class example",
+          "Single inheritance (Animal → Dog)",
+          "Multilevel inheritance (Grandparent → Parent → Child)",
+          "Hierarchical inheritance example",
+          "Student → Exam result system",
+          "Employee → Manager system",
+          "Constructor call order demo",
+          "Method overriding in inheritance",
+          "Bank system using inheritance"
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "Polymorphism (Compile-Time & Run-Time Behavior)",
+      "topics": [
+        {
+          "topicTitle": "Introduction to Polymorphism",
+          "subtopics": [
+            "What is polymorphism (many forms of behavior)",
+            "Real-world analogy (person behaves differently in roles)",
+            "Compile-time vs runtime polymorphism",
+            "Why polymorphism is used in OOP design"
+          ]
+        },
+        {
+          "topicTitle": "Compile-Time Polymorphism",
+          "subtopics": [
+            "Function overloading",
+            "Operator overloading",
+            "Compile-time binding concept",
+            "Rules of overloading in C++"
+          ]
+        },
+        {
+          "topicTitle": "Run-Time Polymorphism",
+          "subtopics": [
+            "Function overriding",
+            "Virtual functions",
+            "Base class pointer to derived object",
+            "Dynamic binding concept",
+            "Why virtual keyword is important"
+          ]
+        },
+        {
+          "topicTitle": "Virtual Functions Deep Concept",
+          "subtopics": [
+            "V-table concept (basic idea)",
+            "Function dispatch at runtime",
+            "Pure virtual functions (intro)",
+            "Abstract class concept (preview)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 15,
+        "theory": [
+          "What is polymorphism and why is it used?",
+          "Difference between compile-time and runtime polymorphism?",
+          "What is function overloading?",
+          "What is function overriding?",
+          "Why virtual functions are required in C++?"
+        ],
+        "practical": [
+          "Function overloading example (add functions)",
+          "Operator overloading for + operator",
+          "Function overriding example",
+          "Virtual function demonstration",
+          "Base pointer pointing to derived object",
+          "Runtime polymorphism demo program",
+          "Shape class system (circle/rectangle polymorphism)",
+          "Employee role system using overriding",
+          "Calculator using function overloading",
+          "Menu system using polymorphism"
+        ]
+      }
+    },
+    {
+      "chapterId": 6,
+      "chapterTitle": "Abstraction (Abstract Classes & Interface Design)",
+      "topics": [
+        {
+          "topicTitle": "Understanding Abstraction",
+          "subtopics": [
+            "What is abstraction in OOP",
+            "Hiding implementation, exposing behavior",
+            "Difference between abstraction and encapsulation",
+            "Real-world abstraction examples (ATM, payment system, car driving)"
+          ]
+        },
+        {
+          "topicTitle": "Abstract Classes",
+          "subtopics": [
+            "What is an abstract class",
+            "Pure virtual functions",
+            "Why abstract classes cannot be instantiated",
+            "Base class design for abstraction",
+            "Rules of abstract classes"
+          ]
+        },
+        {
+          "topicTitle": "Interface Concept in C++",
+          "subtopics": [
+            "C++ does not have interfaces like Java",
+            "Using abstract classes as interfaces",
+            "Designing contracts using pure virtual functions",
+            "Multiple inheritance for interface simulation"
+          ]
+        },
+        {
+          "topicTitle": "Design Thinking Using Abstraction",
+          "subtopics": [
+            "Identifying common behavior across objects",
+            "Building scalable class structures",
+            "Loose coupling design principle",
+            "Extensible system design using abstraction"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 15,
+        "theory": [
+          "What is abstraction and why is it important?",
+          "Difference between abstraction and encapsulation?",
+          "What is an abstract class?",
+          "What is a pure virtual function?",
+          "Why C++ uses abstract classes for interfaces?"
+        ],
+        "practical": [
+          "Create abstract class Shape with derived classes",
+          "Payment system using abstraction (Card/UPI/Cash)",
+          "Vehicle system using abstract class",
+          "Bank transaction system using abstraction",
+          "Employee role system using abstract base class",
+          "Animal sound system using abstraction",
+          "Menu-driven system using abstract classes",
+          "Interface-style design using pure virtual functions",
+          "Real-world simulation using abstract class hierarchy",
+          "Polymorphic billing system using abstraction"
+        ]
+      }
+    },
+    {
+      "chapterId": 7,
+      "chapterTitle": "STL (Standard Template Library) Mastery",
+      "topics": [
+        {
+          "topicTitle": "Introduction to STL",
+          "subtopics": [
+            "What is STL and why it exists",
+            "Generic programming concept",
+            "Components: containers, iterators, algorithms",
+            "Why STL reduces development time"
+          ]
+        },
+        {
+          "topicTitle": "Sequence Containers",
+          "subtopics": [
+            "vector (dynamic array, resizing, memory behavior)",
+            "deque (double-ended operations)",
+            "list (doubly linked list concept)",
+            "When to use which container"
+          ]
+        },
+        {
+          "topicTitle": "Associative Containers",
+          "subtopics": [
+            "set (sorted unique elements)",
+            "multiset (duplicates allowed)",
+            "map (key-value sorted structure)",
+            "unordered_map (hash-based key-value storage)",
+            "Time complexity comparison of map vs unordered_map"
+          ]
+        },
+        {
+          "topicTitle": "Container Adaptors",
+          "subtopics": [
+            "stack (LIFO structure)",
+            "queue (FIFO structure)",
+            "priority_queue (max heap / min heap concept)",
+            "Real-world usage of adaptors"
+          ]
+        },
+        {
+          "topicTitle": "STL Algorithms",
+          "subtopics": [
+            "sort (custom comparator logic)",
+            "reverse",
+            "binary_search",
+            "lower_bound / upper_bound",
+            "max_element / min_element"
+          ]
+        },
+        {
+          "topicTitle": "Iterators & Auto Keyword",
+          "subtopics": [
+            "begin(), end() iterators",
+            "range-based loops",
+            "auto keyword usage",
+            "Iterator vs pointer concept"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 15,
+        "theory": [
+          "What is STL and why is it used?",
+          "Difference between vector and list?",
+          "Difference between map and unordered_map?",
+          "Why priority_queue is called heap?",
+          "What is time complexity of STL containers?"
+        ],
+        "practical": [
+          "Vector operations (insert, delete, traverse)",
+          "Frequency count using map",
+          "Remove duplicates using set",
+          "Sort vector of pairs using custom comparator",
+          "Binary search using STL",
+          "Find top K elements using priority_queue",
+          "Stack implementation using STL",
+          "Queue implementation using STL",
+          "Sliding window maximum using deque",
+          "Lower bound and upper bound usage problems"
+        ]
+      }
+    },
+    {
+      "chapterId": 8,
+      "chapterTitle": "Modern C++ (C++11/14/17 Features for Interviews)",
+      "topics": [
+        {
+          "topicTitle": "Core Modern Additions",
+          "subtopics": [
+            "auto keyword (type deduction)",
+            "nullptr vs NULL",
+            "range-based for loops",
+            "uniform initialization {}",
+            "why modern C++ reduces bugs"
+          ]
+        },
+        {
+          "topicTitle": "References & Move Semantics",
+          "subtopics": [
+            "lvalue vs rvalue concept (basic interview level)",
+            "references vs pointers deep understanding",
+            "move constructor idea",
+            "move semantics for performance",
+            "std::move usage"
+          ]
+        },
+        {
+          "topicTitle": "Smart Pointers",
+          "subtopics": [
+            "raw pointers problems (memory leaks)",
+            "unique_ptr",
+            "shared_ptr",
+            "weak_ptr (basic concept)",
+            "ownership model in memory management"
+          ]
+        },
+        {
+          "topicTitle": "Lambda Functions",
+          "subtopics": [
+            "What is lambda function",
+            "Syntax of lambda",
+            "Capture list concept",
+            "Using lambda in STL algorithms",
+            "Why lambda improves code readability"
+          ]
+        },
+        {
+          "topicTitle": "Modern Utility Features",
+          "subtopics": [
+            "constexpr basics",
+            "decltype usage",
+            "struct vs class modern usage",
+            "emplace vs insert in STL",
+            "performance improvements in modern C++"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 15,
+        "theory": [
+          "Why modern C++ was introduced?",
+          "Difference between auto and explicit type declaration?",
+          "Why nullptr is better than NULL?",
+          "What is move semantics and why it is needed?",
+          "What is ownership in smart pointers?"
+        ],
+        "practical": [
+          "Use auto in different variable declarations",
+          "Demonstrate range-based loops",
+          "Replace raw pointer with unique_ptr",
+          "Demonstrate shared_ptr usage",
+          "Write lambda for sorting vector",
+          "Use lambda with STL algorithm (sort/filter)",
+          "Demonstrate move semantics example",
+          "Compare insert vs emplace",
+          "Write program using constexpr",
+          "Solve STL problem using lambda functions"
+        ]
+      }
+    },
+    {
+      "chapterId": 9,
+      "chapterTitle": "C++ Projects (Industry-Level System Building)",
+      "topics": [
+        {
+          "topicTitle": "Project Design Thinking",
+          "subtopics": [
+            "How to convert requirements into classes",
+            "Identifying entities, attributes, and actions",
+            "Separation of concerns in C++ programs",
+            "Using OOP + STL together in real systems",
+            "Code scalability mindset"
+          ]
+        },
+        {
+          "topicTitle": "File-Based Persistence",
+          "subtopics": [
+            "File handling integration with OOP",
+            "Storing objects in files",
+            "Reading and updating records",
+            "CRUD operations design",
+            "Data persistence logic"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 10,
+        "theory": [
+          "Why projects are important in C++ learning?",
+          "How do you design a system before coding?",
+          "Why OOP is used in real applications?",
+          "What is CRUD system design?",
+          "Why file handling is needed in real apps?"
+        ],
+        "practical": [
+          "Design class structure for any system before coding",
+          "Create menu-driven system architecture",
+          "Implement file-based data storage",
+          "Design student management system flow",
+          "Design banking system flow diagram in code logic"
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Student Management System (Complete OOP + File System)",
+      "concepts": [
+        "Classes & Objects",
+        "File Handling",
+        "Encapsulation",
+        "STL vectors"
+      ],
+      "features": [
+        "Add student record",
+        "Search student by ID",
+        "Update student data",
+        "Delete student record",
+        "Store data in file permanently"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Bank Management System",
+      "concepts": [
+        "OOP",
+        "File handling",
+        "Class design",
+        "Menu-driven system"
+      ],
+      "features": [
+        "Account creation",
+        "Deposit money",
+        "Withdraw money",
+        "Balance inquiry",
+        "Transaction history"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Library Management System",
+      "concepts": [
+        "Classes",
+        "Arrays/Vectors",
+        "File system",
+        "OOP design"
+      ],
+      "features": [
+        "Add books",
+        "Issue books",
+        "Return books",
+        "Track availability",
+        "Search system"
+      ]
+    },
+    {
+      "projectId": 4,
+      "projectTitle": "Expense Tracker System",
+      "concepts": [
+        "STL vectors",
+        "File handling",
+        "OOP design",
+        "Data aggregation logic"
+      ],
+      "features": [
+        "Add expenses",
+        "Categorize expenses",
+        "Monthly summary",
+        "File storage",
+        "Data filtering"
+      ]
+    },
+    {
+      "projectId": 5,
+      "projectTitle": "Mini Inventory Management System",
+      "concepts": [
+        "Classes",
+        "File handling",
+        "STL containers",
+        "Menu-driven architecture"
+      ],
+      "features": [
+        "Add products",
+        "Update stock",
+        "Search product",
+        "Billing system",
+        "Inventory tracking"
+      ]
+    }
+  ]
+}
