@@ -67,7 +67,7 @@ function buildNavbar() {
     <nav class="lp-navbar" id="lp-navbar" role="navigation" aria-label="Main navigation">
         <div class="lp-nav-inner">
             <a href="#home" class="lp-logo" aria-label="Ramascript Home">
-                <div class="lp-logo-mark">R</div>
+                <img src="src/img/logo.png" alt="Ramascript" class="lp-logo-mark" width="32" height="32">
                 <span class="lp-logo-text">Ramascript</span>
             </a>
 
@@ -417,7 +417,7 @@ function buildFooter() {
         <div class="lp-footer-inner">
             <div>
                 <a href="#home" class="lp-logo" style="text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;margin-bottom:.35rem;">
-                    <div class="lp-logo-mark" style="width:28px;height:28px;font-size:.8rem;">R</div>
+                    <img src="src/img/logo.png" alt="Ramascript" class="lp-logo-mark" style="width:28px;height:28px;border-radius:6px;">
                     <span class="lp-logo-text" style="font-size:1.05rem;">Ramascript</span>
                 </a>
                 <div class="lp-footer-copy" style="margin-top:.25rem;">© ${new Date().getFullYear()} — All rights reserved.</div>

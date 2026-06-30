@@ -183,6 +183,10 @@
 .lp-logo-mark {
     width: 36px; height: 36px;
     border-radius: 10px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+.lp-logo-mark:not(img) {
     background: var(--lp-grad-primary);
     display: flex; align-items: center; justify-content: center;
     font-weight: 900;
@@ -191,7 +195,6 @@
     color: #fff;
     letter-spacing: -0.05em;
     box-shadow: 0 0 20px rgba(79, 110, 247, 0.5);
-    flex-shrink: 0;
 }
 
 .lp-logo-text {
