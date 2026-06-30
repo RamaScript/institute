@@ -440,7 +440,7 @@ let _landingInitialised = false;
 function _initLanding() {
 
     /* Theme — apply saved preference immediately */
-    const savedTheme = localStorage.getItem('theme') || 'dark';
+    const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
 
     const themeBtn = document.getElementById('lp-theme-toggle');
