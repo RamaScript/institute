@@ -1,0 +1,1140 @@
+{
+  "courseId": "flutter",
+  "courseTitle": "Flutter Mobile App Development",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Introduction to Flutter & Environment Setup",
+      "topics": [
+        {
+          "topicTitle": "Introduction to Flutter",
+          "subtopics": [
+            "What is Flutter?",
+            "Why Flutter for cross-platform development",
+            "Flutter vs React Native vs native development",
+            "Flutter architecture overview",
+            "Skia rendering engine concept"
+          ]
+        },
+        {
+          "topicTitle": "Environment Setup",
+          "subtopics": [
+            "Installing Flutter SDK",
+            "Setting up Android Studio / VS Code",
+            "Setting up emulators and simulators",
+            "flutter doctor",
+            "Creating a new Flutter project",
+            "Project folder structure (lib, android, ios, pubspec.yaml)"
+          ]
+        },
+        {
+          "topicTitle": "First Flutter App",
+          "subtopics": [
+            "main() and runApp()",
+            "Hot reload vs hot restart",
+            "Understanding MaterialApp",
+            "Running app on emulator/device"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is Flutter and why is it used for cross-platform apps?",
+          "Explain the Flutter project folder structure.",
+          "Difference between hot reload and hot restart.",
+          "What is the role of runApp() in a Flutter app?",
+          "Explain the purpose of pubspec.yaml."
+        ],
+        "practical": [
+          "Install Flutter SDK and run flutter doctor.",
+          "Create a new Flutter project using the CLI.",
+          "Run the default Flutter counter app on an emulator.",
+          "Modify the default app title and display text.",
+          "Create a basic Hello World Flutter app from scratch.",
+          "Demonstrate hot reload by changing a text widget.",
+          "Demonstrate hot restart and observe state reset.",
+          "Add a new Dart file and import it into main.dart.",
+          "Explore and explain each folder in a generated Flutter project.",
+          "Add a package dependency in pubspec.yaml and use it.",
+          "Change the app's theme color in MaterialApp.",
+          "Display your name and college details using a Text widget.",
+          "Create a simple splash-like screen with an app title.",
+          "Run the app on both Android emulator and a physical device.",
+          "Create a basic single-screen app with a centered message."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Flutter Project Structure & Widget Fundamentals",
+      "topics": [
+        {
+          "topicTitle": "Everything is a Widget",
+          "subtopics": [
+            "Widget tree concept",
+            "StatelessWidget",
+            "StatefulWidget",
+            "build() method",
+            "Widget lifecycle overview"
+          ]
+        },
+        {
+          "topicTitle": "Basic App Structure Widgets",
+          "subtopics": [
+            "MaterialApp",
+            "Scaffold",
+            "AppBar",
+            "Body, FloatingActionButton",
+            "SafeArea"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain the concept of 'everything is a widget' in Flutter.",
+          "Difference between StatelessWidget and StatefulWidget.",
+          "Explain the role of the build() method.",
+          "Explain the purpose of Scaffold and AppBar.",
+          "What is SafeArea and why is it used?"
+        ],
+        "practical": [
+          "Create a StatelessWidget displaying a welcome message.",
+          "Create a StatefulWidget with an internal counter variable.",
+          "Create a Scaffold with an AppBar and a body Text widget.",
+          "Add a FloatingActionButton that prints a message on tap.",
+          "Create a screen wrapped in SafeArea.",
+          "Create a custom StatelessWidget class and reuse it twice.",
+          "Build a simple profile card using nested widgets.",
+          "Create an app with a custom AppBar title and back button disabled.",
+          "Build a screen showing app name, version, and developer info.",
+          "Create a StatefulWidget that toggles text on button press.",
+          "Build a widget tree diagram for a simple screen (in comments).",
+          "Create an AppBar with leading and actions icons.",
+          "Build a screen with a Scaffold background color.",
+          "Create a widget that displays a list of static greeting messages.",
+          "Build a simple 'About App' screen."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Basic Widgets",
+      "topics": [
+        {
+          "topicTitle": "Text & Typography",
+          "subtopics": [
+            "Text widget",
+            "TextStyle",
+            "Google Fonts (overview)",
+            "RichText"
+          ]
+        },
+        {
+          "topicTitle": "Images & Icons",
+          "subtopics": [
+            "Image.asset, Image.network",
+            "Icon widget",
+            "IconButton",
+            "CircleAvatar"
+          ]
+        },
+        {
+          "topicTitle": "Buttons",
+          "subtopics": [
+            "ElevatedButton",
+            "TextButton",
+            "OutlinedButton",
+            "IconButton",
+            "GestureDetector and InkWell"
+          ]
+        },
+        {
+          "topicTitle": "Containers & Decoration",
+          "subtopics": [
+            "Container widget",
+            "BoxDecoration",
+            "Padding and Margin",
+            "SizedBox"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain the Text widget and TextStyle properties.",
+          "Difference between ElevatedButton, TextButton and OutlinedButton.",
+          "Explain GestureDetector and InkWell with an example use case.",
+          "Explain the Container widget and BoxDecoration.",
+          "Difference between Padding, Margin and SizedBox."
+        ],
+        "practical": [
+          "Create a screen displaying styled text with different fonts and colors.",
+          "Display an image from assets and from the network.",
+          "Create a row of icons with different colors and sizes.",
+          "Create a CircleAvatar showing a profile picture.",
+          "Create three buttons (Elevated, Text, Outlined) with click handlers.",
+          "Create a custom button using GestureDetector.",
+          "Create a card-like container with rounded corners and shadow.",
+          "Build a profile card combining image, text and a button.",
+          "Create a styled container with gradient background.",
+          "Use Padding and SizedBox to space out widgets properly.",
+          "Create a login button that shows a snackbar on tap.",
+          "Create an icon button that toggles a favorite/heart icon.",
+          "Build a simple product card with image, title, price and button.",
+          "Create a custom styled AppBar using Container and BoxDecoration.",
+          "Build a welcome screen combining text, image and buttons."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Layout Widgets",
+      "topics": [
+        {
+          "topicTitle": "Linear Layouts",
+          "subtopics": [
+            "Row",
+            "Column",
+            "MainAxisAlignment, CrossAxisAlignment",
+            "Expanded and Flexible"
+          ]
+        },
+        {
+          "topicTitle": "Stacking & Positioning",
+          "subtopics": ["Stack widget", "Positioned widget", "Align widget"]
+        },
+        {
+          "topicTitle": "Advanced Layout",
+          "subtopics": [
+            "Wrap widget",
+            "ConstrainedBox",
+            "AspectRatio",
+            "LayoutBuilder (overview)",
+            "MediaQuery for responsive design"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain Row and Column with MainAxisAlignment.",
+          "Difference between Expanded and Flexible.",
+          "Explain Stack and Positioned widgets with an example.",
+          "What is MediaQuery and why is it used for responsive design?",
+          "Explain the Wrap widget and when to use it."
+        ],
+        "practical": [
+          "Create a Row of three colored boxes with equal spacing.",
+          "Create a Column of widgets with different alignments.",
+          "Build a layout using Expanded to split space between two boxes.",
+          "Create a Stack with a background image and overlay text.",
+          "Build a profile screen using Positioned widgets over a Stack.",
+          "Create a responsive layout using MediaQuery for screen width.",
+          "Build a tag-list UI using the Wrap widget.",
+          "Create a grid-like layout using nested Rows and Columns.",
+          "Build a login form layout combining Column and Padding.",
+          "Create a card layout with an image and overlapping badge using Stack.",
+          "Build a dashboard-style layout with multiple sections.",
+          "Create a responsive two-column layout for tablets vs phones.",
+          "Build a chat bubble layout using Align and Row.",
+          "Create a layout demonstrating AspectRatio for an image.",
+          "Build a complete profile screen combining all layout widgets."
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "Styling, Theming & Responsive Design",
+      "topics": [
+        {
+          "topicTitle": "Theming",
+          "subtopics": [
+            "ThemeData",
+            "Light and dark themes",
+            "Custom color schemes",
+            "Text themes"
+          ]
+        },
+        {
+          "topicTitle": "Custom Fonts & Assets",
+          "subtopics": [
+            "Adding custom fonts",
+            "Managing image assets",
+            "pubspec.yaml asset declarations"
+          ]
+        },
+        {
+          "topicTitle": "Responsive Design",
+          "subtopics": [
+            "MediaQuery in depth",
+            "LayoutBuilder",
+            "OrientationBuilder",
+            "Adaptive widgets for tablets/phones"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain ThemeData and how it is applied globally.",
+          "How do you implement dark mode in Flutter?",
+          "Explain how to add and use custom fonts.",
+          "Explain LayoutBuilder with an example.",
+          "What is the difference between MediaQuery and LayoutBuilder?"
+        ],
+        "practical": [
+          "Create a custom ThemeData with primary and accent colors.",
+          "Implement light and dark theme toggling in an app.",
+          "Add a custom font and apply it to a Text widget.",
+          "Add image assets and declare them in pubspec.yaml.",
+          "Build a responsive layout that adapts to portrait and landscape.",
+          "Create a settings screen with a dark mode switch.",
+          "Build a typography showcase screen using custom text themes.",
+          "Create a responsive grid that changes column count by screen width.",
+          "Build a card UI styled entirely using theme colors.",
+          "Create an OrientationBuilder based layout change demo.",
+          "Build an adaptive navigation layout for phone vs tablet.",
+          "Create a themed button style used across multiple screens.",
+          "Build a custom AppBar theme applied app-wide.",
+          "Create a responsive font-size scaling demo using MediaQuery.",
+          "Build a complete themed home screen."
+        ]
+      }
+    },
+    {
+      "chapterId": 6,
+      "chapterTitle": "State Management Basics",
+      "topics": [
+        {
+          "topicTitle": "Understanding State",
+          "subtopics": [
+            "What is state in Flutter?",
+            "Ephemeral vs app state",
+            "setState() mechanics",
+            "Widget rebuilding"
+          ]
+        },
+        {
+          "topicTitle": "StatefulWidget in Depth",
+          "subtopics": [
+            "initState()",
+            "dispose()",
+            "didUpdateWidget()",
+            "Lifting state up"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is state in Flutter and why does it matter?",
+          "Explain the difference between ephemeral and app state.",
+          "Explain the StatefulWidget lifecycle methods.",
+          "What does setState() actually do internally?",
+          "Explain 'lifting state up' with an example."
+        ],
+        "practical": [
+          "Create a counter app using setState().",
+          "Create a like/favorite toggle button using setState().",
+          "Build a simple to-do list using StatefulWidget and a List.",
+          "Demonstrate initState() by initializing a value on screen load.",
+          "Demonstrate dispose() by cleaning up a controller.",
+          "Build a quiz screen that updates score using setState().",
+          "Create a color-changing box on tap using setState().",
+          "Build a simple form that lifts state from child to parent widget.",
+          "Create a multi-step form using shared parent state.",
+          "Build a shopping cart counter using setState().",
+          "Create a toggle switch widget controlling visibility of another widget.",
+          "Build a star-rating widget using setState().",
+          "Create a stopwatch app using setState() and a Timer.",
+          "Build an expandable list item using setState().",
+          "Create a login form that shows/hides password using setState()."
+        ]
+      }
+    },
+    {
+      "chapterId": 7,
+      "chapterTitle": "User Input, Forms & Validation",
+      "topics": [
+        {
+          "topicTitle": "Text Input",
+          "subtopics": [
+            "TextField",
+            "TextEditingController",
+            "InputDecoration",
+            "Keyboard types"
+          ]
+        },
+        {
+          "topicTitle": "Forms",
+          "subtopics": [
+            "Form widget",
+            "GlobalKey<FormState>",
+            "TextFormField",
+            "Validation logic",
+            "Form submission handling"
+          ]
+        },
+        {
+          "topicTitle": "Other Input Widgets",
+          "subtopics": [
+            "Checkbox",
+            "Radio buttons",
+            "Switch",
+            "Slider",
+            "DropdownButton",
+            "Date and time pickers"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain TextField and TextEditingController.",
+          "Explain the Form widget and GlobalKey<FormState>.",
+          "How do you implement field validation in Flutter forms?",
+          "Difference between Checkbox, Radio and Switch widgets.",
+          "Explain how to show a date picker in Flutter."
+        ],
+        "practical": [
+          "Create a TextField that displays typed text below it.",
+          "Build a login form with email and password TextFormFields.",
+          "Add validation to ensure the email field is not empty.",
+          "Build a registration form with name, email and password validation.",
+          "Create a form with a dropdown for selecting a country.",
+          "Build a form using checkboxes for selecting hobbies.",
+          "Create a form with radio buttons for selecting gender.",
+          "Build a settings screen with toggle switches.",
+          "Create a slider to select a volume or brightness level.",
+          "Build a date picker that displays the selected date.",
+          "Build a time picker that displays the selected time.",
+          "Create a feedback form with a rating slider and text field.",
+          "Build a multi-field form that submits and shows a summary.",
+          "Create a search bar using TextField with a clear button.",
+          "Build a complete sign-up form combining multiple input widgets."
+        ]
+      }
+    },
+    {
+      "chapterId": 8,
+      "chapterTitle": "Navigation & Routing",
+      "topics": [
+        {
+          "topicTitle": "Basic Navigation",
+          "subtopics": [
+            "Navigator.push and Navigator.pop",
+            "MaterialPageRoute",
+            "Passing data between screens",
+            "Returning data from a screen"
+          ]
+        },
+        {
+          "topicTitle": "Named Routes",
+          "subtopics": [
+            "Defining named routes",
+            "Navigator.pushNamed",
+            "onGenerateRoute",
+            "Route arguments"
+          ]
+        },
+        {
+          "topicTitle": "Advanced Navigation",
+          "subtopics": [
+            "Bottom navigation bar",
+            "Tab bar and TabBarView",
+            "Drawer navigation",
+            "Nested navigation (overview)",
+            "go_router package (overview)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain Navigator.push and Navigator.pop.",
+          "How do you pass data between two screens?",
+          "Explain named routes and onGenerateRoute.",
+          "Explain BottomNavigationBar and TabBarView.",
+          "What is go_router and how does it differ from the default Navigator?"
+        ],
+        "practical": [
+          "Create two screens and navigate between them using push/pop.",
+          "Pass a string from one screen to another using the constructor.",
+          "Return a result from a second screen back to the first.",
+          "Set up named routes for three different screens.",
+          "Build navigation using Navigator.pushNamed with arguments.",
+          "Create a bottom navigation bar with three tabs.",
+          "Build a TabBar with TabBarView showing different content.",
+          "Create a navigation drawer with multiple menu items.",
+          "Build a multi-screen app with a login flow and home screen.",
+          "Create a detail screen that receives an item object from a list.",
+          "Build a settings screen accessible from a drawer.",
+          "Create a back-button confirmation dialog before exiting a screen.",
+          "Build a nested navigation flow (list to detail to edit screen).",
+          "Create an onboarding flow with multiple screens using PageView.",
+          "Build a complete multi-tab app with drawer and named routes."
+        ]
+      }
+    },
+    {
+      "chapterId": 9,
+      "chapterTitle": "Lists, Grids & Scrollable Widgets",
+      "topics": [
+        {
+          "topicTitle": "ListView",
+          "subtopics": [
+            "ListView",
+            "ListView.builder",
+            "ListView.separated",
+            "ListTile"
+          ]
+        },
+        {
+          "topicTitle": "GridView",
+          "subtopics": [
+            "GridView.count",
+            "GridView.builder",
+            "SliverGridDelegate"
+          ]
+        },
+        {
+          "topicTitle": "Slivers & Custom Scroll",
+          "subtopics": [
+            "CustomScrollView",
+            "SliverAppBar",
+            "SliverList and SliverGrid (overview)",
+            "RefreshIndicator",
+            "Pull-to-refresh and infinite scroll"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Difference between ListView and ListView.builder.",
+          "Explain GridView.builder with an example.",
+          "What is a SliverAppBar and why is it used?",
+          "Explain RefreshIndicator and pull-to-refresh.",
+          "Explain how infinite scrolling is implemented in Flutter."
+        ],
+        "practical": [
+          "Build a list of student names using ListView.builder.",
+          "Create a list of contacts using ListTile.",
+          "Build a list with dividers using ListView.separated.",
+          "Create a photo gallery using GridView.builder.",
+          "Build a product catalog grid with image, name and price.",
+          "Create a list with swipe-to-delete functionality.",
+          "Build a list that supports pull-to-refresh.",
+          "Create an infinite scrolling list that loads more items.",
+          "Build a collapsing app bar using SliverAppBar and CustomScrollView.",
+          "Create a news feed style scrollable list.",
+          "Build a chat screen UI using a reversed ListView.",
+          "Create a horizontally scrolling list of category chips.",
+          "Build a nested list (list within list) UI.",
+          "Create a searchable list that filters as the user types.",
+          "Build a complete e-commerce style product listing screen."
+        ]
+      }
+    },
+    {
+      "chapterId": 10,
+      "chapterTitle": "Networking & REST API Integration",
+      "topics": [
+        {
+          "topicTitle": "HTTP Basics",
+          "subtopics": [
+            "REST API concepts",
+            "http package",
+            "GET, POST, PUT, DELETE requests",
+            "Handling responses and status codes"
+          ]
+        },
+        {
+          "topicTitle": "JSON Handling",
+          "subtopics": [
+            "jsonDecode and jsonEncode",
+            "Model classes (fromJson, toJson)",
+            "Parsing nested JSON",
+            "json_serializable (overview)"
+          ]
+        },
+        {
+          "topicTitle": "Async UI Patterns",
+          "subtopics": [
+            "FutureBuilder",
+            "StreamBuilder",
+            "Loading, error and empty states",
+            "dio package (overview)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain REST API concepts and HTTP methods.",
+          "Explain how to parse JSON into a Dart model class.",
+          "Explain FutureBuilder with an example.",
+          "Difference between the http package and dio.",
+          "How do you handle loading and error states in a network call?"
+        ],
+        "practical": [
+          "Fetch data from a public API using a GET request.",
+          "Display fetched JSON data in a ListView using FutureBuilder.",
+          "Create a model class with fromJson and toJson methods.",
+          "Build a screen that posts data to an API using POST.",
+          "Build a screen that updates data using a PUT request.",
+          "Build a screen that deletes an item using a DELETE request.",
+          "Show a loading spinner while data is being fetched.",
+          "Show an error message if the API call fails.",
+          "Build a weather app fetching data from a weather API.",
+          "Build a news app fetching articles from a news API.",
+          "Parse a nested JSON response into multiple model classes.",
+          "Build a search screen that queries an API as the user types.",
+          "Create a StreamBuilder demo with live updating data.",
+          "Build a pagination system that loads more data from an API.",
+          "Build a complete API-driven product listing app."
+        ]
+      }
+    },
+    {
+      "chapterId": 11,
+      "chapterTitle": "Advanced State Management",
+      "topics": [
+        {
+          "topicTitle": "InheritedWidget & Provider",
+          "subtopics": [
+            "InheritedWidget concept",
+            "ChangeNotifier",
+            "Provider package",
+            "Consumer and context.watch/read"
+          ]
+        },
+        {
+          "topicTitle": "Riverpod",
+          "subtopics": [
+            "Riverpod basics",
+            "Providers (Provider, StateProvider, FutureProvider)",
+            "ConsumerWidget",
+            "Riverpod vs Provider"
+          ]
+        },
+        {
+          "topicTitle": "BLoC Pattern",
+          "subtopics": [
+            "BLoC/Cubit concept",
+            "Events and states",
+            "flutter_bloc package",
+            "When to choose BLoC vs Provider vs Riverpod"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain InheritedWidget and how Provider builds on it.",
+          "Explain ChangeNotifier with an example.",
+          "Explain the difference between Provider and Riverpod.",
+          "Explain the BLoC pattern and the role of events and states.",
+          "When would you choose BLoC over Provider for a project?"
+        ],
+        "practical": [
+          "Build a counter app using Provider and ChangeNotifier.",
+          "Build a theme switcher app using Provider.",
+          "Build a shopping cart app using Provider for global state.",
+          "Build a counter app using Riverpod's StateProvider.",
+          "Build a data-fetching screen using Riverpod's FutureProvider.",
+          "Build a counter app using the BLoC/Cubit pattern.",
+          "Build a login flow managing authentication state with BLoC.",
+          "Build a to-do app with add/remove using Provider.",
+          "Build a multi-screen app sharing user data via Provider.",
+          "Build a favorites feature using Riverpod across multiple screens.",
+          "Build a form validation flow using BLoC events and states.",
+          "Compare setState vs Provider by refactoring a counter app.",
+          "Build a settings app with theme and language state using Provider.",
+          "Build a notification badge counter using global state management.",
+          "Build a complete app combining Provider/Riverpod/BLoC concepts."
+        ]
+      }
+    },
+    {
+      "chapterId": 12,
+      "chapterTitle": "Local Storage & Databases",
+      "topics": [
+        {
+          "topicTitle": "Key-Value Storage",
+          "subtopics": [
+            "SharedPreferences",
+            "Storing simple settings and flags",
+            "Reading and writing primitive data"
+          ]
+        },
+        {
+          "topicTitle": "SQLite Database",
+          "subtopics": [
+            "sqflite package",
+            "Creating tables",
+            "CRUD operations with SQLite",
+            "Database migrations (basic)"
+          ]
+        },
+        {
+          "topicTitle": "NoSQL Local Storage",
+          "subtopics": [
+            "Hive database (overview)",
+            "Type adapters",
+            "When to use Hive vs SQLite"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is SharedPreferences used for?",
+          "Explain how to perform CRUD operations using sqflite.",
+          "Difference between SQLite and Hive.",
+          "Explain database migrations in mobile apps.",
+          "When should local storage be preferred over a remote database?"
+        ],
+        "practical": [
+          "Save and retrieve a user's name using SharedPreferences.",
+          "Build a dark mode toggle persisted using SharedPreferences.",
+          "Create a SQLite database with a students table.",
+          "Insert a new record into a SQLite database.",
+          "Read and display all records from a SQLite database.",
+          "Update a record in a SQLite database.",
+          "Delete a record from a SQLite database.",
+          "Build a note-taking app using SQLite for storage.",
+          "Build a to-do app that persists tasks using Hive.",
+          "Store and retrieve a list of objects using SharedPreferences with JSON.",
+          "Build an offline expense tracker using SQLite.",
+          "Build a login session persistence feature using SharedPreferences.",
+          "Create a search feature over locally stored SQLite data.",
+          "Build a favorites feature persisted using Hive.",
+          "Build a complete offline-first contact management app."
+        ]
+      }
+    },
+    {
+      "chapterId": 13,
+      "chapterTitle": "Firebase Integration",
+      "topics": [
+        {
+          "topicTitle": "Firebase Setup",
+          "subtopics": [
+            "Creating a Firebase project",
+            "Connecting Flutter app to Firebase",
+            "FlutterFire CLI",
+            "google-services.json / GoogleService-Info.plist"
+          ]
+        },
+        {
+          "topicTitle": "Firebase Authentication",
+          "subtopics": [
+            "Email/password authentication",
+            "Google sign-in (overview)",
+            "Managing auth state",
+            "Sign out and session handling"
+          ]
+        },
+        {
+          "topicTitle": "Cloud Firestore & Storage",
+          "subtopics": [
+            "Firestore collections and documents",
+            "Reading and writing data",
+            "Real-time listeners (snapshots)",
+            "Firebase Storage for file uploads"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain the steps to connect a Flutter app to Firebase.",
+          "Explain Firebase Authentication with email and password.",
+          "Explain the structure of Cloud Firestore (collections and documents).",
+          "What are real-time listeners in Firestore?",
+          "Explain how Firebase Storage is used for file uploads."
+        ],
+        "practical": [
+          "Set up a Firebase project and connect it to a Flutter app.",
+          "Build a sign-up screen using Firebase email/password authentication.",
+          "Build a login screen using Firebase Authentication.",
+          "Implement sign-out functionality with Firebase Auth.",
+          "Add a new document to a Firestore collection.",
+          "Read and display documents from a Firestore collection.",
+          "Update a document in Firestore.",
+          "Delete a document from Firestore.",
+          "Build a real-time chat-like list using Firestore snapshots.",
+          "Build a to-do app synced with Firestore.",
+          "Upload an image to Firebase Storage and display its URL.",
+          "Build a user profile screen storing data in Firestore.",
+          "Implement an auth-state listener to redirect logged-in users.",
+          "Build a simple social-feed app using Firestore.",
+          "Build a complete authenticated note-taking app using Firebase."
+        ]
+      }
+    },
+    {
+      "chapterId": 14,
+      "chapterTitle": "Animations in Flutter",
+      "topics": [
+        {
+          "topicTitle": "Implicit Animations",
+          "subtopics": [
+            "AnimatedContainer",
+            "AnimatedOpacity",
+            "AnimatedAlign",
+            "AnimatedCrossFade"
+          ]
+        },
+        {
+          "topicTitle": "Explicit Animations",
+          "subtopics": [
+            "AnimationController",
+            "Tween",
+            "AnimatedBuilder",
+            "Curves"
+          ]
+        },
+        {
+          "topicTitle": "Advanced Animation",
+          "subtopics": [
+            "Hero animations",
+            "Page transition animations",
+            "Lottie animations (overview)",
+            "Staggered animations (concept)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Difference between implicit and explicit animations.",
+          "Explain AnimationController and Tween.",
+          "Explain Hero animations with an example use case.",
+          "What are Curves and why are they used in animations?",
+          "Explain staggered animations conceptually."
+        ],
+        "practical": [
+          "Create a button that animates size using AnimatedContainer.",
+          "Build a fade-in effect using AnimatedOpacity.",
+          "Create a sliding panel using AnimatedAlign.",
+          "Build a custom rotation animation using AnimationController and Tween.",
+          "Create a pulsing button animation using AnimatedBuilder.",
+          "Build a Hero animation between a list screen and a detail screen.",
+          "Create a custom page transition animation between two screens.",
+          "Build a loading spinner using a custom animation.",
+          "Create a bounce animation on button tap.",
+          "Build a card flip animation using AnimatedCrossFade.",
+          "Create a progress bar with animated fill.",
+          "Build an animated splash screen.",
+          "Create a staggered list item entrance animation.",
+          "Build a like-button animation (heart pop effect).",
+          "Build a complete onboarding screen with combined animations."
+        ]
+      }
+    },
+    {
+      "chapterId": 15,
+      "chapterTitle": "Platform Features & Native Integration",
+      "topics": [
+        {
+          "topicTitle": "Device Features",
+          "subtopics": [
+            "Camera and image_picker",
+            "Location services (geolocator)",
+            "Permissions (permission_handler)",
+            "Local notifications"
+          ]
+        },
+        {
+          "topicTitle": "Sensors & Connectivity",
+          "subtopics": [
+            "Connectivity status (connectivity_plus)",
+            "Device info plugin (overview)",
+            "Sharing content (share_plus)"
+          ]
+        },
+        {
+          "topicTitle": "Platform Channels (Concept)",
+          "subtopics": [
+            "What are platform channels?",
+            "MethodChannel basics",
+            "When custom native code is needed"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain how to request runtime permissions in Flutter.",
+          "Explain the use of image_picker and geolocator packages.",
+          "What are platform channels and when are they needed?",
+          "Explain how to check network connectivity in a Flutter app.",
+          "Explain how local notifications work in Flutter."
+        ],
+        "practical": [
+          "Build a screen that picks an image from the gallery using image_picker.",
+          "Build a screen that captures a photo using the camera.",
+          "Request location permission and display the user's current location.",
+          "Build a feature that shows a local notification on a button tap.",
+          "Build a connectivity checker that shows online/offline status.",
+          "Build a share feature to share text content using share_plus.",
+          "Build a profile screen that lets users update their profile picture.",
+          "Create a permission request flow for camera and location access.",
+          "Build a simple map-marker screen showing the device's coordinates.",
+          "Build a scheduled notification reminder feature.",
+          "Create a feature detecting and displaying device information.",
+          "Build a QR code scanner screen (using a scanning package).",
+          "Build a feature exporting and sharing a generated file.",
+          "Create a simple platform channel call to get the battery level.",
+          "Build a complete app combining camera, location and notifications."
+        ]
+      }
+    },
+    {
+      "chapterId": 16,
+      "chapterTitle": "App Architecture & Best Practices",
+      "topics": [
+        {
+          "topicTitle": "Project Architecture",
+          "subtopics": [
+            "Folder structuring strategies",
+            "Separation of UI, logic and data layers",
+            "MVC, MVVM concepts in Flutter",
+            "Clean architecture overview"
+          ]
+        },
+        {
+          "topicTitle": "Code Quality",
+          "subtopics": [
+            "Reusable widgets",
+            "Constants and theming files",
+            "Error handling strategy",
+            "Linting and code formatting"
+          ]
+        },
+        {
+          "topicTitle": "Performance Optimization",
+          "subtopics": [
+            "const constructors",
+            "Avoiding unnecessary rebuilds",
+            "ListView performance tips",
+            "Image caching"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain the importance of separating UI, logic and data layers.",
+          "Explain MVVM architecture in the context of Flutter.",
+          "Why are const constructors important for performance?",
+          "Explain common causes of unnecessary widget rebuilds.",
+          "Explain best practices for structuring a large Flutter project."
+        ],
+        "practical": [
+          "Refactor a screen into separate UI and data/service layers.",
+          "Create a reusable custom button widget used across screens.",
+          "Create a constants file for colors, strings and dimensions.",
+          "Refactor a widget tree to use const constructors where possible.",
+          "Set up a basic MVVM folder structure for a small app.",
+          "Create a centralized error-handling utility function.",
+          "Apply lint rules and fix warnings in an existing project.",
+          "Refactor a ListView to improve scrolling performance.",
+          "Implement image caching using a caching package.",
+          "Create a repository layer separating API calls from UI.",
+          "Build a service locator/dependency injection setup (basic).",
+          "Refactor a Provider-based app to follow clean architecture layers.",
+          "Create unit-testable business logic separate from widgets.",
+          "Document a project's architecture in a README-style file.",
+          "Build a small app from scratch following clean architecture principles."
+        ]
+      }
+    },
+    {
+      "chapterId": 17,
+      "chapterTitle": "Testing & Debugging in Flutter",
+      "topics": [
+        {
+          "topicTitle": "Debugging Tools",
+          "subtopics": [
+            "Flutter DevTools",
+            "debugPrint and breakpoints",
+            "Widget inspector",
+            "Performance profiling overview"
+          ]
+        },
+        {
+          "topicTitle": "Testing",
+          "subtopics": [
+            "Unit testing",
+            "Widget testing",
+            "Integration testing (overview)",
+            "Mocking dependencies (overview)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain the difference between unit, widget and integration tests.",
+          "Explain how Flutter DevTools helps in debugging an app.",
+          "What is the widget inspector used for?",
+          "Explain the purpose of mocking in tests.",
+          "Why is testing important in mobile app development?"
+        ],
+        "practical": [
+          "Write a unit test for a simple calculator function.",
+          "Write a unit test for a model class's fromJson method.",
+          "Write a widget test verifying a Text widget displays correctly.",
+          "Write a widget test verifying a button tap updates the UI.",
+          "Use the widget inspector to examine a screen's widget tree.",
+          "Debug a layout overflow error using DevTools.",
+          "Write a unit test for a Provider/ChangeNotifier class.",
+          "Write a widget test for a form validation scenario.",
+          "Set up and run a basic integration test for app launch.",
+          "Use debugPrint statements to trace a state change bug.",
+          "Write tests for a counter app covering increment and decrement.",
+          "Mock an API service to test a screen without a real network call.",
+          "Write a test verifying navigation between two screens.",
+          "Profile an app's performance using DevTools and identify a bottleneck.",
+          "Build a small test suite covering a complete feature."
+        ]
+      }
+    },
+    {
+      "chapterId": 18,
+      "chapterTitle": "Publishing, Deployment & Final Capstone Projects",
+      "topics": [
+        {
+          "topicTitle": "Preparing for Release",
+          "subtopics": [
+            "App icons and splash screens",
+            "App naming and versioning",
+            "Build flavors (dev/staging/prod overview)",
+            "Generating signed APK/AAB"
+          ]
+        },
+        {
+          "topicTitle": "Publishing",
+          "subtopics": [
+            "Publishing to Google Play Store",
+            "Publishing to Apple App Store (overview)",
+            "App store listing essentials",
+            "Post-release updates"
+          ]
+        },
+        {
+          "topicTitle": "Flutter Development Revision",
+          "subtopics": [
+            "Widgets and layouts",
+            "State management",
+            "Navigation",
+            "Networking and Firebase",
+            "Local storage",
+            "Animations",
+            "Architecture and testing"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [],
+        "practical": [
+          "Generate a custom app icon and splash screen for an app.",
+          "Configure app name, package name and version number.",
+          "Generate a signed release APK for an app.",
+          "Generate an Android App Bundle (AAB) for Play Store submission.",
+          "Prepare a Play Store listing (description, screenshots) for an app.",
+          "Build a complete weather app combining API and animations.",
+          "Build a complete to-do app with Firebase sync and authentication.",
+          "Build a complete e-commerce app with product list, cart and checkout UI.",
+          "Build a complete social media feed app with posts and likes.",
+          "Build a complete notes app with local SQLite storage and search.",
+          "Build a complete chat app UI with Firestore real-time messages.",
+          "Build a complete expense tracker app with charts and categories.",
+          "Build a complete food delivery app UI with cart and order tracking.",
+          "Build a complete fitness tracker app with local data persistence.",
+          "Build a complete news reader app with API integration and bookmarks.",
+          "Build a complete music player app UI with playlists.",
+          "Build a complete quiz app with score tracking and Firebase leaderboard.",
+          "Build a complete booking/reservation app with date and time pickers.",
+          "Build a complete portfolio app showcasing your Flutter projects.",
+          "Package and present a final capstone Flutter application."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "E-Commerce Shopping App",
+      "concepts": [
+        "Navigation",
+        "State Management",
+        "Networking",
+        "Local Storage"
+      ],
+      "features": [
+        "Product listing and details",
+        "Add to cart",
+        "Checkout flow",
+        "Order history",
+        "User authentication"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Social Media Feed App",
+      "concepts": ["Firebase", "State Management", "Animations", "Navigation"],
+      "features": [
+        "User authentication",
+        "Create and view posts",
+        "Like and comment",
+        "Real-time feed updates",
+        "Profile screen"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Expense Tracker App",
+      "concepts": ["Local Storage (SQLite/Hive)", "State Management", "Charts"],
+      "features": [
+        "Add and categorize expenses",
+        "Monthly summary",
+        "Offline data storage",
+        "Search and filter expenses"
+      ]
+    },
+    {
+      "projectId": 4,
+      "projectTitle": "Weather & News App",
+      "concepts": ["REST API", "FutureBuilder", "Animations", "Theming"],
+      "features": [
+        "Live weather data",
+        "News article feed",
+        "Search by city",
+        "Light/dark theme toggle"
+      ]
+    },
+    {
+      "projectId": 5,
+      "projectTitle": "Chat & Booking Application",
+      "concepts": [
+        "Firebase Firestore",
+        "Authentication",
+        "Real-time updates",
+        "Forms and Validation"
+      ],
+      "features": [
+        "User login/signup",
+        "Real-time chat messaging",
+        "Appointment/booking form",
+        "Push notifications"
+      ]
+    }
+  ]
+}

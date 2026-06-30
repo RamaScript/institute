@@ -74,7 +74,8 @@
           "Check palindrome using recursion",
           "Analyze nested loop complexity",
           "Simulate recursion call stack manually"
-        ]
+        ],
+        "totalQuestions": 16
       }
     },
     {
@@ -130,7 +131,8 @@
           "Remove duplicates (basic approach)",
           "Rotate array",
           "Move zeroes to end"
-        ]
+        ],
+        "totalQuestions": 15
       }
     },
     {
@@ -197,7 +199,8 @@
           "Find last occurrence of element",
           "Implement lower bound logic",
           "Implement upper bound logic"
-        ]
+        ],
+        "totalQuestions": 15
       }
     },
     {
@@ -277,7 +280,8 @@
           "Generate all permutations of a string",
           "Solve maze path (basic grid recursion)",
           "Simulate recursion tree manually for factorial"
-        ]
+        ],
+        "totalQuestions": 16
       }
     },
     {
@@ -354,7 +358,8 @@
           "Range sum query using prefix sum",
           "Count subarrays with given sum (basic)",
           "Move zeroes using two pointers"
-        ]
+        ],
+        "totalQuestions": 15
       }
     },
     {
@@ -410,7 +415,8 @@
           "Simulate recursion using stack",
           "Convert expression idea using stack",
           "Find stock span (intro level)"
-        ]
+        ],
+        "totalQuestions": 15
       }
     },
     {
@@ -475,7 +481,8 @@
           "Simulate printer job queue",
           "Check palindrome using deque",
           "Basic scheduling simulation using queue"
-        ]
+        ],
+        "totalQuestions": 15
       }
     },
     {
@@ -540,7 +547,8 @@
           "Merge two sorted linked lists",
           "Remove duplicates",
           "Find length of linked list"
-        ]
+        ],
+        "totalQuestions": 15
       }
     },
     {
@@ -607,7 +615,8 @@
           "Find leaf nodes",
           "Mirror a binary tree (basic idea)",
           "Sum of all nodes in tree"
-        ]
+        ],
+        "totalQuestions": 15
       }
     },
     {
@@ -669,7 +678,8 @@
           "Floor and ceiling in BST",
           "Inorder traversal of BST",
           "Build BST from array"
-        ]
+        ],
+        "totalQuestions": 15
       }
     },
     {
@@ -731,7 +741,8 @@
           "Simulate priority scheduling",
           "Find median using two heaps (idea level)",
           "Convert array into heap"
-        ]
+        ],
+        "totalQuestions": 15
       }
     },
     {
@@ -794,7 +805,8 @@
           "Remove duplicates using set",
           "Group elements by frequency",
           "Sliding window frequency tracking"
-        ]
+        ],
+        "totalQuestions": 15
       }
     },
     {
@@ -867,7 +879,8 @@
           "Implement simple Dijkstra (basic)",
           "Topological sort (intro implementation)",
           "Count number of islands problem"
-        ]
+        ],
+        "totalQuestions": 15
       }
     },
     {
@@ -932,7 +945,8 @@
           "Coin change problem",
           "Min cost path problem",
           "Rod cutting problem (basic)"
-        ]
+        ],
+        "totalQuestions": 15
       }
     },
     {
@@ -984,7 +998,8 @@
           "Optimize brute force solutions",
           "Explain solution before coding",
           "Write clean structured code under time limit"
-        ]
+        ],
+        "totalQuestions": 10
       }
     }
   ]

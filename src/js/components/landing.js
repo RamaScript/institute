@@ -17,6 +17,31 @@ const courseThemes = {
         iconBg: 'rgba(6,214,160,0.12)',
         tagColor: '#06d6a0',
     },
+    'python': {
+        gradient: 'linear-gradient(135deg, #f7b731 0%, #306998 100%)',
+        iconBg: 'rgba(247,183,49,0.14)',
+        tagColor: '#f7b731',
+    },
+    'java': {
+        gradient: 'linear-gradient(135deg, #e76f00 0%, #5382a1 100%)',
+        iconBg: 'rgba(231,111,0,0.14)',
+        tagColor: '#e76f00',
+    },
+    'dart': {
+        gradient: 'linear-gradient(135deg, #00589e 0%, #41c9ff 100%)',
+        iconBg: 'rgba(0,88,158,0.14)',
+        tagColor: '#00589e',
+    },
+    'flutter': {
+        gradient: 'linear-gradient(135deg, #02569b 0%, #4fc3f7 100%)',
+        iconBg: 'rgba(2,86,155,0.14)',
+        tagColor: '#02569b',
+    },
+    'basic-web-dev': {
+        gradient: 'linear-gradient(135deg, #e44d26 0%, #264de4 100%)',
+        iconBg: 'rgba(228,77,38,0.14)',
+        tagColor: '#e44d26',
+    },
 };
 
 /* ─── SVG Icons ──────────────────────────────────────────── */
@@ -103,7 +128,7 @@ function buildHero() {
 
             <!-- subtitle -->
             <p class="lp-hero-sub">
-                Deep, practical courses in C, C++ and Data Structures & Algorithms.
+                Deep, practical courses in C, C++, Python, Java, Dart, Flutter, Web Dev and Data Structures & Algorithms.
                 Built for engineers who want to understand computers from the ground up.
             </p>
 

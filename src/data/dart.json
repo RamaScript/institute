@@ -1,0 +1,890 @@
+{
+  "courseId": "dart",
+  "courseTitle": "Dart Programming",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Introduction to Dart & Programming Fundamentals",
+      "topics": [
+        {
+          "topicTitle": "Programming Fundamentals",
+          "subtopics": [
+            "What is Programming?",
+            "Problem solving approach",
+            "Algorithm",
+            "Flowchart",
+            "Pseudocode"
+          ]
+        },
+        {
+          "topicTitle": "Introduction to Dart",
+          "subtopics": [
+            "History of Dart",
+            "Why Dart for Flutter",
+            "Features of Dart",
+            "Dart SDK and DartPad",
+            "Dart program structure",
+            "main() function",
+            "Comments in Dart",
+            "Compilation: JIT vs AOT"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is programming? Explain with an example.",
+          "Why was Dart created and why is it used for Flutter?",
+          "Explain JIT and AOT compilation in Dart.",
+          "Explain the structure of a Dart program.",
+          "Explain the role of the main() function in Dart."
+        ],
+        "practical": [
+          "Write a program to print \"Hello World\".",
+          "Write a program to print your name, age, and city.",
+          "Write a program to print multiple lines using print().",
+          "Create an algorithm to add two numbers.",
+          "Create a flowchart to check whether a number is positive or negative.",
+          "Write a program to print student details.",
+          "Write a program to print your college details.",
+          "Write a program to print a simple pattern using print().",
+          "Write a program to display your daily schedule.",
+          "Write a program to print a simple introduction.",
+          "Write a program with single-line and multi-line comments.",
+          "Write a program to display arithmetic expressions.",
+          "Write a program to print values of multiple variables.",
+          "Write a program to create a basic menu display.",
+          "Write a program showing the basic structure of Dart."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Variables, Data Types & Operators",
+      "topics": [
+        {
+          "topicTitle": "Variables",
+          "subtopics": [
+            "What are variables?",
+            "var, dynamic and final/const",
+            "Type inference",
+            "Naming rules",
+            "Scope of variables"
+          ]
+        },
+        {
+          "topicTitle": "Data Types",
+          "subtopics": [
+            "int, double, num",
+            "String",
+            "bool",
+            "List, Set, Map (overview)",
+            "Type conversion"
+          ]
+        },
+        {
+          "topicTitle": "Operators",
+          "subtopics": [
+            "Arithmetic operators",
+            "Relational operators",
+            "Logical operators",
+            "Assignment operators",
+            "Conditional operators (?:, ??, ??=)",
+            "Cascade notation (..)",
+            "Operator precedence"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Difference between var, final and const.",
+          "Explain data types in Dart.",
+          "Explain the null-aware operators (??, ??=, ?.).",
+          "Explain operator precedence in Dart.",
+          "Explain cascade notation with an example."
+        ],
+        "practical": [
+          "Write a program to store and print integer value.",
+          "Write a program to store and print double value.",
+          "Write a program to store and print string value.",
+          "Write a program using var, final and const.",
+          "Write a program to demonstrate type inference.",
+          "Create a program to store student marks.",
+          "Create a program to calculate simple interest.",
+          "Create a program to calculate compound interest.",
+          "Write a program to calculate area of circle.",
+          "Write a program to convert Celsius into Fahrenheit.",
+          "Write a program using null-aware operators.",
+          "Write a program using cascade notation on an object.",
+          "Write a program using ternary operator.",
+          "Write a program demonstrating type conversion.",
+          "Write a program to swap two numbers."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Input, Output & Conditional Statements",
+      "topics": [
+        {
+          "topicTitle": "Input and Output",
+          "subtopics": [
+            "print() function",
+            "String interpolation",
+            "Reading console input (stdin)",
+            "Formatting output"
+          ]
+        },
+        {
+          "topicTitle": "Decision Making",
+          "subtopics": [
+            "if statement",
+            "if-else statement",
+            "if-else-if ladder",
+            "switch-case statement",
+            "Nested if statements"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain string interpolation with an example.",
+          "Explain if-else-if ladder.",
+          "Explain switch-case statement in Dart.",
+          "Difference between if-else and switch.",
+          "Why are conditional statements important?"
+        ],
+        "practical": [
+          "Write a program to take two numbers and print their sum.",
+          "Write a program to check even or odd.",
+          "Write a program to check positive, negative or zero.",
+          "Write a program to find the largest of three numbers.",
+          "Write a program to check leap year.",
+          "Write a program to grade a student based on marks.",
+          "Write a program to check vowel or consonant.",
+          "Write a program for a simple calculator using switch.",
+          "Write a program to check if a year is a century year.",
+          "Write a program to check character type.",
+          "Write a program to find the smallest of three numbers.",
+          "Write a program to check ticket pricing based on age.",
+          "Write a program using nested if statements.",
+          "Write a program to check triangle validity using sides.",
+          "Write a program using string interpolation to display a bill."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Loops & Pattern Based Problem Solving",
+      "topics": [
+        {
+          "topicTitle": "for Loop",
+          "subtopics": ["for loop syntax", "for-in loop", "Nested for loops"]
+        },
+        {
+          "topicTitle": "while and do-while Loops",
+          "subtopics": [
+            "while loop syntax",
+            "do-while loop syntax",
+            "Infinite loops"
+          ]
+        },
+        {
+          "topicTitle": "Loop Control Statements",
+          "subtopics": ["break", "continue", "Labeled loops"]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [],
+        "patternPrinting": {
+          "totalQuestions": 25,
+          "patterns": [
+            {
+              "name": "Square Star Pattern",
+              "output": ["* * * *", "* * * *", "* * * *", "* * * *"]
+            },
+            {
+              "name": "Hollow Square",
+              "output": ["* * * *", "*     *", "*     *", "* * * *"]
+            },
+            {
+              "name": "Right Triangle Star",
+              "output": ["*", "* *", "* * *", "* * * *"]
+            },
+            {
+              "name": "Inverted Right Triangle",
+              "output": ["* * * *", "* * *", "* *", "*"]
+            },
+            {
+              "name": "Pyramid Star Pattern",
+              "output": ["   *", "  * *", " * * *", "* * * *"]
+            },
+            {
+              "name": "Inverted Pyramid",
+              "output": ["* * * *", " * * *", "  * *", "   *"]
+            },
+            {
+              "name": "Diamond Pattern",
+              "output": [
+                "   *",
+                "  * *",
+                " * * *",
+                "* * * *",
+                " * * *",
+                "  * *",
+                "   *"
+              ]
+            },
+            {
+              "name": "Hollow Diamond",
+              "output": [
+                "   *",
+                "  * *",
+                " *   *",
+                "*     *",
+                " *   *",
+                "  * *",
+                "   *"
+              ]
+            },
+            {
+              "name": "Half Pyramid Numbers",
+              "output": ["1", "1 2", "1 2 3", "1 2 3 4"]
+            },
+            {
+              "name": "Inverted Half Pyramid Numbers",
+              "output": ["1 2 3 4", "1 2 3", "1 2", "1"]
+            },
+            {
+              "name": "Floyd Triangle",
+              "output": ["1", "2 3", "4 5 6", "7 8 9 10"]
+            },
+            {
+              "name": "Number Pyramid",
+              "output": ["   1", "  2 2", " 3 3 3", "4 4 4 4"]
+            },
+            {
+              "name": "Inverted Number Pyramid",
+              "output": ["4 4 4 4", " 3 3 3", "  2 2", "   1"]
+            },
+            {
+              "name": "Mirrored Right Triangle",
+              "output": ["      *", "    * *", "  * * *", "* * * *"]
+            },
+            {
+              "name": "Hollow Right Triangle",
+              "output": ["*", "* *", "*   *", "* * * *"]
+            },
+            {
+              "name": "Butterfly Pattern",
+              "output": [
+                "*       *",
+                "* *   * *",
+                "* * * * *",
+                "* *   * *",
+                "*       *"
+              ]
+            },
+            {
+              "name": "Hollow Butterfly",
+              "output": [
+                "*       *",
+                "* *   * *",
+                "*   *   *",
+                "* *   * *",
+                "*       *"
+              ]
+            },
+            {
+              "name": "Zig Zag Pattern",
+              "output": ["  *   *   *", "*   *   *   *", "  *   *   *"]
+            },
+            {
+              "name": "0-1 Triangle",
+              "output": ["1", "0 1", "1 0 1", "0 1 0 1"]
+            },
+            {
+              "name": "Concentric Square",
+              "output": [
+                "4 4 4 4 4 4 4",
+                "4 3 3 3 3 3 4",
+                "4 3 2 2 2 3 4",
+                "4 3 2 1 2 3 4",
+                "4 3 2 2 2 3 4",
+                "4 3 3 3 3 3 4",
+                "4 4 4 4 4 4 4"
+              ]
+            },
+            {
+              "name": "X Pattern",
+              "output": [
+                "*     *",
+                " *   *",
+                "  * *",
+                "  * *",
+                " *   *",
+                "*     *"
+              ]
+            },
+            {
+              "name": "Plus Pattern",
+              "output": ["    *", "    *", "* * * * *", "    *", "    *"]
+            },
+            {
+              "name": "Cross Pattern",
+              "output": [
+                "*     *",
+                " *   *",
+                "  * *",
+                "  * *",
+                " *   *",
+                "*     *"
+              ]
+            },
+            {
+              "name": "Increasing-Decreasing Triangle",
+              "output": ["1", "1 2", "1 2 3", "1 2", "1"]
+            }
+          ]
+        },
+        "practical": [
+          "Write a program to print numbers from 1 to N.",
+          "Write a program to print even numbers up to N.",
+          "Write a program to find the sum of first N natural numbers.",
+          "Write a program to find the factorial of a number.",
+          "Write a program to print the multiplication table of a number.",
+          "Write a program to check if a number is prime.",
+          "Write a program to print all prime numbers up to N.",
+          "Write a program to reverse a number.",
+          "Write a program to check palindrome number.",
+          "Write a program to print Fibonacci series.",
+          "Write a program to print a square star pattern.",
+          "Write a program to print a triangle star pattern.",
+          "Write a program to print a pyramid pattern.",
+          "Write a program to print a number pattern.",
+          "Write a program using break statement.",
+          "Write a program using continue statement.",
+          "Write a program to count digits in a number.",
+          "Write a program to find sum of digits of a number.",
+          "Write a program using a for-in loop on a list.",
+          "Write a program using nested loops to print a grid."
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "Functions in Dart",
+      "topics": [
+        {
+          "topicTitle": "Function Basics",
+          "subtopics": [
+            "What is a function?",
+            "Function declaration and calling",
+            "Return types and void",
+            "Arrow functions"
+          ]
+        },
+        {
+          "topicTitle": "Function Parameters",
+          "subtopics": [
+            "Positional parameters",
+            "Optional positional parameters",
+            "Named parameters",
+            "Default parameter values",
+            "required keyword"
+          ]
+        },
+        {
+          "topicTitle": "Advanced Function Concepts",
+          "subtopics": [
+            "Anonymous functions",
+            "Higher-order functions",
+            "Closures",
+            "Functions as first-class objects"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a function? Explain with an example.",
+          "Explain named and positional parameters.",
+          "What is a closure in Dart?",
+          "Explain higher-order functions with an example.",
+          "Explain arrow function syntax."
+        ],
+        "practical": [
+          "Write a function to add two numbers.",
+          "Write a function to check even or odd.",
+          "Write a function to find the factorial of a number.",
+          "Write a function with optional named parameters.",
+          "Write a function with default parameter values.",
+          "Write a function using arrow syntax to square a number.",
+          "Write a higher-order function that takes a function as a parameter.",
+          "Write a program demonstrating a closure.",
+          "Write a function to find the largest of three numbers.",
+          "Write an anonymous function and use it with forEach().",
+          "Write a function to convert Celsius into Fahrenheit.",
+          "Write a function to calculate simple interest.",
+          "Write a function-based simple calculator.",
+          "Write a function that returns another function.",
+          "Write a function using required named parameters."
+        ]
+      }
+    },
+    {
+      "chapterId": 6,
+      "chapterTitle": "Collections in Dart",
+      "topics": [
+        {
+          "topicTitle": "Lists",
+          "subtopics": [
+            "Creating lists",
+            "Fixed-length vs growable lists",
+            "List methods (add, remove, sort, map, where)",
+            "Spread operator in lists",
+            "List comprehension with for/if"
+          ]
+        },
+        {
+          "topicTitle": "Sets",
+          "subtopics": [
+            "Creating sets",
+            "Set operations (union, intersection, difference)",
+            "Set methods"
+          ]
+        },
+        {
+          "topicTitle": "Maps",
+          "subtopics": [
+            "Creating maps",
+            "Accessing and updating values",
+            "Map methods (keys, values, forEach)",
+            "Iterating over maps"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a List? Explain with an example.",
+          "Difference between List, Set and Map.",
+          "Explain the spread operator with an example.",
+          "Explain map(), where() and reduce() methods.",
+          "Why are sets useful for removing duplicates?"
+        ],
+        "practical": [
+          "Write a program to find the largest element in a list.",
+          "Write a program to sort a list without using sort().",
+          "Write a program to remove duplicates from a list using a set.",
+          "Write a program to find the sum and average of a list.",
+          "Write a program to reverse a list.",
+          "Write a program to merge two lists using the spread operator.",
+          "Write a program using map() to create a list of squares.",
+          "Write a program using where() to filter even numbers.",
+          "Write a program to create and update a map of student marks.",
+          "Write a program to iterate over a map and print key-value pairs.",
+          "Write a program to count word frequency using a map.",
+          "Write a program to perform union and intersection of two sets.",
+          "Write a program to convert a list into a set and vice versa.",
+          "Write a program using a list comprehension-style collection-for.",
+          "Write a program to create a phonebook using a map."
+        ]
+      }
+    },
+    {
+      "chapterId": 7,
+      "chapterTitle": "Strings & Null Safety in Dart",
+      "topics": [
+        {
+          "topicTitle": "Strings",
+          "subtopics": [
+            "String basics and immutability",
+            "String methods (substring, split, trim, replaceAll)",
+            "Multi-line and raw strings",
+            "String interpolation recap"
+          ]
+        },
+        {
+          "topicTitle": "Null Safety",
+          "subtopics": [
+            "Sound null safety concept",
+            "Nullable vs non-nullable types",
+            "Null-aware operators (?., ??, ??=, !)",
+            "late keyword",
+            "Null safety migration basics"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is sound null safety in Dart?",
+          "Difference between nullable and non-nullable types.",
+          "Explain the late keyword with an example.",
+          "Explain the null assertion operator (!).",
+          "Explain common string methods in Dart."
+        ],
+        "practical": [
+          "Write a program to reverse a string.",
+          "Write a program to check palindrome string.",
+          "Write a program to count vowels in a string.",
+          "Write a program to count words in a sentence.",
+          "Write a program to convert string to uppercase and lowercase.",
+          "Write a program to remove spaces from a string.",
+          "Write a program to check if two strings are anagrams.",
+          "Write a program to split a sentence into words.",
+          "Write a program demonstrating nullable variables.",
+          "Write a program using the ?? operator to provide default values.",
+          "Write a program using the late keyword.",
+          "Write a program using the ?. operator to safely access a property.",
+          "Write a program to capitalize the first letter of each word.",
+          "Write a program to find the longest word in a sentence.",
+          "Write a program demonstrating the difference between String? and String."
+        ]
+      }
+    },
+    {
+      "chapterId": 8,
+      "chapterTitle": "Object Oriented Programming Basics",
+      "topics": [
+        {
+          "topicTitle": "Classes and Objects",
+          "subtopics": [
+            "Class definition",
+            "Object creation",
+            "Instance variables and methods",
+            "this keyword"
+          ]
+        },
+        {
+          "topicTitle": "Constructors",
+          "subtopics": [
+            "Default constructor",
+            "Named constructors",
+            "Constructor with initializer list",
+            "factory constructors"
+          ]
+        },
+        {
+          "topicTitle": "Encapsulation",
+          "subtopics": [
+            "Private members (_ prefix)",
+            "Getters and setters",
+            "Encapsulation best practices"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a class and an object?",
+          "Explain named constructors with an example.",
+          "What is a factory constructor and when is it used?",
+          "Explain encapsulation in Dart.",
+          "Explain getters and setters."
+        ],
+        "practical": [
+          "Create a class to represent a student and display details.",
+          "Create a class with a named constructor.",
+          "Create a class with private fields and getters/setters.",
+          "Create a class using a factory constructor.",
+          "Create a bank account class with deposit and withdraw methods.",
+          "Create an employee class with salary calculation.",
+          "Create a rectangle class with area and perimeter methods.",
+          "Create a product class for billing.",
+          "Create a class demonstrating static members.",
+          "Create multiple objects of a class and compare their values.",
+          "Create a class to store and display book details.",
+          "Create a class to manage a simple to-do list.",
+          "Create a class to represent a circle with area and circumference.",
+          "Create a class with an initializer list constructor.",
+          "Create a singleton class using a factory constructor."
+        ]
+      }
+    },
+    {
+      "chapterId": 9,
+      "chapterTitle": "Inheritance, Mixins & Interfaces",
+      "topics": [
+        {
+          "topicTitle": "Inheritance",
+          "subtopics": [
+            "extends keyword",
+            "super keyword",
+            "Method overriding",
+            "@override annotation"
+          ]
+        },
+        {
+          "topicTitle": "Abstract Classes & Interfaces",
+          "subtopics": [
+            "Abstract classes",
+            "implements keyword",
+            "Implicit interfaces in Dart",
+            "Multiple interface implementation"
+          ]
+        },
+        {
+          "topicTitle": "Mixins",
+          "subtopics": [
+            "What is a mixin?",
+            "with keyword",
+            "Mixin constraints (on keyword)",
+            "Combining mixins, inheritance and interfaces"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain inheritance with an example.",
+          "Explain method overriding and the super keyword.",
+          "Difference between abstract class and interface in Dart.",
+          "What is a mixin and why is it used?",
+          "Explain how Dart supports implicit interfaces."
+        ],
+        "practical": [
+          "Create a parent and child class to demonstrate inheritance.",
+          "Create a program demonstrating method overriding.",
+          "Create a program using the super keyword to call a parent constructor.",
+          "Create an abstract class with an abstract method.",
+          "Create a class that implements multiple interfaces.",
+          "Create a mixin and use it in a class with the with keyword.",
+          "Create a class hierarchy for shapes with area calculation.",
+          "Create a vehicle class hierarchy demonstrating inheritance.",
+          "Create an animal class hierarchy demonstrating polymorphism.",
+          "Create a payment system using interfaces.",
+          "Create an employee hierarchy with manager and developer subclasses.",
+          "Create a mixin to add logging behavior to multiple classes.",
+          "Create a class combining inheritance and a mixin.",
+          "Create a library system using abstraction and inheritance.",
+          "Create a program demonstrating polymorphism with a list of objects."
+        ]
+      }
+    },
+    {
+      "chapterId": 10,
+      "chapterTitle": "Exception Handling & Generics",
+      "topics": [
+        {
+          "topicTitle": "Exception Handling",
+          "subtopics": [
+            "What is an exception?",
+            "try-catch-finally",
+            "Catching specific exceptions",
+            "throw keyword",
+            "Custom exceptions"
+          ]
+        },
+        {
+          "topicTitle": "Generics",
+          "subtopics": [
+            "Why generics are used",
+            "Generic classes",
+            "Generic methods",
+            "Bounded type parameters"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is an exception in Dart?",
+          "Explain try-catch-finally with an example.",
+          "How do you create a custom exception in Dart?",
+          "What are generics and why are they useful?",
+          "Explain bounded type parameters with an example."
+        ],
+        "practical": [
+          "Write a program to handle division by zero exception.",
+          "Write a program to handle invalid input using exceptions.",
+          "Write a program using try-catch-finally.",
+          "Write a program to catch multiple exception types.",
+          "Write a program to create and throw a custom exception.",
+          "Write a program to validate user age using exceptions.",
+          "Write a program to handle a RangeError.",
+          "Write a program to handle a FormatException.",
+          "Write a generic class to hold a value of any type.",
+          "Write a generic method to find the maximum of two values.",
+          "Write a generic class for a simple stack.",
+          "Write a generic class for a simple box/container.",
+          "Write a program for a calculator that handles invalid operations.",
+          "Write a program demonstrating nested try-catch blocks.",
+          "Write a program to handle multiple user input errors gracefully."
+        ]
+      }
+    },
+    {
+      "chapterId": 11,
+      "chapterTitle": "Asynchronous Programming in Dart",
+      "topics": [
+        {
+          "topicTitle": "Futures",
+          "subtopics": [
+            "What is asynchronous programming?",
+            "Future class",
+            "async and await keywords",
+            "Error handling in async code"
+          ]
+        },
+        {
+          "topicTitle": "Streams",
+          "subtopics": [
+            "What is a Stream?",
+            "Single-subscription vs broadcast streams",
+            "listen() method",
+            "async* and yield",
+            "StreamController"
+          ]
+        },
+        {
+          "topicTitle": "Isolates (Concept)",
+          "subtopics": [
+            "What is an isolate?",
+            "Why Dart uses isolates for concurrency",
+            "compute() function (overview)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is asynchronous programming and why is it needed?",
+          "Explain Future, async and await with an example.",
+          "Explain the difference between a Future and a Stream.",
+          "What is an isolate in Dart?",
+          "How do you handle errors in asynchronous code?"
+        ],
+        "practical": [
+          "Write a program using a Future to simulate a delayed task.",
+          "Write a program using async/await to fetch simulated data.",
+          "Write a program to handle errors in an async function using try-catch.",
+          "Write a program using Future.then() and Future.catchError().",
+          "Write a program using a Stream to emit a sequence of numbers.",
+          "Write a program to listen to a stream and print each value.",
+          "Write a program using async* to generate a stream.",
+          "Write a program using Future.wait() to run multiple futures.",
+          "Write a program simulating an API call with a delayed Future.",
+          "Write a program using a StreamController to broadcast events.",
+          "Write a program to filter values from a stream using where().",
+          "Write a program to transform stream values using map().",
+          "Write a program demonstrating sequential vs concurrent async tasks.",
+          "Write a program using a timer with Future.delayed().",
+          "Write a program combining multiple async operations into one result."
+        ]
+      }
+    },
+    {
+      "chapterId": 12,
+      "chapterTitle": "Final Dart Practice & Problem Solving",
+      "topics": [
+        {
+          "topicTitle": "Logic Building",
+          "subtopics": [
+            "Problem analysis",
+            "Breaking problems into smaller parts",
+            "Optimized thinking",
+            "Debugging basics"
+          ]
+        },
+        {
+          "topicTitle": "Dart Language Revision",
+          "subtopics": [
+            "Variables and data types",
+            "Functions",
+            "Collections",
+            "Null safety",
+            "OOP (classes, inheritance, mixins)",
+            "Exception handling",
+            "Generics",
+            "Asynchronous programming"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [],
+        "practical": [
+          "Create a menu-driven calculator.",
+          "Create a student marks management system.",
+          "Create an employee salary calculator.",
+          "Create a banking transaction program.",
+          "Create an inventory management system.",
+          "Create a number guessing game.",
+          "Create a quiz application using a list of questions.",
+          "Create a contact management system using a map.",
+          "Create a library record system using OOP.",
+          "Create a billing system.",
+          "Create a to-do list manager using classes and lists.",
+          "Create a simple chat-log simulator using Streams.",
+          "Create a weather-fetch simulator using Future and async/await.",
+          "Create a generic data repository class.",
+          "Create a custom exception driven validation system.",
+          "Create a program combining mixins, inheritance and interfaces.",
+          "Create a simple expense tracker using collections.",
+          "Create a JSON-like nested map and list data parser.",
+          "Create a console-based mini project combining OOP and async code.",
+          "Create a complete Dart command-line application."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Command-Line Student Management System",
+      "concepts": ["OOP", "Collections", "Exception Handling"],
+      "features": [
+        "Add student",
+        "View student",
+        "Search student",
+        "Update student",
+        "Delete student"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Console Banking System",
+      "concepts": ["OOP", "Exception Handling", "Generics"],
+      "features": [
+        "Create account",
+        "Deposit money",
+        "Withdraw money",
+        "Check balance",
+        "Transaction history"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Library Record System",
+      "concepts": ["Collections", "OOP", "Mixins"],
+      "features": ["Add books", "Issue books", "Return books", "Search books"]
+    },
+    {
+      "projectId": 4,
+      "projectTitle": "Async Data Fetch Simulator",
+      "concepts": ["Future", "Stream", "async/await"],
+      "features": [
+        "Simulate API calls",
+        "Stream data updates",
+        "Handle async errors",
+        "Combine multiple futures"
+      ]
+    },
+    {
+      "projectId": 5,
+      "projectTitle": "Generic Inventory/Billing System",
+      "concepts": ["Generics", "OOP", "Collections"],
+      "features": [
+        "Add products",
+        "Update stock",
+        "Generate bill",
+        "Store records"
+      ]
+    }
+  ]
+}

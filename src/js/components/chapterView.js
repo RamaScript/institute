@@ -30,7 +30,7 @@ export function renderChapterView(chapters, projects, courseId) {
         <section class="projects-section" id="course-projects">
             <div class="chapter-header-section">
                 <span class="chapter-badge">Final Projects</span>
-                <h1 class="chapter-title-main">C Language Projects</h1>
+                <h1 class="chapter-title-main">${getCourseTitle(courseId)} Projects</h1>
                 <p class="projects-intro">Build these projects after completing all chapters to solidify your skills.</p>
             </div>
             <div class="projects-grid">
@@ -98,6 +98,6 @@ function renderAssignment(assignment) {
 }
 
 function getCourseTitle(courseId) {
-    const titles = { 'c': 'C Programming', 'cpp': 'C++ Programming', 'dsa-cpp': 'DSA with C++' };
+    const titles = { 'c': 'C Programming', 'cpp': 'C++ Programming', 'dsa-cpp': 'DSA with C++', 'python': 'Python Programming', 'java': 'Java Programming', 'dart': 'Dart Programming', 'flutter': 'Flutter', 'basic-web-dev': 'Web Development' };
     return titles[courseId] || 'Course';
 }

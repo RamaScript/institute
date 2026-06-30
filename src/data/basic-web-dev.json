@@ -1,0 +1,1092 @@
+{
+  "courseId": "basic-web-dev",
+  "courseTitle": "Web Development (HTML, CSS & JavaScript)",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Introduction to Web Development & HTML Basics",
+      "topics": [
+        {
+          "topicTitle": "How the Web Works",
+          "subtopics": [
+            "What is a website vs web application?",
+            "Client-server model",
+            "Frontend vs backend",
+            "Role of browsers and rendering engines",
+            "HTTP/HTTPS basics"
+          ]
+        },
+        {
+          "topicTitle": "Introduction to HTML",
+          "subtopics": [
+            "What is HTML?",
+            "HTML document structure (doctype, html, head, body)",
+            "Tags, elements and attributes",
+            "Setting up a code editor (VS Code)",
+            "Comments in HTML",
+            "Saving and viewing HTML files in a browser"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain how a browser requests and renders a web page.",
+          "Difference between frontend and backend development.",
+          "Explain the basic structure of an HTML document.",
+          "What is the difference between an HTML tag and an element?",
+          "Explain the purpose of the <!DOCTYPE html> declaration."
+        ],
+        "practical": [
+          "Create a basic HTML file with the standard boilerplate structure.",
+          "Create a page displaying \"Hello World\" using a heading tag.",
+          "Create a page showing your name, age, and city using headings and paragraphs.",
+          "Add comments explaining each section of an HTML page.",
+          "Create a simple personal introduction page.",
+          "Create a page with multiple heading levels (h1 to h6).",
+          "Create a page displaying your daily schedule using paragraphs.",
+          "Create a page with a title shown in the browser tab.",
+          "Create a basic page describing your favorite hobby.",
+          "Create a page listing three facts about yourself.",
+          "Create an HTML page with a meta description tag.",
+          "Create a page demonstrating proper indentation and nesting.",
+          "Create a simple 'About Me' single page.",
+          "Create a page showing the structure of head and body separately.",
+          "Create a basic webpage skeleton for a future project."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "HTML Text, Lists & Links",
+      "topics": [
+        {
+          "topicTitle": "Text Formatting",
+          "subtopics": [
+            "Headings and paragraphs",
+            "Bold, italic, underline (strong, em)",
+            "Line breaks and horizontal rules",
+            "Block vs inline elements",
+            "Blockquote and special characters"
+          ]
+        },
+        {
+          "topicTitle": "Lists",
+          "subtopics": [
+            "Ordered lists (ol)",
+            "Unordered lists (ul)",
+            "Description lists (dl, dt, dd)",
+            "Nested lists"
+          ]
+        },
+        {
+          "topicTitle": "Links & Navigation",
+          "subtopics": [
+            "Anchor tag (a) and href",
+            "Absolute vs relative links",
+            "Linking to sections (id and #)",
+            "target attribute",
+            "Email and telephone links"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Difference between block-level and inline elements.",
+          "Explain ordered, unordered and description lists.",
+          "Difference between absolute and relative links.",
+          "Explain the purpose of the target attribute in an anchor tag.",
+          "How do you link to a specific section within the same page?"
+        ],
+        "practical": [
+          "Create a page using bold, italic and underlined text.",
+          "Create a numbered list of your top 5 favorite movies.",
+          "Create a bulleted list of your daily tasks.",
+          "Create a nested list showing a course syllabus.",
+          "Create a navigation menu using an unordered list of links.",
+          "Create links that open in a new tab using target=\"_blank\".",
+          "Create a page with an email link and a phone number link.",
+          "Create a page that links to different sections using anchor IDs.",
+          "Create a description list explaining HTML terms.",
+          "Create a multi-page site with links connecting each page.",
+          "Create a blockquote section with a famous quote.",
+          "Create a page demonstrating line breaks and horizontal rules.",
+          "Create a recipe page using an ordered list of steps.",
+          "Create a 'Back to top' link using section anchors.",
+          "Create a simple sitemap page linking to all other pages."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "HTML Forms, Tables & Media",
+      "topics": [
+        {
+          "topicTitle": "Forms",
+          "subtopics": [
+            "form tag and action/method attributes",
+            "input types (text, email, password, number, date, etc.)",
+            "textarea, select and option",
+            "checkbox and radio buttons",
+            "label, placeholder and required attributes",
+            "button vs submit"
+          ]
+        },
+        {
+          "topicTitle": "Tables",
+          "subtopics": [
+            "table, tr, td, th",
+            "thead, tbody, tfoot",
+            "colspan and rowspan",
+            "Table borders and structure"
+          ]
+        },
+        {
+          "topicTitle": "Media",
+          "subtopics": [
+            "img tag and alt attribute",
+            "audio and video tags",
+            "iframe",
+            "figure and figcaption"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain the purpose of the form tag and its action/method attributes.",
+          "Explain different input types available in HTML forms.",
+          "Explain the structure of an HTML table including thead and tbody.",
+          "Why is the alt attribute important for images?",
+          "Explain colspan and rowspan with an example."
+        ],
+        "practical": [
+          "Create a registration form with name, email and password fields.",
+          "Create a form with radio buttons for gender selection.",
+          "Create a form with checkboxes for selecting hobbies.",
+          "Create a form with a dropdown (select) for selecting a country.",
+          "Create a feedback form using a textarea.",
+          "Create a login form with required field validation attributes.",
+          "Create a table showing a class timetable.",
+          "Create a table with merged cells using colspan and rowspan.",
+          "Create a table displaying product price comparisons.",
+          "Insert an image with proper alt text on a page.",
+          "Embed a video on a webpage using the video tag.",
+          "Embed an audio file using the audio tag.",
+          "Embed a YouTube video using an iframe.",
+          "Create a contact form combining text, email and message fields.",
+          "Create a complete student admission form with multiple input types."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "HTML5 Semantic Elements & Advanced HTML",
+      "topics": [
+        {
+          "topicTitle": "Semantic HTML",
+          "subtopics": [
+            "Why semantic HTML matters",
+            "header, nav, main, section, article",
+            "aside, footer",
+            "div vs semantic tags"
+          ]
+        },
+        {
+          "topicTitle": "Accessibility & SEO Basics",
+          "subtopics": [
+            "Accessibility (a11y) basics",
+            "ARIA roles overview",
+            "Meta tags for SEO",
+            "Semantic structure benefits for SEO"
+          ]
+        },
+        {
+          "topicTitle": "Advanced HTML",
+          "subtopics": [
+            "HTML5 input types (range, color, date)",
+            "data attributes",
+            "HTML entities",
+            "Validating HTML"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is semantic HTML and why is it important?",
+          "Explain the difference between div and semantic elements like section/article.",
+          "Explain basic web accessibility practices.",
+          "Explain the purpose of meta tags for SEO.",
+          "Explain data attributes with an example."
+        ],
+        "practical": [
+          "Create a page layout using header, nav, main and footer tags.",
+          "Convert a div-based layout into a semantic HTML layout.",
+          "Create a blog page using article and section tags.",
+          "Create a page with an aside sidebar for related links.",
+          "Add proper alt text and ARIA labels for accessibility.",
+          "Add meta tags for title, description and keywords.",
+          "Create a page using HTML5 input types like range and color.",
+          "Use data attributes to store extra information on elements.",
+          "Validate an HTML page using an online validator and fix errors.",
+          "Create a semantic news article page layout.",
+          "Create an accessible navigation menu with proper roles.",
+          "Create a portfolio page structure using semantic tags.",
+          "Create a footer with copyright and social links.",
+          "Build a semantic landing page skeleton for a business.",
+          "Create a complete semantic HTML template ready for styling."
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "CSS Fundamentals & Selectors",
+      "topics": [
+        {
+          "topicTitle": "Introduction to CSS",
+          "subtopics": [
+            "What is CSS?",
+            "Inline, internal and external CSS",
+            "Linking a CSS file to HTML",
+            "CSS syntax (selector, property, value)"
+          ]
+        },
+        {
+          "topicTitle": "Selectors",
+          "subtopics": [
+            "Element, class and ID selectors",
+            "Grouping and descendant selectors",
+            "Pseudo-classes (:hover, :focus, :nth-child)",
+            "Pseudo-elements (::before, ::after)",
+            "Specificity and cascade"
+          ]
+        },
+        {
+          "topicTitle": "Colors, Units & Fonts",
+          "subtopics": [
+            "Color formats (named, hex, rgb, hsl)",
+            "Units (px, %, em, rem, vw, vh)",
+            "Font properties",
+            "Google Fonts"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Difference between inline, internal and external CSS.",
+          "Explain CSS specificity and the cascade.",
+          "Difference between class and ID selectors.",
+          "Explain the difference between em, rem and px units.",
+          "Explain pseudo-classes and pseudo-elements with examples."
+        ],
+        "practical": [
+          "Link an external CSS file to an HTML page.",
+          "Style a heading using element, class and ID selectors.",
+          "Create a page demonstrating different color formats.",
+          "Style a paragraph using em, rem and px units.",
+          "Create a button with a hover effect using :hover.",
+          "Style every alternate table row using :nth-child.",
+          "Add a decorative icon before text using ::before.",
+          "Import and apply a Google Font to a page.",
+          "Create a page demonstrating descendant and grouped selectors.",
+          "Style a navigation menu with class selectors.",
+          "Create a card component with custom font and color styling.",
+          "Demonstrate CSS specificity by overriding a class with an ID.",
+          "Create a styled blockquote using custom fonts and colors.",
+          "Style links with different colors for visited and hover states.",
+          "Build a fully styled simple landing page using selectors learned."
+        ]
+      }
+    },
+    {
+      "chapterId": 6,
+      "chapterTitle": "CSS Box Model, Display & Positioning",
+      "topics": [
+        {
+          "topicTitle": "Box Model",
+          "subtopics": [
+            "Content, padding, border, margin",
+            "box-sizing property",
+            "Margin collapsing"
+          ]
+        },
+        {
+          "topicTitle": "Display Property",
+          "subtopics": [
+            "block, inline, inline-block",
+            "none and visibility",
+            "Display in layout flow"
+          ]
+        },
+        {
+          "topicTitle": "Positioning",
+          "subtopics": [
+            "static, relative, absolute",
+            "fixed and sticky positioning",
+            "z-index and stacking context",
+            "float and clear (legacy layout)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain the CSS box model with a diagram description.",
+          "Explain the box-sizing property and its values.",
+          "Difference between relative, absolute and fixed positioning.",
+          "Explain z-index and stacking context.",
+          "Difference between display:none and visibility:hidden."
+        ],
+        "practical": [
+          "Create a box and visually adjust its padding, border and margin.",
+          "Demonstrate box-sizing: border-box on a styled card.",
+          "Create a sticky navigation bar using position: sticky.",
+          "Create a fixed footer using position: fixed.",
+          "Create overlapping elements demonstrating z-index.",
+          "Build a layout using floated elements (legacy technique).",
+          "Create a centered box using margin: auto.",
+          "Build a badge positioned absolutely over a card using relative parent.",
+          "Create a modal overlay using fixed positioning.",
+          "Demonstrate the difference between inline and block elements visually.",
+          "Create a hidden element toggled using display and visibility.",
+          "Build a two-column layout using float and clearfix.",
+          "Create a tooltip positioned absolutely near a button.",
+          "Build a sticky header that stays visible while scrolling.",
+          "Create a complete styled profile card using box model concepts."
+        ]
+      }
+    },
+    {
+      "chapterId": 7,
+      "chapterTitle": "CSS Flexbox",
+      "topics": [
+        {
+          "topicTitle": "Flex Container Properties",
+          "subtopics": [
+            "display: flex",
+            "flex-direction",
+            "justify-content",
+            "align-items",
+            "flex-wrap"
+          ]
+        },
+        {
+          "topicTitle": "Flex Item Properties",
+          "subtopics": [
+            "flex-grow, flex-shrink, flex-basis",
+            "align-self",
+            "order property"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain the difference between justify-content and align-items.",
+          "Explain flex-grow, flex-shrink and flex-basis.",
+          "What is flex-wrap and when is it used?",
+          "Explain the order property in Flexbox.",
+          "Why is Flexbox useful for building responsive layouts?"
+        ],
+        "practical": [
+          "Create a navigation bar using Flexbox.",
+          "Build a row of equally spaced cards using justify-content.",
+          "Center a div both vertically and horizontally using Flexbox.",
+          "Create a responsive card layout that wraps using flex-wrap.",
+          "Build a sidebar and content layout using Flexbox.",
+          "Create a pricing table layout using Flexbox.",
+          "Build a footer with evenly distributed columns using Flexbox.",
+          "Create a flex layout that reorders items using the order property.",
+          "Build a media object component (image + text) using Flexbox.",
+          "Create a responsive image gallery using Flexbox.",
+          "Build a form layout with aligned labels and inputs using Flexbox.",
+          "Create a sticky header and footer with a flexible body using Flexbox.",
+          "Build a comparison table layout using Flexbox.",
+          "Create a profile card with flex-aligned content sections.",
+          "Build a complete responsive landing page section using Flexbox."
+        ]
+      }
+    },
+    {
+      "chapterId": 8,
+      "chapterTitle": "CSS Grid",
+      "topics": [
+        {
+          "topicTitle": "Grid Container Properties",
+          "subtopics": [
+            "display: grid",
+            "grid-template-columns and rows",
+            "gap (row-gap, column-gap)",
+            "grid-template-areas"
+          ]
+        },
+        {
+          "topicTitle": "Grid Item Properties",
+          "subtopics": [
+            "grid-column and grid-row",
+            "Spanning cells",
+            "justify-items and align-items",
+            "Grid vs Flexbox: when to use which"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain the difference between CSS Grid and Flexbox.",
+          "Explain grid-template-columns with an example.",
+          "Explain grid-template-areas and its benefits.",
+          "How do you make a grid item span multiple columns?",
+          "Explain the gap property in CSS Grid."
+        ],
+        "practical": [
+          "Create a basic 3-column grid layout.",
+          "Build a photo gallery using CSS Grid.",
+          "Create a webpage layout (header, sidebar, main, footer) using grid-template-areas.",
+          "Build a responsive grid that adjusts columns based on screen size.",
+          "Create a grid item that spans two columns.",
+          "Create a grid item that spans two rows.",
+          "Build a dashboard layout using CSS Grid.",
+          "Create a magazine-style layout using CSS Grid.",
+          "Build a pricing comparison grid using CSS Grid.",
+          "Create a responsive product grid for an online store.",
+          "Build a calendar layout using CSS Grid.",
+          "Create a grid layout combining fixed and flexible (fr) columns.",
+          "Build a portfolio grid showcasing projects.",
+          "Create a nested grid (grid within a grid item).",
+          "Build a complete responsive page layout combining Grid and Flexbox."
+        ]
+      }
+    },
+    {
+      "chapterId": 9,
+      "chapterTitle": "Responsive Design & Advanced CSS",
+      "topics": [
+        {
+          "topicTitle": "Responsive Web Design",
+          "subtopics": [
+            "Mobile-first design approach",
+            "Media queries",
+            "Viewport meta tag",
+            "Responsive images",
+            "Breakpoints"
+          ]
+        },
+        {
+          "topicTitle": "CSS Transitions & Animations",
+          "subtopics": [
+            "transition property",
+            "@keyframes and animation property",
+            "transform (translate, rotate, scale)"
+          ]
+        },
+        {
+          "topicTitle": "Advanced CSS Concepts",
+          "subtopics": [
+            "CSS variables (custom properties)",
+            "CSS functions (calc, clamp, min, max)",
+            "CSS Frameworks overview (Bootstrap, Tailwind)",
+            "CSS preprocessors overview (Sass)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain mobile-first design and why it is recommended.",
+          "Explain media queries with an example.",
+          "Difference between CSS transitions and animations.",
+          "Explain CSS custom properties (variables) with an example.",
+          "Explain calc(), clamp(), min() and max() with examples."
+        ],
+        "practical": [
+          "Add the viewport meta tag and test responsiveness on mobile.",
+          "Create a responsive navbar that collapses on small screens.",
+          "Build a layout that changes from 3 columns to 1 column using media queries.",
+          "Create a button with a smooth hover transition.",
+          "Build a loading spinner using @keyframes animation.",
+          "Create a card that scales up on hover using transform.",
+          "Define and use CSS variables for a consistent color theme.",
+          "Build a responsive image gallery that adapts to screen size.",
+          "Create a fade-in animation for a page section on load.",
+          "Use calc() to create a layout with dynamic widths.",
+          "Build a dark mode toggle using CSS variables.",
+          "Create a responsive typography system using clamp().",
+          "Build an animated progress bar using CSS transitions.",
+          "Create a fully responsive pricing page with breakpoints.",
+          "Build a complete responsive landing page combining all CSS concepts learned."
+        ]
+      }
+    },
+    {
+      "chapterId": 10,
+      "chapterTitle": "JavaScript Fundamentals",
+      "topics": [
+        {
+          "topicTitle": "Introduction to JavaScript",
+          "subtopics": [
+            "What is JavaScript and why is it used?",
+            "Adding JS to HTML (inline, internal, external)",
+            "console.log() and the browser console",
+            "Comments in JavaScript"
+          ]
+        },
+        {
+          "topicTitle": "Variables & Data Types",
+          "subtopics": [
+            "var, let and const",
+            "Primitive data types",
+            "typeof operator",
+            "Type coercion basics"
+          ]
+        },
+        {
+          "topicTitle": "Operators",
+          "subtopics": [
+            "Arithmetic operators",
+            "Comparison operators (== vs ===)",
+            "Logical operators",
+            "Assignment operators",
+            "Template literals"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain the difference between var, let and const.",
+          "Explain different ways to include JavaScript in an HTML page.",
+          "Difference between == and === in JavaScript.",
+          "Explain type coercion with an example.",
+          "Explain template literals with an example."
+        ],
+        "practical": [
+          "Write a script to print \"Hello World\" using console.log().",
+          "Write a script declaring variables using let and const.",
+          "Write a script demonstrating the use of typeof on different values.",
+          "Write a script comparing == and === with different value pairs.",
+          "Write a script to add two numbers entered using prompt().",
+          "Write a script using template literals to display a formatted message.",
+          "Write a script demonstrating arithmetic operators.",
+          "Write a script demonstrating logical operators.",
+          "Write a script to swap two variables.",
+          "Write a script to calculate the area of a rectangle.",
+          "Write a script to calculate simple interest.",
+          "Write a script demonstrating type coercion (e.g., \"5\" + 5).",
+          "Write a script using alert(), prompt() and confirm().",
+          "Write a script to convert Celsius into Fahrenheit.",
+          "Write a script displaying multiple variable values in one console.log()."
+        ]
+      }
+    },
+    {
+      "chapterId": 11,
+      "chapterTitle": "Conditional Statements & Loops in JavaScript",
+      "topics": [
+        {
+          "topicTitle": "Decision Making",
+          "subtopics": [
+            "if, if-else, if-else-if",
+            "switch statement",
+            "Ternary operator",
+            "Truthy and falsy values"
+          ]
+        },
+        {
+          "topicTitle": "Loops",
+          "subtopics": [
+            "for loop",
+            "while and do-while loops",
+            "for...in and for...of",
+            "break and continue"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [],
+        "practical": [
+          "Write a script to check even or odd using if-else.",
+          "Write a script to find the largest of three numbers.",
+          "Write a script to check leap year.",
+          "Write a script using switch-case for a simple calculator.",
+          "Write a script using the ternary operator to check eligibility.",
+          "Write a script to print numbers from 1 to N using a for loop.",
+          "Write a script to print the multiplication table of a number.",
+          "Write a script to find the factorial of a number using a loop.",
+          "Write a script to check if a number is prime.",
+          "Write a script to print the Fibonacci series.",
+          "Write a script to reverse a number using a while loop.",
+          "Write a script to check palindrome number.",
+          "Write a script demonstrating break and continue in a loop.",
+          "Write a script using for...of to iterate over an array.",
+          "Write a script using for...in to iterate over object properties.",
+          "Write a script to print a star pattern using nested loops.",
+          "Write a script to print a pyramid pattern.",
+          "Write a script demonstrating truthy and falsy value checks.",
+          "Write a script grading students based on marks using if-else-if.",
+          "Write a script combining loops and conditionals to find prime numbers up to N."
+        ]
+      }
+    },
+    {
+      "chapterId": 12,
+      "chapterTitle": "Functions in JavaScript",
+      "topics": [
+        {
+          "topicTitle": "Function Basics",
+          "subtopics": [
+            "Function declaration",
+            "Function expression",
+            "Arrow functions",
+            "Parameters and default values",
+            "return statement"
+          ]
+        },
+        {
+          "topicTitle": "Scope & Closures",
+          "subtopics": [
+            "Global vs local scope",
+            "Block scope (let/const)",
+            "Closures",
+            "The this keyword (intro)"
+          ]
+        },
+        {
+          "topicTitle": "Advanced Functions",
+          "subtopics": [
+            "Higher-order functions",
+            "Callback functions",
+            "Immediately Invoked Function Expressions (IIFE)",
+            "Rest parameters"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Difference between function declaration and function expression.",
+          "Explain arrow functions and how they differ from regular functions.",
+          "What is a closure? Explain with an example.",
+          "Explain higher-order functions with an example.",
+          "What is an IIFE and why is it used?"
+        ],
+        "practical": [
+          "Write a function to add two numbers.",
+          "Write a function to check even or odd.",
+          "Write a function to find the factorial of a number.",
+          "Write an arrow function to square a number.",
+          "Write a function with default parameter values.",
+          "Write a function demonstrating a closure (a counter function).",
+          "Write a higher-order function that takes another function as a parameter.",
+          "Write a function using a callback to process an array.",
+          "Write an IIFE that runs immediately and logs a message.",
+          "Write a function using rest parameters to sum any number of values.",
+          "Write a function to find the largest of three numbers.",
+          "Write a function to convert Celsius into Fahrenheit.",
+          "Write a function-based simple calculator.",
+          "Write a function that returns another function.",
+          "Write a recursive function to calculate factorial."
+        ]
+      }
+    },
+    {
+      "chapterId": 13,
+      "chapterTitle": "Arrays & Objects in JavaScript",
+      "topics": [
+        {
+          "topicTitle": "Arrays",
+          "subtopics": [
+            "Creating and accessing arrays",
+            "Array methods (push, pop, shift, unshift, slice, splice)",
+            "map(), filter(), reduce(), forEach()",
+            "sort() and find()",
+            "Spread and rest with arrays"
+          ]
+        },
+        {
+          "topicTitle": "Objects",
+          "subtopics": [
+            "Creating objects (object literals)",
+            "Accessing and updating properties",
+            "Object methods",
+            "Object.keys(), Object.values(), Object.entries()",
+            "Spread operator with objects",
+            "Destructuring"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain map(), filter() and reduce() with examples.",
+          "Difference between slice() and splice().",
+          "Explain object destructuring with an example.",
+          "Explain the spread operator with arrays and objects.",
+          "Explain Object.keys(), Object.values() and Object.entries()."
+        ],
+        "practical": [
+          "Write a script to find the largest element in an array.",
+          "Write a script to sort an array without using sort().",
+          "Write a script using map() to create a list of squares.",
+          "Write a script using filter() to find even numbers in an array.",
+          "Write a script using reduce() to find the sum of an array.",
+          "Write a script to remove duplicates from an array.",
+          "Write a script to reverse an array.",
+          "Write a script to create an object representing a student.",
+          "Write a script to access and update properties of an object.",
+          "Write a script using Object.keys() to list all property names.",
+          "Write a script using destructuring to extract values from an object.",
+          "Write a script using destructuring to extract values from an array.",
+          "Write a script using the spread operator to merge two objects.",
+          "Write a script using the spread operator to merge two arrays.",
+          "Write a script to create an array of objects representing a class list and find the topper."
+        ]
+      }
+    },
+    {
+      "chapterId": 14,
+      "chapterTitle": "DOM Manipulation",
+      "topics": [
+        {
+          "topicTitle": "The Document Object Model",
+          "subtopics": [
+            "What is the DOM?",
+            "DOM tree structure",
+            "Selecting elements (getElementById, querySelector, querySelectorAll)",
+            "Difference between NodeList and HTMLCollection"
+          ]
+        },
+        {
+          "topicTitle": "Modifying the DOM",
+          "subtopics": [
+            "innerHTML and textContent",
+            "Changing styles via JS",
+            "Creating and appending elements",
+            "Removing elements",
+            "classList (add, remove, toggle)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is the DOM and how does JavaScript interact with it?",
+          "Difference between getElementById and querySelector.",
+          "Difference between innerHTML and textContent.",
+          "Explain classList methods (add, remove, toggle).",
+          "Explain how to create and append a new element to the DOM."
+        ],
+        "practical": [
+          "Select an element by ID and change its text content.",
+          "Select multiple elements using querySelectorAll and loop through them.",
+          "Change the background color of a div using JavaScript.",
+          "Create a new list item and append it to an existing list.",
+          "Remove an element from the DOM on a button click.",
+          "Toggle a CSS class to show/hide an element.",
+          "Build a script that dynamically updates a heading's text.",
+          "Create a script that adds a new paragraph with user-entered text.",
+          "Build a dynamic image gallery that changes the displayed image.",
+          "Create a script that highlights an element on click.",
+          "Build a counter that updates a number displayed in the DOM.",
+          "Create a script that dynamically builds a table from an array of data.",
+          "Build a simple accordion using classList toggling.",
+          "Create a script that disables a button after it is clicked.",
+          "Build a dynamic 'add item' list manager using DOM methods."
+        ]
+      }
+    },
+    {
+      "chapterId": 15,
+      "chapterTitle": "Events in JavaScript",
+      "topics": [
+        {
+          "topicTitle": "Event Handling",
+          "subtopics": [
+            "addEventListener()",
+            "Common events (click, mouseover, keydown, submit)",
+            "Event object",
+            "Removing event listeners"
+          ]
+        },
+        {
+          "topicTitle": "Event Behavior",
+          "subtopics": [
+            "Event bubbling and capturing",
+            "Event delegation",
+            "preventDefault() and stopPropagation()"
+          ]
+        },
+        {
+          "topicTitle": "Form Handling with JS",
+          "subtopics": [
+            "Handling form submission",
+            "Reading form input values",
+            "Basic form validation with JavaScript"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain addEventListener() with an example.",
+          "Explain event bubbling and event delegation.",
+          "Explain the purpose of preventDefault().",
+          "Explain how to handle a form submission using JavaScript.",
+          "Explain the difference between event bubbling and capturing."
+        ],
+        "practical": [
+          "Add a click event listener to a button that shows an alert.",
+          "Create a script that changes text color on mouseover.",
+          "Build a key-press detector that displays the key pressed.",
+          "Create a form that prevents default submission and validates input.",
+          "Build a simple to-do list using click events to add and remove items.",
+          "Create an event delegation example for a dynamically generated list.",
+          "Build a dropdown menu that opens/closes on click using events.",
+          "Create a script that validates an email field on form submit.",
+          "Build a live character counter for a textarea using the input event.",
+          "Create a simple image slider controlled by next/previous buttons.",
+          "Build a form that displays a success message after valid submission.",
+          "Create a double-click event that triggers an animation.",
+          "Build a calculator that performs operations using button click events.",
+          "Create a script demonstrating stopPropagation() on nested elements.",
+          "Build a complete interactive form with real-time validation feedback."
+        ]
+      }
+    },
+    {
+      "chapterId": 16,
+      "chapterTitle": "Asynchronous JavaScript",
+      "topics": [
+        {
+          "topicTitle": "Understanding Asynchronous Code",
+          "subtopics": [
+            "Synchronous vs asynchronous execution",
+            "Call stack and event loop (concept)",
+            "setTimeout() and setInterval()",
+            "Callback functions and callback hell"
+          ]
+        },
+        {
+          "topicTitle": "Promises",
+          "subtopics": [
+            "What is a Promise?",
+            "then(), catch(), finally()",
+            "Promise chaining",
+            "Promise.all()"
+          ]
+        },
+        {
+          "topicTitle": "async/await & Fetch API",
+          "subtopics": [
+            "async and await keywords",
+            "Error handling with try-catch in async code",
+            "fetch() API",
+            "Working with JSON responses"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain the difference between synchronous and asynchronous code.",
+          "Explain the event loop conceptually.",
+          "What is a Promise and what are its three states?",
+          "Explain async/await and how it simplifies working with Promises.",
+          "Explain how the fetch() API is used to make a network request."
+        ],
+        "practical": [
+          "Write a script using setTimeout() to delay a message.",
+          "Write a script using setInterval() to create a simple timer.",
+          "Write a script demonstrating a basic callback function.",
+          "Write a script creating and resolving a simple Promise.",
+          "Write a script chaining multiple .then() calls.",
+          "Write a script using Promise.all() to handle multiple promises.",
+          "Write a script using fetch() to get data from a public API.",
+          "Write a script using async/await to fetch and display data.",
+          "Write a script handling fetch errors using try-catch.",
+          "Build a script displaying fetched JSON data in the DOM.",
+          "Write a script simulating a loading spinner while data is fetched.",
+          "Build a search feature that fetches data from an API as the user types.",
+          "Write a script using async/await to fetch data from multiple endpoints sequentially.",
+          "Build a weather-fetching script using the fetch API.",
+          "Create a complete page that fetches and displays a list of users from an API."
+        ]
+      }
+    },
+    {
+      "chapterId": 17,
+      "chapterTitle": "ES6+ Features & Advanced JavaScript",
+      "topics": [
+        {
+          "topicTitle": "Modern JavaScript Syntax",
+          "subtopics": [
+            "let/const recap",
+            "Arrow functions recap",
+            "Template literals recap",
+            "Default and rest parameters"
+          ]
+        },
+        {
+          "topicTitle": "Classes & OOP in JavaScript",
+          "subtopics": [
+            "class syntax",
+            "Constructors",
+            "Inheritance with extends and super",
+            "Getters and setters",
+            "Static methods"
+          ]
+        },
+        {
+          "topicTitle": "Modules & Tooling",
+          "subtopics": [
+            "import and export (ES Modules)",
+            "JSON: JSON.stringify() and JSON.parse()",
+            "localStorage and sessionStorage",
+            "Intro to npm and package.json",
+            "Intro to the browser dev tools (Network, Console, Sources)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain the class syntax in JavaScript with an example.",
+          "Explain inheritance using extends and super.",
+          "Difference between localStorage and sessionStorage.",
+          "Explain JSON.stringify() and JSON.parse().",
+          "Explain the purpose of ES Modules (import/export)."
+        ],
+        "practical": [
+          "Create a class representing a Student with a constructor and a method.",
+          "Create a parent and child class demonstrating inheritance.",
+          "Create a class using getters and setters.",
+          "Create a class with a static method.",
+          "Write a script storing and retrieving data using localStorage.",
+          "Write a script storing form data temporarily using sessionStorage.",
+          "Write a script converting an object to a JSON string and back.",
+          "Create two JS files demonstrating import and export of a function.",
+          "Build a to-do list app that persists tasks using localStorage.",
+          "Create a class-based shape hierarchy (Shape, Circle, Rectangle).",
+          "Build a notes app that saves notes to localStorage.",
+          "Create a script combining classes and array methods to manage a list of objects.",
+          "Build a simple theme-switcher that remembers preference using localStorage.",
+          "Create a class demonstrating method overriding from a parent class.",
+          "Build a small project combining classes, modules and localStorage."
+        ]
+      }
+    },
+    {
+      "chapterId": 18,
+      "chapterTitle": "Final Web Development Practice & Capstone Projects",
+      "topics": [
+        {
+          "topicTitle": "Putting It All Together",
+          "subtopics": [
+            "Combining HTML structure, CSS styling and JS behavior",
+            "Project planning and wireframing basics",
+            "Debugging using browser DevTools",
+            "Deploying a static website (GitHub Pages/Netlify overview)"
+          ]
+        },
+        {
+          "topicTitle": "Full Stack Web Revision",
+          "subtopics": [
+            "HTML structure and semantics",
+            "CSS layout (Flexbox/Grid) and responsiveness",
+            "JavaScript logic, DOM and events",
+            "Asynchronous JavaScript and APIs",
+            "ES6+ and modern best practices"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [],
+        "practical": [
+          "Build a complete responsive personal portfolio website.",
+          "Build a complete responsive landing page for a fictional business.",
+          "Build a to-do list application with add, complete and delete features.",
+          "Build a weather app that fetches live data from a weather API.",
+          "Build a quiz application with score tracking using JavaScript.",
+          "Build a calculator app with a styled UI and working operations.",
+          "Build a recipe finder app that fetches data from a public food API.",
+          "Build a movie search app using a movie database API.",
+          "Build an expense tracker with add/remove entries and a running total.",
+          "Build a responsive restaurant website with a menu and contact form.",
+          "Build a blog homepage layout with article cards using Grid/Flexbox.",
+          "Build a multi-step registration form with JavaScript validation.",
+          "Build an image gallery with a lightbox effect using JavaScript.",
+          "Build a countdown timer app for an event.",
+          "Build a simple e-commerce product listing page with a cart counter.",
+          "Build a contact form that validates and shows success/error messages.",
+          "Build a dark/light theme toggle website using CSS variables and JS.",
+          "Build a responsive navbar with a hamburger menu for mobile.",
+          "Deploy one of your completed projects to GitHub Pages or Netlify.",
+          "Build and present a complete capstone website combining HTML, CSS and JavaScript."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Personal Portfolio Website",
+      "concepts": ["Semantic HTML", "Flexbox/Grid", "Responsive Design"],
+      "features": [
+        "About me section",
+        "Projects showcase",
+        "Skills section",
+        "Contact form",
+        "Mobile responsive layout"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "To-Do List Application",
+      "concepts": ["DOM Manipulation", "Events", "localStorage"],
+      "features": [
+        "Add and delete tasks",
+        "Mark tasks as complete",
+        "Persist tasks using localStorage",
+        "Filter tasks by status"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Weather Dashboard",
+      "concepts": ["Fetch API", "Promises/async-await", "DOM Manipulation"],
+      "features": [
+        "Search weather by city",
+        "Display live weather data",
+        "Show forecast details",
+        "Handle loading and error states"
+      ]
+    },
+    {
+      "projectId": 4,
+      "projectTitle": "E-Commerce Landing & Product Page",
+      "concepts": ["CSS Grid", "Flexbox", "JavaScript Cart Logic"],
+      "features": [
+        "Product listing grid",
+        "Add to cart functionality",
+        "Cart item counter",
+        "Responsive design for all devices"
+      ]
+    },
+    {
+      "projectId": 5,
+      "projectTitle": "Quiz & Score Tracker App",
+      "concepts": ["Arrays/Objects", "Events", "DOM Manipulation"],
+      "features": [
+        "Multiple choice questions",
+        "Score calculation",
+        "Timer for each question",
+        "Result summary screen"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1095 @@
+{
+  "courseId": "java",
+  "courseTitle": "Java Programming",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Introduction to Programming & Java Language",
+      "topics": [
+        {
+          "topicTitle": "Programming Fundamentals",
+          "subtopics": [
+            "What is Programming?",
+            "Why do we need programming?",
+            "Problem solving approach",
+            "Logical thinking in programming",
+            "Algorithm",
+            "Flowchart",
+            "Pseudocode",
+            "Converting real-life problems into programming logic"
+          ]
+        },
+        {
+          "topicTitle": "Introduction to Java",
+          "subtopics": [
+            "History of Java",
+            "Features of Java",
+            "Applications of Java",
+            "Why Java is platform independent (JVM, JRE, JDK)",
+            "Java program structure",
+            "main() method",
+            "Comments in Java",
+            "Compilation and execution process (javac, java)",
+            "Bytecode concept"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is programming? Explain with an example.",
+          "Explain algorithm and flowchart.",
+          "Explain JVM, JRE and JDK.",
+          "Explain the structure of a Java program.",
+          "Explain the compilation and execution process of Java."
+        ],
+        "practical": [
+          "Write a program to print \"Hello World\".",
+          "Write a program to print your name, age, and city.",
+          "Write a program to print multiple lines using System.out.println().",
+          "Create an algorithm to add two numbers.",
+          "Create a flowchart to check whether a number is positive or negative.",
+          "Write a program to print student details.",
+          "Write a program to print your college details.",
+          "Write a program to print a simple pattern using print statements.",
+          "Write a program to display your daily schedule.",
+          "Write a program to print a simple introduction.",
+          "Write a program with single-line and multi-line comments.",
+          "Write a program to display arithmetic expressions.",
+          "Write a program to print values of multiple variables.",
+          "Write a program to create a basic menu display.",
+          "Write a program showing the basic structure of a Java class."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Variables, Data Types & Type Casting",
+      "topics": [
+        {
+          "topicTitle": "Variables",
+          "subtopics": [
+            "What are variables?",
+            "Need of variables",
+            "Variable declaration and initialization",
+            "Naming rules",
+            "Scope of variables (local, instance, static)"
+          ]
+        },
+        {
+          "topicTitle": "Data Types",
+          "subtopics": [
+            "Primitive data types (byte, short, int, long, float, double, char, boolean)",
+            "Non-primitive data types overview",
+            "Size and range of data types",
+            "Default values of variables"
+          ]
+        },
+        {
+          "topicTitle": "Type Casting & Constants",
+          "subtopics": [
+            "Implicit (widening) casting",
+            "Explicit (narrowing) casting",
+            "final keyword for constants",
+            "Literals in Java"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a variable?",
+          "Explain primitive data types in Java.",
+          "Difference between variable and constant.",
+          "Explain local, instance and static variables.",
+          "Explain implicit and explicit type casting."
+        ],
+        "practical": [
+          "Write a program to store and print integer value.",
+          "Write a program to store and print float value.",
+          "Write a program to store and print character value.",
+          "Write a program using all primitive data types.",
+          "Find size of different data types using wrapper class constants.",
+          "Create a program to store student marks.",
+          "Create a program to store employee details.",
+          "Create a program to calculate simple interest.",
+          "Create a program to calculate compound interest.",
+          "Write a program to calculate area of circle.",
+          "Write a program to calculate area of rectangle.",
+          "Write a program to convert Celsius into Fahrenheit.",
+          "Write a program using the final keyword.",
+          "Write a program to demonstrate type casting.",
+          "Write a program to swap two numbers."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Input and Output in Java",
+      "topics": [
+        {
+          "topicTitle": "Output Statements",
+          "subtopics": [
+            "System.out.print()",
+            "System.out.println()",
+            "System.out.printf()",
+            "Format specifiers",
+            "Escape sequences"
+          ]
+        },
+        {
+          "topicTitle": "Input Handling",
+          "subtopics": [
+            "Scanner class",
+            "Taking user input (nextInt, nextLine, nextDouble)",
+            "BufferedReader (brief intro)",
+            "Multiple inputs",
+            "Input formatting"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain System.out.println() and System.out.printf().",
+          "Explain the Scanner class.",
+          "Explain format specifiers in printf().",
+          "Explain escape sequences.",
+          "Difference between nextInt() and nextLine()."
+        ],
+        "practical": [
+          "Write a program to take two numbers and print their sum.",
+          "Write a program to take three numbers and find average.",
+          "Write a program to take student details and display them.",
+          "Write a program to take employee salary and display it.",
+          "Write a program to calculate total marks.",
+          "Write a program to calculate percentage.",
+          "Write a program to calculate simple interest.",
+          "Write a program to calculate area of different shapes.",
+          "Write a program to take user age and display it.",
+          "Write a program to convert kilometers into meters.",
+          "Write a program to convert minutes into seconds.",
+          "Write a program to take product details and display bill.",
+          "Write a program to print formatted output using printf().",
+          "Write a program using different escape sequences.",
+          "Write a program for basic calculator input/output."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Operators in Java",
+      "topics": [
+        {
+          "topicTitle": "Arithmetic Operators",
+          "subtopics": [
+            "Addition (+)",
+            "Subtraction (-)",
+            "Multiplication (*)",
+            "Division (/)",
+            "Modulus (%)"
+          ]
+        },
+        {
+          "topicTitle": "Relational Operators",
+          "subtopics": [">", "<", ">=", "<=", "==", "!="]
+        },
+        {
+          "topicTitle": "Logical Operators",
+          "subtopics": ["AND (&&)", "OR (||)", "NOT (!)"]
+        },
+        {
+          "topicTitle": "Other Operators",
+          "subtopics": [
+            "Assignment operators",
+            "Increment/decrement operators",
+            "Ternary operator",
+            "Bitwise operators",
+            "instanceof operator",
+            "Operator precedence"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain arithmetic operators.",
+          "Explain relational operators.",
+          "Explain logical operators.",
+          "Explain operator precedence.",
+          "Explain increment and decrement operators."
+        ],
+        "practical": [
+          "Write a program for addition of two numbers.",
+          "Write a program for subtraction.",
+          "Write a program for multiplication.",
+          "Write a program for division.",
+          "Write a program to find remainder.",
+          "Write a program to swap two numbers.",
+          "Write a program to check greater number using operators.",
+          "Write a program to check even or odd.",
+          "Write a program to check positive or negative.",
+          "Write a program using logical operators.",
+          "Write a program using increment operator.",
+          "Write a program using decrement operator.",
+          "Write a program using ternary operator.",
+          "Write a program using bitwise operators.",
+          "Create a calculator using operators."
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "Conditional Statements in Java",
+      "topics": [
+        {
+          "topicTitle": "Decision Making",
+          "subtopics": [
+            "if statement",
+            "if-else statement",
+            "if-else-if ladder",
+            "Nested if statements"
+          ]
+        },
+        {
+          "topicTitle": "switch Statement",
+          "subtopics": [
+            "switch-case syntax",
+            "break in switch",
+            "default case",
+            "switch with strings"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain if-else statement.",
+          "Explain if-else-if ladder.",
+          "Explain switch statement with an example.",
+          "Difference between if-else and switch.",
+          "Why are conditional statements important?"
+        ],
+        "practical": [
+          "Write a program to check even or odd.",
+          "Write a program to check positive, negative or zero.",
+          "Write a program to find the largest of three numbers.",
+          "Write a program to check leap year.",
+          "Write a program to check eligibility for voting.",
+          "Write a program to grade a student based on marks.",
+          "Write a program to check vowel or consonant.",
+          "Write a program for a simple calculator using switch.",
+          "Write a program to check if a number is divisible by 5 and 11.",
+          "Write a program to check if a year is a century year.",
+          "Write a program to check character type (digit, alphabet, special).",
+          "Write a program to find the smallest of three numbers.",
+          "Write a program to check ticket pricing based on age.",
+          "Write a program using nested if statements.",
+          "Write a program to check triangle validity using sides."
+        ]
+      }
+    },
+    {
+      "chapterId": 6,
+      "chapterTitle": "Loops in Java",
+      "topics": [
+        {
+          "topicTitle": "for Loop",
+          "subtopics": [
+            "for loop syntax",
+            "Enhanced for-each loop",
+            "Nested for loops"
+          ]
+        },
+        {
+          "topicTitle": "while and do-while Loops",
+          "subtopics": [
+            "while loop syntax",
+            "do-while loop syntax",
+            "Infinite loops",
+            "Nested while loops"
+          ]
+        },
+        {
+          "topicTitle": "Loop Control Statements",
+          "subtopics": ["break", "continue", "Labeled break and continue"]
+        },
+        {
+          "topicTitle": "Loop Based Problem Solving",
+          "subtopics": [
+            "Pattern printing",
+            "Number series",
+            "Star patterns",
+            "Pyramid patterns"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [],
+        "patternPrinting": {
+          "totalQuestions": 25,
+          "patterns": [
+            {
+              "name": "Square Star Pattern",
+              "output": ["* * * *", "* * * *", "* * * *", "* * * *"]
+            },
+            {
+              "name": "Hollow Square",
+              "output": ["* * * *", "*     *", "*     *", "* * * *"]
+            },
+            {
+              "name": "Right Triangle Star",
+              "output": ["*", "* *", "* * *", "* * * *"]
+            },
+            {
+              "name": "Inverted Right Triangle",
+              "output": ["* * * *", "* * *", "* *", "*"]
+            },
+            {
+              "name": "Pyramid Star Pattern",
+              "output": ["   *", "  * *", " * * *", "* * * *"]
+            },
+            {
+              "name": "Inverted Pyramid",
+              "output": ["* * * *", " * * *", "  * *", "   *"]
+            },
+            {
+              "name": "Diamond Pattern",
+              "output": [
+                "   *",
+                "  * *",
+                " * * *",
+                "* * * *",
+                " * * *",
+                "  * *",
+                "   *"
+              ]
+            },
+            {
+              "name": "Hollow Diamond",
+              "output": [
+                "   *",
+                "  * *",
+                " *   *",
+                "*     *",
+                " *   *",
+                "  * *",
+                "   *"
+              ]
+            },
+            {
+              "name": "Half Pyramid Numbers",
+              "output": ["1", "1 2", "1 2 3", "1 2 3 4"]
+            },
+            {
+              "name": "Inverted Half Pyramid Numbers",
+              "output": ["1 2 3 4", "1 2 3", "1 2", "1"]
+            },
+            {
+              "name": "Floyd Triangle",
+              "output": ["1", "2 3", "4 5 6", "7 8 9 10"]
+            },
+            {
+              "name": "Number Pyramid",
+              "output": ["   1", "  2 2", " 3 3 3", "4 4 4 4"]
+            },
+            {
+              "name": "Inverted Number Pyramid",
+              "output": ["4 4 4 4", " 3 3 3", "  2 2", "   1"]
+            },
+            {
+              "name": "Mirrored Right Triangle",
+              "output": ["      *", "    * *", "  * * *", "* * * *"]
+            },
+            {
+              "name": "Hollow Right Triangle",
+              "output": ["*", "* *", "*   *", "* * * *"]
+            },
+            {
+              "name": "Butterfly Pattern",
+              "output": [
+                "*       *",
+                "* *   * *",
+                "* * * * *",
+                "* *   * *",
+                "*       *"
+              ]
+            },
+            {
+              "name": "Hollow Butterfly",
+              "output": [
+                "*       *",
+                "* *   * *",
+                "*   *   *",
+                "* *   * *",
+                "*       *"
+              ]
+            },
+            {
+              "name": "Zig Zag Pattern",
+              "output": ["  *   *   *", "*   *   *   *", "  *   *   *"]
+            },
+            {
+              "name": "0-1 Triangle",
+              "output": ["1", "0 1", "1 0 1", "0 1 0 1"]
+            },
+            {
+              "name": "Concentric Square",
+              "output": [
+                "4 4 4 4 4 4 4",
+                "4 3 3 3 3 3 4",
+                "4 3 2 2 2 3 4",
+                "4 3 2 1 2 3 4",
+                "4 3 2 2 2 3 4",
+                "4 3 3 3 3 3 4",
+                "4 4 4 4 4 4 4"
+              ]
+            },
+            {
+              "name": "X Pattern",
+              "output": [
+                "*     *",
+                " *   *",
+                "  * *",
+                "  * *",
+                " *   *",
+                "*     *"
+              ]
+            },
+            {
+              "name": "Plus Pattern",
+              "output": ["    *", "    *", "* * * * *", "    *", "    *"]
+            },
+            {
+              "name": "Cross Pattern",
+              "output": [
+                "*     *",
+                " *   *",
+                "  * *",
+                "  * *",
+                " *   *",
+                "*     *"
+              ]
+            },
+            {
+              "name": "Increasing-Decreasing Triangle",
+              "output": ["1", "1 2", "1 2 3", "1 2", "1"]
+            }
+          ]
+        },
+        "practical": [
+          "Write a program to print numbers from 1 to N.",
+          "Write a program to print even numbers up to N.",
+          "Write a program to print odd numbers up to N.",
+          "Write a program to find the sum of first N natural numbers.",
+          "Write a program to find the factorial of a number.",
+          "Write a program to print the multiplication table of a number.",
+          "Write a program to check if a number is prime.",
+          "Write a program to print all prime numbers up to N.",
+          "Write a program to reverse a number.",
+          "Write a program to check palindrome number.",
+          "Write a program to print Fibonacci series.",
+          "Write a program to print a square star pattern.",
+          "Write a program to print a triangle star pattern.",
+          "Write a program to print a pyramid pattern.",
+          "Write a program to print a number pattern.",
+          "Write a program using break statement.",
+          "Write a program using continue statement.",
+          "Write a program to count digits in a number.",
+          "Write a program to find sum of digits of a number.",
+          "Write a program using nested loops to print a grid."
+        ]
+      }
+    },
+    {
+      "chapterId": 7,
+      "chapterTitle": "Arrays in Java",
+      "topics": [
+        {
+          "topicTitle": "1D Arrays",
+          "subtopics": [
+            "What is an array?",
+            "Array declaration and initialization",
+            "Accessing array elements",
+            "Default array values",
+            "Array length property"
+          ]
+        },
+        {
+          "topicTitle": "2D Arrays",
+          "subtopics": [
+            "Declaring 2D arrays",
+            "Initializing 2D arrays",
+            "Traversing 2D arrays",
+            "Jagged arrays"
+          ]
+        },
+        {
+          "topicTitle": "Array Operations",
+          "subtopics": [
+            "Traversal",
+            "Searching",
+            "Sorting",
+            "Insertion and deletion (manual)"
+          ]
+        },
+        {
+          "topicTitle": "Arrays Utility Class",
+          "subtopics": [
+            "Arrays.sort()",
+            "Arrays.toString()",
+            "Arrays.fill()",
+            "Arrays.copyOf()"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is an array? Explain with an example.",
+          "Difference between 1D and 2D arrays.",
+          "Explain default values in arrays.",
+          "What is a jagged array?",
+          "Explain the Arrays utility class."
+        ],
+        "practical": [
+          "Write a program to find the largest element in an array.",
+          "Write a program to find the smallest element in an array.",
+          "Write a program to sort an array without using Arrays.sort().",
+          "Write a program to reverse an array.",
+          "Write a program to find the sum and average of an array.",
+          "Write a program to search an element using linear search.",
+          "Write a program to search an element using binary search.",
+          "Write a program to remove duplicates from an array.",
+          "Write a program to merge two arrays.",
+          "Write a program to find the second largest element.",
+          "Write a program to add two matrices using 2D arrays.",
+          "Write a program to multiply two matrices using 2D arrays.",
+          "Write a program to transpose a matrix.",
+          "Write a program to find frequency of elements in an array.",
+          "Write a program to rotate an array by N positions."
+        ]
+      }
+    },
+    {
+      "chapterId": 8,
+      "chapterTitle": "Strings in Java",
+      "topics": [
+        {
+          "topicTitle": "String Basics",
+          "subtopics": [
+            "What is a string?",
+            "String immutability",
+            "String pool concept",
+            "String vs StringBuilder vs StringBuffer"
+          ]
+        },
+        {
+          "topicTitle": "String Methods",
+          "subtopics": [
+            "length(), charAt()",
+            "substring(), indexOf()",
+            "toUpperCase(), toLowerCase()",
+            "equals() vs ==",
+            "split(), trim(), replace()"
+          ]
+        },
+        {
+          "topicTitle": "StringBuilder & StringBuffer",
+          "subtopics": [
+            "append(), insert(), reverse()",
+            "Mutable strings",
+            "Performance comparison with String"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a string in Java?",
+          "Why are strings immutable in Java?",
+          "Difference between String, StringBuilder and StringBuffer.",
+          "Difference between equals() and == for strings.",
+          "Explain the string pool concept."
+        ],
+        "practical": [
+          "Write a program to reverse a string.",
+          "Write a program to check palindrome string.",
+          "Write a program to count vowels in a string.",
+          "Write a program to count words in a sentence.",
+          "Write a program to find the length of a string without length().",
+          "Write a program to convert string to uppercase and lowercase.",
+          "Write a program to remove spaces from a string.",
+          "Write a program to check if two strings are anagrams.",
+          "Write a program to find the frequency of each character.",
+          "Write a program to replace a word in a sentence.",
+          "Write a program to split a sentence into words.",
+          "Write a program to join words into a sentence using StringBuilder.",
+          "Write a program to check if a string contains only digits.",
+          "Write a program to capitalize the first letter of each word.",
+          "Write a program to find the longest word in a sentence."
+        ]
+      }
+    },
+    {
+      "chapterId": 9,
+      "chapterTitle": "Methods & Recursion in Java",
+      "topics": [
+        {
+          "topicTitle": "Method Basics",
+          "subtopics": [
+            "What is a method?",
+            "Method declaration and calling",
+            "Return types",
+            "Method parameters",
+            "Call by value in Java"
+          ]
+        },
+        {
+          "topicTitle": "Method Overloading",
+          "subtopics": [
+            "What is method overloading?",
+            "Rules for overloading",
+            "Varargs (variable-length arguments)"
+          ]
+        },
+        {
+          "topicTitle": "Recursion",
+          "subtopics": [
+            "What is recursion?",
+            "Base condition",
+            "Recursive vs iterative approach",
+            "Call stack in recursion"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a method? Explain with an example.",
+          "Explain method overloading with an example.",
+          "What is recursion? Explain base condition.",
+          "Difference between recursion and iteration.",
+          "Explain call by value in Java."
+        ],
+        "practical": [
+          "Write a method to add two numbers.",
+          "Write a method to check even or odd.",
+          "Write a method to find the factorial of a number.",
+          "Write a method to check prime number.",
+          "Write overloaded methods to add int and double values.",
+          "Write a method using varargs to sum any number of values.",
+          "Write a method to find the largest of three numbers.",
+          "Write a recursive method to find factorial.",
+          "Write a recursive method to find Fibonacci series.",
+          "Write a recursive method to reverse a string.",
+          "Write a recursive method to check palindrome.",
+          "Write a recursive method to find GCD of two numbers.",
+          "Write a method to convert Celsius into Fahrenheit.",
+          "Write a method to calculate simple interest.",
+          "Write a method-based simple calculator."
+        ]
+      }
+    },
+    {
+      "chapterId": 10,
+      "chapterTitle": "Object Oriented Programming Basics",
+      "topics": [
+        {
+          "topicTitle": "Classes and Objects",
+          "subtopics": [
+            "Class definition",
+            "Object creation using new",
+            "Instance variables and methods",
+            "this keyword"
+          ]
+        },
+        {
+          "topicTitle": "Constructors",
+          "subtopics": [
+            "Default constructor",
+            "Parameterized constructor",
+            "Constructor overloading",
+            "this() constructor chaining"
+          ]
+        },
+        {
+          "topicTitle": "Access Modifiers",
+          "subtopics": [
+            "public",
+            "private",
+            "protected",
+            "default (package-private)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a class and an object?",
+          "Explain constructors and constructor overloading.",
+          "Explain the this keyword.",
+          "Explain access modifiers in Java.",
+          "Difference between instance and static members."
+        ],
+        "practical": [
+          "Create a class to represent a student and display details.",
+          "Create a class with a default and parameterized constructor.",
+          "Create a class demonstrating constructor overloading.",
+          "Create a class using the this keyword to resolve naming conflicts.",
+          "Create a class with private fields and public getters/setters.",
+          "Create a bank account class with deposit and withdraw methods.",
+          "Create an employee class with salary calculation.",
+          "Create a class hierarchy demonstrating access modifiers.",
+          "Create a rectangle class with area and perimeter methods.",
+          "Create a product class for billing.",
+          "Create a class demonstrating static variables and methods.",
+          "Create multiple objects of a class and compare their values.",
+          "Create a class to store and display book details.",
+          "Create a class to manage a simple to-do list.",
+          "Create a class to represent a circle with area and circumference."
+        ]
+      }
+    },
+    {
+      "chapterId": 11,
+      "chapterTitle": "Inheritance, Polymorphism & Abstraction",
+      "topics": [
+        {
+          "topicTitle": "Inheritance",
+          "subtopics": [
+            "What is inheritance?",
+            "extends keyword",
+            "Single and multilevel inheritance",
+            "super keyword",
+            "Method overriding"
+          ]
+        },
+        {
+          "topicTitle": "Polymorphism",
+          "subtopics": [
+            "Compile-time polymorphism (overloading)",
+            "Run-time polymorphism (overriding)",
+            "Dynamic method dispatch",
+            "instanceof operator"
+          ]
+        },
+        {
+          "topicTitle": "Abstraction & Interfaces",
+          "subtopics": [
+            "Abstract classes",
+            "Abstract methods",
+            "Interfaces",
+            "Difference between abstract class and interface",
+            "default and static methods in interfaces"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain inheritance with an example.",
+          "Explain method overriding and the super keyword.",
+          "Explain runtime polymorphism with an example.",
+          "Difference between abstract class and interface.",
+          "Why is multiple inheritance not supported through classes in Java?"
+        ],
+        "practical": [
+          "Create a parent and child class to demonstrate inheritance.",
+          "Create a program demonstrating multilevel inheritance.",
+          "Create a program demonstrating method overriding.",
+          "Create a program using the super keyword to call parent constructor.",
+          "Create an abstract class with an abstract method.",
+          "Create an interface and implement it in a class.",
+          "Create a program demonstrating multiple interface implementation.",
+          "Create a class hierarchy for shapes with area calculation.",
+          "Create a vehicle class hierarchy demonstrating inheritance.",
+          "Create a program demonstrating dynamic method dispatch.",
+          "Create an animal class hierarchy demonstrating polymorphism.",
+          "Create a payment system using interfaces.",
+          "Create an employee hierarchy with manager and developer subclasses.",
+          "Create a program using instanceof to check object types.",
+          "Create a library system using abstraction and inheritance."
+        ]
+      }
+    },
+    {
+      "chapterId": 12,
+      "chapterTitle": "Exception Handling in Java",
+      "topics": [
+        {
+          "topicTitle": "Introduction to Exceptions",
+          "subtopics": [
+            "What is an exception?",
+            "Checked vs unchecked exceptions",
+            "Exception hierarchy",
+            "Common built-in exceptions"
+          ]
+        },
+        {
+          "topicTitle": "Handling Exceptions",
+          "subtopics": [
+            "try-catch block",
+            "finally block",
+            "Catching multiple exceptions",
+            "throw and throws keywords",
+            "Custom exceptions"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is an exception in Java?",
+          "Difference between checked and unchecked exceptions.",
+          "Explain try-catch-finally with an example.",
+          "Difference between throw and throws.",
+          "How do you create a custom exception in Java?"
+        ],
+        "practical": [
+          "Write a program to handle division by zero exception.",
+          "Write a program to handle invalid input using exceptions.",
+          "Write a program using try-catch-finally.",
+          "Write a program to catch multiple exceptions.",
+          "Write a program to create and throw a custom exception.",
+          "Write a program to validate user age using exceptions.",
+          "Write a program to handle array index out of bounds exception.",
+          "Write a program to handle NumberFormatException.",
+          "Write a program to handle NullPointerException.",
+          "Write a program to handle ClassCastException.",
+          "Write a program for a calculator that handles invalid operations.",
+          "Write a program to validate input using a custom exception class.",
+          "Write a program demonstrating nested try-catch blocks.",
+          "Write a program using multi-catch syntax.",
+          "Write a program to handle multiple user input errors gracefully."
+        ]
+      }
+    },
+    {
+      "chapterId": 13,
+      "chapterTitle": "Collections Framework in Java",
+      "topics": [
+        {
+          "topicTitle": "Introduction to Collections",
+          "subtopics": [
+            "What is the Collections Framework?",
+            "Collection vs Collections",
+            "List, Set, Map interfaces overview"
+          ]
+        },
+        {
+          "topicTitle": "List & Set Implementations",
+          "subtopics": ["ArrayList", "LinkedList", "HashSet", "TreeSet"]
+        },
+        {
+          "topicTitle": "Map Implementations",
+          "subtopics": [
+            "HashMap",
+            "TreeMap",
+            "LinkedHashMap",
+            "Iterating over maps"
+          ]
+        },
+        {
+          "topicTitle": "Generics (Basics)",
+          "subtopics": [
+            "Why generics are used",
+            "Generic collections",
+            "Type safety"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is the Collections Framework in Java?",
+          "Difference between ArrayList and LinkedList.",
+          "Difference between HashMap and TreeMap.",
+          "Explain generics with an example.",
+          "Difference between List, Set and Map."
+        ],
+        "practical": [
+          "Write a program to create and use an ArrayList.",
+          "Write a program to sort an ArrayList.",
+          "Write a program to remove duplicates using a HashSet.",
+          "Write a program to store and access elements using a HashMap.",
+          "Write a program to iterate over a HashMap using entrySet().",
+          "Write a program to find the maximum value in an ArrayList.",
+          "Write a program to count word frequency using a HashMap.",
+          "Write a program using a TreeSet to store sorted unique elements.",
+          "Write a program using a TreeMap to store sorted key-value pairs.",
+          "Write a program to merge two ArrayLists.",
+          "Write a program to convert an array into an ArrayList.",
+          "Write a program to search an element in an ArrayList.",
+          "Write a program to create a student record system using a HashMap.",
+          "Write a program to implement a simple phonebook using a Map.",
+          "Write a program using generics to create a type-safe list."
+        ]
+      }
+    },
+    {
+      "chapterId": 14,
+      "chapterTitle": "File Handling & I/O in Java",
+      "topics": [
+        {
+          "topicTitle": "Introduction to File Handling",
+          "subtopics": [
+            "What is a file?",
+            "Need of file handling",
+            "java.io package overview",
+            "File class"
+          ]
+        },
+        {
+          "topicTitle": "Reading and Writing Files",
+          "subtopics": [
+            "FileWriter and FileReader",
+            "BufferedWriter and BufferedReader",
+            "Reading a file line by line",
+            "Appending data to a file"
+          ]
+        },
+        {
+          "topicTitle": "Streams (Basics)",
+          "subtopics": [
+            "InputStream and OutputStream",
+            "Byte streams vs character streams",
+            "try-with-resources"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is file handling?",
+          "Difference between byte stream and character stream.",
+          "Explain the File class in Java.",
+          "Explain try-with-resources and why it is useful.",
+          "Difference between FileReader and BufferedReader."
+        ],
+        "practical": [
+          "Create a file and write data into it.",
+          "Read data from a file.",
+          "Append data into an existing file.",
+          "Count number of characters in a file.",
+          "Count number of words in a file.",
+          "Count number of lines in a file.",
+          "Copy content from one file to another.",
+          "Search a word inside a file.",
+          "Replace a word in a file.",
+          "Store student details in a file.",
+          "Read student details from a file.",
+          "Store employee records in a file.",
+          "Update an employee record in a file.",
+          "Delete a record from a file.",
+          "Create a file-based record management system."
+        ]
+      }
+    },
+    {
+      "chapterId": 15,
+      "chapterTitle": "Final Java Practice & Problem Solving",
+      "topics": [
+        {
+          "topicTitle": "Logic Building",
+          "subtopics": [
+            "Problem analysis",
+            "Breaking problems into smaller parts",
+            "Optimized thinking",
+            "Debugging basics"
+          ]
+        },
+        {
+          "topicTitle": "Java Programming Revision",
+          "subtopics": [
+            "Variables",
+            "Conditions",
+            "Loops",
+            "Arrays",
+            "Methods",
+            "OOP (Classes, Inheritance, Polymorphism, Abstraction)",
+            "Exception Handling",
+            "Collections",
+            "File Handling"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [],
+        "practical": [
+          "Create a menu-driven calculator.",
+          "Create student marks management system.",
+          "Create employee salary calculator.",
+          "Create banking transaction program.",
+          "Create inventory management system.",
+          "Create number guessing game.",
+          "Create quiz application.",
+          "Create ATM simulation.",
+          "Create contact management system.",
+          "Create library record system.",
+          "Create billing system.",
+          "Create hospital management system.",
+          "Create railway ticket booking simulation.",
+          "Create password-based login system.",
+          "Create text file analyzer.",
+          "Create expense tracker.",
+          "Create attendance management system.",
+          "Create simple game using Java logic.",
+          "Create record management using OOP and file handling.",
+          "Create a complete mini project."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Student Management System",
+      "concepts": ["OOP", "Arrays/Collections", "File Handling"],
+      "features": [
+        "Add student",
+        "View student",
+        "Search student",
+        "Update student",
+        "Delete student"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Banking Management System",
+      "concepts": ["OOP", "Exception Handling", "File Handling"],
+      "features": [
+        "Create account",
+        "Deposit money",
+        "Withdraw money",
+        "Check balance",
+        "Transaction history"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Library Management System",
+      "concepts": ["Collections", "OOP", "File Handling"],
+      "features": ["Add books", "Issue books", "Return books", "Search books"]
+    },
+    {
+      "projectId": 4,
+      "projectTitle": "Quiz Application",
+      "concepts": ["Conditions", "Loops", "Methods", "Collections"],
+      "features": ["Multiple questions", "Score calculation", "Result storage"]
+    },
+    {
+      "projectId": 5,
+      "projectTitle": "Inventory/Billing Management System",
+      "concepts": ["OOP", "Collections", "File Handling"],
+      "features": [
+        "Add products",
+        "Update stock",
+        "Generate bill",
+        "Store records"
+      ]
+    }
+  ]
+}

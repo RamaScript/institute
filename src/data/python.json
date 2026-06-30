@@ -1,0 +1,1098 @@
+{
+  "courseId": "python",
+  "courseTitle": "Python Programming",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Introduction to Programming & Python Language",
+      "topics": [
+        {
+          "topicTitle": "Programming Fundamentals",
+          "subtopics": [
+            "What is Programming?",
+            "Why do we need programming?",
+            "Problem solving approach",
+            "Logical thinking in programming",
+            "Algorithm",
+            "Flowchart",
+            "Pseudocode",
+            "Converting real-life problems into programming logic"
+          ]
+        },
+        {
+          "topicTitle": "Introduction to Python",
+          "subtopics": [
+            "History of Python",
+            "Features of Python",
+            "Applications of Python",
+            "Advantages of Python",
+            "Python program structure",
+            "Interpreter vs compiler",
+            "Installing Python and IDEs",
+            "Comments in Python",
+            "Indentation rules",
+            "Running a Python script"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is programming? Explain with an example.",
+          "Explain algorithm and flowchart.",
+          "Explain the difference between compiler and interpreter.",
+          "Explain the structure of a Python program.",
+          "Explain why indentation is important in Python."
+        ],
+        "practical": [
+          "Write a program to print \"Hello World\".",
+          "Write a program to print your name, age, and city.",
+          "Write a program to print multiple lines using print().",
+          "Create an algorithm to add two numbers.",
+          "Create a flowchart to check whether a number is positive or negative.",
+          "Write a program to print student details.",
+          "Write a program to print your college details.",
+          "Write a program to print a simple pattern using print().",
+          "Write a program to display your daily schedule.",
+          "Write a program to print a simple introduction.",
+          "Write a program with single-line and multi-line comments.",
+          "Write a program to display arithmetic expressions.",
+          "Write a program to print values of multiple variables.",
+          "Write a program to create a basic menu display.",
+          "Write a program showing the basic structure of Python."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Variables, Data Types & Constants",
+      "topics": [
+        {
+          "topicTitle": "Variables",
+          "subtopics": [
+            "What are variables?",
+            "Need of variables",
+            "Variable declaration and assignment",
+            "Dynamic typing in Python",
+            "Naming rules",
+            "Scope of variables"
+          ]
+        },
+        {
+          "topicTitle": "Data Types",
+          "subtopics": [
+            "int",
+            "float",
+            "complex",
+            "str",
+            "bool",
+            "NoneType",
+            "type() function",
+            "Type conversion (casting)"
+          ]
+        },
+        {
+          "topicTitle": "Constants",
+          "subtopics": [
+            "What are constants?",
+            "Naming convention for constants",
+            "Using constants in Python (convention based)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a variable?",
+          "Explain different data types in Python.",
+          "Difference between variable and constant.",
+          "Explain local and global variables.",
+          "Explain rules for naming variables."
+        ],
+        "practical": [
+          "Write a program to store and print integer value.",
+          "Write a program to store and print float value.",
+          "Write a program to store and print string value.",
+          "Write a program using all basic data types.",
+          "Find type of different variables using type().",
+          "Create a program to store student marks.",
+          "Create a program to store employee details.",
+          "Create a program to calculate simple interest.",
+          "Create a program to calculate compound interest.",
+          "Write a program to calculate area of circle.",
+          "Write a program to calculate area of rectangle.",
+          "Write a program to convert Celsius into Fahrenheit.",
+          "Write a program using constants.",
+          "Write a program to demonstrate type conversion.",
+          "Write a program to swap two numbers."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Input and Output in Python",
+      "topics": [
+        {
+          "topicTitle": "Output Functions",
+          "subtopics": [
+            "print()",
+            "String formatting",
+            "f-strings",
+            "format() method",
+            "Escape sequences",
+            "sep and end parameters"
+          ]
+        },
+        {
+          "topicTitle": "Input Functions",
+          "subtopics": [
+            "input()",
+            "Taking user input",
+            "Type casting input values",
+            "Multiple inputs",
+            "Input formatting"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain print() function.",
+          "Explain input() function.",
+          "Explain f-strings with examples.",
+          "Explain escape sequences.",
+          "Difference between input and output functions."
+        ],
+        "practical": [
+          "Write a program to take two numbers and print their sum.",
+          "Write a program to take three numbers and find average.",
+          "Write a program to take student details and display them.",
+          "Write a program to take employee salary and display it.",
+          "Write a program to calculate total marks.",
+          "Write a program to calculate percentage.",
+          "Write a program to calculate simple interest.",
+          "Write a program to calculate area of different shapes.",
+          "Write a program to take user age and display it.",
+          "Write a program to convert kilometers into meters.",
+          "Write a program to convert minutes into seconds.",
+          "Write a program to take product details and display bill.",
+          "Write a program to print formatted output using f-strings.",
+          "Write a program using different escape sequences.",
+          "Write a program for basic calculator input/output."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Operators in Python",
+      "topics": [
+        {
+          "topicTitle": "Arithmetic Operators",
+          "subtopics": [
+            "Addition (+)",
+            "Subtraction (-)",
+            "Multiplication (*)",
+            "Division (/)",
+            "Floor Division (//)",
+            "Modulus (%)",
+            "Exponent (**)"
+          ]
+        },
+        {
+          "topicTitle": "Relational Operators",
+          "subtopics": [">", "<", ">=", "<=", "==", "!="]
+        },
+        {
+          "topicTitle": "Logical Operators",
+          "subtopics": ["AND (and)", "OR (or)", "NOT (not)"]
+        },
+        {
+          "topicTitle": "Other Operators",
+          "subtopics": [
+            "Assignment operators",
+            "Identity operators (is, is not)",
+            "Membership operators (in, not in)",
+            "Conditional (ternary) expression",
+            "Bitwise operators",
+            "Operator precedence"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain arithmetic operators.",
+          "Explain relational operators.",
+          "Explain logical operators.",
+          "Explain operator precedence.",
+          "Explain identity and membership operators."
+        ],
+        "practical": [
+          "Write a program for addition of two numbers.",
+          "Write a program for subtraction.",
+          "Write a program for multiplication.",
+          "Write a program for division.",
+          "Write a program to find remainder.",
+          "Write a program to swap two numbers.",
+          "Write a program to check greater number using operators.",
+          "Write a program to check even or odd.",
+          "Write a program to check positive or negative.",
+          "Write a program using logical operators.",
+          "Write a program using identity operators.",
+          "Write a program using membership operators.",
+          "Write a program using ternary expression.",
+          "Write a program using bitwise operators.",
+          "Create a calculator using operators."
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "Conditional Statements in Python",
+      "topics": [
+        {
+          "topicTitle": "Decision Making",
+          "subtopics": [
+            "if statement",
+            "if-else statement",
+            "if-elif-else ladder",
+            "Nested if statements"
+          ]
+        },
+        {
+          "topicTitle": "Conditional Expressions",
+          "subtopics": [
+            "Short-hand if",
+            "Short-hand if-else",
+            "Using logical operators in conditions"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain if-else statement.",
+          "Explain if-elif-else ladder.",
+          "Explain nested if statements.",
+          "What is a short-hand if-else?",
+          "Why are conditional statements important?"
+        ],
+        "practical": [
+          "Write a program to check even or odd.",
+          "Write a program to check positive, negative or zero.",
+          "Write a program to find the largest of three numbers.",
+          "Write a program to check leap year.",
+          "Write a program to check eligibility for voting.",
+          "Write a program to grade a student based on marks.",
+          "Write a program to check vowel or consonant.",
+          "Write a program for a simple calculator using if-elif.",
+          "Write a program to check if a number is divisible by 5 and 11.",
+          "Write a program to check if a year is a century year.",
+          "Write a program to check character type (digit, alphabet, special).",
+          "Write a program to find the smallest of three numbers.",
+          "Write a program to check ticket pricing based on age.",
+          "Write a program using nested if statements.",
+          "Write a program to check triangle validity using sides."
+        ]
+      }
+    },
+    {
+      "chapterId": 6,
+      "chapterTitle": "Loops in Python",
+      "topics": [
+        {
+          "topicTitle": "for Loop",
+          "subtopics": [
+            "for loop syntax",
+            "range() function",
+            "Looping through sequences",
+            "Nested for loops"
+          ]
+        },
+        {
+          "topicTitle": "while Loop",
+          "subtopics": [
+            "while loop syntax",
+            "Infinite loops",
+            "Nested while loops"
+          ]
+        },
+        {
+          "topicTitle": "Loop Control Statements",
+          "subtopics": ["break", "continue", "pass", "else clause with loops"]
+        },
+        {
+          "topicTitle": "Loop Based Problem Solving",
+          "subtopics": [
+            "Pattern printing",
+            "Number series",
+            "Star patterns",
+            "Pyramid patterns"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [],
+        "patternPrinting": {
+          "totalQuestions": 25,
+          "patterns": [
+            {
+              "name": "Square Star Pattern",
+              "output": ["* * * *", "* * * *", "* * * *", "* * * *"]
+            },
+            {
+              "name": "Hollow Square",
+              "output": ["* * * *", "*     *", "*     *", "* * * *"]
+            },
+            {
+              "name": "Right Triangle Star",
+              "output": ["*", "* *", "* * *", "* * * *"]
+            },
+            {
+              "name": "Inverted Right Triangle",
+              "output": ["* * * *", "* * *", "* *", "*"]
+            },
+            {
+              "name": "Pyramid Star Pattern",
+              "output": ["   *", "  * *", " * * *", "* * * *"]
+            },
+            {
+              "name": "Inverted Pyramid",
+              "output": ["* * * *", " * * *", "  * *", "   *"]
+            },
+            {
+              "name": "Diamond Pattern",
+              "output": [
+                "   *",
+                "  * *",
+                " * * *",
+                "* * * *",
+                " * * *",
+                "  * *",
+                "   *"
+              ]
+            },
+            {
+              "name": "Hollow Diamond",
+              "output": [
+                "   *",
+                "  * *",
+                " *   *",
+                "*     *",
+                " *   *",
+                "  * *",
+                "   *"
+              ]
+            },
+            {
+              "name": "Half Pyramid Numbers",
+              "output": ["1", "1 2", "1 2 3", "1 2 3 4"]
+            },
+            {
+              "name": "Inverted Half Pyramid Numbers",
+              "output": ["1 2 3 4", "1 2 3", "1 2", "1"]
+            },
+            {
+              "name": "Floyd Triangle",
+              "output": ["1", "2 3", "4 5 6", "7 8 9 10"]
+            },
+            {
+              "name": "Number Pyramid",
+              "output": ["   1", "  2 2", " 3 3 3", "4 4 4 4"]
+            },
+            {
+              "name": "Inverted Number Pyramid",
+              "output": ["4 4 4 4", " 3 3 3", "  2 2", "   1"]
+            },
+            {
+              "name": "Mirrored Right Triangle",
+              "output": ["      *", "    * *", "  * * *", "* * * *"]
+            },
+            {
+              "name": "Hollow Right Triangle",
+              "output": ["*", "* *", "*   *", "* * * *"]
+            },
+            {
+              "name": "Butterfly Pattern",
+              "output": [
+                "*       *",
+                "* *   * *",
+                "* * * * *",
+                "* *   * *",
+                "*       *"
+              ]
+            },
+            {
+              "name": "Hollow Butterfly",
+              "output": [
+                "*       *",
+                "* *   * *",
+                "*   *   *",
+                "* *   * *",
+                "*       *"
+              ]
+            },
+            {
+              "name": "Zig Zag Pattern",
+              "output": ["  *   *   *", "*   *   *   *", "  *   *   *"]
+            },
+            {
+              "name": "0-1 Triangle",
+              "output": ["1", "0 1", "1 0 1", "0 1 0 1"]
+            },
+            {
+              "name": "Concentric Square",
+              "output": [
+                "4 4 4 4 4 4 4",
+                "4 3 3 3 3 3 4",
+                "4 3 2 2 2 3 4",
+                "4 3 2 1 2 3 4",
+                "4 3 2 2 2 3 4",
+                "4 3 3 3 3 3 4",
+                "4 4 4 4 4 4 4"
+              ]
+            },
+            {
+              "name": "X Pattern",
+              "output": [
+                "*     *",
+                " *   *",
+                "  * *",
+                "  * *",
+                " *   *",
+                "*     *"
+              ]
+            },
+            {
+              "name": "Plus Pattern",
+              "output": ["    *", "    *", "* * * * *", "    *", "    *"]
+            },
+            {
+              "name": "Cross Pattern",
+              "output": [
+                "*     *",
+                " *   *",
+                "  * *",
+                "  * *",
+                " *   *",
+                "*     *"
+              ]
+            },
+            {
+              "name": "Increasing-Decreasing Triangle",
+              "output": ["1", "1 2", "1 2 3", "1 2", "1"]
+            }
+          ]
+        },
+        "practical": [
+          "Write a program to print numbers from 1 to N.",
+          "Write a program to print even numbers up to N.",
+          "Write a program to print odd numbers up to N.",
+          "Write a program to find the sum of first N natural numbers.",
+          "Write a program to find the factorial of a number.",
+          "Write a program to print the multiplication table of a number.",
+          "Write a program to check if a number is prime.",
+          "Write a program to print all prime numbers up to N.",
+          "Write a program to reverse a number.",
+          "Write a program to check palindrome number.",
+          "Write a program to print Fibonacci series.",
+          "Write a program to print a square star pattern.",
+          "Write a program to print a triangle star pattern.",
+          "Write a program to print a pyramid pattern.",
+          "Write a program to print a number pattern.",
+          "Write a program using break statement.",
+          "Write a program using continue statement.",
+          "Write a program to count digits in a number.",
+          "Write a program to find sum of digits of a number.",
+          "Write a program using nested loops to print a grid."
+        ]
+      }
+    },
+    {
+      "chapterId": 7,
+      "chapterTitle": "Functions in Python",
+      "topics": [
+        {
+          "topicTitle": "Function Basics",
+          "subtopics": [
+            "What is a function?",
+            "Need of functions",
+            "Function definition and calling",
+            "return statement",
+            "Function with no return value"
+          ]
+        },
+        {
+          "topicTitle": "Function Arguments",
+          "subtopics": [
+            "Positional arguments",
+            "Keyword arguments",
+            "Default arguments",
+            "Variable-length arguments (*args, **kwargs)"
+          ]
+        },
+        {
+          "topicTitle": "Scope and Lifetime",
+          "subtopics": [
+            "Local scope",
+            "Global scope",
+            "global keyword",
+            "Nested functions"
+          ]
+        },
+        {
+          "topicTitle": "Advanced Function Concepts",
+          "subtopics": [
+            "Lambda functions",
+            "map(), filter(), reduce()",
+            "Recursion (brief intro)",
+            "Docstrings"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a function? Explain with an example.",
+          "Explain different types of function arguments.",
+          "Difference between local and global variables.",
+          "Explain lambda functions.",
+          "Explain *args and **kwargs."
+        ],
+        "practical": [
+          "Write a function to add two numbers.",
+          "Write a function to check even or odd.",
+          "Write a function to find the factorial of a number.",
+          "Write a function to check prime number.",
+          "Write a function with default arguments.",
+          "Write a function using keyword arguments.",
+          "Write a function using *args to sum any number of values.",
+          "Write a function using **kwargs to print details.",
+          "Write a function to find the largest of three numbers.",
+          "Write a lambda function to square a number.",
+          "Write a program using map() to double a list of numbers.",
+          "Write a program using filter() to find even numbers.",
+          "Write a function to convert Celsius into Fahrenheit.",
+          "Write a function to calculate simple interest.",
+          "Write a function-based simple calculator."
+        ]
+      }
+    },
+    {
+      "chapterId": 8,
+      "chapterTitle": "Recursion in Python",
+      "topics": [
+        {
+          "topicTitle": "Recursion Basics",
+          "subtopics": [
+            "What is recursion?",
+            "Base condition",
+            "Recursive vs iterative approach",
+            "Call stack in recursion"
+          ]
+        },
+        {
+          "topicTitle": "Recursive Problem Solving",
+          "subtopics": [
+            "Recursion tree",
+            "Tail recursion (concept)",
+            "Recursion limits in Python (sys.setrecursionlimit)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is recursion?",
+          "Explain base condition in recursion.",
+          "Difference between recursion and iteration.",
+          "What happens if base condition is missing?",
+          "Explain the call stack in recursion."
+        ],
+        "practical": [
+          "Write a recursive function to find factorial.",
+          "Write a recursive function to find Fibonacci series.",
+          "Write a recursive function to find sum of digits.",
+          "Write a recursive function to reverse a string.",
+          "Write a recursive function to check palindrome.",
+          "Write a recursive function to find power of a number.",
+          "Write a recursive function for sum of first N numbers.",
+          "Write a recursive function to find GCD of two numbers.",
+          "Write a recursive function to count digits of a number.",
+          "Write a recursive function to find maximum of a list.",
+          "Write a recursive binary search function.",
+          "Write a recursive function for Tower of Hanoi.",
+          "Write a recursive function to print numbers from N to 1.",
+          "Write a recursive function to multiply two numbers.",
+          "Write a recursive function to flatten a nested list."
+        ]
+      }
+    },
+    {
+      "chapterId": 9,
+      "chapterTitle": "Strings in Python",
+      "topics": [
+        {
+          "topicTitle": "String Basics",
+          "subtopics": [
+            "What is a string?",
+            "String indexing and slicing",
+            "String immutability",
+            "String concatenation and repetition"
+          ]
+        },
+        {
+          "topicTitle": "String Methods",
+          "subtopics": [
+            "upper(), lower()",
+            "strip(), split(), join()",
+            "find(), replace()",
+            "startswith(), endswith()",
+            "len() with strings"
+          ]
+        },
+        {
+          "topicTitle": "String Formatting",
+          "subtopics": ["f-strings", "format() method", "% formatting (legacy)"]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a string in Python?",
+          "Explain string slicing with examples.",
+          "Why are strings immutable in Python?",
+          "Explain split() and join() methods.",
+          "Explain different string formatting techniques."
+        ],
+        "practical": [
+          "Write a program to reverse a string.",
+          "Write a program to check palindrome string.",
+          "Write a program to count vowels in a string.",
+          "Write a program to count words in a sentence.",
+          "Write a program to find the length of a string without len().",
+          "Write a program to convert string to uppercase and lowercase.",
+          "Write a program to remove spaces from a string.",
+          "Write a program to check if two strings are anagrams.",
+          "Write a program to find the frequency of each character.",
+          "Write a program to replace a word in a sentence.",
+          "Write a program to split a sentence into words.",
+          "Write a program to join a list of words into a sentence.",
+          "Write a program to check if a string contains only digits.",
+          "Write a program to capitalize the first letter of each word.",
+          "Write a program to find the longest word in a sentence."
+        ]
+      }
+    },
+    {
+      "chapterId": 10,
+      "chapterTitle": "Lists, Tuples & Sets",
+      "topics": [
+        {
+          "topicTitle": "Lists",
+          "subtopics": [
+            "Creating lists",
+            "Indexing and slicing",
+            "List methods (append, insert, remove, pop, sort, reverse)",
+            "List comprehension",
+            "Nested lists"
+          ]
+        },
+        {
+          "topicTitle": "Tuples",
+          "subtopics": [
+            "Creating tuples",
+            "Tuple immutability",
+            "Tuple methods",
+            "Tuple unpacking"
+          ]
+        },
+        {
+          "topicTitle": "Sets",
+          "subtopics": [
+            "Creating sets",
+            "Set operations (union, intersection, difference)",
+            "Set methods (add, remove, discard)",
+            "Frozen sets"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a list? Explain with an example.",
+          "Difference between list and tuple.",
+          "Explain set operations with examples.",
+          "What is list comprehension?",
+          "Why are tuples immutable?"
+        ],
+        "practical": [
+          "Write a program to find the largest element in a list.",
+          "Write a program to find the smallest element in a list.",
+          "Write a program to sort a list without using sort().",
+          "Write a program to remove duplicates from a list.",
+          "Write a program to find the sum and average of a list.",
+          "Write a program to reverse a list.",
+          "Write a program to merge two lists.",
+          "Write a program to find common elements in two lists using sets.",
+          "Write a program using list comprehension to create a list of squares.",
+          "Write a program to unpack a tuple into variables.",
+          "Write a program to count occurrences of an element in a list.",
+          "Write a program to find the second largest element in a list.",
+          "Write a program to perform union and intersection of two sets.",
+          "Write a program to convert a list into a set and a tuple.",
+          "Write a program to rotate a list by N positions."
+        ]
+      }
+    },
+    {
+      "chapterId": 11,
+      "chapterTitle": "Dictionaries in Python",
+      "topics": [
+        {
+          "topicTitle": "Dictionary Basics",
+          "subtopics": [
+            "What is a dictionary?",
+            "Creating dictionaries",
+            "Accessing and updating values",
+            "Key-value pair concept"
+          ]
+        },
+        {
+          "topicTitle": "Dictionary Methods",
+          "subtopics": [
+            "keys(), values(), items()",
+            "get(), pop(), update()",
+            "Looping through dictionaries",
+            "Nested dictionaries"
+          ]
+        },
+        {
+          "topicTitle": "Dictionary Comprehension",
+          "subtopics": [
+            "Creating dictionaries using comprehension",
+            "Filtering dictionaries"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a dictionary in Python?",
+          "Difference between list and dictionary.",
+          "Explain dictionary methods with examples.",
+          "What is dictionary comprehension?",
+          "Explain nested dictionaries."
+        ],
+        "practical": [
+          "Write a program to create a dictionary of student marks.",
+          "Write a program to update a value in a dictionary.",
+          "Write a program to delete a key from a dictionary.",
+          "Write a program to merge two dictionaries.",
+          "Write a program to find the maximum value in a dictionary.",
+          "Write a program to count word frequency using a dictionary.",
+          "Write a program to loop through a dictionary and print key-value pairs.",
+          "Write a program using dictionary comprehension to create squares.",
+          "Write a program to check if a key exists in a dictionary.",
+          "Write a program to create a nested dictionary for employee records.",
+          "Write a program to sort a dictionary by values.",
+          "Write a program to convert two lists into a dictionary.",
+          "Write a program to create a phonebook using a dictionary.",
+          "Write a program to find common keys between two dictionaries.",
+          "Write a program to store and search student records using a dictionary."
+        ]
+      }
+    },
+    {
+      "chapterId": 12,
+      "chapterTitle": "File Handling in Python",
+      "topics": [
+        {
+          "topicTitle": "Introduction to File Handling",
+          "subtopics": [
+            "What is a file?",
+            "Need of file handling",
+            "Types of files",
+            "Text files",
+            "Binary files",
+            "File modes"
+          ]
+        },
+        {
+          "topicTitle": "File Operations",
+          "subtopics": [
+            "Opening a file (open())",
+            "Closing a file (close())",
+            "Reading a file (read, readline, readlines)",
+            "Writing a file (write, writelines)",
+            "Appending data"
+          ]
+        },
+        {
+          "topicTitle": "Working with Files Safely",
+          "subtopics": [
+            "with statement",
+            "File modes: r, w, a, r+, w+, a+",
+            "Working with CSV files (basic)",
+            "Exception handling with files"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is file handling?",
+          "Why do we need files?",
+          "Difference between text file and binary file.",
+          "Explain file modes in Python.",
+          "Explain the use of the with statement in file handling."
+        ],
+        "practical": [
+          "Create a file and write data into it.",
+          "Read data from a file.",
+          "Append data into an existing file.",
+          "Count number of characters in a file.",
+          "Count number of words in a file.",
+          "Count number of lines in a file.",
+          "Copy content from one file to another.",
+          "Search a word inside a file.",
+          "Replace a word in a file.",
+          "Store student details in a file.",
+          "Read student details from a file.",
+          "Store employee records in a file.",
+          "Update an employee record in a file.",
+          "Delete a record from a file.",
+          "Create a file-based record management system."
+        ]
+      }
+    },
+    {
+      "chapterId": 13,
+      "chapterTitle": "Exception Handling in Python",
+      "topics": [
+        {
+          "topicTitle": "Introduction to Exceptions",
+          "subtopics": [
+            "What is an exception?",
+            "Difference between syntax error and exception",
+            "Common built-in exceptions"
+          ]
+        },
+        {
+          "topicTitle": "Handling Exceptions",
+          "subtopics": [
+            "try-except block",
+            "else clause",
+            "finally clause",
+            "Catching multiple exceptions",
+            "raise keyword",
+            "Custom exceptions"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is an exception in Python?",
+          "Explain try-except-finally with an example.",
+          "Difference between syntax error and runtime exception.",
+          "How do you raise a custom exception?",
+          "Explain common built-in exceptions in Python."
+        ],
+        "practical": [
+          "Write a program to handle division by zero exception.",
+          "Write a program to handle invalid input using exceptions.",
+          "Write a program using try-except-finally.",
+          "Write a program to catch multiple exceptions.",
+          "Write a program to raise a custom exception.",
+          "Write a program to validate user age using exceptions.",
+          "Write a program to handle file not found exception.",
+          "Write a program to handle index out of range exception.",
+          "Write a program to handle type errors.",
+          "Write a program to handle key errors in a dictionary.",
+          "Write a program for a calculator that handles invalid operations.",
+          "Write a program to validate input using a custom exception class.",
+          "Write a program to log exceptions to a file.",
+          "Write a program demonstrating nested try-except blocks.",
+          "Write a program to handle multiple user input errors gracefully."
+        ]
+      }
+    },
+    {
+      "chapterId": 14,
+      "chapterTitle": "Object Oriented Programming in Python",
+      "topics": [
+        {
+          "topicTitle": "Classes and Objects",
+          "subtopics": [
+            "Class definition",
+            "Object creation",
+            "self keyword",
+            "Constructor (__init__)",
+            "Instance variables and methods"
+          ]
+        },
+        {
+          "topicTitle": "OOP Pillars",
+          "subtopics": [
+            "Encapsulation",
+            "Inheritance (single, multiple, multilevel)",
+            "Polymorphism (method overriding, duck typing)",
+            "Abstraction (abstract classes)"
+          ]
+        },
+        {
+          "topicTitle": "Advanced OOP Concepts",
+          "subtopics": [
+            "Class variables vs instance variables",
+            "Static methods and class methods",
+            "Magic/dunder methods (__str__, __len__)",
+            "Operator overloading"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is a class and an object?",
+          "Explain the four pillars of OOP.",
+          "Difference between class method and static method.",
+          "Explain inheritance with an example.",
+          "Explain method overriding and polymorphism."
+        ],
+        "practical": [
+          "Create a class to represent a student and display details.",
+          "Create a class with a constructor to initialize values.",
+          "Create a class demonstrating encapsulation using private variables.",
+          "Create a parent and child class to demonstrate inheritance.",
+          "Create a program demonstrating multiple inheritance.",
+          "Create a program demonstrating method overriding.",
+          "Create an abstract class using the abc module.",
+          "Create a class with static and class methods.",
+          "Create a class to overload the + operator.",
+          "Create a bank account class with deposit and withdraw methods.",
+          "Create an employee management system using classes.",
+          "Create a class hierarchy for shapes with area calculation.",
+          "Create a library management system using OOP.",
+          "Create a vehicle class hierarchy demonstrating inheritance.",
+          "Create a class using __str__ and __len__ dunder methods."
+        ]
+      }
+    },
+    {
+      "chapterId": 15,
+      "chapterTitle": "Modules, Packages & Final Python Practice",
+      "topics": [
+        {
+          "topicTitle": "Modules and Packages",
+          "subtopics": [
+            "What is a module?",
+            "Importing modules",
+            "Creating custom modules",
+            "Python Standard Library overview",
+            "What is a package?",
+            "pip and installing packages"
+          ]
+        },
+        {
+          "topicTitle": "Useful Standard Modules",
+          "subtopics": [
+            "math module",
+            "random module",
+            "datetime module",
+            "os module (basics)"
+          ]
+        },
+        {
+          "topicTitle": "Python Programming Revision",
+          "subtopics": [
+            "Variables",
+            "Conditions",
+            "Loops",
+            "Functions",
+            "Lists, Tuples, Sets, Dictionaries",
+            "File Handling",
+            "Exception Handling",
+            "OOP"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [],
+        "practical": [
+          "Create a custom module and import it into another program.",
+          "Write a program using the math module.",
+          "Write a program using the random module to generate OTP.",
+          "Write a program using the datetime module to display current date.",
+          "Create a menu-driven calculator.",
+          "Create a student marks management system.",
+          "Create an employee salary calculator.",
+          "Create a banking transaction program.",
+          "Create an inventory management system.",
+          "Create a number guessing game.",
+          "Create a quiz application.",
+          "Create an ATM simulation.",
+          "Create a contact management system.",
+          "Create a library record system.",
+          "Create a billing system.",
+          "Create a hospital management system.",
+          "Create a password-based login system.",
+          "Create a text file analyzer.",
+          "Create an expense tracker.",
+          "Create a complete mini project combining OOP and file handling."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Student Management System",
+      "concepts": ["Variables", "Functions", "OOP", "File Handling"],
+      "features": [
+        "Add student",
+        "View student",
+        "Search student",
+        "Update student",
+        "Delete student"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Banking Management System",
+      "concepts": ["Functions", "OOP", "Exception Handling", "File Handling"],
+      "features": [
+        "Create account",
+        "Deposit money",
+        "Withdraw money",
+        "Check balance",
+        "Transaction history"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Library Management System",
+      "concepts": ["Lists/Dictionaries", "OOP", "File Handling"],
+      "features": ["Add books", "Issue books", "Return books", "Search books"]
+    },
+    {
+      "projectId": 4,
+      "projectTitle": "Quiz Application",
+      "concepts": ["Conditions", "Loops", "Functions", "File Handling"],
+      "features": ["Multiple questions", "Score calculation", "Result storage"]
+    },
+    {
+      "projectId": 5,
+      "projectTitle": "Inventory/Billing Management System",
+      "concepts": ["Dictionaries", "OOP", "File Handling"],
+      "features": [
+        "Add products",
+        "Update stock",
+        "Generate bill",
+        "Store records"
+      ]
+    }
+  ]
+}
