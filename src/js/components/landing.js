@@ -33,6 +33,7 @@ const icons = {
     user: `<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5.5" r="3" stroke="currentColor" stroke-width="1.3"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>`,
     pin: `<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1.5c-3 0-5 2.2-5 5.5S8 14.5 8 14.5s5-4.2 5-7.5-2-5.5-5-5.5z" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="6.5" r="1.5" stroke="currentColor" stroke-width="1.3"/></svg>`,
     mail: `<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1.5 4.5l6.5 4 6.5-4v9H1.5v-9z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M1.5 4.5l6.5 4 6.5-4" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>`,
+    messageDots: `<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><circle cx="8" cy="10" r=".5" fill="currentColor"/><circle cx="12" cy="10" r=".5" fill="currentColor"/><circle cx="16" cy="10" r=".5" fill="currentColor"/></svg>`,
 };
 
 /* ─── Navbar ─────────────────────────────────────────────── */
@@ -251,9 +252,15 @@ function buildAbout() {
 /* ─── Testimonials ───────────────────────────────────────── */
 function buildTestimonials() {
     const reviews = [
-        { initials: 'JS', name: 'John Smith',   role: 'Backend Engineer',   stars: 5, text: "I never understood pointers until I took the C course here. The way they visualize memory and walk through each dereference — it finally clicked. Night and day difference." },
-        { initials: 'AL', name: 'Anita Lee',    role: 'Systems Architect',  stars: 5, text: "The C++ course helped me crack my dream systems interview. The OOP and memory model explanations are the clearest I've ever seen anywhere online." },
-        { initials: 'MK', name: 'Mike K.',      role: 'CS Graduate',        stars: 5, text: "Finally, a course that treats you like an adult. No hand-holding, no fluff — just clear, deep engineering concepts. The DSA section is absolute gold." },
+        { initials: 'SA', name: 'Syed Alina',      role: 'Web Developer',            stars: 5, text: "The Web Dev course gave me everything I needed to land my first internship. From HTML semantics to responsive layouts — every concept clicked. The project-based approach is incredible." },
+        { initials: 'V',  name: 'Vivan',            role: 'Full-Stack Developer',     stars: 5, text: "I took C, C++, Web Dev and Logic Building — and each course built on the last perfectly. The logic building drills sharpened my problem-solving like nothing else. Highly recommend the full track." },
+        { initials: 'H',  name: 'Hanshika',         role: 'Software Engineer',        stars: 5, text: "Started with C and C++ for systems programming, then moved to Web Dev and Logic Building. The first-principles approach made me a confident programmer. Worth every hour." },
+        { initials: 'KV', name: 'Kirti Verma',      role: 'Frontend Engineer',        stars: 5, text: "Web Dev course was a game-changer. The way they break down CSS layout, JavaScript DOM, and responsive design — crystal clear explanations. Built my portfolio from scratch." },
+        { initials: 'SS', name: 'Sanyam Sharma',    role: 'Full-Stack Developer',     stars: 5, text: "Completed C, C++, Web Dev and Logic Building with Ramascript. Each course is packed with hands-on problems and real-world context. The logic building module completely changed how I approach coding." },
+        { initials: 'SK', name: 'Shashwat Kesharvani', role: 'Web Developer',         stars: 5, text: "Web Dev course gave me a rock-solid foundation. JavaScript, CSS, responsive design — everything is taught from the ground up. No magic, just clear engineering. Exactly what I needed." },
+        { initials: 'P',  name: 'Prakash',          role: 'Web Developer',            stars: 5, text: "I finally understand how the web works under the hood. The Web Dev course doesn't just teach you syntax — it teaches you how everything fits together. Exceptional quality." },
+        { initials: 'A',  name: 'Ashok',            role: 'Frontend Developer',       stars: 5, text: "Before this course, web development felt like memorizing recipes. After the Web Dev course, I actually understand why things work. The difference is night and day." },
+        { initials: 'R',  name: 'Rochak',           role: 'JavaScript Specialist',    stars: 5, text: "The JS course is hands-down the best I've taken. Closures, prototypes, async — concepts I struggled with for years finally made sense. The way they visualize execution is genius." },
     ];
 
     const cards = reviews.map((r, i) => {
@@ -272,6 +279,21 @@ function buildTestimonials() {
         </div>`;
     }).join('');
 
+    const moreCard = `
+        <div class="lp-testimonial-card lp-more-card lp-reveal">
+            <div class="lp-more-card-content">
+                <span class="lp-more-icon">${icons.messageDots}</span>
+                <div class="lp-more-text">
+                    <strong>And many more…</strong>
+                    <span>Join <strong>100+</strong> students who have transformed their skills with Ramascript.</span>
+                </div>
+                <a href="#courses" class="lp-btn-primary" style="font-size:0.85rem;padding:0.75rem 1.5rem;white-space:nowrap;">
+                    Start Learning
+                    ${icons.arrowRight}
+                </a>
+            </div>
+        </div>`;
+
     return `
     <section id="testimonials" class="lp-section" style="position:relative;z-index:1;">
         <div class="lp-section-header">
@@ -279,7 +301,7 @@ function buildTestimonials() {
             <h2 class="lp-section-title lp-reveal">What our students say</h2>
             <p class="lp-section-desc lp-reveal">Real feedback from engineers who levelled up.</p>
         </div>
-        <div class="lp-testimonials-grid">${cards}</div>
+        <div class="lp-testimonials-grid">${cards}${moreCard}</div>
     </section>`;
 }
 
