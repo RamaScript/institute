@@ -306,7 +306,7 @@
         }
       ],
       "assignment": {
-        "totalQuestions": 15,
+        "totalQuestions": 20,
         "theory": [
           "What is polymorphism and why is it used?",
           "Difference between compile-time and runtime polymorphism?",
@@ -314,16 +314,25 @@
           "What is function overriding?",
           "Why virtual functions are required in C++?"
         ],
-        "practical": [
+        "functionOverloading": [
           "Function overloading example (add functions)",
+          "Calculator using function overloading"
+        ],
+        "operatorOverloading": [
           "Operator overloading for + operator",
+          "Bank Account Management 💰: Create a class BankAccount that stores Account Holder Name, Account Number, and Balance. Requirements: Use a constructor to initialize the account. Overload + to deposit money (acc = acc + 5000;) and overload - to withdraw money (acc = acc - 2000;). If withdrawal amount is greater than the balance, display \"Insufficient Balance\". Create a display function to show account details. Concepts Used: Class, Constructor, Encapsulation, Operator Overloading, Objects.",
+          "Cricket Team Score 🏏: Create a class Team that stores Team Name and Total Runs. Requirements: Constructor to initialize values. Overload + so that runs scored in an over can be added (india = india + 18;). Overload > to compare two teams. Display which team has scored more runs (Example: India : 245, Australia : 231 -> Output: India is leading).",
+          "Shopping Cart 🛒: Create a class ShoppingCart that stores Customer Name and Total Bill. Requirements: Constructor to initialize values. Overload + to add the price of a purchased item (cart = cart + 500; cart = cart + 1200;). Overload == to compare whether two customers have the same bill. Display final bill.",
+          "Mobile Phone Battery 🔋: Create a class MobileBattery that stores Phone Name and Battery Percentage. Requirements: Constructor to initialize values. Overload prefix ++ to increase battery by 5% (++phone;) and prefix -- to decrease battery by 5% (--phone;). Battery should never exceed 100% and never go below 0%. Display current battery percentage after every operation.",
+          "Family Net Worth 👨👩👧👦: Create a class Family that stores Family Name and Net Worth. Requirements: Constructor to initialize values. Overload + to combine the net worth of two families and return a new object (Family total = gupta + sharma;). Overload > to compare which family is richer (if (gupta > sharma) ...). Display the result."
+        ],
+        "functionOverriding": [
           "Function overriding example",
           "Virtual function demonstration",
           "Base pointer pointing to derived object",
           "Runtime polymorphism demo program",
           "Shape class system (circle/rectangle polymorphism)",
           "Employee role system using overriding",
-          "Calculator using function overloading",
           "Menu system using polymorphism"
         ]
       }

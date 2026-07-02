@@ -82,6 +82,24 @@ function renderAssignment(assignment) {
                     ${assignment.practical.map(q => `<li>${q}</li>`).join('')}
                 </ol>
             ` : ''}
+            ${assignment.functionOverloading && assignment.functionOverloading.length > 0 ? `
+                <div class="subsection-title">Practical Questions: Function Overloading</div>
+                <ol class="question-list">
+                    ${assignment.functionOverloading.map(q => `<li>${q}</li>`).join('')}
+                </ol>
+            ` : ''}
+            ${assignment.operatorOverloading && assignment.operatorOverloading.length > 0 ? `
+                <div class="subsection-title">Practical Questions: Operator Overloading</div>
+                <ol class="question-list">
+                    ${assignment.operatorOverloading.map(q => `<li>${q}</li>`).join('')}
+                </ol>
+            ` : ''}
+            ${assignment.functionOverriding && assignment.functionOverriding.length > 0 ? `
+                <div class="subsection-title">Practical Questions: Function Overriding & Virtual Functions</div>
+                <ol class="question-list">
+                    ${assignment.functionOverriding.map(q => `<li>${q}</li>`).join('')}
+                </ol>
+            ` : ''}
             ${assignment.patternPrinting && assignment.patternPrinting.patterns && assignment.patternPrinting.patterns.length > 0 ? `
                 <div class="subsection-title">Pattern Questions (${assignment.patternPrinting.totalQuestions})</div>
                 <div class="patterns-grid">
