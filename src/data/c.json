@@ -180,66 +180,36 @@
       }
     },
     {
-      "chapterId": 4,
-      "chapterTitle": "Operators in C",
-      "topics": [
-        {
-          "topicTitle": "Arithmetic Operators",
-          "subtopics": [
-            "Addition (+)",
-            "Subtraction (-)",
-            "Multiplication (*)",
-            "Division (/)",
-            "Modulus (%)"
-          ]
-        },
-        {
-          "topicTitle": "Relational Operators",
-          "subtopics": [">", "<", ">=", "<=", "==", "!="]
-        },
-        {
-          "topicTitle": "Logical Operators",
-          "subtopics": ["AND (&&)", "OR (||)", "NOT (!)"]
-        },
-        {
-          "topicTitle": "Other Operators",
-          "subtopics": [
-            "Assignment operators",
-            "Increment operators",
-            "Decrement operators",
-            "Conditional operator",
-            "Bitwise operators",
-            "Operator precedence"
-          ]
-        }
+      "totalQuestions": 25,
+      "theory": [
+        "Differentiate between arithmetic, relational, logical, and bitwise operators with examples.",
+        "Explain the difference between prefix and postfix increment/decrement operators using suitable examples.",
+        "What is operator precedence? Explain how it affects the evaluation of an expression.",
+        "Differentiate between the assignment operator (=) and equality operator (==) with examples.",
+        "Explain the purpose of the conditional (ternary) operator. When is it preferred over an if-else statement?"
       ],
-      "assignment": {
-        "totalQuestions": 20,
-        "theory": [
-          "Explain arithmetic operators.",
-          "Explain relational operators.",
-          "Explain logical operators.",
-          "Explain operator precedence.",
-          "Explain increment and decrement operators."
-        ],
-        "practical": [
-          "Write a program for addition of two numbers.",
-          "Write a program for subtraction.",
-          "Write a program for multiplication.",
-          "Write a program for division.",
-          "Write a program to find remainder.",
-          "Write a program to swap two numbers.",
-          "Write a program to check greater number using operators.",
-          "Write a program to check even or odd.",
-          "Write a program to check positive or negative.",
-          "Write a program using logical operators.",
-          "Write a program using increment operator.",
-          "Write a program using decrement operator.",
-          "Write a program using ternary operator.",
-          "Write a program using bitwise operators.",
-          "Create a calculator using operators."
-        ]
-      }
+      "practical": [
+        "Write a program to input two integers and display their sum, difference, product, quotient, and remainder.",
+        "Predict the output of the expression: 10 + 5 * 2 - 8 / 4. Verify your answer using a C program.",
+        "Write a program to calculate the average of three numbers using arithmetic operators.",
+        "Write a program to swap two numbers without using a third variable.",
+        "Write a program that takes two integers as input and prints whether the first number is greater than, less than, or equal to the second using relational operators.",
+        "Write a program to check whether a given year is a leap year using logical and relational operators.",
+        "Write a program to determine whether a number lies between 10 and 100 using logical operators.",
+        "Given x = 5 and y = 10, predict the output of the expressions: x < y && y > 0, x > y || y == 10, and !(x == 5). Verify using a C program.",
+        "Given int a = 5;, predict the values of ++a, a++, --a, and a-- after each statement. Verify your answers with a program.",
+        "Write a program to find the largest of two numbers using the conditional (ternary) operator.",
+        "Given int a = 12 and b = 10, print the results of a & b, a | b, and a ^ b. Also write the binary representation of both numbers.",
+        "Write a program to print the result of ~15. Explain why the output is negative.",
+        "Given int n = 13, print the results of n << 2 and n >> 1. Explain how the binary representation changes.",
+        "Write a program to check whether a number is even or odd using only the bitwise AND (&) operator.",
+        "Write a C program to swap two integers using only the bitwise XOR (^) operator.",
+        "Predict the output of: int x = 5, y = 2; printf(\"%d\", x + y * 3 > 10 && x % 2 == 1); Then verify using a program.",
+        "Write a program to evaluate the expression ((a + b) * c) / d for user-entered values and explain how operator precedence affects the result.",
+        "Write a simple calculator that performs addition, subtraction, multiplication, division, and modulus based on the operator entered by the user.",
+        "Predict the output of: int x = 4; printf(\"%d %d\", x++, ++x); Verify the result and explain the sequence of operations.",
+        "Write a program that checks whether a character is an uppercase English letter using relational and logical operators."
+      ]
     },
     {
       "chapterId": 5,
