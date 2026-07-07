@@ -875,79 +875,31 @@
       }
     },
     {
-      "chapterId": 13,
-      "chapterTitle": "File Handling in C",
-      "topics": [
-        {
-          "topicTitle": "Introduction to File Handling",
-          "subtopics": [
-            "What is a file?",
-            "Need of file handling",
-            "Types of files",
-            "Text files",
-            "Binary files",
-            "File pointer"
-          ]
-        },
-        {
-          "topicTitle": "File Operations",
-          "subtopics": [
-            "Opening a file",
-            "Closing a file",
-            "Reading a file",
-            "Writing a file",
-            "Appending data"
-          ]
-        },
-        {
-          "topicTitle": "File Handling Functions",
-          "subtopics": [
-            "fopen()",
-            "fclose()",
-            "fprintf()",
-            "fscanf()",
-            "fgetc()",
-            "fputc()",
-            "fgets()",
-            "fputs()"
-          ]
-        },
-        {
-          "topicTitle": "Advanced File Handling",
-          "subtopics": [
-            "File modes: r, w, a, r+, w+, a+",
-            "Working with binary files",
-            "Storing structures in files"
-          ]
-        }
+      "totalQuestions": 25,
+      "theory": [
+        "Why is file handling required when variables can already store data? Explain with a real-life example.",
+        "Differentiate between text files and binary files with suitable examples and use cases.",
+        "Explain the purpose of a file pointer. What happens if a file pointer is not closed after use?",
+        "Compare the file modes r, w, a, r+, w+, and a+. State what happens if the file already exists or does not exist.",
+        "Differentiate between fprintf() and fputs(), and between fscanf() and fgets(), with examples."
       ],
-      "assignment": {
-        "totalQuestions": 20,
-        "theory": [
-          "What is file handling?",
-          "Why do we need files?",
-          "Difference between text file and binary file.",
-          "Explain file modes in C.",
-          "Explain file pointer."
-        ],
-        "practical": [
-          "Create a file and write data into it.",
-          "Read data from a file.",
-          "Append data into an existing file.",
-          "Count number of characters in a file.",
-          "Count number of words in a file.",
-          "Count number of lines in a file.",
-          "Copy content from one file to another.",
-          "Search a word inside a file.",
-          "Replace a word in a file.",
-          "Store student details in a file.",
-          "Read student details from a file.",
-          "Store employee records in a file.",
-          "Update employee record in a file.",
-          "Delete a record from a file.",
-          "Create a file-based record management system."
-        ]
-      }
+      "practical": [
+        "Write a program to create a file named student.txt and store your name, roll number, and course in it.",
+        "Write a program to read and display the entire contents of student.txt line by line.",
+        "Write a program to append today's date to an existing log.txt file without deleting its previous contents.",
+        "Write a program to count the number of characters, words, and lines present in a text file.",
+        "Write a program to copy the contents of source.txt into destination.txt.",
+        "Write a program to search for a given word in a text file and display the number of times it appears.",
+        "Write a program to replace every occurrence of the word \"C\" with \"C Programming\" in a text file.",
+        "Write a program that writes the English alphabets A to Z into a file using fputc(), then reads them back using fgetc().",
+        "Write a program to accept five lines of text from the user, store them using fputs(), and display them using fgets().",
+        "Write a program to store the details of five students (roll number, name, and marks) in a file using structures.",
+        "Write a program to read all student records from the file and display only those students who scored more than 75 marks.",
+        "Write a program to update the marks of a student by searching for the student's roll number in the file.",
+        "Write a program to delete a student record from a file by copying all remaining records into a new file.",
+        "Write a program to store and retrieve employee records using binary files with fwrite() and fread().",
+        "Write a menu-driven program that allows the user to add, view, search, update, and delete student records stored in a file."
+      ]
     },
     {
       "chapterId": 14,
