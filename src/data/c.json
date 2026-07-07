@@ -103,28 +103,23 @@
       "assignment": {
         "totalQuestions": 20,
         "theory": [
-          "What is a variable?",
-          "Explain different data types in C.",
-          "Difference between variable and constant.",
-          "Explain local and global variables.",
-          "Explain rules for naming variables."
+          "Differentiate between variables and constants with suitable examples.",
+          "Explain the purpose of each basic data type (int, float, double, char, and void) with real-world use cases.",
+          "Compare the const keyword and #define. When should each be preferred?",
+          "Explain the rules for naming variables. Identify which of the following are valid variable names and justify your answer.",
+          "Explain the difference between local and global variables with examples."
         ],
         "practical": [
-          "Write a program to store and print integer value.",
-          "Write a program to store and print float value.",
-          "Write a program to store and print character value.",
-          "Write a program using all basic data types.",
-          "Find size of different data types using sizeof().",
-          "Create a program to store student marks.",
-          "Create a program to store employee details.",
-          "Create a program to calculate simple interest.",
-          "Create a program to calculate compound interest.",
-          "Write a program to calculate area of circle.",
-          "Write a program to calculate area of rectangle.",
-          "Write a program to convert Celsius into Fahrenheit.",
-          "Write a program using constants.",
-          "Write a program using #define.",
-          "Write a program to swap two numbers."
+          "Write a program that stores a student's name, age, marks, and grade using appropriate data types, then displays the information in a formatted manner.",
+          "Predict the output of a program where an int variable is assigned a float value. Verify your answer by writing the program and explain the result.",
+          "Write a program to display the size (in bytes) of int, float, double, char, and long using sizeof().",
+          "Write a program to calculate the total, average, and percentage of five subjects using appropriate data types.",
+          "Write a program to compare the precision of float and double by storing the value 3.141592653589793.",
+          "Given a list of variable names, identify which are valid and invalid according to C naming rules, then verify by compiling a program.",
+          "Write a program that calculates the area and circumference of a circle using a const variable for PI.",
+          "Write another version of the same program using #define for PI. Compare both approaches.",
+          "Predict the output of the following code and explain why:\nint a = 10;\nfloat b = 3;\nprintf(\"%.2f\", a / b);",
+          "Write a program that swaps two numbers using a third variable and then without using a third variable."
         ]
       }
     },
@@ -154,62 +149,92 @@
       "assignment": {
         "totalQuestions": 20,
         "theory": [
-          "Explain printf().",
-          "Explain scanf().",
-          "Explain format specifiers.",
-          "Explain escape sequences.",
-          "Difference between input and output functions."
+          "Differentiate between printf() and scanf() with examples.",
+          "Explain the purpose of format specifiers. Why does every data type require a different format specifier?",
+          "What are escape sequences? Explain any five with suitable examples.",
+          "What happens if an incorrect format specifier is used with printf() or scanf()? Explain with an example.",
+          "Differentiate between formatted output and unformatted output."
         ],
         "practical": [
-          "Write a program to take two numbers and print their sum.",
-          "Write a program to take three numbers and find average.",
-          "Write a program to take student details and display them.",
-          "Write a program to take employee salary and display it.",
-          "Write a program to calculate total marks.",
-          "Write a program to calculate percentage.",
-          "Write a program to calculate simple interest.",
-          "Write a program to calculate area of different shapes.",
-          "Write a program to take user age and display it.",
-          "Write a program to convert kilometers into meters.",
-          "Write a program to convert minutes into seconds.",
-          "Write a program to take product details and display bill.",
-          "Write a program to print formatted output.",
-          "Write a program using different escape sequences.",
-          "Write a program for basic calculator input/output."
+          "Write a program that accepts a student's name, roll number, and marks in three subjects, then displays the total, average, and percentage in a formatted report.",
+          "Write a program that accepts the radius of a circle and displays its area and circumference with exactly two decimal places.",
+          "Predict the output of the following statement before executing it:\nprintf(\"%5d\", 25);\nprintf(\"%-5d\", 25);\nprintf(\"%.2f\", 3.14159); Then verify using a program.",
+          "Write a program that accepts an integer, a floating-point number, and a character from the user and displays them using appropriate format specifiers.",
+          "Write a program that prints a formatted invoice containing product name, quantity, price, GST, and final amount.",
+          "Write a program that converts temperature from Celsius to Fahrenheit by taking input from the user.",
+          "Write a program that accepts time in hours and minutes and displays the total number of minutes.",
+          "Predict the output of a program that prints different escape sequences such as \\n, \\t, \\\\, \\\" and verify the result.",
+          "Write a program that accepts the length and width of a rectangle and displays its area and perimeter.",
+          "Write a simple calculator that accepts two numbers and an operator (+, -, *, /, %) from the user and displays the result."
         ]
       }
     },
     {
-      "totalQuestions": 25,
-      "theory": [
-        "Differentiate between arithmetic, relational, logical, and bitwise operators with examples.",
-        "Explain the difference between prefix and postfix increment/decrement operators using suitable examples.",
-        "What is operator precedence? Explain how it affects the evaluation of an expression.",
-        "Differentiate between the assignment operator (=) and equality operator (==) with examples.",
-        "Explain the purpose of the conditional (ternary) operator. When is it preferred over an if-else statement?"
+      "chapterId": 4,
+      "chapterTitle": "Operators in C",
+      "topics": [
+        {
+          "topicTitle": "Arithmetic Operators",
+          "subtopics": [
+            "Addition (+)",
+            "Subtraction (-)",
+            "Multiplication (*)",
+            "Division (/)",
+            "Modulus (%)"
+          ]
+        },
+        {
+          "topicTitle": "Relational Operators",
+          "subtopics": [">", "<", ">=", "<=", "==", "!="]
+        },
+        {
+          "topicTitle": "Logical Operators",
+          "subtopics": ["AND (&&)", "OR (||)", "NOT (!)"]
+        },
+        {
+          "topicTitle": "Other Operators",
+          "subtopics": [
+            "Assignment operators",
+            "Increment operators",
+            "Decrement operators",
+            "Conditional operator",
+            "Bitwise operators",
+            "Operator precedence"
+          ]
+        }
       ],
-      "practical": [
-        "Write a program to input two integers and display their sum, difference, product, quotient, and remainder.",
-        "Predict the output of the expression: 10 + 5 * 2 - 8 / 4. Verify your answer using a C program.",
-        "Write a program to calculate the average of three numbers using arithmetic operators.",
-        "Write a program to swap two numbers without using a third variable.",
-        "Write a program that takes two integers as input and prints whether the first number is greater than, less than, or equal to the second using relational operators.",
-        "Write a program to check whether a given year is a leap year using logical and relational operators.",
-        "Write a program to determine whether a number lies between 10 and 100 using logical operators.",
-        "Given x = 5 and y = 10, predict the output of the expressions: x < y && y > 0, x > y || y == 10, and !(x == 5). Verify using a C program.",
-        "Given int a = 5;, predict the values of ++a, a++, --a, and a-- after each statement. Verify your answers with a program.",
-        "Write a program to find the largest of two numbers using the conditional (ternary) operator.",
-        "Given int a = 12 and b = 10, print the results of a & b, a | b, and a ^ b. Also write the binary representation of both numbers.",
-        "Write a program to print the result of ~15. Explain why the output is negative.",
-        "Given int n = 13, print the results of n << 2 and n >> 1. Explain how the binary representation changes.",
-        "Write a program to check whether a number is even or odd using only the bitwise AND (&) operator.",
-        "Write a C program to swap two integers using only the bitwise XOR (^) operator.",
-        "Predict the output of: int x = 5, y = 2; printf(\"%d\", x + y * 3 > 10 && x % 2 == 1); Then verify using a program.",
-        "Write a program to evaluate the expression ((a + b) * c) / d for user-entered values and explain how operator precedence affects the result.",
-        "Write a simple calculator that performs addition, subtraction, multiplication, division, and modulus based on the operator entered by the user.",
-        "Predict the output of: int x = 4; printf(\"%d %d\", x++, ++x); Verify the result and explain the sequence of operations.",
-        "Write a program that checks whether a character is an uppercase English letter using relational and logical operators."
-      ]
+      "assignment": {
+        "totalQuestions": 25,
+        "theory": [
+          "Differentiate between arithmetic, relational, logical, and bitwise operators with examples.",
+          "Explain the difference between prefix and postfix increment/decrement operators using suitable examples.",
+          "What is operator precedence? Explain how it affects the evaluation of an expression.",
+          "Differentiate between the assignment operator (=) and equality operator (==) with examples.",
+          "Explain the purpose of the conditional (ternary) operator. When is it preferred over an if-else statement?"
+        ],
+        "practical": [
+          "Write a program to input two integers and display their sum, difference, product, quotient, and remainder.",
+          "Predict the output of the expression: 10 + 5 * 2 - 8 / 4. Verify your answer using a C program.",
+          "Write a program to calculate the average of three numbers using arithmetic operators.",
+          "Write a program to swap two numbers without using a third variable.",
+          "Write a program that takes two integers as input and prints whether the first number is greater than, less than, or equal to the second using relational operators.",
+          "Write a program to check whether a given year is a leap year using logical and relational operators.",
+          "Write a program to determine whether a number lies between 10 and 100 using logical operators.",
+          "Given x = 5 and y = 10, predict the output of the expressions: x < y && y > 0, x > y || y == 10, and !(x == 5). Verify using a C program.",
+          "Given int a = 5;, predict the values of ++a, a++, --a, and a-- after each statement. Verify your answers with a program.",
+          "Write a program to find the largest of two numbers using the conditional (ternary) operator.",
+          "Given int a = 12 and b = 10, print the results of a & b, a | b, and a ^ b. Also write the binary representation of both numbers.",
+          "Write a program to print the result of ~15. Explain why the output is negative.",
+          "Given int n = 13, print the results of n << 2 and n >> 1. Explain how the binary representation changes.",
+          "Write a program to check whether a number is even or odd using only the bitwise AND (&) operator.",
+          "Write a C program to swap two integers using only the bitwise XOR (^) operator.",
+          "Predict the output of: int x = 5, y = 2; printf(\"%d\", x + y * 3 > 10 && x % 2 == 1); Then verify using a program.",
+          "Write a program to evaluate the expression ((a + b) * c) / d for user-entered values and explain how operator precedence affects the result.",
+          "Write a simple calculator that performs addition, subtraction, multiplication, division, and modulus based on the operator entered by the user.",
+          "Predict the output of: int x = 4; printf(\"%d %d\", x++, ++x); Verify the result and explain the sequence of operations.",
+          "Write a program that checks whether a character is an uppercase English letter using relational and logical operators."
+        ]
+      }
     },
     {
       "chapterId": 5,
@@ -239,28 +264,23 @@
       "assignment": {
         "totalQuestions": 20,
         "theory": [
-          "Why do we need decision-making statements?",
-          "Explain if statement.",
-          "Difference between if-else and switch case.",
-          "Explain else-if ladder.",
-          "Explain the use of break statement."
+          "Why are decision-making statements required in programming? Explain with a real-life example.",
+          "Compare if, if-else, else-if ladder, and switch statements. When should each be used?",
+          "Why can't relational expressions be used directly as case labels in a switch statement?",
+          "Explain the purpose of the break statement in a switch case. What happens if it is omitted?",
+          "Differentiate between nested if statements and else-if ladders with suitable examples."
         ],
         "practical": [
-          "Write a program to check whether a number is even or odd.",
-          "Write a program to check whether a number is positive, negative, or zero.",
-          "Write a program to find the largest of two numbers.",
-          "Write a program to find the largest of three numbers.",
-          "Write a program to check voting eligibility.",
-          "Write a program to check whether a year is leap year.",
-          "Write a program to check whether a character is vowel or consonant.",
-          "Write a program to check whether a character is alphabet, digit, or special character.",
-          "Write a program to calculate grade based on marks.",
-          "Write a program to calculate electricity bill.",
-          "Write a program to calculate discount based on purchase amount.",
-          "Create a calculator using switch case.",
-          "Create a menu-driven program using switch case.",
-          "Write a program to check profit or loss.",
-          "Write a program to find the type of triangle using sides."
+          "Write a program that accepts a student's marks and displays the corresponding grade using an else-if ladder.",
+          "Write a program to determine whether a given year is a leap year.",
+          "Write a program to find the largest among three numbers using nested if statements.",
+          "Write a program that accepts a character and determines whether it is a vowel, consonant, digit, or special character.",
+          "Write a menu-driven calculator using switch case that performs addition, subtraction, multiplication, division, and modulus.",
+          "Predict the output of the following code before executing it, then verify your answer:\nint x = 10;\nif(x > 5)\n    if(x < 15)\n        printf(\"A\");\n    else\n        printf(\"B\");",
+          "Write a program that calculates an electricity bill based on slab rates.",
+          "Write a program that determines whether three sides can form a triangle. If yes, identify whether it is Equilateral, Isosceles, or Scalene.",
+          "Write a program that accepts a month number (1–12) and displays the corresponding month name using switch.",
+          "Write a program that calculates the discount based on the purchase amount using if-else statements."
         ]
       }
     },
@@ -463,26 +483,16 @@
           ]
         },
         "practical": [
-          "Print numbers from 1 to 100.",
-          "Print numbers from 100 to 1.",
-          "Print all even numbers between 1 to 100.",
-          "Print all odd numbers between 1 to 100.",
-          "Find sum of first N numbers.",
-          "Find factorial of a number.",
-          "Print multiplication table of a number.",
-          "Count digits of a number.",
-          "Reverse a number.",
-          "Find sum of digits of a number.",
-          "Check palindrome number.",
-          "Check Armstrong number.",
-          "Print Fibonacci series.",
-          "Check prime number.",
-          "Print prime numbers between two ranges.",
-          "Find HCF/GCD of two numbers.",
-          "Find LCM of two numbers.",
-          "Print star patterns.",
-          "Print number patterns.",
-          "Create a menu-driven loop program."
+          "Predict the output of the following loop before executing it:\nfor(int i = 1; i <= 5; i++)\n    printf(\"%d \", i * 2);",
+          "Predict how many times the following loop executes and justify your answer:\nint i = 5;\nwhile(i > 0)\n    i -= 2;",
+          "Write a program to find the factorial of a number using a for loop.",
+          "Write a program to generate the Fibonacci series up to N terms.",
+          "Write a program to determine whether a given number is prime.",
+          "Write a program to print all prime numbers between two user-given numbers.",
+          "Write a program to reverse a number and determine whether it is a palindrome.",
+          "Write a program to calculate the GCD (HCF) and LCM of two numbers.",
+          "Convert a program written using a for loop into an equivalent while loop.",
+          "Write a menu-driven program that repeatedly performs different mathematical operations until the user chooses to exit."
         ]
       }
     },
@@ -531,28 +541,23 @@
       "assignment": {
         "totalQuestions": 20,
         "theory": [
-          "What is a function?",
-          "Why do we use functions?",
-          "Difference between parameter and argument.",
-          "Explain return type.",
-          "Difference between call by value and call by reference."
+          "What are the advantages of using functions in a C program? Explain with an example.",
+          "Differentiate between function declaration, function definition, and function call.",
+          "Compare parameters and arguments with suitable examples.",
+          "Explain the four types of user-defined functions with examples.",
+          "Differentiate between call by value and call by reference. When should each be used?"
         ],
         "practical": [
-          "Create a function to add two numbers.",
-          "Create a function to find maximum number.",
-          "Create a function to check even or odd.",
-          "Create a function to calculate factorial.",
-          "Create a function to calculate power.",
-          "Create a function to check prime number.",
-          "Create a function to reverse a number.",
-          "Create a function to calculate sum of digits.",
-          "Create a function to check palindrome.",
-          "Create a function to swap two numbers.",
-          "Create a function to calculate area of circle.",
-          "Create a function to calculate simple interest.",
-          "Create a function to find GCD.",
-          "Create a function to find LCM.",
-          "Create a menu-driven calculator using functions."
+          "Predict the output of the following program involving function calls, then verify your answer by executing it.",
+          "Write a function that accepts two integers and returns the larger number. Use it to find the largest among three numbers.",
+          "Write a function that returns whether a given number is prime. Use the function to print all prime numbers between two user-given limits.",
+          "Write a function that calculates the factorial of a number and use it to compute nCr (Combination).",
+          "Write a program that calculates the area of a circle, rectangle, and triangle using three separate functions.",
+          "Write a program that swaps two numbers using call by value. Observe the output, then rewrite it using call by reference and compare the results.",
+          "Write a function that accepts an array and returns the largest element present in it.",
+          "Write a function that reverses a number and use it to determine whether the number is a palindrome.",
+          "Write a menu-driven calculator where each arithmetic operation is implemented as a separate function.",
+          "Write a program that accepts a student's marks in five subjects, calculates the total, average, and grade using separate functions."
         ]
       }
     },
@@ -584,28 +589,23 @@
       "assignment": {
         "totalQuestions": 20,
         "theory": [
-          "What is recursion?",
-          "Why is base condition required?",
-          "Difference between loop and recursion.",
-          "Explain recursive function execution.",
-          "What happens if base condition is missing?"
+          "What is recursion? Explain how it differs from iteration.",
+          "Why is a base condition necessary in a recursive function? What happens if it is omitted?",
+          "Explain how recursive function calls are managed using the function call stack.",
+          "Compare recursion and loops in terms of readability, memory usage, and execution speed.",
+          "For which types of problems is recursion more suitable than loops?"
         ],
         "practical": [
-          "Write factorial using recursion.",
-          "Write Fibonacci series using recursion.",
-          "Find sum of first N numbers using recursion.",
-          "Find power of a number using recursion.",
-          "Reverse a number using recursion.",
-          "Find sum of digits using recursion.",
-          "Count digits using recursion.",
-          "Check palindrome using recursion.",
-          "Find GCD using recursion.",
-          "Print numbers from 1 to N using recursion.",
-          "Print numbers from N to 1 using recursion.",
-          "Print Fibonacci till N terms using recursion.",
-          "Solve tower of Hanoi problem.",
-          "Create recursive pattern printing program.",
-          "Solve any mathematical problem using recursion."
+          "Trace the recursive calls made while calculating factorial(5) and show the order in which the function returns.",
+          "Predict the output of a recursive function before executing it, then verify your answer.",
+          "Write a recursive function to calculate the factorial of a number.",
+          "Write a recursive function to print the Fibonacci series up to N terms.",
+          "Write a recursive function to calculate the sum of the first N natural numbers.",
+          "Write a recursive function to calculate x raised to the power n (xⁿ).",
+          "Write a recursive function to reverse the digits of a number.",
+          "Write a recursive function to determine whether a number is a palindrome.",
+          "Write a recursive function to calculate the GCD (Greatest Common Divisor) of two numbers.",
+          "Implement the Tower of Hanoi problem and display the sequence of moves required to solve it."
         ]
       }
     },
@@ -797,28 +797,23 @@
       "assignment": {
         "totalQuestions": 20,
         "theory": [
-          "What is a pointer?",
-          "Why are pointers used?",
-          "Explain address and dereference operators.",
-          "Difference between call by value and call by reference.",
-          "Explain dynamic memory allocation."
+          "What is a pointer? Why are pointers required in C programming?",
+          "Differentiate between the address operator (&) and the dereference operator (*).",
+          "Explain the difference between call by value and call by reference using pointers.",
+          "What is dynamic memory allocation? Explain the purpose of malloc(), calloc(), realloc(), and free().",
+          "Differentiate between a pointer to a variable and a pointer to an array with suitable examples."
         ],
         "practical": [
-          "Create a pointer variable and print value.",
-          "Print address of a variable.",
-          "Update variable value using pointer.",
-          "Swap two numbers using pointers.",
-          "Add two numbers using pointers.",
-          "Traverse an array using pointers.",
-          "Find sum of array using pointers.",
-          "Pass pointer to a function.",
-          "Return pointer from function.",
-          "Create dynamic integer array using malloc().",
-          "Create dynamic array using calloc().",
-          "Resize memory using realloc().",
-          "Free allocated memory.",
-          "Create dynamic student record.",
-          "Create dynamic calculator using pointers."
+          "Predict the output of a program that uses pointers to access and modify a variable, then verify your answer.",
+          "Write a program to swap two numbers using pointers.",
+          "Write a program that accepts two integers and calculates their sum, difference, product, and quotient using pointers.",
+          "Write a program to traverse an array using pointer arithmetic instead of array indexing.",
+          "Write a program to find the largest and smallest element in an array using pointers.",
+          "Write a program that reverses an array using pointers.",
+          "Write a program to compare the results of call by value and call by reference while swapping two numbers.",
+          "Write a program to dynamically allocate memory for N integers using malloc(), then calculate their sum and average.",
+          "Write a program to allocate memory using calloc(), accept values from the user, and display them.",
+          "Write a program that resizes a dynamically allocated array using realloc() and displays both the old and new contents."
         ]
       }
     },
@@ -849,57 +844,100 @@
       "assignment": {
         "totalQuestions": 20,
         "theory": [
-          "What is a structure?",
-          "Difference between array and structure.",
-          "Explain structure members.",
-          "Explain nested structure.",
-          "Explain pointer to structure."
+          "Why are structures required in C? Explain with a real-life example.",
+          "Differentiate between an array and a structure.",
+          "Explain nested structures with a suitable example.",
+          "How do you pass a structure to a function? Explain with an example.",
+          "Differentiate between accessing structure members using the dot (.) operator and the arrow (->) operator."
         ],
         "practical": [
-          "Create student structure.",
-          "Store and display employee details.",
-          "Create book structure.",
-          "Store multiple students using array of structures.",
-          "Find student with highest marks.",
-          "Create bank account structure.",
-          "Create product billing structure.",
-          "Pass structure to function.",
-          "Use pointer with structure.",
-          "Create nested structure.",
-          "Create library management structure.",
-          "Create hospital patient structure.",
-          "Create employee salary system.",
-          "Search record using structure.",
-          "Update structure record."
+          "Write a program to store the details of five students (roll number, name, and marks) using an array of structures and display the topper.",
+          "Write a program to search for a student by roll number using structures.",
+          "Write a program to update the marks of a student after searching by roll number.",
+          "Write a program to sort student records in ascending order of marks.",
+          "Write a program to store and display employee details using structures.",
+          "Write a program to calculate the net salary of employees using a structure containing basic salary, HRA, and DA.",
+          "Write a program that uses a nested structure to store employee and address details.",
+          "Write a program that passes a structure to a function and displays its contents.",
+          "Write a program that uses a pointer to a structure and accesses its members using the arrow (->) operator.",
+          "Write a program to create a product inventory using structures and calculate the total bill for multiple products."
         ]
       }
     },
     {
-      "totalQuestions": 25,
-      "theory": [
-        "Why is file handling required when variables can already store data? Explain with a real-life example.",
-        "Differentiate between text files and binary files with suitable examples and use cases.",
-        "Explain the purpose of a file pointer. What happens if a file pointer is not closed after use?",
-        "Compare the file modes r, w, a, r+, w+, and a+. State what happens if the file already exists or does not exist.",
-        "Differentiate between fprintf() and fputs(), and between fscanf() and fgets(), with examples."
+      "chapterId": 13,
+      "chapterTitle": "File Handling in C",
+      "topics": [
+        {
+          "topicTitle": "Introduction to File Handling",
+          "subtopics": [
+            "What is a file?",
+            "Need of file handling",
+            "Types of files",
+            "Text files",
+            "Binary files",
+            "File pointer"
+          ]
+        },
+        {
+          "topicTitle": "File Operations",
+          "subtopics": [
+            "Opening a file",
+            "Closing a file",
+            "Reading a file",
+            "Writing a file",
+            "Appending data"
+          ]
+        },
+        {
+          "topicTitle": "File Handling Functions",
+          "subtopics": [
+            "fopen()",
+            "fclose()",
+            "fprintf()",
+            "fscanf()",
+            "fgetc()",
+            "fputc()",
+            "fgets()",
+            "fputs()"
+          ]
+        },
+        {
+          "topicTitle": "Advanced File Handling",
+          "subtopics": [
+            "File modes: r, w, a, r+, w+, a+",
+            "Working with binary files",
+            "Storing structures in files"
+          ]
+        }
       ],
-      "practical": [
-        "Write a program to create a file named student.txt and store your name, roll number, and course in it.",
-        "Write a program to read and display the entire contents of student.txt line by line.",
-        "Write a program to append today's date to an existing log.txt file without deleting its previous contents.",
-        "Write a program to count the number of characters, words, and lines present in a text file.",
-        "Write a program to copy the contents of source.txt into destination.txt.",
-        "Write a program to search for a given word in a text file and display the number of times it appears.",
-        "Write a program to replace every occurrence of the word \"C\" with \"C Programming\" in a text file.",
-        "Write a program that writes the English alphabets A to Z into a file using fputc(), then reads them back using fgetc().",
-        "Write a program to accept five lines of text from the user, store them using fputs(), and display them using fgets().",
-        "Write a program to store the details of five students (roll number, name, and marks) in a file using structures.",
-        "Write a program to read all student records from the file and display only those students who scored more than 75 marks.",
-        "Write a program to update the marks of a student by searching for the student's roll number in the file.",
-        "Write a program to delete a student record from a file by copying all remaining records into a new file.",
-        "Write a program to store and retrieve employee records using binary files with fwrite() and fread().",
-        "Write a menu-driven program that allows the user to add, view, search, update, and delete student records stored in a file."
-      ]
+      "assignment": {
+        "totalQuestions": 25,
+        "theory": [
+          "Why is file handling required when variables can already store data? Explain with a real-life example.",
+          "Differentiate between text files and binary files with suitable examples and use cases.",
+          "Explain the purpose of a file pointer. What happens if a file pointer is not closed after use?",
+          "Compare the file modes r, w, a, r+, w+, and a+. State what happens if the file already exists or does not exist.",
+          "Differentiate between fprintf() and fputs(), and between fscanf() and fgets(), with examples."
+        ],
+        "practical": [
+          "Write a program to create a file named student.txt and store your name, roll number, and course in it.",
+          "Write a program to read and display the entire contents of student.txt line by line.",
+          "Write a program to append today's date to an existing log.txt file without deleting its previous contents.",
+          "Write a program to count the number of characters, words, and lines present in a text file.",
+          "Write a program to copy the contents of source.txt into destination.txt.",
+          "Write a program to search for a given word in a text file and display the number of times it appears.",
+          "Write a program to replace every occurrence of the word \"C\" with \"C Programming\" in a text file.",
+          "Write a program that writes the English alphabets A to Z into a file using fputc(), then reads them back using fgetc().",
+          "Write a program to accept five lines of text from the user, store them using fputs(), and display them using fgets().",
+          "Write a program to store the details of five students (roll number, name, and marks) in a file using structures.",
+          "Write a program to read all student records from the file and display only those students who scored more than 75 marks.",
+          "Write a program to update the marks of a student by searching for the student's roll number in the file.",
+          "Write a program to delete a student record from a file by copying all remaining records into a new file.",
+          "Write a program to store and retrieve employee records using binary files with fwrite() and fread().",
+          "Write a menu-driven program that allows the user to add, view, search, update, and delete student records stored in a file."
+        ]
+      }
     },
     {
       "chapterId": 14,
