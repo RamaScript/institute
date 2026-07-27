@@ -1,0 +1,992 @@
+{
+  "courseId": "javascript",
+  "courseTitle": "JavaScript Programming",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "JavaScript Basics & Variables",
+      "topics": [
+        {
+          "topicTitle": "Introduction to JavaScript",
+          "subtopics": [
+            "What is JavaScript (Programming language for instructions)",
+            "Setting up VS Code and the Browser Console",
+            "Writing the first code: console.log()"
+          ]
+        },
+        {
+          "topicTitle": "Variables and Rules",
+          "subtopics": [
+            "Variables as containers for data",
+            "Naming conventions (case sensitivity, allowed characters like _, $)",
+            "Only a letter, underscore(_), or $ should be the 1st character",
+            "Reserved words cannot be variable names"
+          ]
+        },
+        {
+          "topicTitle": "Variable Declaration (let, const, var)",
+          "subtopics": [
+            "var: Global scope, can be re-declared & updated",
+            "let: Block scope, cannot be re-declared but can be updated",
+            "const: Block scope, cannot be re-declared or updated"
+          ]
+        },
+        {
+          "topicTitle": "Data Types",
+          "subtopics": [
+            "Primitive Types: Number, String, Boolean, Undefined, Null, BigInt, Symbol"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 8,
+        "theory": [
+          "What is the difference between let, const, and var?",
+          "Name the primitive data types available in JavaScript.",
+          "What are the rules for naming variables in JavaScript?",
+          "How do you log a message or output to the browser console?",
+          "Why will you get an error if you try to start a variable name with a digit?"
+        ],
+        "practical": [
+          "Create a const object called 'product' to store information like title, rating, and price.",
+          "Create a const object called 'profile' to store a user's social media details (username, followers, following).",
+          "Declare a variable using 'let', assign it a value, update its value on the next line, and log the final result."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Operators & Conditional Statements",
+      "topics": [
+        {
+          "topicTitle": "Comments in JS",
+          "subtopics": [
+            "Single line comments (//)",
+            "Multi-line comments (/* */)",
+            "Part of code which is not executed"
+          ]
+        },
+        {
+          "topicTitle": "Operators in JS",
+          "subtopics": [
+            "Arithmetic Operators (+, -, *, /, Modulus, Exponentiation, Increment, Decrement)",
+            "Assignment Operators (=, +=, -=, *=, %=, **=)",
+            "Comparison Operators (==, !=, === for strict type checking, !==, >, <, >=, <=)",
+            "Logical Operators (&& Logical AND, || Logical OR, ! Logical NOT)",
+            "Ternary Operators (condition ? true output : false output)"
+          ]
+        },
+        {
+          "topicTitle": "Conditional Statements",
+          "subtopics": [
+            "To implement some condition in the code",
+            "if Statement",
+            "if-else Statement",
+            "else-if Statement for multiple conditions"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 10,
+        "theory": [
+          "Explain the difference between the == and === comparison operators.",
+          "How does a ternary operator work? Provide its syntax.",
+          "What is the difference between Logical AND (&&) and Logical OR (||)?",
+          "What is the purpose of comments in JavaScript, and what is the syntax for single-line and multi-line comments?",
+          "Explain the difference between the assignment operator (=) and the equality operator (==)."
+        ],
+        "practical": [
+          "Get user input using prompt('Enter a number:'). Check if the number is a multiple of 5 or not.",
+          "Write a code which gives grades to students according to their scores (80-100: A, 70-89: B, 60-69: C, 50-59: D, 0-49: F).",
+          "Write a JavaScript program using an if-else statement to check if a person is eligible to vote (age >= 18).",
+          "Use the exponentiation (**) operator to calculate and print the cube of a given number.",
+          "Create a program that uses logical operators to check if a number is both greater than 10 AND an even number."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Loops & Strings",
+      "topics": [
+        {
+          "topicTitle": "Loops in JS",
+          "subtopics": [
+            "Loops are used to execute a piece of code again & again",
+            "for Loop",
+            "while Loop",
+            "do-while Loop",
+            "Infinite Loop (A Loop that never ends)",
+            "for-of Loop (used for iterating over strings and arrays)",
+            "for-in Loop (used for iterating over objects)"
+          ]
+        },
+        {
+          "topicTitle": "Strings in JS",
+          "subtopics": [
+            "String is a sequence of characters used to represent text",
+            "String Length (e.g., str.length)",
+            "String Indices (e.g., str, str[1])"
+          ]
+        },
+        {
+          "topicTitle": "Template Literals",
+          "subtopics": [
+            "A way to have embedded expressions in strings using backticks (`)",
+            "String Interpolation: To create strings by doing substitution of placeholders (${expression})"
+          ]
+        },
+        {
+          "topicTitle": "String Methods in JS",
+          "subtopics": [
+            "Built-in functions to manipulate a string",
+            "str.toUpperCase() & str.toLowerCase()",
+            "str.trim() (removes whitespaces from start and end)",
+            "str.concat(str2) (joins str2 with str1)",
+            "str.replace(searchVal, newVal)",
+            "str.charAt(idx)",
+            "str.slice(start, end?) (returns part of string)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 17,
+        "theory": [
+          "What is the difference between a for-of loop and a for-in loop?",
+          "Explain what Template Literals are and provide an example of String Interpolation."
+        ],
+        "practical": [
+          "Print all even numbers from 0 to 100 using a for loop.",
+          "Create a game where you start with any random game number. Ask the user to keep guessing the game number using a while loop until the user enters the correct value.",
+          "Prompt the user to enter their full name. Generate a username for them starting with '@', followed by their full name, and ending with the full name's length (e.g., @shradhakhapra13).",
+          "Create a variable containing a string with extra spaces at the beginning and end. Use the trim() method to remove the spaces and log the cleaned string.",
+          "Declare a string and use the slice() method to extract and print only the first 5 characters.",
+          "Use the replace() method to change a specific word inside a string to a new word and log the updated string.",
+          "Take two different strings, join them together using the concat() method, and log the final result in all uppercase letters.",
+          "Write a for-of loop to iterate over the string 'JavaScript' and print each character individually to the console.",
+          "Write a for loop that prints the multiplication table of 5 (i.e., 5, 10, 15, ..., 50).",
+          "Use a do-while loop to print numbers from 10 counting backwards down to 1.",
+          "Create a simple object with 3 properties (e.g., studentName, age, marks) and use a for-in loop to print all its keys and their corresponding values.",
+          "Write a program using template literals to print a formatted message: 'My name is [name] and I am [age] years old', substituting variables for name and age.",
+          "Declare a string 'Hello World' and use the charAt() method to print the first and the last characters of the string.",
+          "Write a for loop that calculates and prints the sum of the first 100 natural numbers.",
+          "Take a string input from the user. Convert the entire string to lowercase, remove all trailing and leading spaces using trim(), and print the length of the final cleaned string."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Arrays & Array Methods",
+      "topics": [
+        {
+          "topicTitle": "Arrays in JS",
+          "subtopics": [
+            "Arrays as collections of items",
+            "Creating an Array (e.g., let marks = [1-3])",
+            "Array Indices (arr, arr[4], arr[5]...)"
+          ]
+        },
+        {
+          "topicTitle": "Looping over an Array",
+          "subtopics": [
+            "Iterating through an array to access individual items",
+            "Printing all elements of an array using loops"
+          ]
+        },
+        {
+          "topicTitle": "Basic Array Methods",
+          "subtopics": [
+            "push() : adds an item to the end of the array",
+            "pop() : deletes an item from the end and returns it",
+            "toString() : converts an array to a single string",
+            "concat() : joins multiple arrays and returns the result"
+          ]
+        },
+        {
+          "topicTitle": "Advanced Array Methods",
+          "subtopics": [
+            "unshift() : adds an item to the start of the array",
+            "shift() : deletes an item from the start and returns it",
+            "slice(startIdx, endIdx) : returns a piece of the array without changing the original",
+            "splice(startIdx, delCount, newEl1...) : changes the original array by adding, removing, or replacing elements"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 17,
+        "theory": [
+          "What is an array in JavaScript and how do you access its individual elements?",
+          "Explain the key difference between the slice() and splice() array methods."
+        ],
+        "practical": [
+          "Create an array of 5 different fruits. Log the 3rd fruit to the console using its index.",
+          "For a given array with marks of students -> [6-11], find and print the average marks of the entire class.",
+          "For a given array with prices of 5 items -> [12], all items have an offer of 10% OFF. Change the array to store the final price after applying the offer.",
+          "Create an array of 3 numbers. Use the push() method to add two new numbers to the end of the array.",
+          "Declare an array of colors. Use the pop() method to remove the last color, and log the removed color to the console.",
+          "Create an array of mixed data types (strings and numbers). Convert the entire array into a string using the toString() method and print it.",
+          "Create two separate arrays, one for Marvel heroes and one for DC heroes. Join them together using the concat() method and print the final array.",
+          "Use the unshift() method to add 'Delhi' to the very beginning of an array of city names.",
+          "Use the shift() method to remove the first element from an array of numbers and print the updated array.",
+          "Given an array [11-16], use the slice() method to extract and print only the elements from index 1 to index 4.",
+          "Given an array of 5 numbers, use the splice() method to remove exactly 2 elements starting from index 2.",
+          "Use the splice() method to insert a new string element at index 2 of an existing array without removing any of the original elements.",
+          "Use the splice() method to completely replace the item at index 1 of an array with a new value.",
+          "Create an array of companies: 'Bloomberg', 'Microsoft', 'Uber', 'Google', 'IBM', 'Netflix'. Remove the first company from the array.",
+          "Using the same companies array, remove 'Uber' and add 'Ola' in its exact place.",
+          "Using the same companies array, add 'Amazon' at the very end.",
+          "Create an array of 5 names. Use a for-of loop to iterate over the array and print each name in uppercase letters."
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "Functions & Advanced Array Methods",
+      "topics": [
+        {
+          "topicTitle": "Functions in JS",
+          "subtopics": [
+            "Block of code that performs a specific task",
+            "Can be invoked (called) whenever needed",
+            "Function Definition: function functionName(param1) { ... }",
+            "Function Call: functionName();"
+          ]
+        },
+        {
+          "topicTitle": "Arrow Functions",
+          "subtopics": [
+            "Compact way of writing a function",
+            "Syntax: const functionName = (param1, param2) => { ... }",
+            "Returning values from arrow functions"
+          ]
+        },
+        {
+          "topicTitle": "Callbacks & forEach Loop",
+          "subtopics": [
+            "A callback is a function passed as an argument to another function",
+            "arr.forEach(callBackFunction)",
+            "Executing a function for each element in the array"
+          ]
+        },
+        {
+          "topicTitle": "Higher-Order Array Methods",
+          "subtopics": [
+            "Map: arr.map(callbackFnx(value, index, array))",
+            "Map creates a new array with the results of some operation",
+            "Filter: arr.filter(callbackFnx)",
+            "Filter creates a new array of elements that give true for a condition",
+            "Reduce: arr.reduce(callbackFnx)",
+            "Reduce performs some operation and reduces the array to a single value"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 18,
+        "theory": [
+          "What is a callback function in JavaScript?",
+          "Explain the fundamental difference between the map() and forEach() methods.",
+          "How does the reduce() method work under the hood to return a single value?"
+        ],
+        "practical": [
+          "Create a function using the 'function' keyword that takes a String as an argument & returns the number of vowels in the string.",
+          "Create an arrow function to perform the exact same task of counting vowels in a string.",
+          "For a given array of numbers, calculate and print the square of each value using the forEach loop.",
+          "We are given an array of marks of students. Filter out the marks of students that scored 90+.",
+          "Take a number n as input from the user. Create an array containing numbers from 1 to n.",
+          "Using the array created in the previous question, use the reduce() method to calculate the sum of all numbers in the array.",
+          "Using that same array, use the reduce() method to calculate the product (factorial) of all numbers in the array.",
+          "Write a basic arrow function that takes two numbers as arguments and returns their sum.",
+          "Create an array of lowercase strings. Use the map() method to create a completely new array where every string is converted to uppercase.",
+          "Write a function that accepts an array of names and uses map() to return a new array with 'Hello, ' prepended to each name.",
+          "Use the filter() method to extract only the positive numbers from an array of mixed positive and negative integers.",
+          "Use the forEach() method to iterate over an array of item prices and log a 10% discounted price for each item to the console.",
+          "Write a reduce() function that determines and returns the maximum number in an array of numbers.",
+          "Create a function that acts as a callback (e.g., logs 'Process finished!'). Pass this function as an argument to another 'processor' function that calls it at the end.",
+          "Write an arrow function that checks if a provided number is even or odd, returning a boolean true/false."
+        ]
+      }
+    },
+    {
+      "chapterId": 6,
+      "chapterTitle": "Document Object Model (DOM)",
+      "relatedProjects": [
+        3,
+        4,
+        5,
+        9,
+        17
+      ],
+      "topics": [
+        {
+          "topicTitle": "Web Dev Basics & The Window Object",
+          "subtopics": [
+            "The 3 Musketeers: HTML (structure), CSS (style), JS (logic)",
+            "Connecting JS using the <script> tag",
+            "Window Object: Represents an open window in a browser",
+            "Window is a global browser object (not core JS) with properties and methods"
+          ]
+        },
+        {
+          "topicTitle": "Understanding the DOM",
+          "subtopics": [
+            "Document Object Model (DOM): Created by the browser when a page loads",
+            "Visualizing the DOM tree (window -> document -> html -> head/body)"
+          ]
+        },
+        {
+          "topicTitle": "DOM Manipulation: Selecting Elements",
+          "subtopics": [
+            "document.getElementById(\"myId\")",
+            "document.getElementsByClassName(\"myClass\")",
+            "document.getElementsByTagName(\"p\")",
+            "document.querySelector(\"#myId / .myClass / tag\") : returns first element",
+            "document.querySelectorAll(\"#myId / .myClass / tag\") : returns a NodeList"
+          ]
+        },
+        {
+          "topicTitle": "DOM Manipulation: Properties",
+          "subtopics": [
+            "tagName : returns tag for element nodes",
+            "innerText : returns the text content of the element and all its children",
+            "innerHTML : returns the plain text or HTML contents in the element",
+            "textContent : returns textual content even for hidden elements"
+          ]
+        },
+        {
+          "topicTitle": "Attributes and Styling",
+          "subtopics": [
+            "node.getAttribute(attr) : gets the attribute value",
+            "node.setAttribute(attr, value) : sets the attribute value",
+            "node.style : used to manipulate inline styles"
+          ]
+        },
+        {
+          "topicTitle": "Inserting and Deleting Elements",
+          "subtopics": [
+            "document.createElement(\"div\") : creates a new element",
+            "node.append(el) : adds at the end of node (inside)",
+            "node.prepend(el) : adds at the start of node (inside)",
+            "node.before(el) : adds before the node (outside)",
+            "node.after(el) : adds after the node (outside)",
+            "node.remove() : removes the node"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 15,
+        "theory": [
+          "What is the Window object and how is it different from the Document object?",
+          "Explain the exact difference between innerText, innerHTML, and textContent.",
+          "What is the difference between querySelector and querySelectorAll?"
+        ],
+        "practical": [
+          "Create an H2 heading element with text 'Hello JavaScript'. Append ' from Apna College students' to this text using JS.",
+          "Create 3 divs with a common class name 'box'. Access them using JS and add some unique text to each of them (e.g., Box 1, Box 2, Box 3).",
+          "Create a new button element using JS. Give it a text 'click me', a background color of red, and text color of white.",
+          "Insert the button you just created as the very first element inside the body tag.",
+          "Create a <p> tag in HTML and give it a class with some styling. Create a new class in CSS and use JS to append this new class to the <p> element using classList.",
+          "Select an image element on your page and use getAttribute() to log its 'src', then use setAttribute() to change the image source to a different URL.",
+          "Create a div with some text. Use node.style to change its background color to blue and font size to 24px directly from your JS file.",
+          "Create an unordered list (<ul>) in HTML. Use document.createElement() to create a new list item (<li>) and use append() to add it to the end of the list.",
+          "Use prepend() to add another new list item (<li>) to the very beginning of the same unordered list.",
+          "Create a heading in HTML. Use node.before() to insert a dynamically created paragraph directly above the heading.",
+          "Create a button on your webpage. Write a JS script to select this button and completely delete it from the page using the node.remove() method.",
+          "Use querySelectorAll to select all paragraph tags on a page. Iterate over the NodeList using a for-of loop and change the innerText of every paragraph to 'DOM Manipulation is fun!'."
+        ]
+      }
+    },
+    {
+      "chapterId": 7,
+      "chapterTitle": "Events in JavaScript",
+      "relatedProjects": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        10,
+        12,
+        13
+      ],
+      "topics": [
+        {
+          "topicTitle": "Introduction to Events",
+          "subtopics": [
+            "Events are fired to notify code of interesting changes",
+            "The change in the state of an object is known as an Event",
+            "Mouse events (click, double click, etc.)",
+            "Keyboard events (keypress, keyup, keydown)",
+            "Form events (submit, etc.)",
+            "Print events & many more"
+          ]
+        },
+        {
+          "topicTitle": "Event Handling in JS",
+          "subtopics": [
+            "node.event = () => { // handle here }",
+            "Example: btn.onclick = () => { console.log('btn was clicked'); }",
+            "Overriding event handlers (assigning a new function overwrites the old one)"
+          ]
+        },
+        {
+          "topicTitle": "The Event Object",
+          "subtopics": [
+            "A special object that has details about the event",
+            "All event handlers have access to the Event Object's properties and methods",
+            "Syntax: node.event = (e) => { // handle here }",
+            "e.target : refers to the element that triggered the event",
+            "e.type : returns the type of event (e.g., 'click')",
+            "e.clientX & e.clientY : returns the mouse coordinates"
+          ]
+        },
+        {
+          "topicTitle": "Event Listeners",
+          "subtopics": [
+            "node.addEventListener(event, callback)",
+            "node.removeEventListener(event, callback)",
+            "Note: The callback function reference must be exactly the same to remove it successfully"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 13,
+        "theory": [
+          "What is an Event in JavaScript? Give three examples of different event types.",
+          "What is the Event Object and what kind of information does it contain?",
+          "Why is it important to use the exact same callback function reference when using removeEventListener?"
+        ],
+        "practical": [
+          "Create a toggle button that changes the screen to dark-mode (black background) when clicked, and light-mode (white background) when clicked again.",
+          "Create a button in HTML. Use JS to select it and attach an 'onclick' event handler that logs 'Button was clicked!' to the console.",
+          "Create a div with a specific height and width. Add a double click ('dblclick') event listener that changes its background color.",
+          "Add an event listener to the whole document that listens for a 'keydown' event and logs the key that was pressed to the console.",
+          "Create a form with a submit button. Attach an event listener to the form that listens for the 'submit' event and logs a message.",
+          "Attach an event listener to a button and pass the event object (e) as a parameter. Log e.type and e.target to the console when clicked.",
+          "Create a large div on the page. Add an event listener to track mouse movements inside it, logging e.clientX and e.clientY to the console.",
+          "Write a function called 'sayHello' that logs 'Hello'. Add it to a button using addEventListener. Then, write the code to remove it using removeEventListener.",
+          "Create an unordered list (<ul>) with 3 list items (<li>). Add an event listener to the <ul> that logs the innerText of the exact <li> that was clicked using e.target.",
+          "Create a button that can only be clicked once. Inside its addEventListener callback, write the logic to immediately remove the event listener so subsequent clicks do nothing."
+        ]
+      }
+    },
+    {
+      "chapterId": 8,
+      "chapterTitle": "Object-Oriented Programming (OOP) & Error Handling",
+      "relatedProjects": [
+        18,
+        19,
+        20,
+        28,
+        29,
+        30
+      ],
+      "topics": [
+        {
+          "topicTitle": "Prototypes in JS",
+          "subtopics": [
+            "JS objects have a special property called prototype",
+            "Setting prototypes using __proto__",
+            "How objects inherit methods and properties from their prototype"
+          ]
+        },
+        {
+          "topicTitle": "Classes and Objects",
+          "subtopics": [
+            "Classes as templates for creating objects",
+            "Defining a class to group properties and methods",
+            "Creating objects (instances) from a class using the 'new' keyword"
+          ]
+        },
+        {
+          "topicTitle": "Constructors",
+          "subtopics": [
+            "The constructor() method",
+            "Automatically invoked when a new object is created",
+            "Used for initializing object properties"
+          ]
+        },
+        {
+          "topicTitle": "Inheritance",
+          "subtopics": [
+            "Inheriting properties and methods from a parent class using 'extends'",
+            "Passing down traits from Parent to Child classes",
+            "Method Overriding (Child class having the same method as Parent)"
+          ]
+        },
+        {
+          "topicTitle": "The 'super' Keyword",
+          "subtopics": [
+            "super(args) // calls Parent's constructor",
+            "super.parentMethod(args) // calls Parent's method",
+            "Must call super() before using 'this' in a derived class constructor"
+          ]
+        },
+        {
+          "topicTitle": "Error Handling (try-catch)",
+          "subtopics": [
+            "try { ... normal code }",
+            "catch ( err ) { ... handling error }",
+            "err is the error object",
+            "Prevents the script from completely crashing"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 18,
+        "theory": [
+          "What is a prototype in JavaScript and how does it relate to objects?",
+          "Explain the exact purpose of the 'super' keyword in JavaScript inheritance.",
+          "How does a try-catch block work and what is the 'err' object?"
+        ],
+        "practical": [
+          "Create a class 'User' with 2 properties, name & email. It also has a method called viewData() that allows the user to view website data.",
+          "Create a new class called 'Admin' which inherits from 'User'. Add a new method called editData() to Admin that allows it to edit website data.",
+          "Write a program with a try-catch block where you intentionally reference an undefined variable in the 'try' block, and log the 'err' object in the 'catch' block.",
+          "Create a prototype object for an employee containing a method calcTax(). Create another object for a specific employee and set its __proto__ to inherit the tax method.",
+          "Create a 'Car' class with a constructor() that initializes a 'brand' and 'mileage'. Instantiate two different car objects and log their properties.",
+          "Create a 'Person' class with a greet() method. Create a 'Student' class that inherits from 'Person' and overrides the greet() method to include their major.",
+          "Write a 'MathOperations' class with a method add() that takes two numbers and returns their sum. Instantiate the class and test the method.",
+          "Create a class 'BankAccount' with a balance property initialized in the constructor. Write deposit() and withdraw() methods.",
+          "Write a try-catch block around a JSON.parse() method attempting to parse an invalid string to handle the syntax error gracefully.",
+          "Create an 'Employee' class and a 'Manager' class. The 'Manager' constructor should use the super(args) keyword to call the 'Employee' constructor.",
+          "Create a class 'Product' with properties title, category, and price. Write a method applyDiscount(percent) that reduces the price.",
+          "Create a 'Device' class with a turnOn() method. Create a 'Smartphone' class inheriting from 'Device', and call super.turnOn() inside its own overridden turnOn() method.",
+          "Create a 'Shape' parent class with a constructor that accepts a color. Create a 'Circle' child class that passes the color to the parent using super() and also initializes a radius.",
+          "Write a program that takes user input for an age. If the age is negative, manually throw a custom error and catch it using a try-catch block.",
+          "Create a class 'Library' that contains an array of books. Write methods to addBook() and getBooks(), and test them by creating a new Library object."
+        ]
+      }
+    },
+    {
+      "chapterId": 9,
+      "chapterTitle": "Asynchronous JavaScript & Web APIs",
+      "relatedProjects": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "topics": [
+        {
+          "topicTitle": "Synchronous vs Asynchronous",
+          "subtopics": [
+            "Synchronous: Code runs in a particular sequence of instructions [1]",
+            "Each instruction waits for the previous instruction to complete [1]",
+            "Asynchronous: Allows execution of next instructions immediately without blocking the flow [1]"
+          ]
+        },
+        {
+          "topicTitle": "Timers & Execution Context",
+          "subtopics": [
+            "setTimeout(callback, delay) for delayed execution",
+            "setInterval(callback, interval) for repeated execution",
+            "Understanding the Call Stack, Web APIs, and the Event Loop",
+            "How asynchronous callbacks are pushed to the Task Queue"
+          ]
+        },
+        {
+          "topicTitle": "Callbacks & Callback Hell",
+          "subtopics": [
+            "Callback: A function passed as an argument to another function [2]",
+            "Callback Hell: Nested callbacks stacked below one another forming a pyramid structure [2]",
+            "Also known as the 'Pyramid of Doom' [2]"
+          ]
+        },
+        {
+          "topicTitle": "Promises",
+          "subtopics": [
+            "An object in JS representing the 'eventual' completion of a task [2]",
+            "A solution to callback hell [2]",
+            "Promise States: Pending (undefined), Resolved (fulfilled value), Rejected (error object) [3]",
+            "Using promise.then((res) => { ... }) and promise.catch((err) => { ... }) [3]"
+          ]
+        },
+        {
+          "topicTitle": "Async-Await & IIFE",
+          "subtopics": [
+            "async function always returns a promise [4]",
+            "await pauses the execution of its surrounding async function until the promise is settled [4]",
+            "IIFE: A function that is called immediately as soon as it is defined [4]"
+          ]
+        },
+        {
+          "topicTitle": "Working with APIs (Fetch & JSON)",
+          "subtopics": [
+            "What is an API (Application Programming Interface)?",
+            "HTTP Basics: GET (fetching data) vs POST (sending data)",
+            "Using the fetch(url) API to make network requests",
+            "JSON (JavaScript Object Notation): The standard data format",
+            "Converting data: JSON.parse() and JSON.stringify()"
+          ]
+        },
+        {
+          "topicTitle": "Browser Storage",
+          "subtopics": [
+            "Persisting data on the client side",
+            "localStorage (data does not expire) vs sessionStorage (cleared when tab closes)",
+            "setItem, getItem, and removeItem methods"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 18,
+        "theory": [
+          "What is the exact difference between Synchronous and Asynchronous code execution? [1]",
+          "What is 'Callback Hell' and how do Promises provide a cleaner solution? [2]",
+          "Explain the difference between a GET request and a POST request.",
+          "How does the Event Loop handle asynchronous functions like setTimeout?"
+        ],
+        "practical": [
+          "Write a function using setTimeout that logs 'Welcome to Web APIs' after a 3-second delay.",
+          "Create a sequence of 3 nested callback functions using setTimeout to simulate 'Callback Hell'.",
+          "Refactor your nested callbacks from the previous question into a flat Promise chain using multiple .then() blocks.",
+          "Write a Promise that randomly resolves or rejects using Math.random(). Chain .then() and .catch() to handle both outcomes.",
+          "Write an Immediately Invoked Function Expression (IIFE) that logs a message to the console the moment it is defined. [4]",
+          "Create an object with user details. Convert it into a JSON string using JSON.stringify() and log it. Then convert it back to an object using JSON.parse().",
+          "Use the fetch() API with .then() to make a GET request to a public API (like JSONPlaceholder) and log the returned JSON data to the console.",
+          "Rewrite the previous fetch request using an async function and the 'await' keyword.",
+          "Write an async function that intentionally fetches data from an invalid URL. Use a try-catch block to gracefully handle and log the error.",
+          "Save a user's chosen theme ('dark-mode') to localStorage. Retrieve it on the next line and log it to the console.",
+          "Write a function that clears all saved data from localStorage using the clear() method.",
+          "Create a custom function delay(ms) that returns a Promise which resolves after 'ms' milliseconds. Use it with await to pause an async function.",
+          "Mix synchronous and asynchronous code: Write console.log('Start'), a setTimeout of 0ms, and console.log('End'). Observe the Event Loop execution order.",
+          "Write an async function that fetches an array of posts from an API, then uses the array map() method to log only the titles of the posts."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Number Guessing Game (Neon UI)",
+      "difficulty": "beginner",
+      "features": [
+        "Modern neon-styled input fields and glowing buttons",
+        "Generate random numbers using Math.random()",
+        "Loop-based retry logic with remaining attempts counter",
+        "Trigger animated confetti effects upon winning"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Rock Paper Scissors (Arcade Edition)",
+      "difficulty": "beginner",
+      "features": [
+        "Retro arcade-style UI with pixel fonts and hover animations",
+        "Store game choices in an array and use functions to determine the winner",
+        "Complex conditional logic to evaluate win/loss/draw scenarios",
+        "Persistent scoreboard tracking player vs computer wins"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Random Color Generator (Minimalist Palette)",
+      "difficulty": "beginner",
+      "features": [
+        "Clean, minimalist layout focusing entirely on the generated color",
+        "Click events to trigger dynamic background color changes",
+        "Generate random HEX codes using Math.random() and string manipulation",
+        "One-click 'Copy to Clipboard' functionality with toast notifications"
+      ]
+    },
+    {
+      "projectId": 4,
+      "projectTitle": "Digital Clock (Neumorphic Design)",
+      "difficulty": "beginner",
+      "features": [
+        "Soft, 3D neumorphic UI design for the clock face",
+        "Fetch real-time hours, minutes, and seconds using the Date object",
+        "Use setInterval() to update the DOM every second seamlessly",
+        "Toggle between 12-hour (AM/PM) and 24-hour formats"
+      ]
+    },
+    {
+      "projectId": 5,
+      "projectTitle": "Counter App (Modern 3D UI)",
+      "difficulty": "beginner",
+      "features": [
+        "Highly polished interface with 3D button press animations",
+        "Event listeners to increment, decrement, and reset values",
+        "Dynamic color changing (e.g., green for positive, red for negative)",
+        "Smooth CSS transitions triggered by JavaScript DOM updates"
+      ]
+    },
+    {
+      "projectId": 6,
+      "projectTitle": "BMI Calculator (Health Dashboard)",
+      "difficulty": "beginner",
+      "features": [
+        "Sleek health-app style interface with sliders and visual scales",
+        "Functions to calculate BMI based on user height and weight inputs",
+        "Conditional statements to classify results (Underweight, Normal, Overweight)",
+        "Dynamic visual indicator moving across a colored health gauge"
+      ]
+    },
+    {
+      "projectId": 7,
+      "projectTitle": "Age Calculator (Interactive Timeline)",
+      "difficulty": "beginner",
+      "features": [
+        "Interactive date picker with a polished, modern calendar UI",
+        "Complex functions computing exact age in years, months, and days",
+        "Calculate the remaining days until the user's next birthday",
+        "Animated counter to display the final result"
+      ]
+    },
+    {
+      "projectId": 8,
+      "projectTitle": "Tip Calculator (Elegant Restaurant UI)",
+      "difficulty": "beginner",
+      "features": [
+        "Premium, dark-themed restaurant bill interface",
+        "Handle multiple inputs: bill amount, tip percentage, and number of people",
+        "Mathematical operations to calculate tip per person and total per person",
+        "Real-time calculation updates as the user types or adjusts sliders"
+      ]
+    },
+    {
+      "projectId": 9,
+      "projectTitle": "Dice Roller Simulator (3D Animated)",
+      "difficulty": "beginner",
+      "features": [
+        "Visually polished 3D dice faces created with CSS and manipulated via JS",
+        "Generate random numbers between 1 and 6 per die",
+        "Apply CSS rotation animations using JS before revealing the final result",
+        "Keep a running log of past rolls dynamically appended to the DOM"
+      ]
+    },
+    {
+      "projectId": 10,
+      "projectTitle": "Password Generator (Cyberpunk Theme)",
+      "difficulty": "beginner",
+      "features": [
+        "Hacker/Cyberpunk styled UI with glowing text and terminal effects",
+        "Combine arrays of uppercase, lowercase, numbers, and symbols based on user checkboxes",
+        "Use loops and random indices to generate a highly secure string",
+        "Visual password strength meter calculating complexity in real-time"
+      ]
+    },
+    {
+      "projectId": 11,
+      "projectTitle": "Calculator (Modern Glassmorphism UI)",
+      "difficulty": "intermediate",
+      "features": [
+        "Stunning glassmorphism design with frosted glass panels and blurred backgrounds",
+        "Handle complex string parsing for continuous mathematical operations",
+        "Function logic to handle edge cases like floating decimals and division by zero",
+        "Keyboard event support for typing numbers directly"
+      ]
+    },
+    {
+      "projectId": 12,
+      "projectTitle": "Tic-Tac-Toe (Glow-in-the-Dark)",
+      "difficulty": "intermediate",
+      "features": [
+        "Neon glowing X and O markers on a sleek dark board",
+        "Track grid state using a 2D array or mapped 1D array",
+        "Complex algorithmic win logic to check rows, columns, and diagonals",
+        "Highlight the winning combination line with CSS animations via JS"
+      ]
+    },
+    {
+      "projectId": 13,
+      "projectTitle": "Simon Says Game (Retro Arcade)",
+      "difficulty": "intermediate",
+      "features": [
+        "Vibrant, arcade-style glowing buttons with distinct audio tones",
+        "Use arrays to store the computer's sequence and the player's inputs",
+        "Implement setTimeout() and setInterval() to flash the sequence to the player",
+        "Strict level progression and high-score tracking"
+      ]
+    },
+    {
+      "projectId": 14,
+      "projectTitle": "Snake Game (Modern Grid Design)",
+      "difficulty": "intermediate",
+      "features": [
+        "Clean, modern grid aesthetic moving away from the old pixelated look",
+        "Capture arrow keys via 'keydown' keyboard events to change direction",
+        "Manage snake body coordinates dynamically using array unshift and pop",
+        "Implement a continuous game loop using requestAnimationFrame or setInterval"
+      ]
+    },
+    {
+      "projectId": 15,
+      "projectTitle": "Memory Card Game (Flip-Animated)",
+      "difficulty": "intermediate",
+      "features": [
+        "High-quality 3D card flip animations using CSS transforms triggered by JS",
+        "Shuffle array elements algorithmically to randomize board layout",
+        "Use timers (setTimeout) to temporarily show incorrect matches before flipping back",
+        "Track moves made and total time taken to complete the board"
+      ]
+    },
+    {
+      "projectId": 16,
+      "projectTitle": "Gamified Quiz Application",
+      "difficulty": "intermediate",
+      "features": [
+        "Polished, interactive question cards with progress bars and smooth transitions",
+        "Store questions, options, and correct answers securely in an array of objects",
+        "Dynamically load content into the DOM without refreshing the page",
+        "Final summary screen showing a visual pie chart of correct vs incorrect answers"
+      ]
+    },
+    {
+      "projectId": 17,
+      "projectTitle": "Notes App (Masonry Grid UI)",
+      "difficulty": "intermediate",
+      "features": [
+        "Google Keep-style masonry grid layout that adapts to note size",
+        "Create, Read, Update, and Delete (CRUD) sticky notes dynamically",
+        "Persist all notes locally across browser sessions using localStorage",
+        "Implement a search bar that filters notes in real-time"
+      ]
+    },
+    {
+      "projectId": 18,
+      "projectTitle": "To-Do App (Animated Task Cards)",
+      "difficulty": "intermediate",
+      "features": [
+        "Visually polished task cards with smooth drag-and-drop or swipe-to-delete animations",
+        "Filter system to seamlessly switch between All, Active, and Completed tasks",
+        "Utilize JS Classes to instantiate new Task objects with properties and methods",
+        "Save and retrieve task objects from localStorage using JSON parsing"
+      ]
+    },
+    {
+      "projectId": 19,
+      "projectTitle": "Expense Tracker (Dashboard Interface)",
+      "difficulty": "intermediate",
+      "features": [
+        "Professional finance dashboard interface with balance, income, and expense summary cards",
+        "Use the higher-order reduce() method to calculate totals from an array of transaction objects",
+        "Dynamically color-code positive (income) and negative (expense) DOM elements",
+        "Persist all financial history permanently using localStorage"
+      ]
+    },
+    {
+      "projectId": 20,
+      "projectTitle": "Habit Tracker (GitHub-Style Contributions)",
+      "difficulty": "intermediate",
+      "features": [
+        "Visually striking heat-map grid similar to GitHub's contribution graph",
+        "Complex calendar logic to map current dates to specific grid squares",
+        "Click to toggle habit completion, updating the intensity of the grid square's color",
+        "Track and calculate current daily streaks and save to localStorage"
+      ]
+    },
+    {
+      "projectId": 21,
+      "projectTitle": "Dynamic Weather Dashboard",
+      "difficulty": "advanced",
+      "features": [
+        "Visually polished UI that changes its background dynamically based on live weather conditions (e.g., rain, sun, clouds)",
+        "Fetch real-time data from a public weather API using Async/Await",
+        "Display temperature, humidity, wind speed, and dynamic icons",
+        "Include a 5-day forecast layout updating dynamically from the JSON response"
+      ]
+    },
+    {
+      "projectId": 22,
+      "projectTitle": "GitHub User Finder (Profile Card UI)",
+      "difficulty": "advanced",
+      "features": [
+        "Premium, GitHub-inspired profile card layout displaying avatars, bios, and stats",
+        "Implement proper asynchronous loading states (spinners/skeletons) while fetching data",
+        "Use Try/Catch blocks to elegantly handle and display errors for users that don't exist",
+        "Fetch and list the top 5 most recent repositories for the searched user"
+      ]
+    },
+    {
+      "projectId": 23,
+      "projectTitle": "Movie Search App (Netflix-Style)",
+      "difficulty": "advanced",
+      "features": [
+        "Dark-themed, cinematic UI with hover-to-expand movie poster cards",
+        "Query an external Movie Database API to return search results dynamically",
+        "Render a grid of highly styled DOM elements containing movie titles, ratings, and cover images",
+        "Implement a modal popup to fetch and display full movie details and cast when clicked"
+      ]
+    },
+    {
+      "projectId": 24,
+      "projectTitle": "Dictionary App (Elegant Typography)",
+      "difficulty": "advanced",
+      "features": [
+        "Minimalist design focusing on beautiful typography, phonetics, and readability",
+        "Fetch definitions, parts of speech, and synonyms from a Dictionary API",
+        "Parse deeply nested JSON data to render multiple meanings dynamically",
+        "Include an audio button that fetches and plays the pronunciation file"
+      ]
+    },
+    {
+      "projectId": 25,
+      "projectTitle": "Currency Converter (Fintech Style)",
+      "difficulty": "advanced",
+      "features": [
+        "Clean, trusted fintech aesthetic (like Revolut or Wise) with custom dropdowns",
+        "Fetch live exchange rates using Async/Await from a financial API",
+        "Calculate and display conversions instantly as the user types",
+        "Include a visual swap button that reverses the 'from' and 'to' currencies"
+      ]
+    },
+    {
+      "projectId": 26,
+      "projectTitle": "Music Player (Spotify-Inspired Interface)",
+      "difficulty": "advanced",
+      "features": [
+        "Highly polished Spotify-clone UI with album art, custom progress bars, and playback controls",
+        "Utilize the native HTML5 Audio API managed entirely through JavaScript classes",
+        "Navigate through a playlist array with Next, Previous, and Shuffle logic",
+        "Update a custom DOM progress bar based on the audio track's current time and duration"
+      ]
+    },
+    {
+      "projectId": 27,
+      "projectTitle": "E-Commerce Shopping Cart (Modern Storefront)",
+      "difficulty": "advanced",
+      "features": [
+        "High-end e-commerce product grid with slide-out cart drawer UI",
+        "Complex logic to add items, prevent duplicates by updating quantities, and remove items",
+        "Calculate live subtotals, taxes, and final totals using the reduce() method",
+        "Persist the user's cart array in localStorage so items remain after refresh"
+      ]
+    },
+    {
+      "projectId": 28,
+      "projectTitle": "Student Management System (Admin Dashboard)",
+      "difficulty": "advanced",
+      "features": [
+        "Professional admin dashboard layout with sidebar navigation and data tables",
+        "Use OOP Classes to instantiate and manage Student records",
+        "Perform full CRUD operations directly on the visual data table",
+        "Implement a fast, real-time search and filter system by name or roll number"
+      ]
+    },
+    {
+      "projectId": 29,
+      "projectTitle": "Employee Management Dashboard",
+      "difficulty": "advanced",
+      "features": [
+        "Enterprise-grade UI with pagination, status badges, and modal forms",
+        "Design an advanced OOP structure with parent 'Employee' classes and inherited roles (Manager, Intern)",
+        "Filter the dashboard view dynamically by department or employment status",
+        "Save the entire complex list of employee objects locally for data persistence"
+      ]
+    },
+    {
+      "projectId": 30,
+      "projectTitle": "Personal Productivity Dashboard (Notion-Inspired)",
+      "difficulty": "advanced",
+      "features": [
+        "Ultra-clean, minimalist workspace UI mimicking Notion's aesthetic",
+        "Combines a To-Do list, sticky notes, live clock, and local weather widget into a single app",
+        "Fetches a new motivational quote via API every time the dashboard loads",
+        "Includes a persistent Light/Dark mode theme toggle saved securely in localStorage"
+      ]
+    }
+  ]
+}

@@ -1,10 +1,57 @@
+export const categories = [
+  {
+    id: "web-dev",
+    title: "Web Development",
+    description:
+      "Build modern websites from scratch — HTML structure, CSS styling, and interactive JavaScript.",
+    gradient: "linear-gradient(135deg, #e44d26 0%, #264de4 100%)",
+    iconBg: "rgba(228,77,38,0.14)",
+    tagColor: "#e44d26",
+    logo: "src/img/tech-logo/web.png",
+    courseIds: ["html", "css", "javascript"],
+  },
+  {
+    id: "programming",
+    title: "Programming Languages",
+    description:
+      "Master core languages — from systems programming with C/C++ to scripting with Python and enterprise Java.",
+    gradient: "linear-gradient(135deg, #4f6ef7 0%, #8b5cf6 100%)",
+    iconBg: "rgba(79,110,247,0.14)",
+    tagColor: "#4f6ef7",
+    logo: "src/img/tech-logo/programming.png",
+    courseIds: ["c", "cpp", "python", "java", "dart", "javascript"],
+  },
+  {
+    id: "mobile",
+    title: "Mobile App Development",
+    description:
+      "Build beautiful cross-platform mobile apps with Flutter — widgets, state management, and deployment.",
+    gradient: "linear-gradient(135deg, #02569b 0%, #4fc3f7 100%)",
+    iconBg: "rgba(2,86,155,0.14)",
+    tagColor: "#02569b",
+    logo: "src/img/tech-logo/mobile.png",
+    courseIds: ["flutter", "dart","java"],
+  },
+  {
+    id: "dsa",
+    title: "Data Structures & Algorithms",
+    description:
+      "Master DSA with C++ — from arrays to graphs, with hands-on problem solving for interviews.",
+    gradient: "linear-gradient(135deg, #06d6a0 0%, #4f6ef7 100%)",
+    iconBg: "rgba(6,214,160,0.12)",
+    tagColor: "#06d6a0",
+    logo: "src/img/tech-logo/DSA.png",
+    courseIds: ["dsa-cpp"],
+  },
+];
+
 export const courses = [
     {
         id: 'c',
         title: 'C Programming',
         description: 'Master the fundamentals of C programming — from variables and pointers to file handling and dynamic memory.',
         tags: ['System', 'Procedural'],
-        icon: '<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 3L5 16h7l-1 9 10-13h-6l1-9z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>',
+        logo: 'src/img/tech-logo/c.png',
         isAvailable: true
     },
     {
@@ -12,7 +59,7 @@ export const courses = [
         title: 'C++ Programming',
         description: 'Deep dive into object-oriented programming with C++ — classes, inheritance, polymorphism, and STL.',
         tags: ['OOP', 'System'],
-        icon: '<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 3l9 9-9 13-9-13 9-9z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>',
+        logo: 'src/img/tech-logo/cpp.png',
         isAvailable: true
     },
     {
@@ -20,7 +67,7 @@ export const courses = [
         title: 'DSA with C++',
         description: 'Master data structures and algorithms with C++ — from arrays to graphs, with hands-on problem solving.',
         tags: ['CS Fundamentals', 'Interview Prep'],
-        icon: '<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 5C10 5 7 8 7 12c0 2.5 1.2 4 1.2 4s-.5 3.5 5.8 3.5 5.8-3.5 5.8-3.5S21 14.5 21 12c0-4-3-7-7-7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M11 10v4M17 10v4M14 9v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
+        logo: 'src/img/tech-logo/DSA.png',
         isAvailable: true
     },
     {
@@ -28,7 +75,7 @@ export const courses = [
         title: 'Python Programming',
         description: 'Learn Python from the ground up — syntax, data structures, OOP, modules, and real-world scripting.',
         tags: ['Scripting', 'General Purpose'],
-        icon: '<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4c-4 0-7 2-7 5v2c0 2 1 3 3 3h1c2 0 3 1 3 3v1c0 2-1 3-3 3H8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 24c4 0 7-2 7-5v-2c0-2-1-3-3-3h-1c-2 0-3-1-3-3V8c0-2 1-3 3-3h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+        logo: 'src/img/tech-logo/python.png',
         isAvailable: true
     },
     {
@@ -36,7 +83,7 @@ export const courses = [
         title: 'Java Programming',
         description: 'Comprehensive Java course — JVM, OOP, collections, multithreading, and building robust applications.',
         tags: ['OOP', 'Enterprise'],
-        icon: '<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M6 7h16l-2 14H8L6 7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M20 10h1a3 3 0 010 6h-1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 4v3M14 4v3M19 4v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
+        logo: 'src/img/tech-logo/java.png',
         isAvailable: true
     },
     {
@@ -44,7 +91,7 @@ export const courses = [
         title: 'Dart Programming',
         description: 'Master Dart programming — types, collections, async, and the foundation for Flutter development.',
         tags: ['UI', 'Cross-Platform'],
-        icon: '<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="1.6"/><circle cx="14" cy="14" r="5" stroke="currentColor" stroke-width="1.6"/><circle cx="14" cy="14" r="2" fill="currentColor"/></svg>',
+        logo: 'src/img/tech-logo/dart.svg',
         isAvailable: true
     },
     {
@@ -52,15 +99,31 @@ export const courses = [
         title: 'Flutter Mobile App Development',
         description: 'Build beautiful cross-platform mobile apps with Flutter — widgets, state management, and deployment.',
         tags: ['UI', 'Cross-Platform'],
-        icon: '<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M5 20l6-6 4 4 8-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 13l6-6 4 4 8-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/></svg>',
+        logo: 'src/img/tech-logo/flutter.svg',
         isAvailable: true
     },
     {
-        id: 'basic-web-dev',
-        title: 'Web Development (HTML, CSS & JavaScript)',
-        description: 'Build modern websites from scratch — HTML structure, CSS styling, and interactive JavaScript.',
-        tags: ['Frontend', 'Web'],
-        icon: '<svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M5 7l3 14h12l3-14H5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 11l-2 3 2 3M18 11l2 3-2 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 11l-1 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
+        id: 'css',
+        title: 'CSS Mastery: Styling the Modern Web',
+        description: 'Master CSS from selectors and box model to Flexbox, Grid, animations, and responsive design.',
+        tags: ['Frontend', 'Design'],
+        logo: 'src/img/tech-logo/css3.png',
+        isAvailable: true
+    },
+    {
+        id: 'html',
+        title: 'HTML: Structure the Web',
+        description: 'Learn HTML from basic tags to semantic elements, forms, accessibility, and building real-world page structures.',
+        tags: ['Frontend', 'Markup'],
+        logo: 'src/img/tech-logo/html5.png',
+        isAvailable: true
+    },
+    {
+        id: 'javascript',
+        title: 'JavaScript Programming',
+        description: 'Master JavaScript — variables, functions, DOM, async programming, ES6+, and building interactive web apps.',
+        tags: ['Frontend', 'Logic'],
+        logo: 'src/img/tech-logo/javascript.png',
         isAvailable: true
     }
 ];

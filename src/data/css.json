@@ -1,0 +1,409 @@
+{
+  "courseId": "css",
+  "courseTitle": "CSS - Cascading Style Sheets",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Basics of CSS & Text Properties",
+      "topics": [
+        {
+          "topicTitle": "Introduction to CSS",
+          "subtopics": [
+            "Cascading Style Sheet basics",
+            "CSS as a styling language (not programming)",
+            "Why HTML is required before CSS",
+            "Basic Syntax: Selectors, Properties, and Values",
+            "The importance of the semicolon (;)"
+          ]
+        },
+        {
+          "topicTitle": "Including Style",
+          "subtopics": [
+            "Inline styles (e.g., <h1 style=\"color: red\">)",
+            "Internal styles using the <style> tag",
+            "External Stylesheet (best practice)",
+            "Override hierarchy: Inline overrides external and internal styles"
+          ]
+        },
+        {
+          "topicTitle": "Colors & Selectors",
+          "subtopics": [
+            "Color Property for foreground text (e.g., color: red;)",
+            "Background Color Property",
+            "Color Systems: RGB (e.g., rgb(255, 0, 0)) and Hexadecimal (e.g., #ff0000)",
+            "Universal Selector (*)",
+            "Element Selector (e.g., h1)",
+            "Id Selector (e.g., #myId)",
+            "Class Selector (e.g., .myClass)"
+          ]
+        },
+        {
+          "topicTitle": "Text Properties",
+          "subtopics": [
+            "text-align: left, right, center, start, end (relative to parent, not page)",
+            "text-decoration: underline, overline, line-through, wavy, dotted, color, none",
+            "font-weight: normal, bold, bolder, lighter, 100-900",
+            "font-family: Generic families (Serif, Sans-Serif, Cursive, Fantasy, Monospace)",
+            "font-family fallback mechanisms (e.g., arial, roboto)",
+            "text-transform: uppercase, lowercase, capitalize, none",
+            "line-height: normal, numbers (e.g., 3), pixels (e.g., 2px)"
+          ]
+        },
+        {
+          "topicTitle": "Units in CSS",
+          "subtopics": [
+            "Absolute units: pixels (px), cm, mm, inch",
+            "Pixel conversion: 96px = 1 inch"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 7,
+        "theory": [
+          "Explain the difference between inline CSS, the <style> tag, and an external stylesheet.",
+          "Which styling method has the highest priority and will override the others?",
+          "Name the 5 generic font families in CSS.",
+          "How does the text-align property align text relative to its container?"
+        ],
+        "practical": [
+          "Create a simple div with an id 'box'. Add text content and set its background color to blue.",
+          "Create 3 headings (h1, h2, h3). Give them all a class 'heading' and set their color to red.",
+          "Create a centered heading with all its text capitalized by default using text-transform, and set the document font to 'Times New Roman'."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "The Box Model & Display Properties",
+      "topics": [
+        {
+          "topicTitle": "The Box Model in CSS",
+          "subtopics": [
+            "Content area: Height and Width",
+            "Border",
+            "Padding",
+            "Margin"
+          ]
+        },
+        {
+          "topicTitle": "Border Properties",
+          "subtopics": [
+            "border-width, border-style (solid, dotted, dashed), border-color",
+            "Border Shorthand (e.g., border: 2px solid black;)",
+            "border-radius for rounded corners (px, %, 50% for circular)"
+          ]
+        },
+        {
+          "topicTitle": "Padding and Margin",
+          "subtopics": [
+            "padding-top, padding-right, padding-bottom, padding-left",
+            "margin-top, margin-right, margin-bottom, margin-left",
+            "Shorthand order: Top, Right, Bottom, Left (Clockwise)"
+          ]
+        },
+        {
+          "topicTitle": "Display & Visibility",
+          "subtopics": [
+            "display: inline (takes required space, no margin/padding)",
+            "display: block (takes full available width)",
+            "display: inline-block (inline layout but allows margin/padding)",
+            "display: none (removes element from document flow)",
+            "visibility: hidden (hides element but reserves space)"
+          ]
+        },
+        {
+          "topicTitle": "Alpha Channel (Opacity)",
+          "subtopics": [
+            "Opacity property (0 to 1)",
+            "RGBA color system for background transparency (e.g., rgba(255, 0, 0, 0.5))"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 8,
+        "theory": [
+          "What are the four core components of the CSS Box Model?",
+          "Explain the difference between 'display: none' and 'visibility: hidden'.",
+          "What is the difference between 'block', 'inline', and 'inline-block' display types?",
+          "In what order does the margin shorthand property apply its values?"
+        ],
+        "practical": [
+          "Create a div with a height and width of 100px. Set its background color to green and make it perfectly circular using border-radius.",
+          "Build a simple navigation bar with a dark background, yellow text links, fixed gap sizes, and zero default margin.",
+          "Create a webpage layout with a header, footer, and a content area containing 3 block divs. Add borders to all divs.",
+          "Apply different background colors to the 3 divs using RGBA to give them each an opacity of 0.5."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Relative Units, Positioning & Z-Index",
+      "topics": [
+        {
+          "topicTitle": "Relative Units",
+          "subtopics": [
+            "Percentage (%): relative to parent object",
+            "em: relative to font-size of element itself (for padding/margin) or parent (for font-size)",
+            "rem (Root Em): relative to the font-size of the root element",
+            "vh: relative to 1% viewport height",
+            "vw: relative to 1% viewport width"
+          ]
+        },
+        {
+          "topicTitle": "CSS Position Property",
+          "subtopics": [
+            "position: static (default, top/right/bottom/left/z-index have no effect)",
+            "position: relative (positioned relative to its normal position)",
+            "position: absolute (relative to closest positioned ancestor, removed from flow)",
+            "position: fixed (relative to browser viewport, removed from flow)",
+            "position: sticky (based on user's scroll position)"
+          ]
+        },
+        {
+          "topicTitle": "Z-Index & Background Details",
+          "subtopics": [
+            "z-index: Stack level of overlapping elements (auto, 0, positive, negative)",
+            "background-image: Using url() to set backgrounds",
+            "background-size: cover (no empty space), contain (fully visible), auto"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "What is the difference between the 'em' and 'rem' CSS units?",
+          "How does 'position: absolute' differ from 'position: fixed'?",
+          "How does the z-index property handle overlapping elements?"
+        ],
+        "practical": [
+          "Create a parent div and a child div. Set the child's width to 50% so it perfectly scales with the parent.",
+          "Place a div at the exact bottom-right corner of the page using position: fixed so it never moves when the user scrolls.",
+          "Create two overlapping divs using absolute positioning. Give them background images with background-size: cover, and use z-index to bring the bottom div to the top."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Flexbox Layouts & Media Queries",
+      "topics": [
+        {
+          "topicTitle": "Introduction to Flexbox",
+          "subtopics": [
+            "One-dimensional layout method (rows or columns)",
+            "The Flex Model: Flex container and Flex items",
+            "Main axis and Cross axis"
+          ]
+        },
+        {
+          "topicTitle": "Flex Container Properties",
+          "subtopics": [
+            "flex-direction: row (default), row-reverse, column, column-reverse",
+            "justify-content: flex-start, flex-end, center, space-evenly (main axis alignment)",
+            "flex-wrap: nowrap, wrap, wrap-reverse",
+            "align-items: alignment along the cross axis",
+            "align-content: spacing between/around content along the cross axis"
+          ]
+        },
+        {
+          "topicTitle": "Flex Item Properties",
+          "subtopics": [
+            "align-self: overrides align-items for individual elements",
+            "flex-grow: how much an item will grow relative to others",
+            "flex-shrink: how much an item will shrink relative to others"
+          ]
+        },
+        {
+          "topicTitle": "Responsive Design with Media Queries",
+          "subtopics": [
+            "Making designs responsive for laptops, tablets, and mobile devices",
+            "Syntax: @media (width), @media (min-width)",
+            "Combining rules: @media (min-width) and (max-width)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 7,
+        "theory": [
+          "What is the difference between the main axis and the cross axis in Flexbox?",
+          "Which property has higher priority: align-items on the container, or align-self on the item?",
+          "Why are media queries crucial for modern web development?"
+        ],
+        "practical": [
+          "Create a navbar with 4 list items containing anchor tags. Use flexbox to space them equally in a single horizontal line.",
+          "Use flexbox properties (justify-content and align-items) to perfectly center a small div inside a larger container div.",
+          "Write a media query that changes a div's background color to green for viewports under 300px.",
+          "Write media queries that turn the div pink (300px-400px), red (400px-600px), and blue (above 600px)."
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "Advanced CSS (Transitions, Transforms, Animations)",
+      "topics": [
+        {
+          "topicTitle": "CSS Transitions",
+          "subtopics": [
+            "transition-property: specifying what changes (font-size, width, etc.)",
+            "transition-duration: time taken (e.g., 2s, 4ms)",
+            "transition-timing-function: ease-in, ease-out, linear, steps",
+            "transition-delay: time before the transition starts",
+            "Transition Shorthand: property | duration | timing-function | delay"
+          ]
+        },
+        {
+          "topicTitle": "CSS Transforms (2D & 3D)",
+          "subtopics": [
+            "rotate: taking degrees (e.g., rotate(45deg))",
+            "scale: resizing elements (e.g., scale(2), scaleX, scaleY, scale(1,2))",
+            "translate: moving elements (e.g., translate(20px, 50px), translateX, translateY, using %, em, rem)",
+            "skew: skewing on an axis (e.g., skew(30deg))"
+          ]
+        },
+        {
+          "topicTitle": "CSS Animations & Keyframes",
+          "subtopics": [
+            "@keyframes definitions (from/to, or 0% / 50% / 100%)",
+            "Animation properties: name, duration, timing-function, delay, iteration-count, direction",
+            "animation-iteration-count: infinite",
+            "Animation Shorthand: name | duration | timing-function | delay | iteration | direction"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "What is the difference between a CSS Transform and a CSS Transition?",
+          "How does the scale() transform alter an element's appearance?",
+          "What is the purpose of the @keyframes rule in CSS animations?"
+        ],
+        "practical": [
+          "Apply a hover effect to a button using a transition shorthand that smoothly increases its width and font-size over 2 seconds.",
+          "Use transform: translate() and transform: rotate() to move a div 50px to the right and rotate it 45 degrees simultaneously.",
+          "Create a custom spinning loader: Make a circular div with a thick border on one side, and use @keyframes from 0deg to 360deg with an infinite duration."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Personal Portfolio Website",
+      "concepts": [
+        "Typography & Box Model",
+        "Flexbox & Positioning",
+        "Responsive Design & Animations"
+      ],
+      "features": [
+        "Design a hero section with animated introduction text",
+        "Create a flexbox layout to showcase previous project cards",
+        "Build a 'Contact' section using appropriate typography",
+        "Ensure the portfolio adapts perfectly to mobile using media queries"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Amazon Homepage UI Clone",
+      "concepts": [
+        "Navigation Bar & Search Bar",
+        "Hero Banner & Product Grid",
+        "Flexbox & Responsive Layout"
+      ],
+      "features": [
+        "Build a complex top navigation bar with a styled search input",
+        "Create a hero banner that sits behind the product rows",
+        "Design a responsive multi-column product grid using flexbox",
+        "Implement a multi-link footer using lists and flexbox"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Spotify Web Player UI Clone",
+      "concepts": [
+        "Fixed & Absolute Positioning",
+        "Flexbox (Rows & Columns)",
+        "Hover Effects"
+      ],
+      "features": [
+        "Create a fixed left sidebar for navigation and playlists",
+        "Build a fixed bottom player bar for music controls",
+        "Layout a scrollable main content area with album cover cards",
+        "Implement hover states that reveal UI elements over images"
+      ]
+    },
+    {
+      "projectId": 4,
+      "projectTitle": "LinkedIn Feed & Profile UI Clone",
+      "concepts": [
+        "Left/Center/Right Layout",
+        "Sticky Navbar",
+        "Responsive Sidebar"
+      ],
+      "features": [
+        "Build a classic 3-column layout: left profile card, center feed, right widget",
+        "Style a sticky top navigation bar with search and flex-spaced icons",
+        "Create a responsive sidebar that adapts or hides on smaller screens",
+        "Style feed posts with circular profile pictures (using border-radius)"
+      ]
+    },
+    {
+      "projectId": 5,
+      "projectTitle": "Netflix Landing Page Clone",
+      "concepts": [
+        "Background Images & Gradient Overlays",
+        "Sections & Centering Elements",
+        "Responsive Layout"
+      ],
+      "features": [
+        "Set a full-screen background image with a dark transparent gradient overlay",
+        "Perfectly center the main call-to-action text and email input form",
+        "Create an accordion-style FAQ UI design using borders and padding",
+        "Use media queries to stack sections vertically on mobile screens"
+      ]
+    },
+    {
+      "projectId": 6,
+      "projectTitle": "Apple Product Landing Page",
+      "concepts": [
+        "Premium Typography",
+        "Fullscreen Sections",
+        "Smooth Hover Effects"
+      ],
+      "features": [
+        "Design a minimalist landing page with large, premium typography",
+        "Use CSS transitions to make product images smoothly scale on hover",
+        "Implement full-screen sections with responsive images",
+        "Create a glassmorphism-style sticky navigation bar"
+      ]
+    },
+    {
+      "projectId": 7,
+      "projectTitle": "Food Delivery Website (Zomato/Swiggy Inspired)",
+      "concepts": [
+        "Restaurant Cards & Categories",
+        "Hero Banner & Filters UI",
+        "Flexbox Grid"
+      ],
+      "features": [
+        "Build a hero banner with a central search bar for food or restaurants",
+        "Create a flexbox grid of restaurant cards with images, ratings, and delivery times",
+        "Style a horizontal scrollable category menu (e.g., Pizza, Burger, Sushi)",
+        "Design a sticky filter UI sidebar using CSS borders and checkboxes"
+      ]
+    },
+    {
+      "projectId": 8,
+      "projectTitle": "Complete E-Commerce Website",
+      "concepts": [
+        "Multi-section Landing Page",
+        "Product Cards & Offers Banner",
+        "Fully Responsive Layout"
+      ],
+      "features": [
+        "Structure a multi-section page (Hero, Featured Products, Testimonials)",
+        "Design promotional offer banners with absolute positioned text overlays",
+        "Style a complex footer layout with multiple link columns and a newsletter input",
+        "Ensure every section scales perfectly from mobile screens to desktop viewports"
+      ]
+    }
+  ]
+}

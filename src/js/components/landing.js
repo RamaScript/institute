@@ -1,4 +1,4 @@
-import { courses } from '../data/courses.js';
+import { categories, courses } from '../data/courses.js';
 
 /* ─── Per-course visual identity ─────────────────────────── */
 const courseThemes = {
@@ -37,10 +37,20 @@ const courseThemes = {
         iconBg: 'rgba(2,86,155,0.14)',
         tagColor: '#02569b',
     },
-    'basic-web-dev': {
-        gradient: 'linear-gradient(135deg, #e44d26 0%, #264de4 100%)',
+    'css': {
+        gradient: 'linear-gradient(135deg, #264de4 0%, #2965f1 50%, #4fc3f7 100%)',
+        iconBg: 'rgba(38,77,228,0.14)',
+        tagColor: '#264de4',
+    },
+    'html': {
+        gradient: 'linear-gradient(135deg, #e44d26 0%, #f16529 100%)',
         iconBg: 'rgba(228,77,38,0.14)',
         tagColor: '#e44d26',
+    },
+    'javascript': {
+        gradient: 'linear-gradient(135deg, #f7df1e 0%, #e8d44d 100%)',
+        iconBg: 'rgba(247,223,30,0.14)',
+        tagColor: '#b8a900',
     },
 };
 
@@ -172,11 +182,58 @@ function buildHero() {
     </header>`;
 }
 
-/* ─── Courses ────────────────────────────────────────────── */
-function buildCourses() {
-    const cards = courses.map((course, i) => {
-        const theme   = courseThemes[course.id] || courseThemes['c'];
-        const delay   = i * 0.12;
+/* ─── Categories ───────────────────────────────────────── */
+function buildCategories() {
+    const cards = categories.map((cat, i) => {
+        const courseCount = cat.courseIds.length;
+        const courseLogos = cat.courseIds.map(id => {
+            const c = courses.find(co => co.id === id);
+            return c ? `<img src="${c.logo}" alt="${c.title}" class="lp-category-course-logo" title="${c.title}">` : '';
+        }).join('');
+
+        return `
+        <div class="lp-category-card lp-reveal lp-delay-${Math.min(i+1,4)}"
+             style="--card-gradient:${cat.gradient}"
+             onclick="window.location.hash='${cat.id}'"
+             role="button" tabindex="0" aria-label="${cat.title}">
+            <div class="lp-category-icon" style="background:${cat.iconBg};border-color:${cat.tagColor}25">
+                <img src="${cat.logo}" alt="${cat.title}" class="lp-category-logo">
+            </div>
+            <div class="lp-category-body">
+                <h3 class="lp-category-name">${cat.title}</h3>
+                <p class="lp-category-desc">${cat.description}</p>
+                <div class="lp-category-logos">${courseLogos}</div>
+                <div class="lp-category-meta">
+                    <span class="lp-category-count">${courseCount} course${courseCount > 1 ? 's' : ''}</span>
+                    <span class="lp-category-explore">Explore <span class="arrow">${icons.arrowRight}</span></span>
+                </div>
+            </div>
+        </div>`;
+    }).join('');
+
+    return `
+    <section id="courses" class="lp-section" style="position:relative;z-index:1;">
+        <div class="lp-section-header">
+            <span class="lp-section-eyebrow">Courses</span>
+            <h2 class="lp-section-title lp-reveal">Pick your path</h2>
+            <p class="lp-section-desc lp-reveal">
+                Choose a category to explore our deep, practical courses.
+            </p>
+        </div>
+        <div class="lp-categories-grid">${cards}</div>
+    </section>`;
+}
+
+/* ─── Category Detail Page ──────────────────────────────── */
+export function renderCategoryPage(categoryId) {
+    const container = document.getElementById('landing-view');
+    const cat = categories.find(c => c.id === categoryId);
+    if (!cat) { window.location.hash = 'home'; return; }
+
+    const catCourses = cat.courseIds.map(id => courses.find(c => c.id === id)).filter(Boolean);
+
+    const cards = catCourses.map((course, i) => {
+        const theme = courseThemes[course.id] || courseThemes['c'];
         const isReady = course.isAvailable;
 
         const footer = isReady
@@ -193,12 +250,12 @@ function buildCourses() {
         return `
         <div class="lp-course-card ${isReady ? 'clickable' : 'disabled'} lp-reveal lp-delay-${Math.min(i+1,4)}"
              style="--card-gradient:${theme.gradient}"
-             onclick="${isReady ? `window.location.hash='#course/${course.id}'` : ''}"
+             onclick="${isReady ? `window.location.hash='${categoryId}/${course.id}'` : ''}"
              role="${isReady ? 'button' : 'article'}"
              tabindex="${isReady ? '0' : '-1'}"
              aria-label="${course.title}">
             <div class="lp-course-icon" style="background:${theme.iconBg};border-color:${theme.tagColor}25">
-                ${course.icon}
+                <img src="${course.logo}" alt="${course.title}" class="lp-course-logo">
             </div>
             <div class="lp-course-body">
                 <h3 class="lp-course-name">${course.title}</h3>
@@ -209,17 +266,97 @@ function buildCourses() {
         </div>`;
     }).join('');
 
-    return `
-    <section id="courses" class="lp-section" style="position:relative;z-index:1;">
-        <div class="lp-section-header">
-            <span class="lp-section-eyebrow">Courses</span>
-            <h2 class="lp-section-title lp-reveal">Pick your path</h2>
-            <p class="lp-section-desc lp-reveal">
-                Each course goes deep — not just syntax, but how the machine actually works.
-            </p>
+    container.innerHTML = `
+        <div class="landing-page-wrapper">
+            ${buildNavbar()}
+            <section class="lp-hero" style="min-height:auto;padding:8rem 2rem 3rem;">
+                <div class="lp-bg-canvas" aria-hidden="true">
+                    <div class="lp-bg-mesh"></div>
+                    <div class="lp-bg-grid"></div>
+                    <div class="lp-orb lp-orb-1"></div>
+                    <div class="lp-orb lp-orb-2"></div>
+                </div>
+                <div class="lp-hero-content" style="max-width:800px;">
+                    <a href="#home" class="lp-hero-badge" style="cursor:pointer;text-decoration:none;">
+                        <span class="lp-badge-dot"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2l4 4-4 4-4-4 4-4z" fill="currentColor"/></svg></span>
+                        Back to Home
+                    </a>
+                    <h1 class="lp-hero-title" style="font-size:clamp(2rem,5vw,3.5rem);">
+                        <span class="grad-text">${cat.title}</span>
+                    </h1>
+                    <p class="lp-hero-sub">${cat.description}</p>
+                </div>
+            </section>
+            <section class="lp-section" style="position:relative;z-index:1;">
+                <div class="lp-section-header">
+                    <span class="lp-section-eyebrow">${cat.title}</span>
+                    <h2 class="lp-section-title lp-reveal">Choose a course</h2>
+                </div>
+                <div class="lp-courses-grid">${cards}</div>
+            </section>
+            ${buildFooter()}
         </div>
-        <div class="lp-courses-grid">${cards}</div>
-    </section>`;
+    `;
+
+    setTimeout(() => _initCategoryPage(), 0);
+}
+
+function _initCategoryPage() {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+
+    const themeBtn = document.getElementById('lp-theme-toggle');
+    if (themeBtn) {
+        themeBtn.addEventListener('click', () => {
+            const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+        });
+    }
+
+    const burger = document.getElementById('lp-hamburger');
+    const mMenu = document.getElementById('lp-mobile-menu');
+    if (burger && mMenu) {
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            mMenu.classList.toggle('active');
+        });
+        mMenu.querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', () => {
+                burger.classList.remove('active');
+                mMenu.classList.remove('active');
+            });
+        });
+    }
+
+    const revealEls = document.querySelectorAll('.lp-reveal');
+    if ('IntersectionObserver' in window && revealEls.length) {
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    io.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        revealEls.forEach(el => io.observe(el));
+    } else {
+        revealEls.forEach(el => el.classList.add('visible'));
+    }
+
+    document.querySelectorAll('.lp-course-card.clickable').forEach(card => {
+        card.addEventListener('mousemove', e => {
+            const r = card.getBoundingClientRect();
+            card.style.setProperty('--mx', `${e.clientX - r.left}px`);
+            card.style.setProperty('--my', `${e.clientY - r.top}px`);
+        });
+        card.addEventListener('keydown', e => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                card.click();
+            }
+        });
+    });
 }
 
 /* ─── About / Features ───────────────────────────────────── */
@@ -444,7 +581,7 @@ export function renderLandingPage() {
         <div class="landing-page-wrapper">
             ${buildNavbar()}
             ${buildHero()}
-            ${buildCourses()}
+            ${buildCategories()}
             ${buildAbout()}
             ${buildTestimonials()}
             ${buildContact()}

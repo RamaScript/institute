@@ -310,10 +310,262 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    /* Fallback for single very long words */
     word-break: break-word;
     min-width: 0;
     flex: 1;
+}
+
+/* ── Sidebar projects (flat) ────────────────────────────── */
+.nav-projects-root {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.nav-projects-label,
+.nav-difficulty-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem var(--spacing-lg);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-tertiary);
+    user-select: none;
+}
+
+.nav-projects-label {
+    color: var(--color-success);
+}
+
+.nav-difficulty-label {
+    padding-left: calc(var(--spacing-lg) + 0.4rem);
+    margin-top: 0.5rem;
+    font-size: 0.68rem;
+}
+
+.nav-difficulty-label .difficulty-icon {
+    font-size: 0.55rem;
+}
+
+.nav-project-link {
+    padding-left: calc(var(--spacing-lg) + 0.9rem) !important;
+    font-size: 0.78rem !important;
+}
+
+.nav-project-link .project-pill {
+    min-width: 20px;
+    height: 20px;
+    font-size: 0.6rem;
+}
+
+.nav-project-link.active {
+    color: var(--color-accent) !important;
+    font-weight: 600;
+}
+
+.nav-project-link.active .project-pill {
+    background: var(--color-accent);
+    color: #fff;
+}
+
+/* ── Practice Projects (in chapter) ────────────────────── */
+.practice-projects-section {
+    margin: 0.5rem 0 1.5rem;
+    padding: 1rem 1.25rem;
+    background: linear-gradient(135deg, rgba(67,97,238,0.04) 0%, rgba(6,214,160,0.04) 100%);
+    border: 1px solid rgba(67,97,238,0.12);
+    border-radius: 12px;
+}
+
+.practice-projects-header {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid rgba(67,97,238,0.1);
+}
+
+.practice-projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.practice-project-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 0.8rem;
+    border-radius: 8px;
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-primary);
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.practice-project-link:hover {
+    border-color: var(--color-accent);
+    background: var(--color-accent-light);
+    color: var(--color-accent);
+    transform: translateX(4px);
+}
+
+.practice-project-link:hover .practice-dot {
+    background: var(--color-accent);
+    transform: scale(1.3);
+}
+
+.practice-project-link:hover .practice-link-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.practice-project-num {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--color-text-tertiary);
+    min-width: 1.2rem;
+}
+
+.practice-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-success);
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+}
+
+.practice-link-arrow {
+    margin-left: auto;
+    opacity: 0;
+    transform: translateX(-4px);
+    transition: all 0.2s ease;
+    color: var(--color-accent);
+    font-size: 0.75rem;
+}
+
+/* ── Projects section difficulty groups ─────────────────── */
+.projects-difficulty-group {
+    margin-bottom: 2rem;
+}
+
+.difficulty-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 0;
+    border-bottom: 2px solid var(--color-border);
+    margin-bottom: 1rem;
+}
+
+.difficulty-label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+}
+
+.difficulty-count {
+    font-size: 0.75rem;
+    color: var(--color-text-tertiary);
+    margin-left: auto;
+}
+
+/* ── Project cards (flat, bordered) ────────────────────── */
+.project-card {
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    border-top: 3px solid var(--color-border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.project-card--beginner { border-top-color: #06d6a0; }
+.project-card--intermediate { border-top-color: #f7b731; }
+.project-card--advanced { border-top-color: #ef476f; }
+
+.project-card-top {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+.project-card-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    background: var(--color-accent);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.project-card-difficulty {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    background: var(--color-border);
+    color: var(--color-text-tertiary);
+}
+
+.project-card--beginner .project-card-difficulty { background: rgba(6,214,160,0.15); color: #06d6a0; }
+.project-card--intermediate .project-card-difficulty { background: rgba(247,183,49,0.15); color: #f7b731; }
+.project-card--advanced .project-card-difficulty { background: rgba(239,71,111,0.15); color: #ef476f; }
+
+.project-card-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0 0 0.75rem 0;
+    color: var(--color-text-primary);
+}
+
+.project-card .project-features {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.project-card .project-features li {
+    position: relative;
+    padding-left: 1rem;
+    font-size: 0.82rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: 0.2rem;
+}
+
+.project-card .project-features li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-size: 0.75rem;
 }
 
 .main-content {

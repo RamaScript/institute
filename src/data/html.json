@@ -1,0 +1,276 @@
+{
+  "courseId": "html",
+  "courseTitle": "HTML - Hyper Text Markup Language",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Basic HTML Structure",
+      "topics": [
+        {
+          "topicTitle": "Introduction to HTML",
+          "subtopics": [
+            "Structure/layout of a web page",
+            "HTML as a markup code (not programming)",
+            "index.html as the default homepage file"
+          ]
+        },
+        {
+          "topicTitle": "HTML Tag Basics",
+          "subtopics": [
+            "Containers for content or other HTML tags",
+            "Elements vs Content (e.g., <p>This is a paragraph</p>)",
+            "Opening & closing tags"
+          ]
+        },
+        {
+          "topicTitle": "Basic HTML Page Skeleton",
+          "subtopics": [
+            "<!DOCTYPE html> (tells browser you are using HTML5)",
+            "<html> root of an html document",
+            "<head> container for metadata",
+            "<title> for page title",
+            "<body> contains all data rendered by the browser"
+          ]
+        },
+        {
+          "topicTitle": "Rules and Best Practices",
+          "subtopics": [
+            "Tags with no content in between (e.g., <br>)",
+            "Using 'Inspect element' or 'View page source' to see HTML",
+            "Comments in HTML (<!-- This is an HTML Comment -->)",
+            "HTML is NOT case sensitive (<p> = <P>)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "What is HTML and what role does it play in web development?",
+          "Explain the difference between an HTML tag and HTML content.",
+          "Why do we use the <!DOCTYPE html> declaration at the beginning of a document?"
+        ],
+        "practical": [
+          "Create your first 'index.html' file and set the browser tab title to 'My First Webpage'.",
+          "Write the basic boilerplate skeleton of an HTML document.",
+          "Add an HTML comment inside the <body> tag explaining what the body tag does, ensuring the comment doesn't render on the screen."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Basic HTML Tags & Formatting",
+      "topics": [
+        {
+          "topicTitle": "HTML Attributes",
+          "subtopics": [
+            "Adding more information to tags (e.g., <html lang=\"en\">)"
+          ]
+        },
+        {
+          "topicTitle": "Headings and Paragraphs",
+          "subtopics": [
+            "Heading Tags: h1 (most important) to h6 (least important)",
+            "Paragraph Tag (<p>)"
+          ]
+        },
+        {
+          "topicTitle": "Links and Media",
+          "subtopics": [
+            "Anchor Tag (<a>) with href attribute",
+            "Image Tag (<img>) with src and alt attributes",
+            "Understanding relative URLs"
+          ]
+        },
+        {
+          "topicTitle": "Text Formatting Tags",
+          "subtopics": [
+            "Bold (<b>), Italic (<i>), and Underline (<u>)",
+            "Big (<big>) and Small (<small>)",
+            "Subscript (<sub>) for formulas like H2O",
+            "Superscript (<sup>) for formulas like A^n + B^n",
+            "Pre Tag (<pre>) to display text exactly as it is (without ignoring spaces & next lines)"
+          ]
+        },
+        {
+          "topicTitle": "Spacing and Separators",
+          "subtopics": [
+            "Br Tag (<br>) for next line/line breaks",
+            "Hr Tag (<hr>) for horizontal rulers to separate content"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 8,
+        "theory": [
+          "What is an HTML attribute? Give two examples (e.g., href, src).",
+          "What is the difference between the <p> tag and the <pre> tag?",
+          "How do <sub> and <sup> tags alter the appearance of text?"
+        ],
+        "practical": [
+          "Create a page displaying all 6 heading tags from h1 to h6.",
+          "Write the chemical formula for Water (H2O) and Carbon Dioxide (CO2) using the correct formatting tags.",
+          "Write the mathematical equation (a+b)2 = a2 + b2 + 2ab using the superscript tag.",
+          "Create a poem maintaining exact spaces and line breaks using the <pre> tag.",
+          "Add an image to your page, and draw a horizontal line (<hr>) directly below it."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Page Layout Techniques",
+      "topics": [
+        {
+          "topicTitle": "Semantic Layout Tags",
+          "subtopics": ["<header>", "<main>", "<footer>"]
+        },
+        {
+          "topicTitle": "Inside the Main Tag",
+          "subtopics": [
+            "Section Tag (<section>) for a section on your page",
+            "Article Tag (<article>) for an article on your page",
+            "Aside Tag (<aside>) for content aside main content (e.g., ads)"
+          ]
+        },
+        {
+          "topicTitle": "Revisiting Anchor & Image Tags",
+          "subtopics": [
+            "Opening links in a new tab (target=\"_main\")",
+            "Creating clickable pictures (<a href=\"...\"><img src=\"...\"></a>)",
+            "Setting image height and width attributes"
+          ]
+        },
+        {
+          "topicTitle": "Div Tag (Block Elements)",
+          "subtopics": [
+            "Div is a container used for other HTML elements",
+            "Block Element concept (takes full width)",
+            "Examples of Block tags: <address>, <article>, <aside>, <blockquote>, <canvas>, <dd>, <div>, <dl>, <dt>, <fieldset>, <figcaption>, <figure>, <footer>, <form>, <h1>-<h6>, <header>, <hr>, <li>, <main>, <nav>, <noscript>, <ol>, <p>, <pre>, <section>, <table>, <tfoot>, <ul>, <video>"
+          ]
+        },
+        {
+          "topicTitle": "Span Tag (Inline Elements)",
+          "subtopics": [
+            "Span is a container used for other HTML elements",
+            "Inline Element concept (takes width as per size)",
+            "Examples of Inline tags: <a>, <abbr>, <acronym>, <b>, <bdo>, <big>, <br>, <button>, <cite>, <code>, <dfn>, <em>, <i>, <img>, <input>, <kbd>, <label>, <map>, <object>, <tt>, <var>, <output>, <q>, <samp>, <script>, <select>, <small>, <span>, <strong>, <sub>, <sup>, <textarea>"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "Why is it better to use semantic tags like <header> and <footer> instead of regular <div> tags?",
+          "What is the core difference in behavior between Block-level elements (Div) and Inline-level elements (Span)?",
+          "How do you make an image act as a hyperlink?"
+        ],
+        "practical": [
+          "Structure a complete webpage using <header>, <main>, <section>, <article>, <aside>, and <footer>.",
+          "Demonstrate block vs inline behavior by placing three <div> tags with background colors next to three <span> tags.",
+          "Add an image to your site, manually set its width to 300px, and make it open a Wikipedia page in a new tab when clicked."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Advanced HTML Elements",
+      "topics": [
+        {
+          "topicTitle": "Lists in HTML",
+          "subtopics": [
+            "Representing real-life list data",
+            "Unordered Lists (<ul>)",
+            "Ordered Lists (<ol>)",
+            "List Items (<li>)"
+          ]
+        },
+        {
+          "topicTitle": "Tables in HTML",
+          "subtopics": [
+            "Table rows (<tr>), headers (<th>), and data (<td>)",
+            "Table Captions (<caption>)",
+            "Table Head (<thead>) and Table Body (<tbody>)",
+            "Colspan attribute for spanning across multiple columns"
+          ]
+        },
+        {
+          "topicTitle": "Forms and Inputs",
+          "subtopics": [
+            "Form Tag (<form>) for collecting user data",
+            "Action attribute (action=\"/action.php\")",
+            "Text Inputs (<input type=\"text\" placeholder=\"...\">)",
+            "Radio Buttons (<input type=\"radio\">)",
+            "Checkboxes (<input type=\"checkbox\">)"
+          ]
+        },
+        {
+          "topicTitle": "Advanced Form Controls & Identifiers",
+          "subtopics": [
+            "Labels and binding to inputs using 'for' (<label for=\"id1\">)",
+            "Class & Id attributes (class=\"group1\", id=\"id1\")",
+            "Textarea for multi-line text (<textarea>)",
+            "Select Dropdowns (<select> and <option>)"
+          ]
+        },
+        {
+          "topicTitle": "Embedded Content",
+          "subtopics": [
+            "iframe Tag (website inside a website)",
+            "Video Tag (<video src=\"...\">)",
+            "Video Attributes (controls, height, width, loop, autoplay)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 8,
+        "theory": [
+          "Explain how the 'colspan' attribute works and when you would use it.",
+          "What is the purpose of the 'action' attribute inside a <form> tag?",
+          "Why should you always use <label> tags with form inputs like checkboxes or radio buttons?",
+          "What is the difference between an ID and a Class attribute?"
+        ],
+        "practical": [
+          "Create a complex Table for 'Student Results' utilizing <caption>, <thead>, <tbody>, <th>, <td>, and a <tr> that uses colspan=\"2\".",
+          "Create a Contact Us form that includes a text input for name, a radio button for gender, a select dropdown for city, and a textarea for feedback.",
+          "Use an iframe to embed a Wikipedia page into your website.",
+          "Embed a local video using the <video> tag, set its dimensions, and ensure user controls are visible."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Semantic Recipe Blog",
+      "concepts": [
+        "Semantic Tags",
+        "Lists",
+        "Text Formatting",
+        "Media Integration"
+      ],
+      "features": [
+        "A <header> containing the blog title and an unordered list (<ul>) navigation menu.",
+        "A <main> content area utilizing <article> and <section> tags to separate different recipe posts.",
+        "Detailed recipe ingredients built with an Ordered List (<ol>).",
+        "Proper use of <sub> and <sup> for cooking measurements (e.g., 350°F, H2O).",
+        "An embedded YouTube video (using <iframe>) demonstrating the recipe steps."
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Comprehensive College Admission Portal",
+      "concepts": [
+        "Forms & Inputs",
+        "Tables (Colspan/Thead)",
+        "Block vs Inline Elements",
+        "Classes and IDs"
+      ],
+      "features": [
+        "A highly structured application <form> utilizing labels strictly bound to inputs via IDs.",
+        "Diverse input data collection: Checkboxes for extracurriculars, Radio buttons for intended majors, and a <select> dropdown for states.",
+        "A multi-line <textarea> for the student's personal essay.",
+        "A 'Fee Structure' <table> at the bottom of the page utilizing <thead>, <tbody>, and colspan for categorized pricing.",
+        "Clear differentiation of layout using block elements (divs) to group form sections seamlessly."
+      ]
+    }
+  ]
+}

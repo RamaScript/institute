@@ -1,7 +1,8 @@
 import { loadAllChapters, loadProjects } from './dataLoader.js';
 import { renderSidebar } from './components/sidebar.js';
 import { renderChapterView } from './components/chapterView.js';
-import { renderLandingPage } from './components/landing.js';
+import { renderLandingPage, renderCategoryPage } from './components/landing.js';
+import { categories } from './data/courses.js';
 
 class App {
     constructor() {
@@ -20,6 +21,7 @@ class App {
         this.setupScrollSpy();
         this.setupCardGlow();
         this.setupSmoothAnchors();
+        this.setupProjectJumpLinks();
         this.handleRouting();
         window.addEventListener('hashchange', () => this.handleRouting());
     }
@@ -85,7 +87,7 @@ class App {
         const scan = () => {
             document.querySelectorAll('.chapter-section:not(.animate-in):not(.animate-in-scale)').forEach(el => observer.observe(el));
             document.querySelectorAll('.topic-card:not(.animate-in):not(.animate-in-scale)').forEach(el => observer.observe(el));
-            document.querySelectorAll('.project-card-mini:not(.animate-in):not(.animate-in-scale)').forEach(el => observer.observe(el));
+            document.querySelectorAll('.project-card:not(.animate-in):not(.animate-in-scale)').forEach(el => observer.observe(el));
             document.querySelectorAll('.stat-card:not(.animate-in):not(.animate-in-scale)').forEach(el => scaleObserver.observe(el));
             document.querySelectorAll('.testimonial-card:not(.animate-in):not(.animate-in-scale)').forEach(el => observer.observe(el));
         };
@@ -112,57 +114,105 @@ class App {
     }
 
     setupSmoothAnchors() {
-        // Smooth-scroll section anchors that are NOT routing hashes
         document.addEventListener('click', (e) => {
             const link = e.target.closest('a[href^="#"]');
             if (!link) return;
             const href = link.getAttribute('href');
-            // Let routing hashes (#home, #course/…) fall through to hashchange handler
-            if (href === '#home' || href.startsWith('#course/')) return;
-            // For all other in-page anchors, prevent default and scroll
+            if (href === '#home' || this.isCourseRoute(href) || this.isCategoryRoute(href)) return;
             const target = document.querySelector(href);
             if (target) {
                 e.preventDefault();
                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                // Don't push these to the URL so routing isn't triggered
             }
         });
     }
 
-    updateActiveChapter() {
-        const sections = document.querySelectorAll('.chapter-section');
-        const navLinks = document.querySelectorAll('.nav-link[data-id]');
-        let currentId = null;
-
-        sections.forEach(section => {
-            const rect = section.getBoundingClientRect();
-            if (rect.top <= 180) {
-                currentId = section.dataset.chapterId;
+    setupProjectJumpLinks() {
+        document.addEventListener('click', (e) => {
+            const link = e.target.closest('[data-scroll-to-project]');
+            if (link) {
+                e.preventDefault();
+                const projectId = link.dataset.scrollToProject;
+                const target = document.getElementById(`project-${projectId}`);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
             }
         });
+    }
+
+    isCategoryRoute(hash) {
+        const catId = hash.replace('#', '');
+        return categories.some(c => c.id === catId);
+    }
+
+    isCourseRoute(hash) {
+        const path = hash.replace('#', '');
+        const parts = path.split('/');
+        if (parts.length === 2) {
+            return categories.some(c => c.id === parts[0]) &&
+                   categories.some(c => c.courseIds.includes(parts[1]));
+        }
+        return false;
+    }
+
+    updateActiveChapter() {
+        const sections = document.querySelectorAll('.chapter-section');
+        const projectCards = document.querySelectorAll('.project-card[data-project-idx]');
+        const navLinks = document.querySelectorAll('.nav-link[data-id]');
+        const projectLinks = document.querySelectorAll('.nav-project-link[data-project-idx]');
+        let currentId = null;
+        let currentProjectIdx = null;
+
+        let inProjectSection = false;
+        if (projectCards.length > 0) {
+            const firstProject = projectCards[0];
+            const firstRect = firstProject.getBoundingClientRect();
+            if (firstRect.top <= 200) {
+                inProjectSection = true;
+            }
+        }
+
+        if (inProjectSection) {
+            projectCards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top <= 200) {
+                    currentProjectIdx = card.dataset.projectIdx;
+                }
+            });
+        } else {
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 180) {
+                    currentId = section.dataset.chapterId;
+                }
+            });
+        }
 
         navLinks.forEach(link => {
-            const isActive = link.dataset.id == currentId;
-            link.classList.toggle('active', isActive);
+            link.classList.toggle('active', link.dataset.id == currentId);
+        });
+
+        projectLinks.forEach(link => {
+            link.classList.toggle('active', currentProjectIdx !== null && link.dataset.projectIdx === currentProjectIdx);
         });
     }
 
     async handleRouting() {
         const hash = window.location.hash;
+        const path = hash.replace('#', '');
         const landingView = document.getElementById('landing-view');
         const syllabusView = document.getElementById('syllabus-view');
 
-        // Section anchors on the landing page — stay on landing, just scroll
+        // Section anchors on the landing page
         const sectionAnchors = ['#courses', '#about', '#testimonials', '#contact'];
         if (sectionAnchors.includes(hash)) {
-            // Make sure the landing is visible
             if (landingView.classList.contains('hidden')) {
                 landingView.classList.remove('hidden');
                 syllabusView.classList.add('hidden');
                 this.currentCourseId = null;
                 renderLandingPage();
                 setTimeout(() => {
-                    this.setupCardGlow();
                     const el = document.querySelector(hash);
                     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }, 120);
@@ -173,36 +223,50 @@ class App {
             return;
         }
 
+        // Home
         if (!hash || hash === '#home') {
             landingView.classList.remove('hidden');
             syllabusView.classList.add('hidden');
             this.currentCourseId = null;
             renderLandingPage();
-            setTimeout(() => {
-                this.setupCardGlow();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }, 0);
+            setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 0);
             return;
         }
 
-        if (hash.startsWith('#course/')) {
-            const parts = hash.split('/');
-            const courseId = parts[1];
-            const chapterId = (parts[2] === 'chapter' && parts[3]) ? parseInt(parts[3]) : null;
+        // Parse route: could be "categoryId" or "categoryId/courseId"
+        const parts = path.split('/');
+        const categoryId = parts[0];
+        const courseId = parts.length === 2 ? parts[1] : null;
+        const cat = categories.find(c => c.id === categoryId);
 
+        if (!cat) {
+            // Unknown route — go home
+            window.location.hash = 'home';
+            return;
+        }
+
+        if (courseId && cat.courseIds.includes(courseId)) {
+            // Course syllabus view
             landingView.classList.add('hidden');
             syllabusView.classList.remove('hidden');
 
             if (this.currentCourseId !== courseId) {
                 this.currentCourseId = courseId;
-                await this.loadCourseContent(courseId, chapterId);
-            } else if (chapterId) {
-                this.scrollToChapter(chapterId);
+                this.currentCategoryId = categoryId;
+                await this.loadCourseContent(courseId, null, categoryId);
             }
+        } else {
+            // Category page
+            landingView.classList.remove('hidden');
+            syllabusView.classList.add('hidden');
+            this.currentCourseId = null;
+            this.currentCategoryId = categoryId;
+            renderCategoryPage(categoryId);
+            setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 0);
         }
     }
 
-    async loadCourseContent(courseId, scrollToChapterId = null) {
+    async loadCourseContent(courseId, scrollToChapterId = null, categoryId = null) {
         const contentArea = document.getElementById('content-area');
 
         contentArea.innerHTML = `<div class="loading-state"><div class="loader"></div><p>Loading course content...</p></div>`;
@@ -217,11 +281,14 @@ class App {
             this.projects = projects;
 
             const sidebarData = chapters.map(c => ({ id: c.chapterId, title: c.chapterTitle }));
-            renderSidebar(sidebarData, null, courseId);
+            const activeId = scrollToChapterId || (chapters.length > 0 ? chapters[0].chapterId : null);
+            renderSidebar(sidebarData, activeId, courseId, projects, categoryId);
             renderChapterView(chapters, projects, courseId);
 
             if (scrollToChapterId) {
                 setTimeout(() => this.scrollToChapter(scrollToChapterId), 150);
+            } else if (chapters.length > 0) {
+                setTimeout(() => this.scrollToChapter(chapters[0].chapterId), 150);
             }
         } catch (err) {
             console.error(err);
