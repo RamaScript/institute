@@ -24,6 +24,11 @@ export function renderChapterView(chapters, projects, courseId) {
                     <div class="topic-card">
                         <h3 class="topic-title" data-number="${chapter.chapterId}.${tIdx + 1}">${topic.topicTitle}</h3>
                         ${
+                          topic.description
+                            ? `<p class="topic-description">${escapeHtml(topic.description)}</p>`
+                            : ""
+                        }
+                        ${
                           topic.subtopics && topic.subtopics.length > 0
                             ? `
                             <ul class="subtopic-list">
@@ -276,6 +281,7 @@ function getCourseTitle(courseId) {
     html: "HTML",
     css: "CSS",
     javascript: "JavaScript",
+    appliedai: "Applied AI Engineering",
   };
   return titles[courseId] || "Course";
 }

@@ -134,6 +134,17 @@
     padding: 0 0.3rem;
 }
 
+.topic-description {
+    font-size: 0.86rem;
+    color: var(--color-text-secondary);
+    line-height: 1.55;
+    margin: -0.25rem 0 0.75rem 0;
+    padding: 0.5rem 0.75rem;
+    background: var(--color-nav-hover);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 4px;
+}
+
 .subtopic-list {
     list-style: none;
     padding: 0;
@@ -156,8 +167,8 @@
 }
 
 .assignment-section {
-    background: linear-gradient(135deg, #fffbeb 0%, #fef9e7 100%);
-    border: 1px solid #fcd34d;
+    background: linear-gradient(135deg, #1e1008 0%, #1a0e06 100%);
+    border: 1px solid rgba(255, 176, 0, 0.35);
     border-radius: var(--radius-md);
     padding: var(--spacing-xl) var(--spacing-xl) var(--spacing-lg);
     margin-top: 0.5rem;
@@ -173,7 +184,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #f59e0b, #fbbf24, #f59e0b);
+    background: linear-gradient(90deg, #FF6A00, #FFB000, #FF6A00);
     background-size: 200% 100%;
     animation: shimmer 3s ease-in-out infinite;
 }
@@ -189,7 +200,7 @@
     align-items: center;
     padding-bottom: var(--spacing-sm);
     margin-bottom: var(--spacing-md);
-    color: #92400e;
+    color: #FFB000;
     font-weight: 700;
     font-size: 0.95rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
@@ -197,8 +208,8 @@
 
 .assignment-header span:last-child {
     font-size: 0.78rem;
-    background: #fbbf24;
-    color: #78350f;
+    background: rgba(255, 176, 0, 0.25);
+    color: #FFB000;
     padding: 0.2rem 0.7rem;
     border-radius: 100px;
     font-weight: 700;
@@ -206,7 +217,7 @@
 
 .subsection-title {
     font-weight: 700;
-    color: #b45309;
+    color: #FF8C42;
     margin: var(--spacing-lg) 0 var(--spacing-sm);
     text-transform: uppercase;
     font-size: 0.72rem;
@@ -222,7 +233,7 @@
 
 .question-list li {
     margin-bottom: 0.55rem;
-    color: #78350f;
+    color: #FFB000;
     font-size: 0.88rem;
     line-height: 1.55;
     padding: 0.2rem 0;
@@ -230,12 +241,12 @@
 }
 
 .question-list li:hover {
-    color: #451a03;
+    color: #FFB000;
     padding-left: 0.3rem;
 }
 
 .question-list li::marker {
-    color: #b45309;
+    color: #FF8C42;
     font-weight: 600;
 }
 
@@ -247,7 +258,7 @@
 }
 
 .pattern-card {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 106, 0, 0.06);
     border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: var(--radius-sm);
     padding: 0.75rem;
@@ -255,7 +266,7 @@
 }
 
 .pattern-card:hover {
-    background: white;
+    background: rgba(255, 106, 0, 0.10);
     border-color: rgba(0, 0, 0, 0.1);
     transform: translateY(-1px);
 }
@@ -264,21 +275,21 @@
     display: block;
     font-weight: 600;
     font-size: 0.78rem;
-    color: #92400e;
+    color: #FFB000;
     margin-bottom: 0.5rem;
 }
 
 .pattern-num {
     font-weight: 700;
-    color: #b45309;
+    color: #FF8C42;
 }
 
 .pattern-output {
     font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
     font-size: 0.72rem;
     line-height: 1.4;
-    color: #78350f;
-    background: rgba(255, 255, 255, 0.5);
+    color: #FFB000;
+    background: rgba(255, 106, 0, 0.06);
     padding: 0.5rem;
     border-radius: 4px;
     overflow-x: auto;
@@ -330,7 +341,7 @@
     border-color: var(--color-accent);
     color: var(--color-accent);
     transform: scale(1.2);
-    box-shadow: 0 4px 16px rgba(67, 97, 238, 0.15);
+    box-shadow: 0 4px 16px rgba(255, 106, 0, 0.25);
     opacity: 1;
     animation: none;
 }
@@ -371,7 +382,7 @@
 .project-concepts .tag {
     background: var(--color-accent-light);
     color: var(--color-accent);
-    border: 1px solid rgba(67, 97, 238, 0.1);
+    border: 1px solid rgba(255, 106, 0, 0.15);
     font-weight: 600;
     font-size: 0.65rem;
     padding: 0.15rem 0.55rem;

@@ -1,0 +1,1195 @@
+{
+  "courseId": "appliedai",
+  "courseTitle": "Applied AI Engineering (LLMs, RAG & Agentic AI)",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "LLM Fundamentals & Model Landscape",
+      "topics": [
+        {
+          "topicTitle": "What is an LLM?",
+          "description": "Understand what a large language model is and why it is the foundation of every other topic in this course. Start here before touching frameworks.",
+          "subtopics": [
+            "What an LLM does (next-token prediction)",
+            "Training vs inference (concept)",
+            "Closed models vs open-weight models",
+            "Where we get LLMs from: hosted APIs vs private LLMs"
+          ]
+        },
+        {
+          "topicTitle": "Comparing LLM Models",
+          "description": "Learn how to choose a model for a task by comparing quality, speed and price instead of following hype.",
+          "subtopics": [
+            "Comparison between LLM models",
+            "Benchmarks and what they actually measure",
+            "Costing per input and output token",
+            "Latency vs quality trade-off",
+            "Choosing the best provider for a task"
+          ]
+        },
+        {
+          "topicTitle": "Knowledge Cutoff & LLM Limitations",
+          "description": "An LLM alone is limited. ChatGPT and Claude feel powerful because of the tools around the model, not because of the raw model.",
+          "subtopics": [
+            "Knowledge cutoff and stale information",
+            "Hallucinations",
+            "No tools by default: why raw LLMs cannot browse, calculate or act",
+            "How products add tools around the model",
+            "Privacy and data concerns with hosted models"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What is an LLM and how does it generate text?",
+          "Difference between a hosted LLM API and a private/self-hosted LLM.",
+          "What do LLM benchmarks measure and what are their limitations?",
+          "What is a knowledge cutoff and how do you work around it?",
+          "Why do raw LLMs hallucinate, and how can an application reduce it?"
+        ],
+        "practical": [
+          "Create free accounts on two LLM providers and get API keys.",
+          "Send the same prompt to two different models and compare the answers.",
+          "Build a comparison table of three models (quality, speed, price per 1M tokens).",
+          "Calculate the cost of a 2,000-token input and 500-token output for three models.",
+          "Ask a model about a recent event and observe its knowledge cutoff behavior.",
+          "Make a model hallucinate on purpose and document the failure case.",
+          "Run a small open-weight model locally and compare it with an API model.",
+          "Read a public benchmark leaderboard and summarize the top three models.",
+          "Write a one-page note on which model you would pick for chatbot, coding and summarization.",
+          "Compare response latency of a small and a large model on 10 prompts.",
+          "Test the same prompt in a chat UI vs the raw API and note the differences.",
+          "List five tasks where an LLM alone fails and what tool would fix each.",
+          "Create a simple script that calls an LLM API and prints the response.",
+          "Track token usage and estimated cost for 20 API calls.",
+          "Build a model-selection cheat sheet for your own future projects."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "LLM Parameters, Tokens & API Basics",
+      "topics": [
+        {
+          "topicTitle": "Tokens",
+          "description": "Tokens decide both cost and limits. The last two token types below are the most important for building efficient AI systems.",
+          "subtopics": [
+            "Input tokens",
+            "Output tokens",
+            "Cached input tokens",
+            "Cached write tokens",
+            "Counting tokens before sending a request"
+          ]
+        },
+        {
+          "topicTitle": "Sampling & Output Parameters",
+          "description": "Control how creative or deterministic the model is and how long it can answer.",
+          "subtopics": [
+            "Temperature",
+            "Top-P and Top-K",
+            "Max output tokens",
+            "Context window and what happens when it overflows"
+          ]
+        },
+        {
+          "topicTitle": "Prompts & API Types",
+          "description": "Learn the different roles in a request and the different ways to call a model, including the cheaper batch route.",
+          "subtopics": [
+            "System prompt",
+            "User prompt",
+            "Completion / chat API",
+            "Batch API for cost-effective bulk work",
+            "Multimodal support (images, audio, documents)"
+          ]
+        },
+        {
+          "topicTitle": "Rate Limits",
+          "description": "Production systems must respect provider limits or they will fail under load.",
+          "subtopics": [
+            "RPM (requests per minute)",
+            "TPM (tokens per minute)",
+            "Handling 429 errors",
+            "Retry with backoff"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain input, output, cached input and cached write tokens.",
+          "What is the context window and what happens when a conversation exceeds it?",
+          "Explain temperature, top-p and top-k with examples.",
+          "Difference between a system prompt and a user prompt.",
+          "What are RPM and TPM and how do they affect application design?"
+        ],
+        "practical": [
+          "Count tokens of a long paragraph using a tokenizer library.",
+          "Call an LLM with temperature 0 and 1.5 and compare outputs.",
+          "Experiment with top-p and top-k and document the effect.",
+          "Set max output tokens low and observe truncated answers.",
+          "Write three different system prompts for the same task and compare results.",
+          "Build a chat loop that keeps conversation history in a list.",
+          "Make a conversation overflow the context window and handle it by trimming.",
+          "Use a batch API to process 50 prompts and compare cost with normal calls.",
+          "Send an image to a multimodal model and extract text from it.",
+          "Trigger a rate-limit error and implement retry with exponential backoff.",
+          "Use prompt caching and measure the cost difference on repeated prompts.",
+          "Build a small token and cost tracker for every API call.",
+          "Create a reusable function that wraps the LLM API with logging.",
+          "Compare the same request across two providers using their native SDKs.",
+          "Build a command-line chatbot with configurable parameters."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Prompting, Structured Output & Function Calling",
+      "topics": [
+        {
+          "topicTitle": "Prompt Engineering Essentials",
+          "description": "Write prompts that give reliable results. System and user prompts are the most important input you control.",
+          "subtopics": [
+            "Clear instructions and role setting",
+            "Few-shot examples",
+            "Step-by-step reasoning prompts",
+            "Prompt templates and variables"
+          ]
+        },
+        {
+          "topicTitle": "Structured Output",
+          "description": "You will use this daily. It makes LLM output machine-readable so code can depend on it.",
+          "subtopics": [
+            "JSON mode and schema-constrained output",
+            "Pydantic models as schemas",
+            "Validating and repairing output",
+            "Extracting data from unstructured text"
+          ]
+        },
+        {
+          "topicTitle": "Function Calling",
+          "description": "Function calling lets the model request actions. Frameworks like LangChain and LangGraph are built on top of this, so if you skip it you will get lost later.",
+          "subtopics": [
+            "Defining a function schema",
+            "Model decides which function to call",
+            "Executing the function in your backend",
+            "Sending the result back to the model"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Why is structured output important in production AI systems?",
+          "Explain few-shot prompting with an example.",
+          "How does function calling work end to end?",
+          "Why must the backend, not the model, execute the function?",
+          "How do frameworks like LangChain and LangGraph depend on function calling and structured output?"
+        ],
+        "practical": [
+          "Write a prompt template with variables for a summarization task.",
+          "Use few-shot examples to improve a classification prompt.",
+          "Force an LLM to return valid JSON for a given schema.",
+          "Define a Pydantic model and use it as the output schema.",
+          "Extract name, date and amount from an invoice text into structured data.",
+          "Handle invalid JSON output with validation and a retry.",
+          "Build a sentiment classifier that returns a fixed label set.",
+          "Define a get_weather function schema and let the model call it.",
+          "Execute a model-requested function and send the result back.",
+          "Build an assistant with two tools (calculator and weather).",
+          "Handle a case where the model calls a function with wrong arguments.",
+          "Let the model choose between calling a tool and answering directly.",
+          "Build a resume parser that outputs structured JSON.",
+          "Build a meeting-notes extractor returning action items as a list.",
+          "Build a mini assistant combining structured output and function calling."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Python for AI Engineers",
+      "topics": [
+        {
+          "topicTitle": "Python Fundamentals",
+          "description": "Revise the Python you need to write clean production code, not just scripts.",
+          "subtopics": [
+            "Data types, functions and modules",
+            "OOP: classes, inheritance, dataclasses",
+            "Type hints",
+            "Virtual environments and package management",
+            "Error handling and logging"
+          ]
+        },
+        {
+          "topicTitle": "Async Python",
+          "description": "Very important. AI apps wait on network calls all the time, and async lets one server handle many requests.",
+          "subtopics": [
+            "async/await basics",
+            "asyncio event loop and tasks",
+            "Running calls concurrently with gather",
+            "Async HTTP clients",
+            "Sync vs async: when to use which"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain the difference between synchronous and asynchronous code.",
+          "What is the asyncio event loop?",
+          "Why are type hints useful in large AI projects?",
+          "Explain OOP concepts with a small AI-related example.",
+          "When should you NOT use async?"
+        ],
+        "practical": [
+          "Create a virtual environment and install packages with a requirements file.",
+          "Write a class that wraps an LLM client using OOP.",
+          "Use dataclasses to represent a chat message.",
+          "Add type hints to an existing script and run a type checker.",
+          "Add structured logging to a script.",
+          "Write an async function that fetches a URL.",
+          "Run 10 API calls concurrently using asyncio.gather.",
+          "Compare the time of sync vs async for 20 requests.",
+          "Use an async HTTP client to call an LLM API.",
+          "Handle timeouts and exceptions inside async code.",
+          "Write a decorator that retries a failing function.",
+          "Write a context manager for timing code blocks.",
+          "Create a small Python package with a clear folder structure.",
+          "Write unit tests for a utility function using pytest.",
+          "Build an async batch processor for 100 prompts with a concurrency limit."
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "Backend Engineering with FastAPI",
+      "topics": [
+        {
+          "topicTitle": "FastAPI & Pydantic",
+          "description": "FastAPI is the preferred backend for AI apps. You do not need to memorize syntax, but you must grasp the concepts.",
+          "subtopics": [
+            "Routes, request and response models",
+            "Pydantic validation",
+            "Dependency injection",
+            "Async endpoints",
+            "API documentation (OpenAPI)"
+          ]
+        },
+        {
+          "topicTitle": "Background Work",
+          "description": "LLM tasks are slow, so long jobs must run outside the request cycle.",
+          "subtopics": [
+            "Background tasks",
+            "Cron / scheduled jobs",
+            "Job queues (concept)"
+          ]
+        },
+        {
+          "topicTitle": "Auth & Security",
+          "description": "Every real AI product needs users, tokens and safe handling of secrets.",
+          "subtopics": [
+            "Authentication and JWT",
+            "API keys and secrets management",
+            "CORS and rate limiting",
+            "Security best practices"
+          ]
+        },
+        {
+          "topicTitle": "Redis, Caching & Queues",
+          "description": "Speed and reliability layer for AI backends.",
+          "subtopics": [
+            "Redis basics",
+            "Caching responses",
+            "Message queues",
+            "Retry, timeout and error handling"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Why is FastAPI popular for AI backends?",
+          "What does Pydantic do in a FastAPI app?",
+          "Explain how JWT authentication works.",
+          "Why do LLM jobs often need background processing or queues?",
+          "What is caching and how does Redis help an AI application?"
+        ],
+        "practical": [
+          "Create a FastAPI app with a health-check endpoint.",
+          "Build a POST endpoint that validates input using a Pydantic model.",
+          "Create an endpoint that calls an LLM and returns the answer.",
+          "Make the LLM endpoint async.",
+          "Add request and response models with proper error responses.",
+          "Use dependency injection to share an LLM client.",
+          "Run a long task using FastAPI background tasks.",
+          "Create a scheduled job that runs every hour.",
+          "Implement signup and login with JWT.",
+          "Protect an endpoint so only logged-in users can use it.",
+          "Store secrets in environment variables and never in code.",
+          "Add rate limiting to the LLM endpoint.",
+          "Install Redis and cache repeated LLM responses.",
+          "Add retry and timeout logic around an external API call.",
+          "Build a small authenticated AI API with caching and tests."
+        ]
+      }
+    },
+    {
+      "chapterId": 6,
+      "chapterTitle": "Streaming & Real-Time Communication",
+      "topics": [
+        {
+          "topicTitle": "Streaming Responses",
+          "description": "Users should see the answer as it is generated. First cover the backend concepts of SSE and WebSockets, then add streaming to LLM calls.",
+          "subtopics": [
+            "Why streaming improves experience",
+            "Server-Sent Events (SSE)",
+            "Streaming tokens from an LLM API",
+            "Streaming from FastAPI to a frontend"
+          ]
+        },
+        {
+          "topicTitle": "WebSockets & Real-Time",
+          "description": "Two-way real-time connections for chat, voice and live agents.",
+          "subtopics": [
+            "WebSocket basics",
+            "SSE vs WebSockets",
+            "WebRTC (overview, used sometimes)",
+            "Handling disconnects and reconnects"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Why is streaming important for LLM applications?",
+          "Explain SSE and how it differs from WebSockets.",
+          "When would you choose WebSockets over SSE?",
+          "What is WebRTC and where is it used in AI apps?",
+          "What problems can happen with long-lived connections?"
+        ],
+        "practical": [
+          "Stream an LLM response token by token in a terminal.",
+          "Create a basic SSE endpoint in FastAPI.",
+          "Stream LLM output through SSE to a simple HTML page.",
+          "Create a WebSocket echo server.",
+          "Build a WebSocket chat that streams LLM replies.",
+          "Show a typing indicator while the model is generating.",
+          "Handle client disconnect and stop the LLM call.",
+          "Add a stop-generation button that cancels the stream.",
+          "Handle reconnect logic on the client side.",
+          "Stream structured output chunks and parse them safely.",
+          "Measure time to first token with and without streaming.",
+          "Stream multiple parallel responses to different users.",
+          "Add authentication to a WebSocket connection.",
+          "Log streaming errors and partial responses.",
+          "Build a complete streaming chat app with FastAPI and a simple frontend."
+        ]
+      }
+    },
+    {
+      "chapterId": 7,
+      "chapterTitle": "Retrieval Augmented Generation (RAG)",
+      "topics": [
+        {
+          "topicTitle": "RAG Fundamentals",
+          "description": "RAG lets a model answer using your own data without retraining. This is the most requested skill in applied AI jobs.",
+          "subtopics": [
+            "Why RAG: knowledge cutoff and private data",
+            "Embeddings",
+            "Chunking strategies",
+            "Retrieval and prompt augmentation"
+          ]
+        },
+        {
+          "topicTitle": "Vector Search",
+          "description": "Store and search embeddings quickly and correctly.",
+          "subtopics": [
+            "Vector databases",
+            "Similarity search",
+            "Metadata filtering",
+            "Hybrid search (keyword + vector)"
+          ]
+        },
+        {
+          "topicTitle": "Improving RAG Quality",
+          "description": "Basic RAG is easy; good RAG is about measurement and iteration.",
+          "subtopics": [
+            "Re-ranking",
+            "Query rewriting",
+            "Citations and source grounding",
+            "Evaluating retrieval quality"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What problem does RAG solve?",
+          "What are embeddings and how are they used in retrieval?",
+          "How does chunk size affect RAG quality?",
+          "Difference between keyword search, vector search and hybrid search.",
+          "How can you measure whether a RAG system is working well?"
+        ],
+        "practical": [
+          "Generate embeddings for 20 sentences and compare similarities.",
+          "Load a PDF and split it into chunks.",
+          "Store chunks in a vector database.",
+          "Retrieve top-k chunks for a user question.",
+          "Build a basic Chat with PDF app.",
+          "Add source citations to every answer.",
+          "Experiment with chunk size and overlap and compare answers.",
+          "Add metadata filtering (by document or date).",
+          "Implement hybrid search and compare with vector-only.",
+          "Add a re-ranking step and measure the improvement.",
+          "Rewrite user queries before retrieval.",
+          "Make the system say I do not know when no relevant chunk is found.",
+          "Build a RAG API in FastAPI with streaming output.",
+          "Create a small evaluation set of 20 questions for your RAG app.",
+          "Build a RAG app over your own documents (for example, course notes)."
+        ]
+      }
+    },
+    {
+      "chapterId": 8,
+      "chapterTitle": "Agentic AI Fundamentals",
+      "topics": [
+        {
+          "topicTitle": "What is an Agent?",
+          "description": "An agent is an LLM plus tools plus a prompt. The LLM is the intelligent brain and everything else is simple code around it.",
+          "subtopics": [
+            "Agent = LLM + Tools + Prompt",
+            "Tools can be normal tools or MCP tools",
+            "Agent loop: think, act, observe",
+            "When you do not need an agent"
+          ]
+        },
+        {
+          "topicTitle": "Workflow vs Agent vs Hybrid",
+          "description": "Know when the next step is fixed and when the model should decide. Most production systems use both.",
+          "subtopics": [
+            "Workflow agents: next step is predefined (validate, extract, save, notify)",
+            "Agents: model chooses the next action based on context (investigate, select tools, evaluate result, continue)",
+            "Hybrid approach used in most production systems",
+            "Choosing the right pattern for a problem"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain agent = LLM + tools + prompt.",
+          "Difference between a workflow and an agent.",
+          "Why do most production systems use a hybrid approach?",
+          "What is the agent loop?",
+          "When is an agent a bad choice for a problem?"
+        ],
+        "practical": [
+          "Build a fixed workflow: validate, extract, save and notify.",
+          "Build a simple agent loop from scratch without any framework.",
+          "Give an agent two tools and let it choose between them.",
+          "Add a maximum step limit to an agent loop.",
+          "Log every thought, tool call and result of an agent run.",
+          "Build an agent that investigates a question using search and a calculator.",
+          "Convert a workflow into an agent and compare reliability.",
+          "Convert an agent into a workflow and compare cost.",
+          "Build a hybrid system: fixed steps with one agentic decision step.",
+          "Handle the case where an agent loops forever.",
+          "Add a final-answer check before returning the result.",
+          "Build a customer-support triage agent.",
+          "Build a research assistant agent that summarizes web results.",
+          "Measure the token cost of one agent run.",
+          "Build a complete agent project with logging and limits."
+        ]
+      }
+    },
+    {
+      "chapterId": 9,
+      "chapterTitle": "Tools, Tool Calling & MCP",
+      "topics": [
+        {
+          "topicTitle": "Tool Design",
+          "description": "Tools are how an agent touches the real world. It is very important that the tool description and schema clearly say what the tool does.",
+          "subtopics": [
+            "Tool calling / function calling",
+            "Tool definition and tool schema (name, description, parameters)",
+            "Tool execution (backend runs the method after the LLM request)",
+            "Tool registry (collection of tools)",
+            "Tool output: you can control and shape the results"
+          ]
+        },
+        {
+          "topicTitle": "Reliability",
+          "description": "Tools fail in production. A good agent expects that.",
+          "subtopics": [
+            "Retry",
+            "Timeout",
+            "Error handling and returning errors to the model",
+            "Validating tool arguments"
+          ]
+        },
+        {
+          "topicTitle": "Model Context Protocol (MCP)",
+          "description": "MCP is a standard way to expose tools to any AI application. It is one of the most important topics in agentic AI.",
+          "subtopics": [
+            "What MCP is and why it exists",
+            "MCP servers and MCP tools",
+            "Handling many tool definitions is a challenge",
+            "Omni MCP: one MCP tool that finds other tools",
+            "MCP gateway"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Why are tool descriptions and schemas so important?",
+          "Explain the full flow from LLM request to tool execution and back.",
+          "What is a tool registry?",
+          "What is MCP and what problem does it solve?",
+          "Why is handling a large number of tool definitions a challenge, and how does an Omni MCP help?"
+        ],
+        "practical": [
+          "Write a clear tool schema for get_weather(city).",
+          "Build a tool registry as a dictionary of functions.",
+          "Execute the tool chosen by the model and return its result.",
+          "Shape and trim a large tool output before giving it to the model.",
+          "Add retry and timeout to a flaky tool.",
+          "Return a tool error to the model and let it recover.",
+          "Validate tool arguments with Pydantic.",
+          "Build a file-reading tool with safety restrictions.",
+          "Build a database-query tool with read-only access.",
+          "Write a simple MCP server exposing two tools.",
+          "Connect an MCP server to a client application.",
+          "Connect an existing public MCP server and use its tools.",
+          "Build a tool-search layer that picks relevant tools from 30 tools.",
+          "Experiment with an MCP gateway concept (single entry point for many servers).",
+          "Build an agent that uses both local tools and MCP tools."
+        ]
+      }
+    },
+    {
+      "chapterId": 10,
+      "chapterTitle": "Context, Memory & Routing in Agents",
+      "topics": [
+        {
+          "topicTitle": "Context Management",
+          "description": "The context window is limited. An agent must decide what to keep, summarize or drop.",
+          "subtopics": [
+            "What goes into the context",
+            "Trimming and summarizing history",
+            "Context budgeting",
+            "Context management is one of the most important agent topics"
+          ]
+        },
+        {
+          "topicTitle": "Memory Management",
+          "description": "Memory makes agents feel consistent across turns and sessions.",
+          "subtopics": [
+            "Short-term memory",
+            "Long-term memory",
+            "Working memory",
+            "Episodic memory",
+            "Semantic memory"
+          ]
+        },
+        {
+          "topicTitle": "Checkpoints & Human in the Loop",
+          "description": "Save progress and let humans approve risky actions. HIL is more important nowadays.",
+          "subtopics": [
+            "Checkpoints of agent state",
+            "Resuming a paused run",
+            "HIL (human in the loop) approvals",
+            "Routing and handoff (agent handoff)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Why is context management a core agent problem?",
+          "Explain short-term, long-term, working, episodic and semantic memory.",
+          "What are checkpoints and why do agents need them?",
+          "What is human in the loop and when is it required?",
+          "Explain routing and agent handoff."
+        ],
+        "practical": [
+          "Implement a sliding-window conversation history.",
+          "Summarize old messages when history gets long.",
+          "Track and display token usage of the context for each turn.",
+          "Store long-term user facts in a database and recall them.",
+          "Implement semantic memory using embeddings.",
+          "Implement episodic memory that stores past task summaries.",
+          "Build working memory for a multi-step task.",
+          "Save agent state to a checkpoint and resume after restart.",
+          "Add a human approval step before a risky tool call.",
+          "Build a router that sends a query to one of three specialist handlers.",
+          "Implement an agent handoff from a general agent to a specialist agent.",
+          "Prevent memory from storing sensitive data.",
+          "Build an agent that remembers a user across two sessions.",
+          "Write tests for memory retrieval quality.",
+          "Build a complete agent with memory, checkpoints and approvals."
+        ]
+      }
+    },
+    {
+      "chapterId": 11,
+      "chapterTitle": "Multi-Agent Systems & Frameworks",
+      "topics": [
+        {
+          "topicTitle": "Multi-Agent Design",
+          "description": "Multiple agents can split a big task. This is the most important part of multi-agent systems and every company is building it.",
+          "subtopics": [
+            "Why and when to use multiple agents",
+            "Parent and child agents (management of parent/child agents)",
+            "Child agent description loading",
+            "Checkpoints in multi-agent runs",
+            "Different LLM models per agent"
+          ]
+        },
+        {
+          "topicTitle": "Production Concerns",
+          "description": "Real systems need budgets, monitoring and predictable output.",
+          "subtopics": [
+            "Adding a budget per agent and per run",
+            "Performance tracking of each agent",
+            "Multi-model support",
+            "Structured output vs normal output handling"
+          ]
+        },
+        {
+          "topicTitle": "Agent Protocols & Orchestration",
+          "description": "How agents talk to each other and how complex flows are organized.",
+          "subtopics": [
+            "Agent to Agent (A2A)",
+            "Multi-tenant agent platforms",
+            "Graph-based workflow orchestration"
+          ]
+        },
+        {
+          "topicTitle": "Frameworks (Not Very Important)",
+          "description": "Frameworks change quickly. Learn the concepts first, then pick one framework for convenience.",
+          "subtopics": [
+            "LangGraph",
+            "OpenAI Agents SDK",
+            "Microsoft AutoGen",
+            "Google ADK"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "When is a multi-agent system better than a single agent?",
+          "Explain parent and child agents and how a parent decides which child to call.",
+          "Why would you use different LLM models for different agents?",
+          "What is Agent to Agent (A2A) communication?",
+          "Why are frameworks considered less important than concepts?"
+        ],
+        "practical": [
+          "Build a parent agent that delegates to two child agents.",
+          "Write clear descriptions so the parent can pick the right child.",
+          "Assign a cheap model to one agent and a strong model to another.",
+          "Add a token budget to each agent and stop when exceeded.",
+          "Track the performance (latency and cost) of each agent.",
+          "Return structured output from a child agent to its parent.",
+          "Add checkpoints to a multi-agent run and resume it.",
+          "Build a graph-based workflow with branching and loops.",
+          "Rebuild the same agent in LangGraph.",
+          "Rebuild the same agent using the OpenAI Agents SDK.",
+          "Try a small example in AutoGen or Google ADK.",
+          "Build a simple A2A style message passing between two agents.",
+          "Design a multi-tenant agent service that isolates users' data.",
+          "Handle failure of one child agent without failing the whole run.",
+          "Build a multi-agent project such as a research and report-writing team."
+        ]
+      }
+    },
+    {
+      "chapterId": 12,
+      "chapterTitle": "Evals, Security & Guardrails",
+      "topics": [
+        {
+          "topicTitle": "Evaluation",
+          "description": "You cannot improve what you do not measure. Evals apply to agents and RAG, both online and offline.",
+          "subtopics": [
+            "Offline evals with test datasets",
+            "Online evals in production",
+            "Evaluating RAG (retrieval and answer quality)",
+            "Evaluating agents (task success, tool choices)",
+            "LLM as a judge"
+          ]
+        },
+        {
+          "topicTitle": "Security & Guardrails",
+          "description": "AI apps introduce new attack types. Guardrails reduce harmful or wrong output.",
+          "subtopics": [
+            "Prompt injection",
+            "Data leakage and secrets",
+            "Input and output guardrails",
+            "Safe tool permissions"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Difference between offline and online evals.",
+          "How would you evaluate a RAG system?",
+          "What is LLM-as-a-judge and what are its weaknesses?",
+          "Explain prompt injection with an example.",
+          "What are guardrails and where do you place them in a pipeline?"
+        ],
+        "practical": [
+          "Create a test dataset of 30 questions with expected answers.",
+          "Write a script that runs the dataset and scores answers.",
+          "Use an LLM as a judge with a clear rubric.",
+          "Measure retrieval hit rate for a RAG app.",
+          "Evaluate whether an agent chose the correct tool.",
+          "Track eval scores across prompt versions.",
+          "Collect thumbs-up and thumbs-down feedback from users.",
+          "Log production traces and review failed ones.",
+          "Demonstrate a prompt injection attack on a sample app.",
+          "Defend against that injection with input filtering and prompt design.",
+          "Add an output guardrail that blocks unsafe responses.",
+          "Add PII detection and masking to inputs.",
+          "Restrict tool permissions with allow lists.",
+          "Create a red-team checklist for your own AI app.",
+          "Build an eval and guardrail suite for one of your earlier projects."
+        ]
+      }
+    },
+    {
+      "chapterId": 13,
+      "chapterTitle": "Voice AI & Real-Time Models",
+      "topics": [
+        {
+          "topicTitle": "Voice Pipeline",
+          "description": "Voice AI is a growing area where multiple companies are hiring separately. Learn the building blocks first.",
+          "subtopics": [
+            "STT (speech to text)",
+            "TTS (text to speech)",
+            "VAD (voice activity detection)",
+            "Pipeline: STT, LLM, TTS"
+          ]
+        },
+        {
+          "topicTitle": "Real-Time Voice",
+          "description": "Low latency is everything in a voice conversation.",
+          "subtopics": [
+            "Real-time speech-to-speech models",
+            "Latency and interruption handling",
+            "Streaming audio over WebSockets or WebRTC",
+            "Telephony integration (overview)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain the STT, LLM and TTS pipeline.",
+          "What is VAD and why is it needed?",
+          "Why is latency critical in voice assistants?",
+          "Difference between a pipeline approach and a real-time speech-to-speech model.",
+          "How do you handle user interruptions in a voice agent?"
+        ],
+        "practical": [
+          "Transcribe an audio file using an STT model.",
+          "Convert text to speech using a TTS service.",
+          "Build a simple voice loop: record, transcribe, answer, speak.",
+          "Add VAD to detect when the user stopped speaking.",
+          "Measure the latency of each stage of the pipeline.",
+          "Stream audio to the server over WebSockets.",
+          "Stream TTS audio back while the LLM is still generating.",
+          "Implement barge-in so the user can interrupt the assistant.",
+          "Try a real-time speech-to-speech API.",
+          "Add function calling to a voice assistant.",
+          "Handle noisy audio and empty transcripts gracefully.",
+          "Support Hindi and English in the same voice assistant.",
+          "Log voice conversations and review failures.",
+          "Build a voice FAQ bot for a business.",
+          "Build a complete voice agent demo with a simple web UI."
+        ]
+      }
+    },
+    {
+      "chapterId": 14,
+      "chapterTitle": "Databases for AI Applications",
+      "topics": [
+        {
+          "topicTitle": "Relational Databases",
+          "description": "Learn Postgres basics well because it supports multiple use cases (including vectors), then understand how others differ.",
+          "subtopics": [
+            "PostgreSQL basics",
+            "MySQL and SQL Server (also OK to know)",
+            "Schema design and indexes",
+            "Transactions"
+          ]
+        },
+        {
+          "topicTitle": "NoSQL & Vector Storage",
+          "description": "Choose the right store for chat logs, documents and embeddings.",
+          "subtopics": [
+            "MongoDB basics",
+            "Storing chat history and agent state",
+            "pgvector and vector databases",
+            "ORMs and migrations"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Why is PostgreSQL a good default database for AI apps?",
+          "Explain indexes and why they matter.",
+          "When would you choose MongoDB over PostgreSQL?",
+          "How can PostgreSQL be used as a vector database?",
+          "What are database migrations and why are they needed?"
+        ],
+        "practical": [
+          "Install PostgreSQL and create a database.",
+          "Create tables for users and conversations.",
+          "Write SQL queries with joins and filters.",
+          "Add indexes and compare query times.",
+          "Connect FastAPI to PostgreSQL.",
+          "Use an ORM to read and write data.",
+          "Create and run a migration.",
+          "Store chat history for each user.",
+          "Store agent checkpoints in the database.",
+          "Install pgvector and store embeddings.",
+          "Run a similarity search query in SQL.",
+          "Use MongoDB to store unstructured documents.",
+          "Add database connection pooling.",
+          "Back up and restore a database.",
+          "Build the full data layer for a chat application."
+        ]
+      }
+    },
+    {
+      "chapterId": 15,
+      "chapterTitle": "Deployment & DevOps",
+      "topics": [
+        {
+          "topicTitle": "Containers & CI/CD",
+          "description": "Do not spend too much time here. Learn why we need this, because interviewers mostly ask whether you are familiar with it.",
+          "subtopics": [
+            "Docker basics",
+            "Docker Compose",
+            "CI/CD pipelines",
+            "Environment configuration"
+          ]
+        },
+        {
+          "topicTitle": "Servers & Cloud",
+          "description": "Know how your app reaches users and how it scales.",
+          "subtopics": [
+            "Cloud basics and virtual servers",
+            "Serverless deployment",
+            "Load balancers and Nginx",
+            "Kubernetes (learn the basics)",
+            "GPU basics for inference"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "What problem does Docker solve?",
+          "Difference between server-based and serverless deployment.",
+          "What does a load balancer do?",
+          "What is CI/CD?",
+          "When do AI applications need GPUs?"
+        ],
+        "practical": [
+          "Write a Dockerfile for a FastAPI app.",
+          "Run the app in a container and expose a port.",
+          "Use Docker Compose to run app, database and Redis together.",
+          "Set up environment variables and secrets safely.",
+          "Create a CI pipeline that runs tests on every push.",
+          "Create a CD pipeline that deploys on merge.",
+          "Deploy the app to a cloud virtual server.",
+          "Put Nginx in front of the app as a reverse proxy.",
+          "Add HTTPS to the deployed app.",
+          "Deploy a small endpoint using a serverless platform.",
+          "Run two instances behind a load balancer.",
+          "Run a simple Kubernetes deployment locally.",
+          "Add health checks and basic monitoring.",
+          "Set up log collection for the deployed app.",
+          "Deploy a complete AI app and share its public URL."
+        ]
+      }
+    },
+    {
+      "chapterId": 16,
+      "chapterTitle": "System Design & LLM Cost Optimization",
+      "topics": [
+        {
+          "topicTitle": "AI System Design",
+          "description": "Strong LLM basics plus backend system design concepts. If a company is big, this round is common; startups often skip it.",
+          "subtopics": [
+            "Designing a chatbot at scale",
+            "Designing a RAG platform",
+            "Designing an agent platform",
+            "Scaling, queues, caching and failure handling",
+            "Agentic AI is built on top of these designs"
+          ]
+        },
+        {
+          "topicTitle": "Cost Optimization",
+          "description": "Companies love engineers who reduce LLM spend without hurting quality.",
+          "subtopics": [
+            "Prompt and response caching",
+            "Batching (can reduce cost by about 50 percent on bulk tasks)",
+            "Picking a model based on task requirement",
+            "Model benchmarks and choosing the best provider",
+            "MoE models and SOTA models (overview)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "How would you design a chatbot that serves 100,000 users?",
+          "Explain how caching reduces LLM cost and latency.",
+          "Why does batching reduce cost and when can you not use it?",
+          "How do you pick a model for a given task requirement?",
+          "What are MoE models at a high level?"
+        ],
+        "practical": [
+          "Draw a system design diagram for a RAG chatbot.",
+          "Draw a system design for a multi-agent platform.",
+          "Add exact-match caching to an LLM endpoint.",
+          "Add semantic caching using embeddings.",
+          "Move a bulk job to a batch API and compute the saving.",
+          "Route easy queries to a cheap model and hard queries to a strong model.",
+          "Shorten prompts and measure the token saving.",
+          "Use prompt caching for a long repeated system prompt.",
+          "Build a cost dashboard per user and per feature.",
+          "Set a monthly budget alert for LLM spend.",
+          "Estimate the monthly cost of an app with 10,000 daily users.",
+          "Load test an AI endpoint and find the bottleneck.",
+          "Write a design document with trade-offs for one system.",
+          "Do a mock system design interview with a friend.",
+          "Optimize one of your earlier projects and report before/after cost."
+        ]
+      }
+    },
+    {
+      "chapterId": 17,
+      "chapterTitle": "ML & Deep Learning Essentials for AI Engineers",
+      "topics": [
+        {
+          "topicTitle": "Core ML & DL Concepts",
+          "description": "Do not go deep at the start; get a job first, then deepen. But know enough that you are not just an API wrapper.",
+          "subtopics": [
+            "Machine learning basics (train, test, overfitting)",
+            "Neural networks and backpropagation (intuition)",
+            "NumPy and Pandas essentials",
+            "Evaluation metrics"
+          ]
+        },
+        {
+          "topicTitle": "Transformers & Inference",
+          "description": "Understand what happens inside the model you call every day.",
+          "subtopics": [
+            "Transformer basics and attention",
+            "Tokenizer",
+            "KV caching",
+            "LLM inference basics"
+          ]
+        },
+        {
+          "topicTitle": "Fine-Tuning & Private AI",
+          "description": "Needed for companies that cannot send data to external APIs.",
+          "subtopics": [
+            "Fine-tuning basics (LoRA and similar)",
+            "Quantization",
+            "Private AI and self-hosted LLM inference",
+            "When to fine-tune vs use RAG vs prompt"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [
+          "Explain overfitting and how to detect it.",
+          "Explain attention in a transformer at a high level.",
+          "What is a tokenizer and why do different models tokenize differently?",
+          "What is KV caching and how does it speed up inference?",
+          "When should you fine-tune instead of using RAG?"
+        ],
+        "practical": [
+          "Load a dataset with Pandas and clean it.",
+          "Train a simple classifier with scikit-learn.",
+          "Evaluate a model using accuracy, precision and recall.",
+          "Build a tiny neural network from scratch with NumPy.",
+          "Train a small model in PyTorch.",
+          "Tokenize text with two different tokenizers and compare.",
+          "Visualize attention for a short sentence using a small model.",
+          "Run a local model and measure tokens per second.",
+          "Compare a full-precision and quantized model on speed and quality.",
+          "Serve a local model using an inference server.",
+          "Fine-tune a small model on a tiny dataset.",
+          "Compare the fine-tuned model with a prompted base model.",
+          "Compare RAG vs fine-tuning for the same task.",
+          "Watch and summarize a from-scratch GPT walkthrough.",
+          "Write a short article explaining transformers in your own words."
+        ]
+      }
+    },
+    {
+      "chapterId": 18,
+      "chapterTitle": "DSA, Interview Prep & Final Capstone Projects",
+      "topics": [
+        {
+          "topicTitle": "DSA for AI Roles",
+          "description": "Depends on the company. Product-based companies definitely ask DSA; service-based and startup roles ask less. Cover the most common patterns only.",
+          "subtopics": [
+            "About 50 array problems",
+            "About 50 string problems",
+            "Sliding window",
+            "Two pointers",
+            "Hash maps and basic recursion"
+          ]
+        },
+        {
+          "topicTitle": "Portfolio & Interviews",
+          "description": "Show real projects. Do not just list courses.",
+          "subtopics": [
+            "GitHub portfolio with READMEs (problem, approach, results)",
+            "Deploying projects with public demos",
+            "Resume bullets for AI projects",
+            "Explaining your design decisions in interviews"
+          ]
+        },
+        {
+          "topicTitle": "Applied AI Revision",
+          "description": "Revise the full stack from model to deployment.",
+          "subtopics": [
+            "LLM basics and parameters",
+            "Structured output and function calling",
+            "Backend and streaming",
+            "RAG",
+            "Agents, tools and MCP",
+            "Memory and multi-agent",
+            "Evals and guardrails",
+            "Deployment and cost optimization"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 20,
+        "theory": [],
+        "practical": [
+          "Solve 50 array problems and keep a log.",
+          "Solve 50 string problems and keep a log.",
+          "Solve 10 sliding window problems.",
+          "Solve 10 two-pointer problems.",
+          "Create a GitHub profile with pinned AI projects.",
+          "Write a clear README for each project (problem, approach, results).",
+          "Build and deploy a Chat with PDF (RAG) app with streaming.",
+          "Build and deploy a customer-support agent with tools and memory.",
+          "Build a multi-agent research and report-writing system.",
+          "Build an MCP server and connect it to an agent.",
+          "Build a voice assistant for a small business use case.",
+          "Build an AI-powered feature inside a Flutter or Android app using your own backend.",
+          "Build an evaluation dashboard for one of your projects.",
+          "Build a document-extraction API with structured output.",
+          "Build a cost-optimized LLM gateway with caching and model routing.",
+          "Build a text-to-SQL assistant with guardrails.",
+          "Prepare answers to 30 common AI engineer interview questions.",
+          "Do two mock interviews (one system design, one project walkthrough).",
+          "Update your resume with measurable results for each project.",
+          "Package and present a final capstone Applied AI application."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Chat with PDF (RAG Assistant)",
+      "concepts": [
+        "Embeddings",
+        "Vector Search",
+        "FastAPI",
+        "Streaming"
+      ],
+      "features": [
+        "Upload and index documents",
+        "Question answering with citations",
+        "Streaming answers",
+        "I do not know fallback",
+        "Basic evaluation set"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Customer Support Agent",
+      "concepts": [
+        "Function Calling",
+        "Tools",
+        "Memory",
+        "Human in the Loop"
+      ],
+      "features": [
+        "Tool calls for orders and tickets",
+        "Conversation memory across sessions",
+        "Human approval for risky actions",
+        "Conversation logging",
+        "Guardrails for unsafe requests"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Multi-Agent Research Assistant",
+      "concepts": [
+        "Multi-Agent",
+        "MCP",
+        "Structured Output",
+        "Budgeting"
+      ],
+      "features": [
+        "Parent agent with specialist child agents",
+        "Web search and summarization tools",
+        "Structured final report",
+        "Per-agent token budget",
+        "Checkpoint and resume"
+      ]
+    },
+    {
+      "projectId": 4,
+      "projectTitle": "Voice AI Receptionist",
+      "concepts": [
+        "STT",
+        "TTS",
+        "VAD",
+        "WebSockets"
+      ],
+      "features": [
+        "Real-time voice conversation",
+        "Interruption handling",
+        "Business FAQ answers using RAG",
+        "Appointment booking tool",
+        "Latency measurement"
+      ]
+    },
+    {
+      "projectId": 5,
+      "projectTitle": "LLM Gateway with Cost Optimization",
+      "concepts": [
+        "Caching",
+        "Batching",
+        "Model Routing",
+        "Redis",
+        "Docker"
+      ],
+      "features": [
+        "Single API for multiple providers",
+        "Exact and semantic caching",
+        "Cheap vs strong model routing",
+        "Per-user cost tracking",
+        "Dockerized deployment"
+      ]
+    }
+  ]
+}

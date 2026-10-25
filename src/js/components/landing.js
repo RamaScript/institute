@@ -52,6 +52,11 @@ const courseThemes = {
         iconBg: 'rgba(247,223,30,0.14)',
         tagColor: '#b8a900',
     },
+    'appliedai': {
+        gradient: 'linear-gradient(135deg, #7c3aed 0%, #4361ee 50%, #06b6d4 100%)',
+        iconBg: 'rgba(124, 58, 237, 0.14)',
+        tagColor: '#7c3aed',
+    },
 };
 
 /* ─── SVG Icons ──────────────────────────────────────────── */
@@ -123,23 +128,18 @@ function buildHero() {
         </div>
 
         <div class="lp-hero-content">
-            <!-- badge -->
-            <div class="lp-hero-badge">
-                <span class="lp-badge-dot"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 2l4 4-4 4-4-4 4-4z" fill="currentColor"/></svg></span>
-                Now live — C Programming course
-            </div>
+
 
             <!-- headline -->
             <h1 class="lp-hero-title">
-                Master<br>
-                <span class="grad-text">Systems</span><br>
-                <span class="grad-text-2">Programming.</span>
+                Engineering & Applied AI<br>
+                <span class="grad-text">from First Principles</span>
             </h1>
 
             <!-- subtitle -->
             <p class="lp-hero-sub">
-                Deep, practical courses in C, C++, Python, Java, Dart, Flutter, Web Dev and Data Structures & Algorithms.
-                Built for engineers who want to understand computers from the ground up.
+                Deep, practical courses in Applied AI Engineering, Systems Programming, and Full-Stack Development.
+                From LLMs, RAG, and AI Agents to C, C++, Python, and DSA.
             </p>
 
             <!-- CTA row -->
@@ -156,29 +156,23 @@ function buildHero() {
             <!-- social proof strip -->
             <div class="lp-hero-strip">
                 <div class="lp-strip-item">
-                    <span class="lp-strip-icon">${icons.zap}</span>
-                    <span>First-principles learning</span>
+                    <span class="lp-strip-icon">${icons.brain}</span>
+                    <span>Applied AI & Autonomous Agents</span>
                 </div>
                 <div class="lp-strip-divider" aria-hidden="true"></div>
                 <div class="lp-strip-item">
-                    <span class="lp-strip-icon">${icons.brain}</span>
-                    <span>300+ practice problems</span>
+                    <span class="lp-strip-icon">${icons.zap}</span>
+                    <span>First-principles systems</span>
                 </div>
                 <div class="lp-strip-divider" aria-hidden="true"></div>
                 <div class="lp-strip-item">
                     <span class="lp-strip-icon">${icons.rocket}</span>
-                    <span>Real capstone projects</span>
+                    <span>Production capstone projects</span>
                 </div>
             </div>
         </div>
 
-        <!-- scroll hint -->
-        <div class="lp-scroll-hint" aria-hidden="true">
-            <div class="lp-scroll-mouse">
-                <div class="lp-scroll-wheel"></div>
-            </div>
-            <span>Scroll</span>
-        </div>
+
     </header>`;
 }
 
@@ -362,10 +356,10 @@ function _initCategoryPage() {
 /* ─── About / Features ───────────────────────────────────── */
 function buildAbout() {
     const features = [
-        { icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg>', color: 'blue',   title: 'First Principles',    desc: 'We build up from how CPUs, memory, and the OS actually work — not from framework abstractions.' },
-        { icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 15l-6 6M9 11L5 7l3-3 4 4M12 12l6 6M15 9l4-4-3-3-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>', color: 'violet', title: 'Hands-on Projects',   desc: 'Every chapter ends with real code. Five capstone projects that go on your resume.' },
-        { icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 4h8v3a2 2 0 104 0V4h3v8h-3a2 2 0 10-4 0v3H6V4zM6 14h3v2a2 2 0 104 0v-2h3v7H6v-7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>', color: 'green',  title: 'Deep Explanations',   desc: 'No hand-waving. Pointers, memory layouts, and DSA complexities explained with clarity.' },
-        { icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L5 13h6l-1 9 8-11h-5l1-9z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>', color: 'pink',   title: 'Interview Ready',     desc: 'Covering exactly what top-tier systems and backend interviews test — and why.' },
+        { icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2a4 4 0 014 4c0 1.9-1.3 3.5-3.1 3.9l1.6 4.1h2a3 3 0 013 3v2H4.5v-2a3 3 0 013-3h2l1.6-4.1A4.01 4.01 0 018 6a4 4 0 014-4z" stroke="currentColor" stroke-width="1.5"/></svg>', color: 'amber', title: 'Applied AI & Agents',   desc: 'Build with real LLM APIs, vector databases, RAG pipelines, function calling, MCP, and autonomous agent loops.' },
+        { icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg>', color: 'blue',   title: 'First Principles',    desc: 'Understand how CPUs, memory, tokenizers, and neural weights execute under the hood without magic.' },
+        { icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 15l-6 6M9 11L5 7l3-3 4 4M12 12l6 6M15 9l4-4-3-3-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>', color: 'violet', title: 'Production Capstones', desc: 'Deploy real-world systems: memory allocators, concurrent servers, and autonomous multi-agent pipelines.' },
+        { icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L5 13h6l-1 9 8-11h-5l1-9z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>', color: 'pink',   title: 'Modern & Interview Ready', desc: 'Covering core systems, algorithms, and AI engineering patterns evaluated at top engineering teams.' },
     ];
 
     const cards = features.map((f, i) => `
@@ -414,15 +408,9 @@ function buildAbout() {
 /* ─── Testimonials ───────────────────────────────────────── */
 function buildTestimonials() {
     const reviews = [
-        { initials: 'SA', name: 'Syed Alina',      role: 'Web Developer',            stars: 5, text: "The Web Dev course gave me everything I needed to land my first internship. From HTML semantics to responsive layouts — every concept clicked. The project-based approach is incredible." },
-        { initials: 'V',  name: 'Vivan',            role: 'Full-Stack Developer',     stars: 5, text: "I took C, C++, Web Dev and Logic Building — and each course built on the last perfectly. The logic building drills sharpened my problem-solving like nothing else. Highly recommend the full track." },
-        { initials: 'H',  name: 'Hanshika',         role: 'Software Engineer',        stars: 5, text: "Started with C and C++ for systems programming, then moved to Web Dev and Logic Building. The first-principles approach made me a confident programmer. Worth every hour." },
-        { initials: 'KV', name: 'Kirti Verma',      role: 'Frontend Engineer',        stars: 5, text: "Web Dev course was a game-changer. The way they break down CSS layout, JavaScript DOM, and responsive design — crystal clear explanations. Built my portfolio from scratch." },
-        { initials: 'SS', name: 'Sanyam Sharma',    role: 'Full-Stack Developer',     stars: 5, text: "Completed C, C++, Web Dev and Logic Building with Ramascript. Each course is packed with hands-on problems and real-world context. The logic building module completely changed how I approach coding." },
-        { initials: 'SK', name: 'Shashwat Kesharvani', role: 'Web Developer',         stars: 5, text: "Web Dev course gave me a rock-solid foundation. JavaScript, CSS, responsive design — everything is taught from the ground up. No magic, just clear engineering. Exactly what I needed." },
-        { initials: 'P',  name: 'Prakash',          role: 'Web Developer',            stars: 5, text: "I finally understand how the web works under the hood. The Web Dev course doesn't just teach you syntax — it teaches you how everything fits together. Exceptional quality." },
-        { initials: 'A',  name: 'Ashok',            role: 'Frontend Developer',       stars: 5, text: "Before this course, web development felt like memorizing recipes. After the Web Dev course, I actually understand why things work. The difference is night and day." },
-        { initials: 'R',  name: 'Rochak',           role: 'JavaScript Specialist',    stars: 5, text: "The JS course is hands-down the best I've taken. Closures, prototypes, async — concepts I struggled with for years finally made sense. The way they visualize execution is genius." },
+        { initials: 'A',  name: 'Aditya',           role: 'Web Developer',            stars: 5, text: "From HTML semantics to responsive layouts and JS — every concept clicked. The project-based approach is exceptional." },
+        { initials: 'R',  name: 'Rohan',            role: 'Full-Stack Developer',     stars: 5, text: "Took C, C++ and Web Dev. The first-principles drills sharpened my problem-solving like nothing else." },
+        { initials: 'P',  name: 'Priyanshi',        role: 'Software Engineer',        stars: 5, text: "Clear, deep explanations of memory, systems, and algorithms. Made me truly confident in technical interviews." },
     ];
 
     const cards = reviews.map((r, i) => {
@@ -483,7 +471,7 @@ function buildContact() {
             <div class="lp-contact-grid">
                 <!-- info -->
                 <div class="lp-contact-intro lp-reveal lp-reveal-left">
-                    <p>Drop a message and we'll get back to you personally within 24 hours. No bots, no auto-replies.</p>
+                    <p>Have questions about courses or want guidance? Send a message.</p>
                     <div class="lp-contact-tiles">
                         <div class="lp-contact-tile">
                             <div class="lp-tile-icon">${icons.user}</div>
@@ -496,7 +484,7 @@ function buildContact() {
                             <div class="lp-tile-icon">${icons.pin}</div>
                             <div>
                                 <div class="lp-tile-label">Location</div>
-                                <div class="lp-tile-value">Sector 35C, Chandigarh</div>
+                                <div class="lp-tile-value">Chennai, TN</div>
                             </div>
                         </div>
                         <div class="lp-contact-tile">
@@ -511,10 +499,6 @@ function buildContact() {
 
                 <!-- form -->
                 <div class="lp-contact-form-wrap lp-reveal lp-reveal-right">
-                    <div class="lp-reply-badge">
-                        <div class="lp-reply-badge-icon">24h</div>
-                        <span>We reply to every message within <strong>24 hours</strong> on your email.</span>
-                    </div>
 
                     <form name="contact" onsubmit="lpThank(event)">
                         <div class="lp-form-row">

@@ -5,6 +5,12 @@ const courseCache = {};
 export async function loadCourseData(courseId = 'c') {
     if (courseCache[courseId]) return courseCache[courseId];
 
+    // Fast memory return from preloaded COURSES_DATA (essential for file:// protocol, instant for offline)
+    if (typeof window !== 'undefined' && window.COURSES_DATA && window.COURSES_DATA[courseId]) {
+        courseCache[courseId] = window.COURSES_DATA[courseId];
+        return courseCache[courseId];
+    }
+
     const url = `${DATA_DIR}${courseId}.json`;
 
     try {
@@ -14,6 +20,10 @@ export async function loadCourseData(courseId = 'c') {
         courseCache[courseId] = data;
         return data;
     } catch (error) {
+        if (typeof window !== 'undefined' && window.COURSES_DATA && window.COURSES_DATA[courseId]) {
+            courseCache[courseId] = window.COURSES_DATA[courseId];
+            return courseCache[courseId];
+        }
         console.error(`Error loading course ${courseId}:`, error);
         throw error;
     }

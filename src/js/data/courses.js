@@ -1,14 +1,14 @@
 export const categories = [
   {
-    id: "web-dev",
-    title: "Web Development",
+    id: "ai",
+    title: "Artificial Intelligence",
     description:
-      "Build modern websites from scratch — HTML structure, CSS styling, and interactive JavaScript.",
-    gradient: "linear-gradient(135deg, #e44d26 0%, #264de4 100%)",
-    iconBg: "rgba(228,77,38,0.14)",
-    tagColor: "#e44d26",
-    logo: "src/img/tech-logo/web.png",
-    courseIds: ["html", "css", "javascript"],
+      "Master applied AI engineering — LLMs, Prompt Engineering, RAG architectures, Autonomous Agents, MCP & Voice AI.",
+    gradient: "linear-gradient(135deg, #FF6A00 0%, #FFB000 100%)",
+    iconBg: "rgba(255, 106, 0, 0.14)",
+    tagColor: "#FF6A00",
+    logo: "src/img/tech-logo/ai.svg",
+    courseIds: ["appliedai"],
   },
   {
     id: "programming",
@@ -22,17 +22,6 @@ export const categories = [
     courseIds: ["c", "cpp", "python", "java", "dart", "javascript"],
   },
   {
-    id: "mobile",
-    title: "Mobile App Development",
-    description:
-      "Build beautiful cross-platform mobile apps with Flutter — widgets, state management, and deployment.",
-    gradient: "linear-gradient(135deg, #02569b 0%, #4fc3f7 100%)",
-    iconBg: "rgba(2,86,155,0.14)",
-    tagColor: "#02569b",
-    logo: "src/img/tech-logo/mobile.png",
-    courseIds: ["flutter", "dart","java"],
-  },
-  {
     id: "dsa",
     title: "Data Structures & Algorithms",
     description:
@@ -42,6 +31,28 @@ export const categories = [
     tagColor: "#06d6a0",
     logo: "src/img/tech-logo/DSA.png",
     courseIds: ["dsa-cpp"],
+  },
+  {
+    id: "web-dev",
+    title: "Web Development",
+    description:
+      "Build modern websites from scratch — HTML structure, CSS styling, and interactive JavaScript.",
+    gradient: "linear-gradient(135deg, #e44d26 0%, #264de4 100%)",
+    iconBg: "rgba(228,77,38,0.14)",
+    tagColor: "#e44d26",
+    logo: "src/img/tech-logo/web.png",
+    courseIds: ["html", "css", "javascript"],
+  },
+  {
+    id: "mobile",
+    title: "Mobile App Development",
+    description:
+      "Build beautiful cross-platform mobile apps with Flutter — widgets, state management, and deployment.",
+    gradient: "linear-gradient(135deg, #02569b 0%, #4fc3f7 100%)",
+    iconBg: "rgba(2,86,155,0.14)",
+    tagColor: "#02569b",
+    logo: "src/img/tech-logo/mobile.png",
+    courseIds: ["flutter", "dart", "java"],
   },
 ];
 
@@ -124,6 +135,14 @@ export const courses = [
         description: 'Master JavaScript — variables, functions, DOM, async programming, ES6+, and building interactive web apps.',
         tags: ['Frontend', 'Logic'],
         logo: 'src/img/tech-logo/javascript.png',
+        isAvailable: true
+    },
+    {
+        id: 'appliedai',
+        title: 'Applied AI Engineering',
+        description: 'Master LLMs, RAG, agentic workflows, function calling, MCP, and voice AI with first-principles engineering.',
+        tags: ['LLMs & RAG', 'Agentic AI'],
+        logo: 'src/img/tech-logo/ai.svg',
         isAvailable: true
     }
 ];
