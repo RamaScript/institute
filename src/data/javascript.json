@@ -8,6 +8,7 @@
       "topics": [
         {
           "topicTitle": "Introduction to JavaScript",
+          "description": "What JavaScript is, where it runs and how to add it to a page. It makes websites interactive.",
           "subtopics": [
             "What is JavaScript (Programming language for instructions)",
             "Setting up VS Code and the Browser Console",
@@ -16,6 +17,7 @@
         },
         {
           "topicTitle": "Variables and Rules",
+          "description": "Named containers for data, with the naming rules and conventions to follow.",
           "subtopics": [
             "Variables as containers for data",
             "Naming conventions (case sensitivity, allowed characters like _, $)",
@@ -25,6 +27,7 @@
         },
         {
           "topicTitle": "Variable Declaration (let, const, var)",
+          "description": "How let, const and var differ in scope and reassignment, and why modern code avoids var.",
           "subtopics": [
             "var: Global scope, can be re-declared & updated",
             "let: Block scope, cannot be re-declared but can be updated",
@@ -33,6 +36,7 @@
         },
         {
           "topicTitle": "Data Types",
+          "description": "Numbers, strings, booleans, null, undefined, objects and the typeof operator.",
           "subtopics": [
             "Primitive Types: Number, String, Boolean, Undefined, Null, BigInt, Symbol"
           ]
@@ -60,6 +64,7 @@
       "topics": [
         {
           "topicTitle": "Comments in JS",
+          "description": "Explain your code with single-line and multi-line comments.",
           "subtopics": [
             "Single line comments (//)",
             "Multi-line comments (/* */)",
@@ -68,6 +73,7 @@
         },
         {
           "topicTitle": "Operators in JS",
+          "description": "Arithmetic, comparison, logical and assignment operators, plus == vs ===.",
           "subtopics": [
             "Arithmetic Operators (+, -, *, /, Modulus, Exponentiation, Increment, Decrement)",
             "Assignment Operators (=, +=, -=, *=, %=, **=)",
@@ -78,6 +84,7 @@
         },
         {
           "topicTitle": "Conditional Statements",
+          "description": "Make decisions with if, else, switch and the ternary operator.",
           "subtopics": [
             "To implement some condition in the code",
             "if Statement",
@@ -110,6 +117,7 @@
       "topics": [
         {
           "topicTitle": "Loops in JS",
+          "description": "Repeat work with for, while and do-while, and control them with break and continue.",
           "subtopics": [
             "Loops are used to execute a piece of code again & again",
             "for Loop",
@@ -122,6 +130,7 @@
         },
         {
           "topicTitle": "Strings in JS",
+          "description": "How text is stored, indexed and compared in JavaScript.",
           "subtopics": [
             "String is a sequence of characters used to represent text",
             "String Length (e.g., str.length)",
@@ -130,6 +139,7 @@
         },
         {
           "topicTitle": "Template Literals",
+          "description": "Backtick strings with embedded expressions and multi-line support.",
           "subtopics": [
             "A way to have embedded expressions in strings using backticks (`)",
             "String Interpolation: To create strings by doing substitution of placeholders (${expression})"
@@ -137,6 +147,7 @@
         },
         {
           "topicTitle": "String Methods in JS",
+          "description": "Built-in tools to search, slice, replace and transform text.",
           "subtopics": [
             "Built-in functions to manipulate a string",
             "str.toUpperCase() & str.toLowerCase()",
@@ -179,6 +190,7 @@
       "topics": [
         {
           "topicTitle": "Arrays in JS",
+          "description": "Ordered lists of values and how to create, read and update them.",
           "subtopics": [
             "Arrays as collections of items",
             "Creating an Array (e.g., let marks = [1-3])",
@@ -187,6 +199,7 @@
         },
         {
           "topicTitle": "Looping over an Array",
+          "description": "Different ways to go through every item: for, for...of and forEach.",
           "subtopics": [
             "Iterating through an array to access individual items",
             "Printing all elements of an array using loops"
@@ -194,6 +207,7 @@
         },
         {
           "topicTitle": "Basic Array Methods",
+          "description": "Add, remove and find items with push, pop, shift, unshift, indexOf and includes.",
           "subtopics": [
             "push() : adds an item to the end of the array",
             "pop() : deletes an item from the end and returns it",
@@ -203,6 +217,7 @@
         },
         {
           "topicTitle": "Advanced Array Methods",
+          "description": "Slice, splice, sort, reverse and joining arrays together.",
           "subtopics": [
             "unshift() : adds an item to the start of the array",
             "shift() : deletes an item from the start and returns it",
@@ -244,6 +259,7 @@
       "topics": [
         {
           "topicTitle": "Functions in JS",
+          "description": "Reusable blocks of code with parameters and return values.",
           "subtopics": [
             "Block of code that performs a specific task",
             "Can be invoked (called) whenever needed",
@@ -253,6 +269,7 @@
         },
         {
           "topicTitle": "Arrow Functions",
+          "description": "A shorter function syntax and how it handles this differently.",
           "subtopics": [
             "Compact way of writing a function",
             "Syntax: const functionName = (param1, param2) => { ... }",
@@ -261,6 +278,7 @@
         },
         {
           "topicTitle": "Callbacks & forEach Loop",
+          "description": "Passing a function into another function. The first step to functional style.",
           "subtopics": [
             "A callback is a function passed as an argument to another function",
             "arr.forEach(callBackFunction)",
@@ -269,6 +287,7 @@
         },
         {
           "topicTitle": "Higher-Order Array Methods",
+          "description": "map, filter and reduce transform data without manual loops. Used everywhere in real projects.",
           "subtopics": [
             "Map: arr.map(callbackFnx(value, index, array))",
             "Map creates a new array with the results of some operation",
@@ -306,7 +325,82 @@
       }
     },
     {
-      "chapterId": 6,
+      "chapterTitle": "Scope, Closures & the 'this' Keyword",
+      "topics": [
+        {
+          "topicTitle": "Scope, Hoisting & Closures",
+          "description": "The concepts behind most JavaScript interview questions, and behind how callbacks remember data.",
+          "subtopics": [
+            "Global, function and block scope",
+            "Hoisting of var, let, const and functions",
+            "Temporal dead zone",
+            "Closures: functions remembering their surroundings",
+            "Practical uses: counters, private data"
+          ]
+        },
+        {
+          "topicTitle": "The 'this' Keyword",
+          "description": "Understand what this points to in different situations, so you stop guessing.",
+          "subtopics": [
+            "this in global, function, method and arrow function",
+            "call, apply and bind",
+            "Losing this in callbacks"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 4,
+        "theory": [
+          "What is a closure? Give a real use case.",
+          "Explain hoisting with let versus var.",
+          "How does this behave in an arrow function?"
+        ],
+        "practical": [
+          "Create a counter using a closure with private state."
+        ]
+      },
+      "chapterId": 6
+    },
+    {
+      "chapterTitle": "Objects & Modern ES6+ Syntax",
+      "topics": [
+        {
+          "topicTitle": "Destructuring, Spread & Rest",
+          "description": "Short modern syntax to unpack and copy data cleanly.",
+          "subtopics": [
+            "Array and object destructuring",
+            "Default values and renaming",
+            "Spread operator for copying and merging",
+            "Rest parameters"
+          ]
+        },
+        {
+          "topicTitle": "Objects in Depth",
+          "description": "Objects are the core data structure of JavaScript. Learn to work with them confidently.",
+          "subtopics": [
+            "Object.keys, values and entries",
+            "Shallow vs deep copy (structuredClone)",
+            "Optional chaining (?.) and nullish coalescing (??)",
+            "Map and Set"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 5,
+        "theory": [
+          "What is the difference between a shallow and a deep copy?",
+          "What do ?. and ?? do?"
+        ],
+        "practical": [
+          "Use destructuring and spread to merge two user objects.",
+          "Use optional chaining to safely read a deeply nested API response.",
+          "Remove duplicates from an array using Set."
+        ]
+      },
+      "chapterId": 7
+    },
+    {
+      "chapterId": 8,
       "chapterTitle": "Document Object Model (DOM)",
       "relatedProjects": [
         3,
@@ -318,6 +412,7 @@
       "topics": [
         {
           "topicTitle": "Web Dev Basics & The Window Object",
+          "description": "How the browser is structured and the window object that holds everything.",
           "subtopics": [
             "The 3 Musketeers: HTML (structure), CSS (style), JS (logic)",
             "Connecting JS using the <script> tag",
@@ -327,6 +422,7 @@
         },
         {
           "topicTitle": "Understanding the DOM",
+          "description": "The browser's tree version of your HTML that JavaScript can read and change.",
           "subtopics": [
             "Document Object Model (DOM): Created by the browser when a page loads",
             "Visualizing the DOM tree (window -> document -> html -> head/body)"
@@ -334,6 +430,7 @@
         },
         {
           "topicTitle": "DOM Manipulation: Selecting Elements",
+          "description": "Find elements with getElementById and querySelector.",
           "subtopics": [
             "document.getElementById(\"myId\")",
             "document.getElementsByClassName(\"myClass\")",
@@ -344,6 +441,7 @@
         },
         {
           "topicTitle": "DOM Manipulation: Properties",
+          "description": "Read and change text, HTML and values using textContent, innerHTML and value.",
           "subtopics": [
             "tagName : returns tag for element nodes",
             "innerText : returns the text content of the element and all its children",
@@ -353,6 +451,7 @@
         },
         {
           "topicTitle": "Attributes and Styling",
+          "description": "Change attributes, classes and inline styles from JavaScript.",
           "subtopics": [
             "node.getAttribute(attr) : gets the attribute value",
             "node.setAttribute(attr, value) : sets the attribute value",
@@ -361,6 +460,7 @@
         },
         {
           "topicTitle": "Inserting and Deleting Elements",
+          "description": "Create, add and remove elements to build dynamic pages.",
           "subtopics": [
             "document.createElement(\"div\") : creates a new element",
             "node.append(el) : adds at the end of node (inside)",
@@ -395,7 +495,7 @@
       }
     },
     {
-      "chapterId": 7,
+      "chapterId": 9,
       "chapterTitle": "Events in JavaScript",
       "relatedProjects": [
         1,
@@ -410,6 +510,7 @@
       "topics": [
         {
           "topicTitle": "Introduction to Events",
+          "description": "Events are actions like clicks and key presses that your code can respond to.",
           "subtopics": [
             "Events are fired to notify code of interesting changes",
             "The change in the state of an object is known as an Event",
@@ -421,6 +522,7 @@
         },
         {
           "topicTitle": "Event Handling in JS",
+          "description": "Connect functions to events using inline and property handlers.",
           "subtopics": [
             "node.event = () => { // handle here }",
             "Example: btn.onclick = () => { console.log('btn was clicked'); }",
@@ -429,6 +531,7 @@
         },
         {
           "topicTitle": "The Event Object",
+          "description": "The object passed to handlers with details like target, key and coordinates.",
           "subtopics": [
             "A special object that has details about the event",
             "All event handlers have access to the Event Object's properties and methods",
@@ -440,6 +543,7 @@
         },
         {
           "topicTitle": "Event Listeners",
+          "description": "addEventListener, removing listeners, bubbling and event delegation.",
           "subtopics": [
             "node.addEventListener(event, callback)",
             "node.removeEventListener(event, callback)",
@@ -469,7 +573,7 @@
       }
     },
     {
-      "chapterId": 8,
+      "chapterId": 10,
       "chapterTitle": "Object-Oriented Programming (OOP) & Error Handling",
       "relatedProjects": [
         18,
@@ -482,6 +586,7 @@
       "topics": [
         {
           "topicTitle": "Prototypes in JS",
+          "description": "How objects inherit from other objects behind the scenes.",
           "subtopics": [
             "JS objects have a special property called prototype",
             "Setting prototypes using __proto__",
@@ -490,6 +595,7 @@
         },
         {
           "topicTitle": "Classes and Objects",
+          "description": "Blueprints for creating many objects with shared behaviour.",
           "subtopics": [
             "Classes as templates for creating objects",
             "Defining a class to group properties and methods",
@@ -498,6 +604,7 @@
         },
         {
           "topicTitle": "Constructors",
+          "description": "Special methods that set up a new object when it is created.",
           "subtopics": [
             "The constructor() method",
             "Automatically invoked when a new object is created",
@@ -506,6 +613,7 @@
         },
         {
           "topicTitle": "Inheritance",
+          "description": "Reuse and extend a class by creating a child class.",
           "subtopics": [
             "Inheriting properties and methods from a parent class using 'extends'",
             "Passing down traits from Parent to Child classes",
@@ -514,6 +622,7 @@
         },
         {
           "topicTitle": "The 'super' Keyword",
+          "description": "Call the parent class constructor and methods from a child class.",
           "subtopics": [
             "super(args) // calls Parent's constructor",
             "super.parentMethod(args) // calls Parent's method",
@@ -522,6 +631,7 @@
         },
         {
           "topicTitle": "Error Handling (try-catch)",
+          "description": "Handle failures gracefully with try, catch, finally and throw.",
           "subtopics": [
             "try { ... normal code }",
             "catch ( err ) { ... handling error }",
@@ -557,7 +667,7 @@
       }
     },
     {
-      "chapterId": 9,
+      "chapterId": 11,
       "chapterTitle": "Asynchronous JavaScript & Web APIs",
       "relatedProjects": [
         21,
@@ -571,6 +681,7 @@
       "topics": [
         {
           "topicTitle": "Synchronous vs Asynchronous",
+          "description": "How JavaScript runs one thing at a time and handles waiting tasks.",
           "subtopics": [
             "Synchronous: Code runs in a particular sequence of instructions [1]",
             "Each instruction waits for the previous instruction to complete [1]",
@@ -579,6 +690,7 @@
         },
         {
           "topicTitle": "Timers & Execution Context",
+          "description": "setTimeout, setInterval and the call stack and event loop behind them.",
           "subtopics": [
             "setTimeout(callback, delay) for delayed execution",
             "setInterval(callback, interval) for repeated execution",
@@ -588,6 +700,7 @@
         },
         {
           "topicTitle": "Callbacks & Callback Hell",
+          "description": "Why nested callbacks become unreadable and what to use instead.",
           "subtopics": [
             "Callback: A function passed as an argument to another function [2]",
             "Callback Hell: Nested callbacks stacked below one another forming a pyramid structure [2]",
@@ -596,6 +709,7 @@
         },
         {
           "topicTitle": "Promises",
+          "description": "Objects that represent a future result, with then, catch and Promise.all.",
           "subtopics": [
             "An object in JS representing the 'eventual' completion of a task [2]",
             "A solution to callback hell [2]",
@@ -605,6 +719,7 @@
         },
         {
           "topicTitle": "Async-Await & IIFE",
+          "description": "Write asynchronous code that reads like normal code, plus immediately invoked functions.",
           "subtopics": [
             "async function always returns a promise [4]",
             "await pauses the execution of its surrounding async function until the promise is settled [4]",
@@ -613,6 +728,7 @@
         },
         {
           "topicTitle": "Working with APIs (Fetch & JSON)",
+          "description": "Get data from servers using fetch and read it as JSON. The base of every real app.",
           "subtopics": [
             "What is an API (Application Programming Interface)?",
             "HTTP Basics: GET (fetching data) vs POST (sending data)",
@@ -623,6 +739,7 @@
         },
         {
           "topicTitle": "Browser Storage",
+          "description": "Save data in the browser with localStorage, sessionStorage and cookies.",
           "subtopics": [
             "Persisting data on the client side",
             "localStorage (data does not expire) vs sessionStorage (cleared when tab closes)",
@@ -655,6 +772,66 @@
           "Write an async function that fetches an array of posts from an API, then uses the array map() method to log only the titles of the posts."
         ]
       }
+    },
+    {
+      "chapterTitle": "Modules, Debugging & Project Workflow",
+      "topics": [
+        {
+          "topicTitle": "ES Modules",
+          "description": "Split code across files with import and export, the way every modern project is organised.",
+          "subtopics": [
+            "export and import (named and default)",
+            "type=module in script tag",
+            "Organising a project into modules"
+          ]
+        },
+        {
+          "topicTitle": "Debugging with Browser DevTools",
+          "description": "Find bugs fast using the browser instead of guessing with console.log.",
+          "subtopics": [
+            "Console and console methods",
+            "Breakpoints and stepping",
+            "Network tab for API calls",
+            "Inspecting and editing DOM and CSS live"
+          ]
+        },
+        {
+          "topicTitle": "npm, Vite & Project Setup",
+          "description": "Set up a real project with packages and a dev server, as done at companies.",
+          "subtopics": [
+            "Node.js and npm basics",
+            "package.json",
+            "Installing packages",
+            "Creating a project with Vite",
+            "Environment variables"
+          ]
+        },
+        {
+          "topicTitle": "Deploying a Frontend",
+          "description": "Put your site online for free and share the link.",
+          "subtopics": [
+            "GitHub Pages",
+            "Netlify or Vercel",
+            "Custom domains",
+            "Build folder vs source"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 7,
+        "theory": [
+          "What problem do ES modules solve?",
+          "What does package.json contain?",
+          "Why do we need a dev server like Vite?"
+        ],
+        "practical": [
+          "Split a small app into three ES modules.",
+          "Debug a broken script using breakpoints only.",
+          "Create a Vite project, add one npm package and use it.",
+          "Deploy any project to GitHub Pages or Netlify."
+        ]
+      },
+      "chapterId": 12
     }
   ],
   "projects": [
@@ -986,6 +1163,18 @@
         "Combines a To-Do list, sticky notes, live clock, and local weather widget into a single app",
         "Fetches a new motivational quote via API every time the dashboard loads",
         "Includes a persistent Light/Dark mode theme toggle saved securely in localStorage"
+      ]
+    },
+    {
+      "projectId": 31,
+      "projectTitle": "Weather & News Dashboard (Modular, Deployed)",
+      "difficulty": "advanced",
+      "features": [
+        "Built with ES modules and a Vite setup",
+        "Fetches data from two public APIs with async/await and error handling",
+        "Search history saved in localStorage",
+        "Uses destructuring, optional chaining and closures where suitable",
+        "Deployed live on GitHub Pages or Netlify"
       ]
     }
   ]

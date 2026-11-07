@@ -8,6 +8,7 @@
       "topics": [
         {
           "topicTitle": "Introduction to HTML",
+          "description": "What HTML is and how browsers turn tags into a page. Everything on the web starts here.",
           "subtopics": [
             "Structure/layout of a web page",
             "HTML as a markup code (not programming)",
@@ -16,6 +17,7 @@
         },
         {
           "topicTitle": "HTML Tag Basics",
+          "description": "Learn opening, closing and self-closing tags and how elements nest inside each other.",
           "subtopics": [
             "Containers for content or other HTML tags",
             "Elements vs Content (e.g., <p>This is a paragraph</p>)",
@@ -24,6 +26,7 @@
         },
         {
           "topicTitle": "Basic HTML Page Skeleton",
+          "description": "The boilerplate every page needs: doctype, html, head and body, and what each part does.",
           "subtopics": [
             "<!DOCTYPE html> (tells browser you are using HTML5)",
             "<html> root of an html document",
@@ -34,6 +37,7 @@
         },
         {
           "topicTitle": "Rules and Best Practices",
+          "description": "Clean habits from day one: indentation, lowercase tags, proper nesting and comments.",
           "subtopics": [
             "Tags with no content in between (e.g., <br>)",
             "Using 'Inspect element' or 'View page source' to see HTML",
@@ -62,12 +66,14 @@
       "topics": [
         {
           "topicTitle": "HTML Attributes",
+          "description": "Attributes add extra information to tags, like links, ids, classes and image sources.",
           "subtopics": [
             "Adding more information to tags (e.g., <html lang=\"en\">)"
           ]
         },
         {
           "topicTitle": "Headings and Paragraphs",
+          "description": "Structure your text with h1 to h6 and p so both readers and search engines understand it.",
           "subtopics": [
             "Heading Tags: h1 (most important) to h6 (least important)",
             "Paragraph Tag (<p>)"
@@ -75,6 +81,7 @@
         },
         {
           "topicTitle": "Links and Media",
+          "description": "Connect pages with anchors and add images, audio and video to your content.",
           "subtopics": [
             "Anchor Tag (<a>) with href attribute",
             "Image Tag (<img>) with src and alt attributes",
@@ -83,6 +90,7 @@
         },
         {
           "topicTitle": "Text Formatting Tags",
+          "description": "Emphasise or mark text using tags like strong, em, mark, sub and sup.",
           "subtopics": [
             "Bold (<b>), Italic (<i>), and Underline (<u>)",
             "Big (<big>) and Small (<small>)",
@@ -93,6 +101,7 @@
         },
         {
           "topicTitle": "Spacing and Separators",
+          "description": "Control line breaks, horizontal rules and whitespace without hacking with spaces.",
           "subtopics": [
             "Br Tag (<br>) for next line/line breaks",
             "Hr Tag (<hr>) for horizontal rulers to separate content"
@@ -121,10 +130,16 @@
       "topics": [
         {
           "topicTitle": "Semantic Layout Tags",
-          "subtopics": ["<header>", "<main>", "<footer>"]
+          "description": "Use header, nav, main, section, article and footer so the page has meaning, not just boxes.",
+          "subtopics": [
+            "<header>",
+            "<main>",
+            "<footer>"
+          ]
         },
         {
           "topicTitle": "Inside the Main Tag",
+          "description": "How to organise the main content area with sections and articles correctly.",
           "subtopics": [
             "Section Tag (<section>) for a section on your page",
             "Article Tag (<article>) for an article on your page",
@@ -133,6 +148,7 @@
         },
         {
           "topicTitle": "Revisiting Anchor & Image Tags",
+          "description": "Deeper use of links and images: relative vs absolute paths, alt text and targets.",
           "subtopics": [
             "Opening links in a new tab (target=\"_main\")",
             "Creating clickable pictures (<a href=\"...\"><img src=\"...\"></a>)",
@@ -141,6 +157,7 @@
         },
         {
           "topicTitle": "Div Tag (Block Elements)",
+          "description": "The generic block container used to group content for layout and styling.",
           "subtopics": [
             "Div is a container used for other HTML elements",
             "Block Element concept (takes full width)",
@@ -149,6 +166,7 @@
         },
         {
           "topicTitle": "Span Tag (Inline Elements)",
+          "description": "The generic inline container for styling a small part of text. Know block vs inline.",
           "subtopics": [
             "Span is a container used for other HTML elements",
             "Inline Element concept (takes width as per size)",
@@ -176,6 +194,7 @@
       "topics": [
         {
           "topicTitle": "Lists in HTML",
+          "description": "Ordered, unordered and description lists, including nested lists for menus.",
           "subtopics": [
             "Representing real-life list data",
             "Unordered Lists (<ul>)",
@@ -185,6 +204,7 @@
         },
         {
           "topicTitle": "Tables in HTML",
+          "description": "Show tabular data with rows, columns, headers and merged cells. Not for page layout.",
           "subtopics": [
             "Table rows (<tr>), headers (<th>), and data (<td>)",
             "Table Captions (<caption>)",
@@ -194,6 +214,7 @@
         },
         {
           "topicTitle": "Forms and Inputs",
+          "description": "Collect user data with form, input types, labels and buttons.",
           "subtopics": [
             "Form Tag (<form>) for collecting user data",
             "Action attribute (action=\"/action.php\")",
@@ -204,6 +225,7 @@
         },
         {
           "topicTitle": "Advanced Form Controls & Identifiers",
+          "description": "Select, textarea, checkbox, radio, validation attributes and ids that link labels to inputs.",
           "subtopics": [
             "Labels and binding to inputs using 'for' (<label for=\"id1\">)",
             "Class & Id attributes (class=\"group1\", id=\"id1\")",
@@ -213,6 +235,7 @@
         },
         {
           "topicTitle": "Embedded Content",
+          "description": "Embed videos, maps and other pages using iframe and related tags.",
           "subtopics": [
             "iframe Tag (website inside a website)",
             "Video Tag (<video src=\"...\">)",
@@ -233,6 +256,61 @@
           "Create a Contact Us form that includes a text input for name, a radio button for gender, a select dropdown for city, and a textarea for feedback.",
           "Use an iframe to embed a Wikipedia page into your website.",
           "Embed a local video using the <video> tag, set its dimensions, and ensure user controls are visible."
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "Accessibility, SEO & Modern HTML",
+      "topics": [
+        {
+          "topicTitle": "Accessibility (a11y) Basics",
+          "description": "Make pages usable for everyone, including people using screen readers or keyboards. It is also a hiring-interview favourite.",
+          "subtopics": [
+            "Why accessibility matters",
+            "Alt text and meaningful link text",
+            "Labels for form controls",
+            "Keyboard navigation and focus",
+            "ARIA roles and attributes (when and when not to use)",
+            "Heading order and landmarks"
+          ]
+        },
+        {
+          "topicTitle": "SEO & Meta Tags",
+          "description": "Help search engines and social apps understand your page using the head section.",
+          "subtopics": [
+            "title and meta description",
+            "Viewport meta for mobile",
+            "Open Graph and Twitter card tags",
+            "Favicon and canonical link",
+            "Structured headings for SEO"
+          ]
+        },
+        {
+          "topicTitle": "Modern HTML5 Elements",
+          "description": "Built-in elements that replace old JavaScript hacks, saving time and code.",
+          "subtopics": [
+            "details and summary (accordion)",
+            "dialog (modal)",
+            "progress and meter",
+            "picture and srcset (responsive images)",
+            "data-* attributes",
+            "Lazy loading images and iframes"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 7,
+        "theory": [
+          "Why is alt text important and when should it be empty?",
+          "What does the viewport meta tag do?",
+          "Difference between a div button and a real button for accessibility."
+        ],
+        "practical": [
+          "Add title, description, favicon and Open Graph tags to an existing page.",
+          "Build an FAQ accordion using only details and summary.",
+          "Create a modal using the dialog element.",
+          "Use picture and srcset to serve different images for mobile and desktop."
         ]
       }
     }
@@ -270,6 +348,23 @@
         "A multi-line <textarea> for the student's personal essay.",
         "A 'Fee Structure' <table> at the bottom of the page utilizing <thead>, <tbody>, and colspan for categorized pricing.",
         "Clear differentiation of layout using block elements (divs) to group form sections seamlessly."
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Accessible Business Landing Page",
+      "concepts": [
+        "Semantic Tags",
+        "Forms",
+        "SEO Meta",
+        "Accessibility"
+      ],
+      "features": [
+        "Fully semantic layout with correct heading order",
+        "Contact form with labels and validation attributes",
+        "SEO and Open Graph tags in head",
+        "FAQ section using details and summary",
+        "Passes a Lighthouse accessibility score above 90"
       ]
     }
   ]

@@ -8,6 +8,7 @@
       "topics": [
         {
           "topicTitle": "Introduction to CSS",
+          "description": "CSS controls how HTML looks: colours, fonts, spacing and layout. Learn how a rule is written.",
           "subtopics": [
             "Cascading Style Sheet basics",
             "CSS as a styling language (not programming)",
@@ -18,6 +19,7 @@
         },
         {
           "topicTitle": "Including Style",
+          "description": "Inline, internal and external CSS, and why external stylesheets are the professional choice.",
           "subtopics": [
             "Inline styles (e.g., <h1 style=\"color: red\">)",
             "Internal styles using the <style> tag",
@@ -27,6 +29,7 @@
         },
         {
           "topicTitle": "Colors & Selectors",
+          "description": "Pick elements with element, class and id selectors and colour them with names, hex, rgb and hsl.",
           "subtopics": [
             "Color Property for foreground text (e.g., color: red;)",
             "Background Color Property",
@@ -39,6 +42,7 @@
         },
         {
           "topicTitle": "Text Properties",
+          "description": "Style text with font, size, weight, spacing, alignment and decoration.",
           "subtopics": [
             "text-align: left, right, center, start, end (relative to parent, not page)",
             "text-decoration: underline, overline, line-through, wavy, dotted, color, none",
@@ -51,6 +55,7 @@
         },
         {
           "topicTitle": "Units in CSS",
+          "description": "Absolute units like px compared with relative ones, and when to use each.",
           "subtopics": [
             "Absolute units: pixels (px), cm, mm, inch",
             "Pixel conversion: 96px = 1 inch"
@@ -78,6 +83,7 @@
       "topics": [
         {
           "topicTitle": "The Box Model in CSS",
+          "description": "Every element is a box of content, padding, border and margin. Understand it and layout stops being confusing.",
           "subtopics": [
             "Content area: Height and Width",
             "Border",
@@ -87,6 +93,7 @@
         },
         {
           "topicTitle": "Border Properties",
+          "description": "Style borders, round corners and create outlines and simple shapes.",
           "subtopics": [
             "border-width, border-style (solid, dotted, dashed), border-color",
             "Border Shorthand (e.g., border: 2px solid black;)",
@@ -95,6 +102,7 @@
         },
         {
           "topicTitle": "Padding and Margin",
+          "description": "Space inside and outside elements, margin collapse and shorthand values.",
           "subtopics": [
             "padding-top, padding-right, padding-bottom, padding-left",
             "margin-top, margin-right, margin-bottom, margin-left",
@@ -103,6 +111,7 @@
         },
         {
           "topicTitle": "Display & Visibility",
+          "description": "Block, inline, inline-block and none, and how hiding differs from removing.",
           "subtopics": [
             "display: inline (takes required space, no margin/padding)",
             "display: block (takes full available width)",
@@ -113,6 +122,7 @@
         },
         {
           "topicTitle": "Alpha Channel (Opacity)",
+          "description": "Make colours and elements transparent with rgba, hsla and opacity.",
           "subtopics": [
             "Opacity property (0 to 1)",
             "RGBA color system for background transparency (e.g., rgba(255, 0, 0, 0.5))"
@@ -141,6 +151,7 @@
       "topics": [
         {
           "topicTitle": "Relative Units",
+          "description": "em, rem, %, vw and vh for layouts that scale with the screen and user settings.",
           "subtopics": [
             "Percentage (%): relative to parent object",
             "em: relative to font-size of element itself (for padding/margin) or parent (for font-size)",
@@ -151,6 +162,7 @@
         },
         {
           "topicTitle": "CSS Position Property",
+          "description": "Static, relative, absolute, fixed and sticky: how elements are placed on the page.",
           "subtopics": [
             "position: static (default, top/right/bottom/left/z-index have no effect)",
             "position: relative (positioned relative to its normal position)",
@@ -161,6 +173,7 @@
         },
         {
           "topicTitle": "Z-Index & Background Details",
+          "description": "Stack overlapping elements and control background images, size, repeat and position.",
           "subtopics": [
             "z-index: Stack level of overlapping elements (auto, 0, positive, negative)",
             "background-image: Using url() to set backgrounds",
@@ -183,11 +196,59 @@
       }
     },
     {
-      "chapterId": 4,
+      "chapterTitle": "Selectors, Pseudo-classes & Specificity",
+      "topics": [
+        {
+          "topicTitle": "Combinators & Attribute Selectors",
+          "description": "Target elements by their relationship to others or by their attributes.",
+          "subtopics": [
+            "Descendant, child (>), adjacent (+) and sibling (~) selectors",
+            "Attribute selectors: [type=text], [href^=https]",
+            "Grouping and :not()"
+          ]
+        },
+        {
+          "topicTitle": "Pseudo-classes & Pseudo-elements",
+          "description": "Style states like hover and focus, and add decorative content without extra HTML.",
+          "subtopics": [
+            "Pseudo-classes: :hover, :focus, :active, :first-child, :nth-child()",
+            "Form states: :checked, :disabled, :valid",
+            "Pseudo-elements: ::before, ::after, ::placeholder, ::selection",
+            "The content property"
+          ]
+        },
+        {
+          "topicTitle": "Specificity & The Cascade",
+          "description": "Why your CSS sometimes does not apply. Learn how the browser decides which rule wins.",
+          "subtopics": [
+            "Specificity score (inline, id, class, element)",
+            "Source order and inheritance",
+            "!important and why to avoid it",
+            "Debugging styles in DevTools"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 5,
+        "theory": [
+          "Rank these selectors by specificity: #id, .class, div, inline style.",
+          "What is the difference between a pseudo-class and a pseudo-element?"
+        ],
+        "practical": [
+          "Style a list so every odd item has a different background using :nth-child.",
+          "Create a custom tooltip using ::after and :hover.",
+          "Fix a stylesheet with conflicting rules using specificity, without !important."
+        ]
+      },
+      "chapterId": 4
+    },
+    {
+      "chapterId": 5,
       "chapterTitle": "Flexbox Layouts & Media Queries",
       "topics": [
         {
           "topicTitle": "Introduction to Flexbox",
+          "description": "A one-dimensional layout system for rows or columns. The main tool for navbars and cards.",
           "subtopics": [
             "One-dimensional layout method (rows or columns)",
             "The Flex Model: Flex container and Flex items",
@@ -196,6 +257,7 @@
         },
         {
           "topicTitle": "Flex Container Properties",
+          "description": "Control direction, wrapping and alignment from the parent container.",
           "subtopics": [
             "flex-direction: row (default), row-reverse, column, column-reverse",
             "justify-content: flex-start, flex-end, center, space-evenly (main axis alignment)",
@@ -206,6 +268,7 @@
         },
         {
           "topicTitle": "Flex Item Properties",
+          "description": "Control how individual children grow, shrink and align.",
           "subtopics": [
             "align-self: overrides align-items for individual elements",
             "flex-grow: how much an item will grow relative to others",
@@ -214,6 +277,7 @@
         },
         {
           "topicTitle": "Responsive Design with Media Queries",
+          "description": "Change styles at different screen widths so one site works on phone, tablet and desktop.",
           "subtopics": [
             "Making designs responsive for laptops, tablets, and mobile devices",
             "Syntax: @media (width), @media (min-width)",
@@ -237,11 +301,109 @@
       }
     },
     {
-      "chapterId": 5,
+      "chapterId": 6,
+      "chapterTitle": "CSS Grid & Modern Layout",
+      "topics": [
+        {
+          "topicTitle": "Introduction to CSS Grid",
+          "description": "A two-dimensional layout system for rows and columns together. Perfect for full page layouts and galleries.",
+          "subtopics": [
+            "Grid vs Flexbox: when to use which",
+            "Grid container and grid items",
+            "display: grid, grid-template-columns, grid-template-rows",
+            "The fr unit",
+            "gap, row-gap, column-gap"
+          ]
+        },
+        {
+          "topicTitle": "Grid Placement & Areas",
+          "description": "Place items exactly where you want them, by line numbers or by named areas.",
+          "subtopics": [
+            "grid-column and grid-row (spanning)",
+            "grid-template-areas and grid-area",
+            "justify-items, align-items, place-items",
+            "Implicit vs explicit grid, grid-auto-flow"
+          ]
+        },
+        {
+          "topicTitle": "Responsive Grids Without Media Queries",
+          "description": "Build layouts that adapt by themselves using auto-fit and minmax.",
+          "subtopics": [
+            "repeat(auto-fit, minmax())",
+            "auto-fill vs auto-fit",
+            "Responsive card gallery pattern",
+            "Holy grail layout with Grid"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 7,
+        "theory": [
+          "When would you choose Grid over Flexbox?",
+          "What does the fr unit do?",
+          "Difference between auto-fit and auto-fill."
+        ],
+        "practical": [
+          "Build a 3-column layout with header and footer using grid-template-areas.",
+          "Create a photo gallery where one image spans two columns.",
+          "Make a responsive card grid with repeat, auto-fit and minmax, with no media queries.",
+          "Recreate a dashboard layout (sidebar, topbar, content) with Grid."
+        ]
+      }
+    },
+    {
+      "chapterTitle": "CSS Variables & Modern CSS",
+      "topics": [
+        {
+          "topicTitle": "CSS Variables (Custom Properties)",
+          "description": "Store colours and sizes once and reuse them everywhere. The base of every theme system.",
+          "subtopics": [
+            "Declaring with --name and using var()",
+            ":root and scoped variables",
+            "Fallback values",
+            "Changing variables with JavaScript"
+          ]
+        },
+        {
+          "topicTitle": "Modern CSS Functions",
+          "description": "Let CSS do the maths for fluid, flexible sizing.",
+          "subtopics": [
+            "calc()",
+            "min(), max(), clamp() for fluid typography",
+            "aspect-ratio and object-fit",
+            "Logical properties (margin-inline)"
+          ]
+        },
+        {
+          "topicTitle": "Dark Mode & Theming",
+          "description": "Support light and dark themes using variables and the user's system preference.",
+          "subtopics": [
+            "prefers-color-scheme media query",
+            "Theme toggle with a class and variables",
+            "color-scheme property"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 4,
+        "theory": [
+          "Why use CSS variables instead of repeating values?",
+          "What does the prefers-color-scheme media query detect?"
+        ],
+        "practical": [
+          "Build a light/dark theme toggle powered by CSS variables.",
+          "Make a heading that scales smoothly between 24px and 48px using clamp()."
+        ]
+      },
+      "chapterId": 7
+    },
+    {
+      "chapterId": 8,
       "chapterTitle": "Advanced CSS (Transitions, Transforms, Animations)",
       "topics": [
         {
           "topicTitle": "CSS Transitions",
+          "description": "Smoothly animate property changes such as hover effects.",
           "subtopics": [
             "transition-property: specifying what changes (font-size, width, etc.)",
             "transition-duration: time taken (e.g., 2s, 4ms)",
@@ -252,6 +414,7 @@
         },
         {
           "topicTitle": "CSS Transforms (2D & 3D)",
+          "description": "Move, rotate, scale and skew elements without affecting layout.",
           "subtopics": [
             "rotate: taking degrees (e.g., rotate(45deg))",
             "scale: resizing elements (e.g., scale(2), scaleX, scaleY, scale(1,2))",
@@ -261,6 +424,7 @@
         },
         {
           "topicTitle": "CSS Animations & Keyframes",
+          "description": "Create multi-step animations that run on their own using keyframes.",
           "subtopics": [
             "@keyframes definitions (from/to, or 0% / 50% / 100%)",
             "Animation properties: name, duration, timing-function, delay, iteration-count, direction",
@@ -280,6 +444,55 @@
           "Apply a hover effect to a button using a transition shorthand that smoothly increases its width and font-size over 2 seconds.",
           "Use transform: translate() and transform: rotate() to move a div 50px to the right and rotate it 45 degrees simultaneously.",
           "Create a custom spinning loader: Make a circular div with a thick border on one side, and use @keyframes from 0deg to 360deg with an infinite duration."
+        ]
+      }
+    },
+    {
+      "chapterId": 9,
+      "chapterTitle": "Professional CSS Workflow",
+      "topics": [
+        {
+          "topicTitle": "Mobile-First & Responsive Images",
+          "description": "Design for the smallest screen first, then enhance. This is how real teams work.",
+          "subtopics": [
+            "Mobile-first with min-width queries",
+            "Breakpoint strategy",
+            "Responsive images: max-width, srcset",
+            "Testing with DevTools device mode"
+          ]
+        },
+        {
+          "topicTitle": "CSS Architecture & Naming (BEM)",
+          "description": "Keep large stylesheets organised so teams can maintain them.",
+          "subtopics": [
+            "CSS reset and box-sizing: border-box",
+            "BEM naming: block__element--modifier",
+            "File structure and reusable components",
+            "Avoiding deep selectors"
+          ]
+        },
+        {
+          "topicTitle": "Sass, Bootstrap & Tailwind Overview",
+          "description": "Know what the popular tools do and when to reach for them, after mastering plain CSS.",
+          "subtopics": [
+            "What a preprocessor is (Sass variables, nesting, mixins)",
+            "Component frameworks: Bootstrap",
+            "Utility-first CSS: Tailwind",
+            "Pros, cons and when to use each"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "Why is mobile-first preferred?",
+          "What problem does BEM solve?"
+        ],
+        "practical": [
+          "Convert a desktop-first stylesheet to mobile-first.",
+          "Refactor a messy stylesheet using BEM names.",
+          "Rebuild one card component in plain CSS, then in Tailwind or Bootstrap, and compare.",
+          "Add a global reset with border-box and test it."
         ]
       }
     }
@@ -403,6 +616,24 @@
         "Design promotional offer banners with absolute positioned text overlays",
         "Style a complex footer layout with multiple link columns and a newsletter input",
         "Ensure every section scales perfectly from mobile screens to desktop viewports"
+      ]
+    },
+    {
+      "projectId": 9,
+      "projectTitle": "Responsive Admin Dashboard with Dark Mode",
+      "concepts": [
+        "CSS Grid",
+        "Flexbox",
+        "CSS Variables",
+        "Mobile-First",
+        "Pseudo-classes"
+      ],
+      "features": [
+        "Grid layout with sidebar, topbar and content area",
+        "Collapsible sidebar on mobile",
+        "Theme switch powered by CSS variables",
+        "Hover and focus effects with pseudo-classes",
+        "Stat cards built with an auto-fit grid"
       ]
     }
   ]
