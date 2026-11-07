@@ -1,0 +1,341 @@
+{
+  "courseId": "system-design",
+  "courseTitle": "System Design Basics",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "System Design Foundations",
+      "topics": [
+        {
+          "topicTitle": "What is System Design?",
+          "description": "How to think about building software that serves many users. Used in real work and in interviews.",
+          "subtopics": [
+            "From one server to a system",
+            "Functional vs non-functional requirements",
+            "A repeatable framework: requirements, estimation, API, data model, design, bottlenecks",
+            "How this course connects to the apps you built"
+          ]
+        },
+        {
+          "topicTitle": "Core Concepts",
+          "description": "The vocabulary every design discussion uses.",
+          "subtopics": [
+            "Latency and throughput",
+            "Availability and reliability",
+            "Scalability",
+            "Consistency (overview)",
+            "Trade-offs: there is no perfect design"
+          ]
+        },
+        {
+          "topicTitle": "Back-of-the-Envelope Estimation",
+          "description": "Rough numbers that guide design decisions.",
+          "subtopics": [
+            "Requests per second from daily users",
+            "Storage estimation",
+            "Bandwidth estimation",
+            "Useful numbers: powers of two and time units",
+            "Practice with a URL shortener"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 5,
+        "theory": [
+          "Difference between latency and throughput.",
+          "What are non-functional requirements? Give three examples."
+        ],
+        "practical": [
+          "Estimate requests per second and storage for an app with 1 million daily users.",
+          "List functional and non-functional requirements for a chat app.",
+          "Explain in five lines how your Express and database app would handle 10 times more users."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Scaling & Networking",
+      "topics": [
+        {
+          "topicTitle": "Scaling Strategies",
+          "description": "Handle more users without rewriting everything.",
+          "subtopics": [
+            "Vertical vs horizontal scaling",
+            "Stateless servers and why they scale easily",
+            "Session storage outside the server",
+            "Auto scaling (concept)"
+          ]
+        },
+        {
+          "topicTitle": "Load Balancers",
+          "description": "Spread traffic across many servers.",
+          "subtopics": [
+            "What a load balancer does",
+            "Algorithms: round robin, least connections, hashing",
+            "Health checks",
+            "Layer 4 vs Layer 7 (overview)",
+            "Nginx as a load balancer"
+          ]
+        },
+        {
+          "topicTitle": "DNS, CDN & Networking Basics",
+          "description": "How requests reach your system and how static content gets faster.",
+          "subtopics": [
+            "DNS resolution",
+            "CDN and edge caching",
+            "HTTP, HTTPS and TLS recap",
+            "REST vs GraphQL vs gRPC (when to use which)",
+            "WebSockets and server-sent events for real time"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 5,
+        "theory": [
+          "Why are stateless servers easier to scale?",
+          "What does a CDN improve?"
+        ],
+        "practical": [
+          "Draw a diagram of users, load balancer and three app servers.",
+          "Configure Nginx to load balance between two running Node containers.",
+          "Pick the right protocol (REST, WebSocket or gRPC) for five given scenarios."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Data Layer Design",
+      "topics": [
+        {
+          "topicTitle": "Choosing a Database",
+          "description": "Pick the right tool, not the trendy one.",
+          "subtopics": [
+            "SQL vs NoSQL decision factors",
+            "Key-value, document, relational and wide-column (overview)",
+            "When one PostgreSQL is enough",
+            "Polyglot persistence (concept)"
+          ]
+        },
+        {
+          "topicTitle": "Replication & Sharding",
+          "description": "Scale reads and writes beyond one database machine.",
+          "subtopics": [
+            "Leader and follower replication, read replicas",
+            "Replication lag",
+            "Sharding and partitioning strategies",
+            "Hot spots and rebalancing (concept)"
+          ]
+        },
+        {
+          "topicTitle": "CAP Theorem & Consistency",
+          "description": "What you must give up when systems are distributed.",
+          "subtopics": [
+            "CAP theorem in plain words",
+            "Strong vs eventual consistency",
+            "ACID vs BASE",
+            "Examples: banking vs social media likes"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 5,
+        "theory": [
+          "What is replication lag and why does it matter?",
+          "Explain CAP in your own words."
+        ],
+        "practical": [
+          "Choose a database for a chat app, a bank and a product catalogue and justify each.",
+          "Design a sharding key for a users table with 500 million rows.",
+          "Show how read replicas could reduce load on your blog database."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Performance & Reliability",
+      "topics": [
+        {
+          "topicTitle": "Caching",
+          "description": "The single most effective way to make systems fast.",
+          "subtopics": [
+            "Where to cache: browser, CDN, application, database",
+            "Cache-aside, write-through and write-back",
+            "TTL and eviction policies (LRU)",
+            "Cache invalidation: the hard part",
+            "Redis in practice (overview)"
+          ]
+        },
+        {
+          "topicTitle": "Queues & Async Processing",
+          "description": "Do slow work in the background and survive spikes.",
+          "subtopics": [
+            "Why queues: decoupling and buffering",
+            "Producers, consumers and pub/sub",
+            "RabbitMQ and Kafka (overview)",
+            "Retries, idempotency and dead-letter queues",
+            "Example: sending emails and processing uploads"
+          ]
+        },
+        {
+          "topicTitle": "Rate Limiting & Protection",
+          "description": "Protect your system from abuse and overload.",
+          "subtopics": [
+            "Why rate limit",
+            "Token bucket and sliding window (concepts)",
+            "Where to apply: gateway vs application",
+            "Backpressure (concept)"
+          ]
+        },
+        {
+          "topicTitle": "Designing for Failure",
+          "description": "Everything fails eventually. Plan for it.",
+          "subtopics": [
+            "Redundancy and failover",
+            "Timeouts, retries with backoff and circuit breakers",
+            "Health checks and monitoring (logs, metrics, alerts)",
+            "Backups and disaster recovery (RPO and RTO overview)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 7,
+        "theory": [
+          "What is cache invalidation and why is it hard?",
+          "Why must queue consumers be idempotent?",
+          "Explain the token bucket algorithm."
+        ],
+        "practical": [
+          "Add Redis caching to one slow endpoint of your API and measure the difference.",
+          "Implement a simple rate limiter and test it.",
+          "Move email sending in your app to a background job using a queue.",
+          "List what happens when your database goes down and how you would handle it."
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "Architecture Patterns & Case Studies",
+      "topics": [
+        {
+          "topicTitle": "Monolith vs Microservices",
+          "description": "Know when not to use microservices.",
+          "subtopics": [
+            "Monolith advantages for small teams",
+            "Microservices: benefits and costs",
+            "API gateway",
+            "Service communication: sync vs async",
+            "A sensible path: modular monolith first"
+          ]
+        },
+        {
+          "topicTitle": "Design Case Study: URL Shortener",
+          "description": "Apply the framework to something you have already built.",
+          "subtopics": [
+            "Requirements and estimation",
+            "API and data model",
+            "Generating short codes (hashing, counters, base62)",
+            "Caching and scaling reads",
+            "Analytics and expiry"
+          ]
+        },
+        {
+          "topicTitle": "Design Case Study: Chat Application",
+          "description": "Real-time and delivery guarantees.",
+          "subtopics": [
+            "Requirements and connection handling with WebSockets",
+            "Message storage and ordering",
+            "Online presence and delivery status",
+            "Scaling WebSocket servers (pub/sub)"
+          ]
+        },
+        {
+          "topicTitle": "Design Case Study: News Feed & File Storage",
+          "description": "Two classic problems with different bottlenecks.",
+          "subtopics": [
+            "Feed generation: fan-out on write vs on read",
+            "Ranking and caching timelines",
+            "File upload service: object storage, pre-signed URLs, CDN",
+            "Handling large files and processing pipelines"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "Why is a modular monolith often the best start?",
+          "Explain fan-out on write and its downside."
+        ],
+        "practical": [
+          "Write a complete one-page design for a URL shortener serving 100 million URLs.",
+          "Design the high-level architecture of a chat app with a diagram.",
+          "Design a photo upload service and identify the top three bottlenecks.",
+          "Present one design to a friend in 10 minutes and answer their questions."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "URL Shortener Design Document",
+      "difficulty": "beginner",
+      "concepts": [
+        "Estimation",
+        "API Design",
+        "Data Model",
+        "Caching"
+      ],
+      "features": [
+        "Requirements and capacity estimation",
+        "API and database schema",
+        "High-level diagram with cache and load balancer",
+        "Bottlenecks and how to fix them"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Add Caching and Rate Limiting to Your API",
+      "difficulty": "intermediate",
+      "concepts": [
+        "Redis",
+        "Rate Limiting",
+        "Performance"
+      ],
+      "features": [
+        "Redis cache on the slowest read endpoint",
+        "Rate limiter on login and public routes",
+        "Before and after performance numbers in a short report"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Chat App Design Document",
+      "difficulty": "intermediate",
+      "concepts": [
+        "WebSockets",
+        "Pub/Sub",
+        "Scaling"
+      ],
+      "features": [
+        "Full design with diagrams and message flow",
+        "Data model for users, chats and messages",
+        "Scaling plan for 1 million concurrent users"
+      ]
+    },
+    {
+      "projectId": 4,
+      "projectTitle": "Design Review of Your Own Full Stack App",
+      "difficulty": "advanced",
+      "concepts": [
+        "Trade-offs",
+        "Reliability",
+        "Scaling"
+      ],
+      "features": [
+        "Document your own full stack app's architecture",
+        "Identify five risks and bottlenecks",
+        "Propose and explain improvements with trade-offs"
+      ]
+    }
+  ]
+}

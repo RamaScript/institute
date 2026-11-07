@@ -1,0 +1,308 @@
+{
+  "courseId": "nextjs",
+  "courseTitle": "Next.js",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Next.js Fundamentals",
+      "topics": [
+        {
+          "topicTitle": "Why Next.js?",
+          "description": "React plus routing, rendering and a backend in one framework. Understand what it adds before using it.",
+          "subtopics": [
+            "Limits of a client-only React app (SEO, first load)",
+            "What Next.js adds: routing, server rendering, API, optimisation",
+            "Pages Router vs App Router (we learn App Router)",
+            "Server rendering vs client rendering in simple words"
+          ]
+        },
+        {
+          "topicTitle": "Project Setup & Structure",
+          "description": "Create a project and know where everything lives.",
+          "subtopics": [
+            "create-next-app with TypeScript and Tailwind",
+            "The app directory",
+            "Special files: page, layout, loading, error, not-found",
+            "next.config and environment files",
+            "Running dev, build and start"
+          ]
+        },
+        {
+          "topicTitle": "File-Based Routing & Layouts",
+          "description": "Folders become URLs. Layouts keep the common UI in one place.",
+          "subtopics": [
+            "Pages from folders",
+            "Nested routes and nested layouts",
+            "Dynamic routes [id] and catch-all routes",
+            "Route groups (folder) and private folders",
+            "Link, useRouter and redirects"
+          ]
+        },
+        {
+          "topicTitle": "Loading, Error & Not-Found UI",
+          "description": "Built-in files for good user experience.",
+          "subtopics": [
+            "loading.js and streaming skeletons",
+            "error.js boundaries",
+            "not-found.js and notFound()",
+            "Handling edge cases gracefully"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "What problems does Next.js solve that a plain React app has?",
+          "Difference between page.js and layout.js."
+        ],
+        "practical": [
+          "Create a Next.js app with Home, About and Blog pages.",
+          "Add a shared navbar and footer through the root layout.",
+          "Create /blog/[slug] and show the slug on the page.",
+          "Add a custom 404 and a loading skeleton."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Server & Client Components",
+      "topics": [
+        {
+          "topicTitle": "Server Components vs Client Components",
+          "description": "The biggest idea in modern Next.js. Components run on the server by default.",
+          "subtopics": [
+            "Server components by default",
+            "When to add 'use client' (state, effects, browser APIs)",
+            "Passing server data to client components",
+            "Keeping client components small",
+            "What cannot run in a server component"
+          ]
+        },
+        {
+          "topicTitle": "Data Fetching in Server Components",
+          "description": "Load data directly where you need it, without useEffect.",
+          "subtopics": [
+            "async server components",
+            "Fetching from an API or database directly",
+            "Parallel vs sequential fetching",
+            "Streaming with Suspense",
+            "Secrets stay on the server"
+          ]
+        },
+        {
+          "topicTitle": "Rendering Strategies & Caching",
+          "description": "Static, dynamic and in-between. Learn the concepts, then follow the current docs for the exact caching APIs.",
+          "subtopics": [
+            "Static rendering vs dynamic rendering",
+            "Revalidation and ISR in concept",
+            "When a page becomes dynamic",
+            "Caching layers overview",
+            "Always check the official docs for the current caching behaviour of your Next.js version"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "When do you need 'use client'?",
+          "What is the benefit of fetching data in a server component?"
+        ],
+        "practical": [
+          "Build a blog list page that fetches posts in a server component.",
+          "Add a client-side like button inside a server-rendered page.",
+          "Show a Suspense fallback while a slow section loads.",
+          "Explain, for three pages in your app, whether each should be static or dynamic."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Backend Inside Next.js",
+      "topics": [
+        {
+          "topicTitle": "Route Handlers",
+          "description": "Build API endpoints inside the same project.",
+          "subtopics": [
+            "route.js with GET, POST, PUT, DELETE",
+            "Reading params, query and JSON body",
+            "Returning responses and status codes",
+            "When to use route handlers vs your separate Express API"
+          ]
+        },
+        {
+          "topicTitle": "Server Actions & Forms",
+          "description": "Submit forms and mutate data without writing an API route.",
+          "subtopics": [
+            "'use server' functions",
+            "Forms with action",
+            "Validating with zod on the server",
+            "Pending states and revalidating data after a mutation",
+            "Security: treat every action like a public endpoint"
+          ]
+        },
+        {
+          "topicTitle": "Databases in Next.js",
+          "description": "Use PostgreSQL or MongoDB from your Next.js app.",
+          "subtopics": [
+            "Prisma or Drizzle with PostgreSQL (overview and one working setup)",
+            "Or Mongoose with MongoDB",
+            "Singleton database client in development",
+            "Environment variables: server only vs NEXT_PUBLIC_"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "Difference between a route handler and a server action.",
+          "Why must server actions validate input and check authentication?"
+        ],
+        "practical": [
+          "Create GET and POST /api/notes route handlers.",
+          "Build a notes form that uses a server action to save to the database.",
+          "Revalidate the list after a new note is added.",
+          "Move your database connection into a reusable module."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Auth, SEO & Optimisation",
+      "topics": [
+        {
+          "topicTitle": "Authentication & Route Protection",
+          "description": "Log users in and protect pages.",
+          "subtopics": [
+            "Options: Auth.js or your own JWT in httpOnly cookies",
+            "Session checks in server components and actions",
+            "Protecting routes with middleware (called proxy in newer versions: check the docs)",
+            "Role checks and redirects"
+          ]
+        },
+        {
+          "topicTitle": "Metadata & SEO",
+          "description": "Show up on Google and look good when shared.",
+          "subtopics": [
+            "Metadata API: static and generateMetadata",
+            "Open Graph and Twitter images",
+            "sitemap and robots",
+            "Semantic HTML and headings for SEO"
+          ]
+        },
+        {
+          "topicTitle": "Performance Optimisation",
+          "description": "Use the built-in tools instead of reinventing them.",
+          "subtopics": [
+            "next/image",
+            "next/font",
+            "Link prefetching",
+            "Bundle size and dynamic imports",
+            "Core Web Vitals and Lighthouse"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "Why is metadata important for a public website?",
+          "Where should authorization checks live and why?"
+        ],
+        "practical": [
+          "Add login and a protected /dashboard page.",
+          "Add dynamic metadata and an Open Graph image for blog posts.",
+          "Replace img tags with next/image and fonts with next/font.",
+          "Run Lighthouse and improve one score."
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "Deploying Next.js",
+      "topics": [
+        {
+          "topicTitle": "Deploying on Vercel",
+          "description": "The easiest way to ship a Next.js app.",
+          "subtopics": [
+            "Connecting a GitHub repository",
+            "Environment variables",
+            "Preview deployments for pull requests",
+            "Custom domain and HTTPS",
+            "Reading build and runtime logs"
+          ]
+        },
+        {
+          "topicTitle": "Self-Hosting with Docker (Overview)",
+          "description": "Run Next.js on your own server using what you learned in the Docker course.",
+          "subtopics": [
+            "next build and next start",
+            "Standalone output for small images",
+            "Dockerfile for Next.js",
+            "Production checklist: env, database, logging, backups"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 4,
+        "theory": [
+          "What is a preview deployment?",
+          "What can go wrong when environment variables are missing in production?"
+        ],
+        "practical": [
+          "Deploy your app to Vercel with a database connected.",
+          "Create a Dockerfile for the same app and run it locally."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Static Blog with Dynamic Routes",
+      "difficulty": "beginner",
+      "concepts": [
+        "Routing",
+        "Layouts",
+        "Metadata",
+        "Static Rendering"
+      ],
+      "features": [
+        "Blog list and /blog/[slug] pages from markdown or an array",
+        "Shared layout and navbar",
+        "SEO metadata and sitemap"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Full Stack Notes App with Server Actions",
+      "difficulty": "intermediate",
+      "concepts": [
+        "Server Components",
+        "Server Actions",
+        "Database"
+      ],
+      "features": [
+        "Notes CRUD with a database",
+        "Forms using server actions and server-side validation",
+        "List revalidates after changes",
+        "Loading and error UI"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Dashboard with Authentication",
+      "difficulty": "advanced",
+      "concepts": [
+        "Auth",
+        "Middleware",
+        "Route Handlers",
+        "Deployment"
+      ],
+      "features": [
+        "Login, logout and protected dashboard",
+        "Role-based pages for user and admin",
+        "At least one route handler API",
+        "Deployed live on Vercel"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "courseId": "nodejs",
+  "courseTitle": "Node.js",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Node.js Fundamentals",
+      "topics": [
+        {
+          "topicTitle": "What is Node.js?",
+          "description": "Node lets you run JavaScript outside the browser, so the same language can build the backend. Understand what it is before writing code.",
+          "subtopics": [
+            "JavaScript runtime built on Chrome's V8 engine",
+            "Browser JS vs Node JS (no DOM, no window)",
+            "Frontend, backend and how they talk (client-server model)",
+            "Installing Node and checking versions",
+            "Running a file with node app.js and the REPL"
+          ]
+        },
+        {
+          "topicTitle": "Modules in Node",
+          "description": "Split code into files and reuse it. Node supports two module styles and you will see both in real projects.",
+          "subtopics": [
+            "CommonJS: require and module.exports",
+            "ES Modules: import and export (type: module)",
+            "Named vs default exports",
+            "Core, local and third-party modules"
+          ]
+        },
+        {
+          "topicTitle": "npm & package.json",
+          "description": "npm is how you install and manage other people's code. Every Node project starts with it.",
+          "subtopics": [
+            "npm init and package.json",
+            "Installing packages: dependencies vs devDependencies",
+            "node_modules and why it goes in .gitignore",
+            "npm scripts (start, dev)",
+            "nodemon for auto-restart",
+            "npx and package-lock.json (concept)"
+          ]
+        },
+        {
+          "topicTitle": "Built-in Modules: fs, path, os",
+          "description": "Node ships with useful tools. Read and write files without installing anything.",
+          "subtopics": [
+            "fs: readFile, writeFile, appendFile, unlink",
+            "Sync vs async file methods",
+            "path: join, resolve, extname, __dirname",
+            "os and process basics (process.argv, process.env)",
+            "events and EventEmitter (concept)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 7,
+        "theory": [
+          "What is the difference between browser JavaScript and Node.js?",
+          "Difference between CommonJS and ES Modules.",
+          "What is the difference between dependencies and devDependencies?"
+        ],
+        "practical": [
+          "Create a project with npm init and a start script.",
+          "Write a script that creates a file, appends a line and reads it back using fs.",
+          "Split a small calculator into two modules and import it in app.js.",
+          "Print the file extension and folder name of any path using the path module."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Async Node & Your First Server",
+      "topics": [
+        {
+          "topicTitle": "Async I/O & the Event Loop",
+          "description": "Why Node is fast: it never waits. Understand non-blocking code once and everything later makes sense.",
+          "subtopics": [
+            "Blocking vs non-blocking code",
+            "Event loop in simple words",
+            "Callbacks, promises and async/await revisited in Node",
+            "fs.promises and util.promisify",
+            "Handling errors with try-catch in async code"
+          ]
+        },
+        {
+          "topicTitle": "Environment Variables",
+          "description": "Keep secrets and settings out of your code. This is a basic professional habit.",
+          "subtopics": [
+            "process.env",
+            "Creating a .env file with dotenv",
+            "Never committing .env (add to .gitignore)",
+            "Different values for development and production"
+          ]
+        },
+        {
+          "topicTitle": "Building a Server with the http Module",
+          "description": "Create a raw server once, feel the pain, and you will love Express.",
+          "subtopics": [
+            "http.createServer and listen",
+            "Request and response objects",
+            "Manual routing with req.url and req.method",
+            "Sending JSON and setting status codes",
+            "Why plain http gets messy fast"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "Why is Node.js called non-blocking?",
+          "Why should secrets live in a .env file?"
+        ],
+        "practical": [
+          "Read a large file using async/await and fs.promises with error handling.",
+          "Load a PORT from .env and print it.",
+          "Create an http server with three routes: /, /about and /api returning JSON.",
+          "Return a 404 response for unknown routes."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Debugging, Streams & External APIs",
+      "topics": [
+        {
+          "topicTitle": "Error Handling & Debugging in Node",
+          "description": "Find and fix problems without guessing. Read errors calmly and use the debugger.",
+          "subtopics": [
+            "Reading stack traces",
+            "try-catch with async/await",
+            "Unhandled promise rejections (concept)",
+            "node --inspect and the VS Code debugger",
+            "console methods beyond console.log"
+          ]
+        },
+        {
+          "topicTitle": "Streams & Buffers",
+          "description": "How Node handles big files without loading everything into memory. Concept first, small examples only.",
+          "subtopics": [
+            "What a buffer is",
+            "What a stream is (readable, writable)",
+            "fs.createReadStream and pipe",
+            "Why streams save memory"
+          ]
+        },
+        {
+          "topicTitle": "Calling External APIs with fetch",
+          "description": "Node can also be a client. Fetch data from public APIs and use API keys safely.",
+          "subtopics": [
+            "fetch in Node 18+",
+            "Reading JSON responses",
+            "Handling failed requests and status codes",
+            "Using API keys from .env"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 5,
+        "theory": [
+          "Why are streams better than reading a huge file at once?",
+          "What does a stack trace tell you?"
+        ],
+        "practical": [
+          "Copy a large file using createReadStream and pipe.",
+          "Break a script on purpose and fix it using the VS Code debugger.",
+          "Fetch data from a public API and print three fields of the response."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Command-Line Notes App",
+      "difficulty": "beginner",
+      "concepts": [
+        "Modules",
+        "fs",
+        "process.argv",
+        "npm"
+      ],
+      "features": [
+        "Add, list and delete notes from the terminal",
+        "Notes saved in a JSON file using the fs module",
+        "Commands passed through process.argv",
+        "Code split into at least two modules"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "File Organizer Script",
+      "difficulty": "beginner",
+      "concepts": [
+        "fs",
+        "path",
+        "Async/Await",
+        "Error Handling"
+      ],
+      "features": [
+        "Scans a folder and moves files into Images, Docs and Videos folders by extension",
+        "Skips folders and handles errors without crashing",
+        "Prints a summary of what was moved"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Weather CLI",
+      "difficulty": "intermediate",
+      "concepts": [
+        "fetch",
+        "dotenv",
+        "process.argv",
+        "Error Handling"
+      ],
+      "features": [
+        "Takes a city name from the command line",
+        "Fetches weather from a public API using a key stored in .env",
+        "Shows a clean, readable result",
+        "Handles wrong city and network errors"
+      ]
+    }
+  ]
+}

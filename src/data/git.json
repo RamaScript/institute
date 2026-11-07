@@ -1,0 +1,216 @@
+{
+  "courseId": "git",
+  "courseTitle": "Git and GitHub",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Git Basics & Your First Repository",
+      "topics": [
+        {
+          "topicTitle": "What is Git & GitHub?",
+          "description": "Git tracks changes to your code on your computer. GitHub is a website that stores Git projects online so you can share and collaborate. They are not the same thing.",
+          "subtopics": [
+            "What version control solves (no more final_v2_REAL.zip)",
+            "Git (tool) vs GitHub (website)",
+            "Repository, commit and branch in simple words",
+            "Installing Git and a GitHub account"
+          ]
+        },
+        {
+          "topicTitle": "Setup & Configuration",
+          "description": "One-time setup so Git knows who you are. Takes five minutes.",
+          "subtopics": [
+            "git --version",
+            "git config --global user.name and user.email",
+            "Default branch name (main)",
+            "Using the terminal basics: cd, ls, mkdir"
+          ]
+        },
+        {
+          "topicTitle": "The Core Workflow: init, add, commit",
+          "description": "The three commands you will use every single day. Master these and you know 70% of Git.",
+          "subtopics": [
+            "git init: start tracking a folder",
+            "Working directory, staging area and repository",
+            "git add and git commit -m",
+            "Writing clear commit messages"
+          ]
+        },
+        {
+          "topicTitle": "Checking Status & History",
+          "description": "See what changed, what is staged and what happened before.",
+          "subtopics": [
+            "git status",
+            "git diff",
+            "git log and git log --oneline",
+            "Ignoring files with .gitignore (node_modules, .env)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 7,
+        "theory": [
+          "What is the difference between Git and GitHub?",
+          "What are the working directory, staging area and repository?",
+          "Why should .env files go in .gitignore?"
+        ],
+        "practical": [
+          "Install Git and configure your name and email.",
+          "Create a folder, run git init and make your first commit.",
+          "Edit a file, check git diff, stage it and commit with a clear message.",
+          "Create a .gitignore that ignores node_modules and .env, then verify with git status."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Branching, Merging & Undoing Mistakes",
+      "topics": [
+        {
+          "topicTitle": "Branches",
+          "description": "A branch is a safe copy of your project where you can try things without breaking the main code.",
+          "subtopics": [
+            "Why we use branches",
+            "git branch, git switch -c, git checkout",
+            "Naming branches (feature/login, fix/navbar)",
+            "Deleting finished branches"
+          ]
+        },
+        {
+          "topicTitle": "Merging & Conflicts",
+          "description": "Combine work from two branches, and learn that a conflict is normal, not an error.",
+          "subtopics": [
+            "git merge",
+            "Fast-forward vs merge commit (concept only)",
+            "What a merge conflict is",
+            "Resolving a conflict in VS Code step by step"
+          ]
+        },
+        {
+          "topicTitle": "Undoing Mistakes Safely",
+          "description": "Everyone makes mistakes. Know the safe ways to go back.",
+          "subtopics": [
+            "git restore (discard changes in a file)",
+            "git restore --staged (unstage)",
+            "git commit --amend (fix the last message)",
+            "git revert vs git reset (when to use which)",
+            "git stash (save work temporarily)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 7,
+        "theory": [
+          "Why should you never work directly on main in a team?",
+          "What causes a merge conflict?",
+          "Difference between git revert and git reset."
+        ],
+        "practical": [
+          "Create a feature branch, make two commits and merge it into main.",
+          "Create a conflict on purpose in two branches and resolve it.",
+          "Discard a wrong edit using git restore.",
+          "Fix your last commit message using --amend."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "GitHub & Collaboration",
+      "topics": [
+        {
+          "topicTitle": "Remote Repositories: clone, push, pull",
+          "description": "Connect your local project to GitHub and keep both in sync.",
+          "subtopics": [
+            "Creating a repository on GitHub",
+            "git remote add origin",
+            "git push and git pull",
+            "git clone",
+            "Authentication: HTTPS with token or SSH key"
+          ]
+        },
+        {
+          "topicTitle": "Pull Requests & Team Workflow",
+          "description": "How real teams add code: branch, push, open a pull request, review, merge.",
+          "subtopics": [
+            "Forking vs cloning",
+            "Opening a pull request",
+            "Code review basics: comments and approvals",
+            "Keeping your branch updated with main",
+            "Feature-branch workflow"
+          ]
+        },
+        {
+          "topicTitle": "Issues, README & Your GitHub Profile",
+          "description": "Make your GitHub look professional. Recruiters check it.",
+          "subtopics": [
+            "Writing a good README.md (Markdown basics)",
+            "GitHub Issues and labels",
+            "Profile README",
+            "Pinning projects and adding a licence"
+          ]
+        },
+        {
+          "topicTitle": "Deploying with GitHub Pages",
+          "description": "Put your HTML/CSS/JS project online for free using your repository.",
+          "subtopics": [
+            "Enabling GitHub Pages",
+            "Choosing the branch and folder",
+            "Custom domain (overview)",
+            "Updating the live site with a push"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 8,
+        "theory": [
+          "What is the difference between fork and clone?",
+          "What is a pull request and why is it used?",
+          "Why is a good README important?"
+        ],
+        "practical": [
+          "Create a GitHub repo and push your local project to it.",
+          "Clone a friend's repo, create a branch and open a pull request.",
+          "Write a README with title, description, screenshot and setup steps.",
+          "Deploy one of your HTML/CSS/JS projects on GitHub Pages.",
+          "Create a profile README and pin three repositories."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Portfolio Repository with Pull Request Workflow",
+      "difficulty": "beginner",
+      "concepts": [
+        "init, add, commit",
+        "Branching",
+        "Push & Pull Requests",
+        "GitHub Pages"
+      ],
+      "features": [
+        "Create a portfolio repo with a clean .gitignore and README",
+        "Add three sections, each on its own feature branch",
+        "Merge every branch using a pull request, never directly on main",
+        "Deploy the final site on GitHub Pages"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Team Conflict Practice Lab",
+      "difficulty": "intermediate",
+      "concepts": [
+        "Forking",
+        "Merge conflicts",
+        "Code review",
+        "Collaboration"
+      ],
+      "features": [
+        "Pair with a friend and edit the same file on different branches",
+        "Create and resolve at least two merge conflicts",
+        "Review each other's pull request with comments",
+        "Document what went wrong and how you fixed it in the README"
+      ]
+    }
+  ]
+}

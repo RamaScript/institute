@@ -1,0 +1,352 @@
+{
+  "courseId": "express",
+  "courseTitle": "Express.js",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Express.js Basics",
+      "topics": [
+        {
+          "topicTitle": "Introduction to Express",
+          "description": "Express is a small framework that makes servers simple. It is the most used Node framework.",
+          "subtopics": [
+            "Why Express over the http module",
+            "npm install express and a minimal server",
+            "app.listen and the PORT variable",
+            "Nodemon workflow"
+          ]
+        },
+        {
+          "topicTitle": "Routing",
+          "description": "Decide what the server does for each URL and HTTP method.",
+          "subtopics": [
+            "app.get, app.post, app.put, app.patch, app.delete",
+            "Route parameters (/users/:id)",
+            "Query strings (?page=2)",
+            "Route order and app.all",
+            "Handling unknown routes (404)"
+          ]
+        },
+        {
+          "topicTitle": "Request & Response Objects",
+          "description": "Everything coming in and going out goes through these two objects.",
+          "subtopics": [
+            "req.params, req.query, req.body, req.headers",
+            "res.send, res.json, res.status, res.redirect",
+            "HTTP status codes you must know (200, 201, 400, 401, 404, 500)",
+            "Reading JSON body with express.json()"
+          ]
+        },
+        {
+          "topicTitle": "Middleware",
+          "description": "The core idea of Express. Learn middleware and you understand Express.",
+          "subtopics": [
+            "What middleware is: the req, res, next chain",
+            "Built-in: express.json, express.urlencoded, express.static",
+            "Writing custom middleware (logger, auth check)",
+            "Application-level vs route-level middleware",
+            "Order of middleware matters"
+          ]
+        },
+        {
+          "topicTitle": "Serving Static Files & Your Frontend",
+          "description": "Connect your HTML, CSS and JS work to a real server.",
+          "subtopics": [
+            "express.static and the public folder",
+            "Serving an HTML page",
+            "Calling your own API with fetch from the browser"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 8,
+        "theory": [
+          "What is middleware and what does next() do?",
+          "Difference between req.params and req.query.",
+          "Why does the order of middleware matter?"
+        ],
+        "practical": [
+          "Create an Express server with GET routes for / and /health.",
+          "Create GET /users/:id that returns the id from the URL.",
+          "Create POST /echo that sends back the JSON body.",
+          "Write a logger middleware that prints the method and URL of every request.",
+          "Serve a static HTML page from a public folder and call an API from it with fetch."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Building REST APIs",
+      "topics": [
+        {
+          "topicTitle": "REST API Basics",
+          "description": "The standard way frontends and backends talk. Keep it simple and consistent.",
+          "subtopics": [
+            "What an API and REST are",
+            "Resources and URL naming (/products, not /getProducts)",
+            "CRUD mapped to GET, POST, PUT/PATCH, DELETE",
+            "Status codes and response format",
+            "Testing with Postman or Thunder Client"
+          ]
+        },
+        {
+          "topicTitle": "Project Structure: Routers & Controllers",
+          "description": "Keep code clean as the app grows. Do not put everything in one file.",
+          "subtopics": [
+            "express.Router",
+            "Separating routes and controllers",
+            "Folder structure (routes, controllers, middleware)",
+            "Using a JSON file or array as a temporary database"
+          ]
+        },
+        {
+          "topicTitle": "Validation & Error Handling",
+          "description": "Never trust user input and never let the server crash silently.",
+          "subtopics": [
+            "Validating input (manual checks, then zod or express-validator)",
+            "Sending proper 400 responses",
+            "Error-handling middleware (err, req, res, next)",
+            "Handling async errors",
+            "Custom error responses"
+          ]
+        },
+        {
+          "topicTitle": "CORS & Connecting a Frontend",
+          "description": "Let your own frontend talk to your API without browser errors.",
+          "subtopics": [
+            "What CORS is and why the browser blocks requests",
+            "The cors package",
+            "Calling the API with fetch from a separate frontend",
+            "Sending JSON in POST requests"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 8,
+        "theory": [
+          "Which HTTP method and status code would you use for creating a resource?",
+          "Why separate routes and controllers?",
+          "What is CORS and why does the browser enforce it?"
+        ],
+        "practical": [
+          "Build full CRUD routes for /todos using an array.",
+          "Move the todo routes into a Router and controller.",
+          "Add validation: reject a todo with an empty title using a 400 response.",
+          "Add a global error-handling middleware.",
+          "Call the API from a plain HTML page on another port, fix the CORS error."
+        ]
+      }
+    },
+    {
+      "chapterTitle": "REST API Design in Practice",
+      "topics": [
+        {
+          "topicTitle": "Resource Design & URL Structure",
+          "description": "Good APIs are predictable. Design URLs so another developer can guess them without reading docs.",
+          "subtopics": [
+            "Nouns not verbs, plural names (/products)",
+            "Nested resources and keeping nesting shallow (/users/5/orders)",
+            "Path params vs query params",
+            "API versioning (/api/v1)",
+            "Consistent naming (camelCase JSON, kebab-case URLs)"
+          ]
+        },
+        {
+          "topicTitle": "Methods, Idempotency & Status Codes in Practice",
+          "description": "Use the right method and the right status code every time. Frontend developers depend on this.",
+          "subtopics": [
+            "GET is safe, PUT and DELETE are idempotent, POST is not",
+            "PUT (replace) vs PATCH (partial update)",
+            "201 Created with a Location header, 204 No Content",
+            "400, 401, 403, 404, 409 and 422: when to use which",
+            "429 Too Many Requests"
+          ]
+        },
+        {
+          "topicTitle": "Pagination, Filtering, Sorting & Search",
+          "description": "Never return 10,000 records in one response. Every real list endpoint needs these.",
+          "subtopics": [
+            "Pagination with ?page and ?limit",
+            "Returning metadata: total, page, totalPages",
+            "Sorting with ?sort=price or ?sort=-createdAt",
+            "Filtering with ?category=shoes&inStock=true",
+            "Simple search with ?q="
+          ]
+        },
+        {
+          "topicTitle": "Consistent Responses & Error Format",
+          "description": "One predictable shape for success and for errors, so the frontend never has to guess.",
+          "subtopics": [
+            "Success format: { success, data, meta }",
+            "Error format: { success: false, error: { code, message } }",
+            "Validation errors as a list of field messages",
+            "Never leaking stack traces or internal details",
+            "One central place that builds every response"
+          ]
+        },
+        {
+          "topicTitle": "API Documentation",
+          "description": "An API without docs is unusable. Document it once, keep it in sync.",
+          "subtopics": [
+            "What OpenAPI (Swagger) is",
+            "Serving docs with swagger-ui-express at /api-docs",
+            "Postman collections and examples",
+            "A README with endpoints, sample requests and responses"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 8,
+        "theory": [
+          "Why should URLs use nouns instead of verbs?",
+          "Difference between PUT and PATCH, and what idempotent means.",
+          "Why does every list endpoint need pagination?"
+        ],
+        "practical": [
+          "Rename a badly designed API (/getAllUsers, /deleteUser) to proper REST URLs and methods.",
+          "Add /api/v1 versioning to an existing API.",
+          "Add pagination, sorting and filtering to GET /products.",
+          "Create a helper that returns the same success and error shape from every route.",
+          "Add Swagger UI documentation for three endpoints."
+        ]
+      },
+      "chapterId": 3
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Production Essentials",
+      "topics": [
+        {
+          "topicTitle": "Security Basics",
+          "description": "Small steps that protect your API from common problems.",
+          "subtopics": [
+            "helmet for secure headers",
+            "Rate limiting with express-rate-limit",
+            "Never trusting input, never exposing stack traces",
+            "Keeping secrets in environment variables"
+          ]
+        },
+        {
+          "topicTitle": "Logging & File Uploads",
+          "description": "See what your server is doing and accept files from users.",
+          "subtopics": [
+            "morgan for request logging",
+            "File uploads with multer",
+            "Limiting file size and type",
+            "Where to store uploaded files (concept)"
+          ]
+        },
+        {
+          "topicTitle": "Deploying a Node App",
+          "description": "Put your API on the internet so anyone can use it.",
+          "subtopics": [
+            "Preparing for deploy: PORT, start script, .env",
+            "Deploying on Render or Railway",
+            "Setting environment variables on the host",
+            "Checking logs and redeploying from GitHub"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 5,
+        "theory": [
+          "What does helmet do?",
+          "Why must the server use process.env.PORT when deployed?"
+        ],
+        "practical": [
+          "Add helmet, morgan and rate limiting to your API.",
+          "Create an upload route that accepts one image under 2 MB.",
+          "Deploy your todo API on Render or Railway and test it from Postman."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Todo REST API",
+      "difficulty": "beginner",
+      "concepts": [
+        "Express Routing",
+        "Middleware",
+        "CRUD",
+        "Status Codes"
+      ],
+      "features": [
+        "Full CRUD for todos with GET, POST, PUT and DELETE",
+        "Custom logger middleware",
+        "Correct status codes (201, 400, 404)",
+        "Tested completely in Postman"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Notes API with Routers & Validation",
+      "difficulty": "intermediate",
+      "concepts": [
+        "Router",
+        "Controllers",
+        "Validation",
+        "Error Handling"
+      ],
+      "features": [
+        "Routes and controllers in separate folders",
+        "Input validation with 400 responses",
+        "Global error-handling middleware",
+        "Data saved in a JSON file"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Expense Tracker API with Frontend",
+      "difficulty": "intermediate",
+      "concepts": [
+        "REST",
+        "CORS",
+        "fetch",
+        "Static Files"
+      ],
+      "features": [
+        "API for adding, listing, filtering and deleting expenses",
+        "Simple HTML/CSS/JS frontend that uses fetch",
+        "Total and category summary endpoint",
+        "CORS configured correctly"
+      ]
+    },
+    {
+      "projectId": 4,
+      "projectTitle": "URL Shortener (Deployed)",
+      "difficulty": "advanced",
+      "concepts": [
+        "Routing",
+        "Redirects",
+        "Security",
+        "Deployment"
+      ],
+      "features": [
+        "POST a long URL and receive a short code",
+        "GET /:code redirects to the original URL",
+        "Rate limiting, helmet and request logging",
+        "Deployed live on Render or Railway"
+      ]
+    },
+    {
+      "projectId": 5,
+      "projectTitle": "Products API v1 (Documented)",
+      "difficulty": "intermediate",
+      "concepts": [
+        "REST Design",
+        "Pagination",
+        "Versioning",
+        "API Docs"
+      ],
+      "features": [
+        "Versioned routes under /api/v1/products",
+        "Pagination, sorting, filtering and search on the list endpoint",
+        "One consistent success and error response format",
+        "Swagger UI documentation at /api-docs",
+        "All status codes used correctly"
+      ]
+    }
+  ]
+}

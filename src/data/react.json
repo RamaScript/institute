@@ -1,0 +1,374 @@
+{
+  "courseId": "react",
+  "courseTitle": "React",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "React Fundamentals",
+      "topics": [
+        {
+          "topicTitle": "What is React?",
+          "description": "A library for building user interfaces from small reusable pieces called components. Understand the idea before the syntax.",
+          "subtopics": [
+            "Problems with building big UIs using plain DOM code",
+            "Components and declarative UI",
+            "Virtual DOM and re-rendering (concept)",
+            "React vs Vue vs Angular in one minute",
+            "Where React fits after your Express APIs"
+          ]
+        },
+        {
+          "topicTitle": "Project Setup with Vite",
+          "description": "Start a real React project the modern way.",
+          "subtopics": [
+            "Node and npm check",
+            "Creating a project with Vite",
+            "Folder structure: src, main.jsx, App.jsx",
+            "Running the dev server and building for production",
+            "Using React DevTools"
+          ]
+        },
+        {
+          "topicTitle": "JSX & Components",
+          "description": "Write UI that looks like HTML but lives inside JavaScript.",
+          "subtopics": [
+            "JSX rules: one root, className, camelCase attributes",
+            "Embedding JavaScript with curly braces",
+            "Function components and naming",
+            "Importing and exporting components",
+            "Fragments"
+          ]
+        },
+        {
+          "topicTitle": "Props & Composition",
+          "description": "Pass data into components and build bigger UIs from smaller ones.",
+          "subtopics": [
+            "Props as function arguments",
+            "Destructuring props and default values",
+            "children prop",
+            "Component composition",
+            "Props are read-only"
+          ]
+        },
+        {
+          "topicTitle": "Lists & Conditional Rendering",
+          "description": "Show data from arrays and show or hide parts of the UI.",
+          "subtopics": [
+            "map() to render lists",
+            "Why keys matter",
+            "Ternary and && rendering",
+            "Early return",
+            "Rendering empty and loading states"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 7,
+        "theory": [
+          "What problem does React solve compared to plain DOM code?",
+          "Why are keys needed in lists?",
+          "Why are props read-only?"
+        ],
+        "practical": [
+          "Create a Vite React project and clean the starter code.",
+          "Build a ProfileCard component and reuse it with three different props.",
+          "Render a list of products from an array with proper keys.",
+          "Show a 'No items found' message when the list is empty."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "State & Events",
+      "topics": [
+        {
+          "topicTitle": "useState",
+          "description": "State is data that changes over time and makes the UI update.",
+          "subtopics": [
+            "What state is and why normal variables do not work",
+            "useState syntax",
+            "Updating state with the previous value",
+            "Updating objects and arrays without mutating them",
+            "State is per component instance"
+          ]
+        },
+        {
+          "topicTitle": "Events & Forms",
+          "description": "Handle clicks, typing and form submits.",
+          "subtopics": [
+            "onClick, onChange, onSubmit",
+            "Controlled inputs",
+            "Handling multiple inputs with one handler",
+            "preventDefault",
+            "Basic form validation"
+          ]
+        },
+        {
+          "topicTitle": "Lifting State Up & Props Drilling",
+          "description": "Share state between components the right way.",
+          "subtopics": [
+            "Moving state to the closest common parent",
+            "Passing handlers as props",
+            "What props drilling is and when it hurts",
+            "Thinking in components: breaking a UI into pieces"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "Why should you never modify state directly?",
+          "What does it mean to lift state up?"
+        ],
+        "practical": [
+          "Build a counter with increment, decrement and reset.",
+          "Build a todo list with add, toggle and delete.",
+          "Build a signup form with controlled inputs and validation messages.",
+          "Split a search and filter UI into components and lift the shared state up."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Effects & Data Fetching",
+      "topics": [
+        {
+          "topicTitle": "useEffect",
+          "description": "Run code in response to rendering, such as fetching data or setting up a timer.",
+          "subtopics": [
+            "What an effect is",
+            "Dependency array: [], [value] and none",
+            "Cleanup functions",
+            "Common mistakes: infinite loops and missing dependencies",
+            "When you do NOT need an effect"
+          ]
+        },
+        {
+          "topicTitle": "Fetching Data",
+          "description": "Load data from your own APIs and public APIs.",
+          "subtopics": [
+            "fetch inside useEffect",
+            "Loading, error and success states",
+            "Aborting requests on unmount",
+            "Environment variables with Vite (VITE_)",
+            "Why fetching in effects gets repetitive"
+          ]
+        },
+        {
+          "topicTitle": "useRef & Custom Hooks",
+          "description": "Hold values without re-rendering, and reuse logic across components.",
+          "subtopics": [
+            "useRef for DOM access and mutable values",
+            "Rules of hooks",
+            "Creating custom hooks (useFetch, useLocalStorage, useDebounce)",
+            "Organising hooks in a project"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "What does the dependency array do?",
+          "Why do we need a cleanup function?"
+        ],
+        "practical": [
+          "Fetch users from a public API and show loading and error states.",
+          "Create a timer component and clean up the interval.",
+          "Build a useFetch custom hook and use it in two components.",
+          "Build a search box with debounce using a custom hook."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Routing & Shared State",
+      "topics": [
+        {
+          "topicTitle": "React Router",
+          "description": "Multiple pages in a single-page app.",
+          "subtopics": [
+            "What a single-page app is",
+            "BrowserRouter, Routes, Route and Link",
+            "URL params (useParams) and query strings",
+            "Nested routes and layouts",
+            "Navigating in code and 404 page",
+            "Protected routes (concept)"
+          ]
+        },
+        {
+          "topicTitle": "Context API & useReducer",
+          "description": "Share state across the app without passing props through every level.",
+          "subtopics": [
+            "createContext, Provider and useContext",
+            "Typical uses: theme and logged-in user",
+            "useReducer for complex state",
+            "Context performance caveats"
+          ]
+        },
+        {
+          "topicTitle": "Global State with Zustand (Overview)",
+          "description": "A small and popular library when Context gets awkward.",
+          "subtopics": [
+            "When Context is not enough",
+            "Creating a store and using it",
+            "Selecting only the state you need",
+            "Context vs Zustand: how to choose"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "What is the difference between props and context?",
+          "When would you choose useReducer over useState?"
+        ],
+        "practical": [
+          "Build a three-page app with navbar, dynamic /products/:id page and a 404 page.",
+          "Add a dark mode toggle using Context.",
+          "Rewrite the todo list using useReducer.",
+          "Move a shopping cart into a Zustand store."
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "Real-World React",
+      "topics": [
+        {
+          "topicTitle": "Styling: CSS Modules & Tailwind CSS",
+          "description": "Style components without CSS becoming a mess.",
+          "subtopics": [
+            "Plain CSS and CSS Modules",
+            "Tailwind CSS: utility-first idea and basics",
+            "Responsive design with Tailwind",
+            "Component libraries (shadcn/ui overview)"
+          ]
+        },
+        {
+          "topicTitle": "Forms with React Hook Form & Zod",
+          "description": "Production-style forms with validation.",
+          "subtopics": [
+            "Why use a form library",
+            "useForm, register and errors",
+            "Schema validation with zod",
+            "Showing field-level errors and disabled submit"
+          ]
+        },
+        {
+          "topicTitle": "Server State with TanStack Query",
+          "description": "Stop hand-writing fetch logic. Caching, refetching and mutations handled for you.",
+          "subtopics": [
+            "Server state vs client state",
+            "useQuery: loading, error, data",
+            "useMutation and invalidating queries",
+            "Caching and refetch behaviour"
+          ]
+        },
+        {
+          "topicTitle": "Connecting to Your Express API",
+          "description": "Join frontend and backend, including login.",
+          "subtopics": [
+            "Axios or fetch wrapper with base URL",
+            "Sending the JWT with requests",
+            "Login flow and protected routes in React",
+            "Handling 401 and refresh",
+            "CORS and environment setup"
+          ]
+        },
+        {
+          "topicTitle": "Performance, TypeScript & Deployment",
+          "description": "Know the basics and ship it.",
+          "subtopics": [
+            "Why components re-render",
+            "React.memo, useMemo and useCallback: when they actually help",
+            "Code splitting with lazy and Suspense",
+            "TypeScript with React: typing props, state and events",
+            "Building and deploying on Vercel or Netlify"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 8,
+        "theory": [
+          "Why is TanStack Query better than fetching in useEffect for server data?",
+          "Why should you not use useMemo everywhere?",
+          "What is code splitting?"
+        ],
+        "practical": [
+          "Style a landing page section using Tailwind with a responsive layout.",
+          "Build a signup form with React Hook Form and zod validation.",
+          "Replace a manual fetch with useQuery and add a mutation that updates the list.",
+          "Connect a login form to your Express JWT API and protect a dashboard route.",
+          "Convert one component to TypeScript and deploy the app to Vercel."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Todo App",
+      "difficulty": "beginner",
+      "concepts": [
+        "useState",
+        "Props",
+        "Events",
+        "Lists"
+      ],
+      "features": [
+        "Add, complete and delete todos",
+        "Filter by all, active and completed",
+        "Persist in localStorage using a custom hook"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Movie or Weather Explorer",
+      "difficulty": "intermediate",
+      "concepts": [
+        "useEffect",
+        "Fetch",
+        "Routing",
+        "Custom Hooks"
+      ],
+      "features": [
+        "Search a public API with debounce",
+        "Details page using a dynamic route",
+        "Loading, error and empty states",
+        "Favourites saved in localStorage"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Shopping Cart App",
+      "difficulty": "intermediate",
+      "concepts": [
+        "Context or Zustand",
+        "useReducer",
+        "Routing"
+      ],
+      "features": [
+        "Products page, product details and cart page",
+        "Add, remove and change quantity with a reducer",
+        "Cart total and persistence"
+      ]
+    },
+    {
+      "projectId": 4,
+      "projectTitle": "Full Stack Notes App (Your Own API)",
+      "difficulty": "advanced",
+      "concepts": [
+        "Express API",
+        "JWT",
+        "TanStack Query",
+        "Forms"
+      ],
+      "features": [
+        "Login and register connected to your Express and database API",
+        "Protected routes and notes CRUD with TanStack Query",
+        "Form validation with React Hook Form and zod",
+        "Deployed frontend and backend"
+      ]
+    }
+  ]
+}

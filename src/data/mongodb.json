@@ -1,0 +1,265 @@
+{
+  "courseId": "mongodb",
+  "courseTitle": "MongoDB",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "MongoDB Fundamentals",
+      "topics": [
+        {
+          "topicTitle": "What is MongoDB?",
+          "description": "A database that stores flexible JSON-like documents instead of rigid tables. Know when it fits and when SQL fits better.",
+          "subtopics": [
+            "SQL vs NoSQL in simple words",
+            "Documents, collections and databases",
+            "BSON and the _id (ObjectId)",
+            "Mapping SQL terms to MongoDB terms",
+            "When to choose MongoDB and when not to"
+          ]
+        },
+        {
+          "topicTitle": "Setup: Atlas, Compass & mongosh",
+          "description": "Get a free cloud database and tools to look inside it.",
+          "subtopics": [
+            "Creating a free MongoDB Atlas cluster",
+            "Connection string and database user",
+            "MongoDB Compass (GUI)",
+            "mongosh basics: show dbs, use, show collections"
+          ]
+        },
+        {
+          "topicTitle": "Data Modeling Basics",
+          "description": "Design documents the MongoDB way. This is the biggest mindset change from SQL.",
+          "subtopics": [
+            "Embedding vs referencing",
+            "One-to-few, one-to-many and many-to-many in MongoDB",
+            "Designing for how the app reads data",
+            "Example: blog with comments"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 5,
+        "theory": [
+          "Difference between a table and a collection.",
+          "When would you embed data and when would you reference it?"
+        ],
+        "practical": [
+          "Create a free Atlas cluster and connect with Compass.",
+          "Insert three documents into a users collection using mongosh.",
+          "Model a blog (users, posts, comments) on paper using embedding and referencing."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "CRUD Operations",
+      "topics": [
+        {
+          "topicTitle": "Insert & Find",
+          "description": "Add and read documents.",
+          "subtopics": [
+            "insertOne and insertMany",
+            "find and findOne",
+            "Query filters",
+            "Comparison operators: $gt, $lt, $gte, $in, $ne",
+            "Logical operators: $and, $or, $not",
+            "Projection, sort, limit and skip"
+          ]
+        },
+        {
+          "topicTitle": "Update & Delete",
+          "description": "Change and remove documents safely.",
+          "subtopics": [
+            "updateOne and updateMany",
+            "$set, $inc, $unset",
+            "Array updates: $push, $pull, $addToSet",
+            "upsert",
+            "deleteOne and deleteMany",
+            "Why filters matter before updating or deleting"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "What is the difference between updateOne and replaceOne?",
+          "What does upsert do?"
+        ],
+        "practical": [
+          "Insert 10 products and find those under 500 sorted by price.",
+          "Use $inc to increase the stock of a product.",
+          "Use $push to add a tag to a post.",
+          "Delete all documents matching a filter."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Aggregation & Indexes",
+      "topics": [
+        {
+          "topicTitle": "Aggregation Pipeline",
+          "description": "Summarise and join data in stages. MongoDB's version of GROUP BY and JOIN.",
+          "subtopics": [
+            "What a pipeline is",
+            "$match, $group, $sort, $project, $limit",
+            "$lookup (join)",
+            "$unwind",
+            "Example: revenue per category"
+          ]
+        },
+        {
+          "topicTitle": "Indexes & Performance",
+          "description": "Make queries fast and know the cost.",
+          "subtopics": [
+            "What an index is",
+            "createIndex: single, compound and unique",
+            "explain() basics",
+            "Text index for search (overview)",
+            "Cost of too many indexes"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "What is the order of stages in a pipeline and why does it matter?",
+          "Why add an index?"
+        ],
+        "practical": [
+          "Count orders per customer using $group.",
+          "Join orders with customers using $lookup.",
+          "Add a unique index on email and test a duplicate insert.",
+          "Compare explain() before and after an index."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Mongoose with Node & Express",
+      "topics": [
+        {
+          "topicTitle": "Connecting & Schemas",
+          "description": "Mongoose adds structure and validation on top of MongoDB.",
+          "subtopics": [
+            "What Mongoose is and why use it",
+            "Connecting with the Atlas connection string from .env",
+            "Schema and Model",
+            "Types, required, default, unique",
+            "Built-in and custom validators",
+            "timestamps option"
+          ]
+        },
+        {
+          "topicTitle": "CRUD API with Mongoose",
+          "description": "Replace your array or JSON file with MongoDB in your Express API.",
+          "subtopics": [
+            "create, find, findById",
+            "findByIdAndUpdate with new and runValidators",
+            "findByIdAndDelete",
+            "Async/await and error handling",
+            "Filtering, sorting and pagination with queries"
+          ]
+        },
+        {
+          "topicTitle": "Relationships & Populate",
+          "description": "Link documents across collections.",
+          "subtopics": [
+            "ObjectId references in schemas",
+            "populate()",
+            "Embedded subdocuments",
+            "Deleting related data"
+          ]
+        },
+        {
+          "topicTitle": "Handling Errors & Deploying",
+          "description": "Make the API behave in production.",
+          "subtopics": [
+            "CastError (invalid id), validation errors and duplicate key error (11000)",
+            "Mapping database errors to 400 and 409 responses",
+            "Atlas network access and environment variables",
+            "Deploying the API on Render with Atlas"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 8,
+        "theory": [
+          "What problem does Mongoose solve?",
+          "What is populate() and when do you use it?",
+          "Why must you pass runValidators to update calls?"
+        ],
+        "practical": [
+          "Convert your Todo API to MongoDB with Mongoose.",
+          "Add validation: title required, minimum 3 characters.",
+          "Create posts that reference users and return a post with its author using populate.",
+          "Return a clean 409 error for duplicate emails.",
+          "Deploy the API on Render connected to Atlas."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Notes API on MongoDB",
+      "difficulty": "beginner",
+      "concepts": [
+        "Mongoose",
+        "CRUD",
+        "Express"
+      ],
+      "features": [
+        "Full CRUD for notes stored in MongoDB",
+        "Schema validation and timestamps",
+        "Clean error responses"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Blog API with Users, Posts & Comments",
+      "difficulty": "intermediate",
+      "concepts": [
+        "References",
+        "populate",
+        "Pagination"
+      ],
+      "features": [
+        "Users, posts and comments in separate collections",
+        "Post endpoint returns author and comments",
+        "Pagination and search on posts"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Sales Reports with Aggregation",
+      "difficulty": "intermediate",
+      "concepts": [
+        "Aggregation",
+        "$lookup",
+        "Indexes"
+      ],
+      "features": [
+        "Orders and products collections with seed data",
+        "Reports: revenue per month, top products, orders per customer",
+        "Indexes added on the most queried fields"
+      ]
+    },
+    {
+      "projectId": 4,
+      "projectTitle": "Task Manager API (Deployed on Atlas)",
+      "difficulty": "advanced",
+      "concepts": [
+        "Mongoose",
+        "Validation",
+        "Deployment"
+      ],
+      "features": [
+        "Tasks with status, priority and due date",
+        "Filtering, sorting and pagination",
+        "Deployed live on Render with MongoDB Atlas"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "courseId": "typescript",
+  "courseTitle": "TypeScript",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "TypeScript Basics",
+      "topics": [
+        {
+          "topicTitle": "Why TypeScript?",
+          "description": "JavaScript with types. Catch mistakes while writing code, not after users find them.",
+          "subtopics": [
+            "Problems with plain JavaScript at scale",
+            "What TypeScript adds and what it compiles to",
+            "Types disappear at runtime (important)",
+            "Who uses TypeScript and why"
+          ]
+        },
+        {
+          "topicTitle": "Setup & tsconfig",
+          "description": "Install it, compile it and understand the config file.",
+          "subtopics": [
+            "npm install typescript, tsc",
+            "tsconfig.json: target, module, outDir, strict",
+            "Running TS directly with tsx or ts-node",
+            "Editor support in VS Code"
+          ]
+        },
+        {
+          "topicTitle": "Basic Types",
+          "description": "Describe your data.",
+          "subtopics": [
+            "string, number, boolean",
+            "Arrays and tuples",
+            "any, unknown, never and void",
+            "Type inference (let TypeScript guess)",
+            "enum"
+          ]
+        },
+        {
+          "topicTitle": "Functions in TypeScript",
+          "description": "Typed inputs and outputs.",
+          "subtopics": [
+            "Parameter and return types",
+            "Optional and default parameters",
+            "Function type expressions",
+            "Rest parameters",
+            "void vs never return"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "What is the difference between any and unknown?",
+          "Why do types not exist at runtime?"
+        ],
+        "practical": [
+          "Set up a TypeScript project with strict mode on.",
+          "Write three functions with typed parameters and return values.",
+          "Fix a file full of implicit any errors.",
+          "Use a tuple for a [name, age] pair."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Object Types & Narrowing",
+      "topics": [
+        {
+          "topicTitle": "Interfaces & Type Aliases",
+          "description": "Two ways to describe the shape of an object.",
+          "subtopics": [
+            "interface and type",
+            "Optional and readonly properties",
+            "Extending interfaces",
+            "interface vs type: when to use which"
+          ]
+        },
+        {
+          "topicTitle": "Union, Intersection & Literal Types",
+          "description": "Say exactly which values are allowed.",
+          "subtopics": [
+            "Union types (string | number)",
+            "Literal types ('GET' | 'POST')",
+            "Intersection types",
+            "Type aliases for unions"
+          ]
+        },
+        {
+          "topicTitle": "Type Narrowing",
+          "description": "Let TypeScript know which type you have inside an if.",
+          "subtopics": [
+            "typeof, instanceof, in",
+            "Truthiness and equality narrowing",
+            "Discriminated unions",
+            "Exhaustive checks with never"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 5,
+        "theory": [
+          "When would you use a union type?",
+          "What is a discriminated union?"
+        ],
+        "practical": [
+          "Define a User interface with optional fields and use it in a function.",
+          "Create a Shape type as a discriminated union (circle, square) and compute area.",
+          "Write a function that accepts string | string[] and handles both."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Generics & Utility Types",
+      "topics": [
+        {
+          "topicTitle": "Generics",
+          "description": "Reusable code that works with many types and stays type-safe.",
+          "subtopics": [
+            "Generic functions",
+            "Generic interfaces and types",
+            "Constraints with extends",
+            "Example: a typed API response wrapper"
+          ]
+        },
+        {
+          "topicTitle": "Utility Types",
+          "description": "Built-in helpers that save a lot of code.",
+          "subtopics": [
+            "Partial, Required, Readonly",
+            "Pick and Omit",
+            "Record",
+            "ReturnType and Awaited (overview)"
+          ]
+        },
+        {
+          "topicTitle": "keyof, typeof & Mapped Types (Overview)",
+          "description": "Build types from other types. Awareness level.",
+          "subtopics": [
+            "keyof and typeof in types",
+            "Indexed access types",
+            "Mapped types (overview)",
+            "as const"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "Why use generics instead of any?",
+          "What do Partial and Pick do?"
+        ],
+        "practical": [
+          "Write a generic function that returns the first item of any array.",
+          "Create ApiResponse<T> and use it for users and products.",
+          "Use Omit to create a CreateUserInput type from User.",
+          "Use Record to type a lookup object."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Classes, Modules & Declarations",
+      "topics": [
+        {
+          "topicTitle": "Classes in TypeScript",
+          "description": "OOP with types.",
+          "subtopics": [
+            "Properties and constructors",
+            "public, private, protected, readonly",
+            "Parameter properties",
+            "implements and abstract classes"
+          ]
+        },
+        {
+          "topicTitle": "Modules & Type Declarations",
+          "description": "Work with libraries that ship JavaScript.",
+          "subtopics": [
+            "import and export with types",
+            "@types packages (for example @types/node, @types/express)",
+            "Declaration files (.d.ts) overview",
+            "Strict mode options explained: strictNullChecks, noImplicitAny"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 5,
+        "theory": [
+          "Difference between private and protected.",
+          "What is an @types package?"
+        ],
+        "practical": [
+          "Create a class hierarchy with an abstract base class.",
+          "Install @types/node and use fs with types.",
+          "Turn on strictNullChecks and fix the errors it shows."
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "TypeScript in Real Projects",
+      "topics": [
+        {
+          "topicTitle": "TypeScript with Node & Express",
+          "description": "Type your backend.",
+          "subtopics": [
+            "Project setup: tsx or ts-node-dev and a build script to dist",
+            "Typing Request, Response and NextFunction",
+            "Extending Request with custom user data",
+            "Typing environment variables"
+          ]
+        },
+        {
+          "topicTitle": "Typing API Data & Runtime Validation",
+          "description": "Types do not exist at runtime, so validate real data.",
+          "subtopics": [
+            "Typing fetch responses",
+            "Why you cannot trust API data just because it is typed",
+            "Zod schemas and z.infer (overview)",
+            "Sharing types between frontend and backend (concept)"
+          ]
+        },
+        {
+          "topicTitle": "Migrating a JavaScript Project",
+          "description": "Move an existing project to TypeScript step by step.",
+          "subtopics": [
+            "allowJs and renaming files one by one",
+            "Fixing errors without using any everywhere",
+            "Turning strict on gradually",
+            "Common mistakes"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "Why do you still need validation if you have TypeScript types?",
+          "What does z.infer do?"
+        ],
+        "practical": [
+          "Convert one route file of your Express API to TypeScript.",
+          "Type the request body of a POST route with a zod schema.",
+          "Extend Request to include req.user.",
+          "Migrate a small JS project fully to TypeScript."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Typed Todo CLI",
+      "difficulty": "beginner",
+      "concepts": [
+        "Types",
+        "Interfaces",
+        "Functions"
+      ],
+      "features": [
+        "Command-line todo app written in strict TypeScript",
+        "Typed data model and helper functions",
+        "No use of any"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Convert Express Todo API to TypeScript",
+      "difficulty": "intermediate",
+      "concepts": [
+        "Express",
+        "Interfaces",
+        "tsconfig"
+      ],
+      "features": [
+        "Whole API migrated with strict mode on",
+        "Typed request bodies and responses",
+        "Build script and run from dist"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Typed API Client with Generics & Zod",
+      "difficulty": "advanced",
+      "concepts": [
+        "Generics",
+        "Zod",
+        "fetch",
+        "Utility Types"
+      ],
+      "features": [
+        "Reusable generic fetch wrapper returning ApiResponse<T>",
+        "Runtime validation of every response using zod",
+        "Typed error handling"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,401 @@
+{
+  "courseId": "postgresql",
+  "courseTitle": "SQL and PostgreSQL",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Databases & SQL Basics",
+      "topics": [
+        {
+          "topicTitle": "What is a Database?",
+          "description": "Why apps need databases instead of JSON files, and how a relational database stores data.",
+          "subtopics": [
+            "Why JSON files break down (speed, safety, many users)",
+            "Relational databases: tables, rows, columns",
+            "Primary key and foreign key in simple words",
+            "SQL vs NoSQL in one minute",
+            "Why PostgreSQL"
+          ]
+        },
+        {
+          "topicTitle": "Installing PostgreSQL & Tools",
+          "description": "Get a working database on your machine and a tool to look inside it.",
+          "subtopics": [
+            "Installing PostgreSQL",
+            "psql basics (\\l, \\c, \\dt, \\d table)",
+            "pgAdmin or DBeaver",
+            "Creating your first database"
+          ]
+        },
+        {
+          "topicTitle": "PostgreSQL Data Types",
+          "description": "Choose the right type for each column. A wrong type causes bugs later.",
+          "subtopics": [
+            "integer, bigint, numeric",
+            "text and varchar",
+            "boolean",
+            "date, time, timestamp, timestamptz",
+            "uuid and auto IDs (identity, serial)",
+            "jsonb (overview)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 5,
+        "theory": [
+          "What is the difference between a primary key and a foreign key?",
+          "Why is a database better than a JSON file for a real app?"
+        ],
+        "practical": [
+          "Install PostgreSQL and connect with psql.",
+          "Create a database called school and list it.",
+          "List which data type you would use for price, email, birthdate and is_active."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Creating & Managing Tables",
+      "topics": [
+        {
+          "topicTitle": "CREATE TABLE & Constraints",
+          "description": "Tables with rules. Constraints keep bad data out of your database.",
+          "subtopics": [
+            "CREATE TABLE syntax",
+            "PRIMARY KEY, NOT NULL, UNIQUE",
+            "DEFAULT and CHECK",
+            "Auto-generated IDs"
+          ]
+        },
+        {
+          "topicTitle": "ALTER, DROP & TRUNCATE",
+          "description": "Change a table after it exists, and the dangerous commands to be careful with.",
+          "subtopics": [
+            "ALTER TABLE: add, rename and drop columns",
+            "DROP TABLE vs TRUNCATE vs DELETE",
+            "Why you never run these on production casually"
+          ]
+        },
+        {
+          "topicTitle": "Relationships & Foreign Keys",
+          "description": "Connect tables to each other. This is where relational databases get their power.",
+          "subtopics": [
+            "One-to-many (user to orders)",
+            "Many-to-many with a junction table (students and courses)",
+            "One-to-one",
+            "FOREIGN KEY and REFERENCES",
+            "ON DELETE CASCADE vs RESTRICT"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "What does a UNIQUE constraint do?",
+          "When do you need a junction table?"
+        ],
+        "practical": [
+          "Create users and posts tables with a foreign key between them.",
+          "Create students, courses and enrollments tables for a many-to-many relation.",
+          "Try inserting a post for a user that does not exist and read the error.",
+          "Add a column to an existing table using ALTER TABLE."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "CRUD Queries",
+      "topics": [
+        {
+          "topicTitle": "INSERT",
+          "description": "Add data to tables, one row or many.",
+          "subtopics": [
+            "INSERT INTO ... VALUES",
+            "Inserting multiple rows",
+            "Using DEFAULT values",
+            "RETURNING to get the new row back"
+          ]
+        },
+        {
+          "topicTitle": "SELECT, WHERE & Filtering",
+          "description": "Read data exactly the way you need it.",
+          "subtopics": [
+            "SELECT columns and *",
+            "WHERE with AND, OR, NOT",
+            "IN, BETWEEN, LIKE and ILIKE",
+            "NULL handling (IS NULL)",
+            "ORDER BY, LIMIT and OFFSET (pagination)",
+            "DISTINCT and aliases (AS)"
+          ]
+        },
+        {
+          "topicTitle": "UPDATE & DELETE",
+          "description": "Change and remove data safely.",
+          "subtopics": [
+            "UPDATE ... SET ... WHERE",
+            "DELETE FROM ... WHERE",
+            "Why forgetting WHERE is a disaster",
+            "RETURNING with update and delete"
+          ]
+        },
+        {
+          "topicTitle": "Useful Functions & CASE",
+          "description": "Built-in tools for text, dates and conditional logic.",
+          "subtopics": [
+            "String functions (UPPER, LOWER, CONCAT, LENGTH)",
+            "Date functions (NOW, AGE, date_trunc)",
+            "CASE WHEN",
+            "COALESCE for default values"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 7,
+        "theory": [
+          "Why is UPDATE without WHERE dangerous?",
+          "What is the difference between LIKE and ILIKE?"
+        ],
+        "practical": [
+          "Insert 10 rows into a products table in one statement.",
+          "Select products under 500 sorted by price, showing only the top 5.",
+          "Find all users whose name starts with A (case-insensitive).",
+          "Update the price of one product and return the updated row.",
+          "Use CASE to label products as cheap, medium or expensive."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Aggregation & Joins",
+      "topics": [
+        {
+          "topicTitle": "Aggregate Functions, GROUP BY & HAVING",
+          "description": "Summarise data: totals, averages and counts per group.",
+          "subtopics": [
+            "COUNT, SUM, AVG, MIN, MAX",
+            "GROUP BY",
+            "HAVING vs WHERE",
+            "Grouping by more than one column"
+          ]
+        },
+        {
+          "topicTitle": "JOINs",
+          "description": "Combine data from related tables in one query. The most important SQL skill.",
+          "subtopics": [
+            "INNER JOIN",
+            "LEFT JOIN and finding rows with no match",
+            "RIGHT and FULL JOIN (overview)",
+            "Joining three tables",
+            "Self join (overview)",
+            "Table aliases"
+          ]
+        },
+        {
+          "topicTitle": "Subqueries & CTEs",
+          "description": "Break complex queries into readable steps.",
+          "subtopics": [
+            "Subquery in WHERE and FROM",
+            "EXISTS and IN",
+            "WITH (Common Table Expressions)",
+            "UNION (overview)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 7,
+        "theory": [
+          "Difference between WHERE and HAVING.",
+          "Difference between INNER JOIN and LEFT JOIN."
+        ],
+        "practical": [
+          "Count orders per customer.",
+          "List all customers with their orders using INNER JOIN.",
+          "Find customers who have never placed an order using LEFT JOIN.",
+          "Find the top 3 best selling products using JOIN, GROUP BY and ORDER BY.",
+          "Rewrite a subquery as a CTE."
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "Database Design, Indexes & Transactions",
+      "topics": [
+        {
+          "topicTitle": "Schema Design & Normalization",
+          "description": "Plan tables before you create them. Good design saves months of pain.",
+          "subtopics": [
+            "Identifying entities and relationships",
+            "Drawing a simple ER diagram",
+            "Normalization: 1NF, 2NF, 3NF in simple words",
+            "When denormalizing is fine",
+            "Design walkthrough: e-commerce database"
+          ]
+        },
+        {
+          "topicTitle": "Indexes & Query Performance",
+          "description": "Make queries fast, and know when not to add an index.",
+          "subtopics": [
+            "What an index is (book index analogy)",
+            "CREATE INDEX and UNIQUE index",
+            "EXPLAIN and EXPLAIN ANALYZE (basic reading)",
+            "Costs of too many indexes"
+          ]
+        },
+        {
+          "topicTitle": "Transactions & ACID",
+          "description": "Make multiple changes succeed together or not at all. Essential for orders and payments.",
+          "subtopics": [
+            "BEGIN, COMMIT, ROLLBACK",
+            "ACID in simple words",
+            "Example: transferring money between two accounts",
+            "Views (overview)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 7,
+        "theory": [
+          "What is normalization and why is it done?",
+          "What are the downsides of adding too many indexes?",
+          "What does ACID stand for?"
+        ],
+        "practical": [
+          "Design an ER diagram for a blog (users, posts, comments, tags).",
+          "Convert a messy single table into 3NF.",
+          "Add an index on a column and compare EXPLAIN ANALYZE before and after.",
+          "Write a transaction that transfers money between two accounts and test a rollback."
+        ]
+      }
+    },
+    {
+      "chapterId": 6,
+      "chapterTitle": "PostgreSQL with Node.js & Express",
+      "topics": [
+        {
+          "topicTitle": "Connecting Node to PostgreSQL",
+          "description": "Use your database from real code.",
+          "subtopics": [
+            "The pg package and Pool",
+            "Connection string and environment variables",
+            "Running queries and reading rows",
+            "Closing connections properly"
+          ]
+        },
+        {
+          "topicTitle": "Safe Queries & SQL Injection",
+          "description": "The most common security mistake. Learn it once, avoid it forever.",
+          "subtopics": [
+            "What SQL injection is, with a demo",
+            "Parameterized queries ($1, $2)",
+            "Never building SQL with string concatenation",
+            "Validating input before it reaches the database"
+          ]
+        },
+        {
+          "topicTitle": "Building a CRUD API on PostgreSQL",
+          "description": "Replace the JSON file in your Express API with a real database.",
+          "subtopics": [
+            "Schema in a .sql file and seed data",
+            "Routes, controllers and a db layer",
+            "Handling errors and duplicate keys",
+            "Pagination with LIMIT and OFFSET"
+          ]
+        },
+        {
+          "topicTitle": "Hosted Databases, Migrations & ORMs (Overview)",
+          "description": "How teams run databases in production. Awareness level only.",
+          "subtopics": [
+            "Neon or Supabase free hosted PostgreSQL",
+            "Migrations: why schema changes need versioned files",
+            "ORM and query builders overview: Prisma, Drizzle",
+            "Backups (concept)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 7,
+        "theory": [
+          "What is SQL injection and how do parameterized queries stop it?",
+          "Why use migrations instead of editing tables by hand?"
+        ],
+        "practical": [
+          "Connect a Node script to PostgreSQL using a connection string from .env.",
+          "Demonstrate SQL injection on a vulnerable query, then fix it.",
+          "Convert your Todo API from a JSON file to PostgreSQL with full CRUD.",
+          "Add pagination and a search filter to the list endpoint.",
+          "Deploy the database on Neon or Supabase and connect your API to it."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Library Database (Pure SQL)",
+      "difficulty": "beginner",
+      "concepts": [
+        "CREATE TABLE",
+        "Constraints",
+        "CRUD",
+        "Foreign Keys"
+      ],
+      "features": [
+        "Tables for books, members and loans with proper constraints",
+        "Seed data with at least 20 rows",
+        "Queries to list overdue books and a member's history",
+        "Everything saved in one schema.sql file"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "E-commerce Schema & Sales Reports",
+      "difficulty": "intermediate",
+      "concepts": [
+        "Joins",
+        "GROUP BY",
+        "CTEs",
+        "Normalization"
+      ],
+      "features": [
+        "Normalized schema: customers, products, orders, order_items",
+        "Report: revenue per month and per category",
+        "Report: top customers and products never sold",
+        "Indexes on the most queried columns"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Expense Tracker API on PostgreSQL",
+      "difficulty": "intermediate",
+      "concepts": [
+        "pg",
+        "Parameterized Queries",
+        "Express",
+        "Pagination"
+      ],
+      "features": [
+        "Your Express expense API moved from JSON file to PostgreSQL",
+        "Parameterized queries everywhere",
+        "Filtering by category and date range",
+        "Pagination on the list endpoint"
+      ]
+    },
+    {
+      "projectId": 4,
+      "projectTitle": "Blog Backend with Users, Posts & Comments",
+      "difficulty": "advanced",
+      "concepts": [
+        "Relationships",
+        "Joins",
+        "Transactions",
+        "Deployment"
+      ],
+      "features": [
+        "Users, posts, comments and tags with proper relations",
+        "Endpoints returning a post with its comments and author using joins",
+        "Transaction when creating a post with its tags",
+        "Hosted on Neon or Supabase and API deployed live"
+      ]
+    }
+  ]
+}

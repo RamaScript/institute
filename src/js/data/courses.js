@@ -41,7 +41,7 @@ export const categories = [
     iconBg: "rgba(228,77,38,0.14)",
     tagColor: "#e44d26",
     logo: "src/img/tech-logo/web.png",
-    courseIds: ["html", "css", "javascript"],
+    courseIds: ["html", "css", "javascript", "git", "nodejs", "express", "postgresql", "mongodb", "auth-security", "typescript", "docker", "react", "nextjs", "testing", "system-design"],
   },
   {
     id: "mobile",
@@ -135,6 +135,102 @@ export const courses = [
         description: 'Master JavaScript — variables, functions, DOM, async programming, ES6+, and building interactive web apps.',
         tags: ['Frontend', 'Logic'],
         logo: 'src/img/tech-logo/javascript.png',
+        isAvailable: true
+    },
+    {
+        id: 'git',
+        title: 'Git and GitHub',
+        description: 'Learn only what matters — commits, branches, merging, pull requests and deploying with GitHub Pages.',
+        tags: ['Tools', 'Collaboration'],
+        logo: 'src/img/tech-logo/github.png',
+        isAvailable: true
+    },
+    {
+        id: 'nodejs',
+        title: 'Node.js',
+        description: 'Learn Node.js from scratch — modules, npm, file system, async programming and your first server.',
+        tags: ['Backend', 'Runtime'],
+        logo: 'src/img/tech-logo/nodejs.png',
+        isAvailable: true
+    },
+    {
+        id: 'express',
+        title: 'Express.js',
+        description: 'Build REST APIs with Express — routing, middleware, validation, error handling, CORS and deployment.',
+        tags: ['Backend', 'APIs'],
+        logo: 'src/img/tech-logo/express.png',
+        isAvailable: true
+    },
+    {
+        id: 'postgresql',
+        title: 'SQL and PostgreSQL',
+        description: 'Learn databases the practical way — SQL queries, joins, schema design, indexes, transactions and using PostgreSQL with Node.js.',
+        tags: ['Database', 'SQL'],
+        logo: 'src/img/tech-logo/postgresql.png',
+        isAvailable: true
+    },
+    {
+        id: 'mongodb',
+        title: 'MongoDB',
+        description: 'Learn NoSQL the practical way — documents, queries, aggregation, Mongoose and deploying with Atlas.',
+        tags: ['Database', 'NoSQL'],
+        logo: 'src/img/tech-logo/mongodb.png',
+        isAvailable: true
+    },
+    {
+        id: 'auth-security',
+        title: 'Authentication and Security',
+        description: 'Secure your apps — password hashing, JWT, roles, OAuth overview and the web security essentials every developer needs.',
+        tags: ['Security', 'Backend'],
+        logo: 'src/img/tech-logo/auth-security.png',
+        isAvailable: true
+    },
+    {
+        id: 'typescript',
+        title: 'TypeScript',
+        description: 'Add types to JavaScript — interfaces, generics, utility types and using TypeScript with Node and Express.',
+        tags: ['Language', 'Typed JS'],
+        logo: 'src/img/tech-logo/typescript.png',
+        isAvailable: true
+    },
+    {
+        id: 'docker',
+        title: 'Docker and Deployment',
+        description: 'Ship your apps — Docker, Compose, deploying to cloud and VPS, Nginx, HTTPS and CI/CD with GitHub Actions.',
+        tags: ['DevOps', 'Deployment'],
+        logo: 'src/img/tech-logo/docker.png',
+        isAvailable: true
+    },
+    {
+        id: 'react',
+        title: 'React',
+        description: 'Build modern interfaces — components, state, hooks, routing, TanStack Query and connecting to your own API.',
+        tags: ['Frontend', 'Library'],
+        logo: 'src/img/tech-logo/react.png',
+        isAvailable: true
+    },
+    {
+        id: 'nextjs',
+        title: 'Next.js',
+        description: 'Full stack React — App Router, server components, server actions, authentication, SEO and deployment.',
+        tags: ['Full Stack', 'Framework'],
+        logo: 'src/img/tech-logo/nextjs.png',
+        isAvailable: true
+    },
+    {
+        id: 'testing',
+        title: 'Testing',
+        description: 'Test with confidence — unit tests with Vitest, API tests with Supertest, React Testing Library and Playwright E2E.',
+        tags: ['Quality', 'Testing'],
+        logo: 'src/img/tech-logo/testing.png',
+        isAvailable: true
+    },
+    {
+        id: 'system-design',
+        title: 'System Design Basics',
+        description: 'Think in systems — scaling, load balancing, caching, queues, databases at scale and real design case studies.',
+        tags: ['Architecture', 'Scaling'],
+        logo: 'src/img/tech-logo/system-design.png',
         isAvailable: true
     },
     {

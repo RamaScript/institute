@@ -1,0 +1,314 @@
+{
+  "courseId": "docker",
+  "courseTitle": "Docker and Deployment",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Deployment Fundamentals",
+      "topics": [
+        {
+          "topicTitle": "How the Web Is Deployed",
+          "description": "What actually happens between your laptop and a live website.",
+          "subtopics": [
+            "Client, server and ports",
+            "IP address, domain and DNS",
+            "HTTP vs HTTPS and TLS certificates",
+            "Environments: development, staging, production"
+          ]
+        },
+        {
+          "topicTitle": "Linux & Terminal for Servers",
+          "description": "The minimum you need to survive on a server.",
+          "subtopics": [
+            "Navigating files and permissions",
+            "SSH and key-based login",
+            "Processes, ports and logs (ps, top, systemctl, journalctl)",
+            "Installing packages with apt",
+            "Environment variables and .env on servers"
+          ]
+        },
+        {
+          "topicTitle": "Configuration & Secrets",
+          "description": "Same code, different settings. A basic twelve-factor idea.",
+          "subtopics": [
+            "Config in environment variables",
+            "Never committing secrets",
+            "Different config per environment",
+            "Health check endpoint"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 5,
+        "theory": [
+          "What does DNS do?",
+          "Why should config live in environment variables?"
+        ],
+        "practical": [
+          "SSH into a server (or a local VM) and list running processes.",
+          "Add a /health endpoint to your Express API.",
+          "Move all hard-coded config in a project into environment variables."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Docker Essentials",
+      "topics": [
+        {
+          "topicTitle": "What is Docker?",
+          "description": "Package your app with everything it needs so it runs the same everywhere.",
+          "subtopics": [
+            "The 'works on my machine' problem",
+            "Containers vs virtual machines",
+            "Image vs container",
+            "Registry and Docker Hub",
+            "Installing Docker"
+          ]
+        },
+        {
+          "topicTitle": "Core Docker Commands",
+          "description": "The commands you use daily.",
+          "subtopics": [
+            "docker run, ps, stop, rm",
+            "docker logs and docker exec",
+            "Port mapping (-p)",
+            "Environment variables (-e)",
+            "Volumes for persistent data",
+            "Cleaning up images and containers"
+          ]
+        },
+        {
+          "topicTitle": "Writing a Dockerfile",
+          "description": "Describe how to build your image.",
+          "subtopics": [
+            "FROM, WORKDIR, COPY, RUN, CMD, EXPOSE",
+            "Layers and build cache (copy package.json first)",
+            ".dockerignore",
+            "Multi-stage builds (overview)",
+            "Image size and slim or alpine bases"
+          ]
+        },
+        {
+          "topicTitle": "Containerizing a Node App",
+          "description": "Put your Express API in a container.",
+          "subtopics": [
+            "Dockerfile for a Node and Express app",
+            "Passing environment variables safely",
+            "Running as a non-root user",
+            "Pushing an image to Docker Hub"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 7,
+        "theory": [
+          "Difference between an image and a container.",
+          "Why do we copy package.json before the rest of the code in a Dockerfile?",
+          "What does a volume do?"
+        ],
+        "practical": [
+          "Run an nginx container and open it in the browser on port 8080.",
+          "Write a Dockerfile for your Express API and run it.",
+          "Add a .dockerignore and compare build time and image size.",
+          "Push your image to Docker Hub."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Docker Compose",
+      "topics": [
+        {
+          "topicTitle": "Compose Basics",
+          "description": "Run several containers with one command.",
+          "subtopics": [
+            "docker-compose.yml structure",
+            "services, ports, environment, depends_on",
+            "docker compose up, down, logs",
+            "Rebuilding after code changes"
+          ]
+        },
+        {
+          "topicTitle": "App with a Database",
+          "description": "Run your API and PostgreSQL or MongoDB together.",
+          "subtopics": [
+            "Adding a database service",
+            "Service names as hostnames on the network",
+            "Volumes so data survives restarts",
+            "Healthchecks (overview)",
+            "Running migrations or seed on startup"
+          ]
+        },
+        {
+          "topicTitle": "Development vs Production Setups",
+          "description": "Different Compose settings for different needs.",
+          "subtopics": [
+            "Bind mounts and hot reload for development",
+            "Separate compose files or profiles",
+            "Using .env files with Compose"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 5,
+        "theory": [
+          "How do two containers talk to each other in Compose?",
+          "Why use volumes for database containers?"
+        ],
+        "practical": [
+          "Write a compose file for your API and PostgreSQL.",
+          "Show that data survives docker compose down and up.",
+          "Create a development setup with hot reload."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Deploying to the Cloud",
+      "topics": [
+        {
+          "topicTitle": "Deploying on a PaaS (Render or Railway)",
+          "description": "The easiest way to go live. Connect GitHub, set variables, done.",
+          "subtopics": [
+            "Deploying from a GitHub repo",
+            "Environment variables and secrets on the platform",
+            "Viewing logs and restarting",
+            "Deploying a Docker image"
+          ]
+        },
+        {
+          "topicTitle": "Deploying on a VPS",
+          "description": "Full control: your own Linux server.",
+          "subtopics": [
+            "Creating a VPS and securing SSH",
+            "Installing Docker and Compose on the server",
+            "Pulling and running your containers",
+            "Firewall basics (ufw)"
+          ]
+        },
+        {
+          "topicTitle": "Nginx, Domains & HTTPS",
+          "description": "Put a proper front door on your app.",
+          "subtopics": [
+            "Reverse proxy concept with Nginx",
+            "Pointing a domain to your server (A record)",
+            "Free HTTPS with Let's Encrypt and Certbot",
+            "Serving frontend and API together"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "What does a reverse proxy do?",
+          "Why must a production site use HTTPS?"
+        ],
+        "practical": [
+          "Deploy your API on Render or Railway from GitHub.",
+          "Create a VPS (or use a free-tier VM), install Docker and run your compose app.",
+          "Configure Nginx as a reverse proxy to your container.",
+          "Add a domain and enable HTTPS."
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "CI/CD & Monitoring",
+      "topics": [
+        {
+          "topicTitle": "GitHub Actions Basics",
+          "description": "Automate checks and builds on every push.",
+          "subtopics": [
+            "What CI/CD means",
+            "Workflow YAML: on, jobs, steps",
+            "Running lint and tests on every pull request",
+            "Caching dependencies",
+            "Using secrets in workflows"
+          ]
+        },
+        {
+          "topicTitle": "Automated Build & Deploy",
+          "description": "Push code, and the new version goes live by itself.",
+          "subtopics": [
+            "Building and pushing a Docker image in a workflow",
+            "Deploying to a PaaS or VPS from GitHub Actions",
+            "Branch rules: deploy only from main",
+            "Rollbacks and versioned images (concept)"
+          ]
+        },
+        {
+          "topicTitle": "Logging & Monitoring Basics",
+          "description": "Know when something breaks before users tell you.",
+          "subtopics": [
+            "Reading container logs",
+            "Uptime monitoring with a health endpoint",
+            "Error tracking overview (Sentry)",
+            "Backups of databases (concept)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "What is the difference between continuous integration and continuous deployment?",
+          "Why store credentials in GitHub secrets?"
+        ],
+        "practical": [
+          "Create a workflow that runs npm test and lint on every pull request.",
+          "Extend it to build and push a Docker image on merge to main.",
+          "Auto-deploy to your server or PaaS after a successful build.",
+          "Set up free uptime monitoring on your /health endpoint."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Dockerize Your Express API",
+      "difficulty": "beginner",
+      "concepts": [
+        "Dockerfile",
+        "Docker Hub",
+        "Env Variables"
+      ],
+      "features": [
+        "Production-ready Dockerfile with .dockerignore",
+        "Image pushed to Docker Hub",
+        "Runs correctly with env variables"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Full Stack App with Docker Compose",
+      "difficulty": "intermediate",
+      "concepts": [
+        "Compose",
+        "PostgreSQL or MongoDB",
+        "Volumes"
+      ],
+      "features": [
+        "API, database and a simple frontend started with one command",
+        "Data persists in a volume",
+        "Separate development and production setups"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Live Deployment with CI/CD",
+      "difficulty": "advanced",
+      "concepts": [
+        "GitHub Actions",
+        "Nginx",
+        "HTTPS",
+        "Deployment"
+      ],
+      "features": [
+        "Pushing to main runs tests, builds an image and deploys",
+        "Hosted on a VPS or PaaS with a domain and HTTPS",
+        "Health check and uptime monitoring"
+      ]
+    }
+  ]
+}

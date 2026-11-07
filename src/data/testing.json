@@ -1,0 +1,301 @@
+{
+  "courseId": "testing",
+  "courseTitle": "Testing",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Testing Fundamentals",
+      "topics": [
+        {
+          "topicTitle": "Why Test?",
+          "description": "Tests let you change code without fear. Know what to test and what not to waste time on.",
+          "subtopics": [
+            "Bugs and the cost of finding them late",
+            "Unit, integration and end-to-end tests",
+            "The testing pyramid",
+            "What to test and what to skip",
+            "Test-driven development in one paragraph"
+          ]
+        },
+        {
+          "topicTitle": "Anatomy of a Test",
+          "description": "Every test follows the same simple shape.",
+          "subtopics": [
+            "Arrange, Act, Assert",
+            "describe, it and test",
+            "One behaviour per test",
+            "Naming tests so failures explain themselves",
+            "Test files and folders"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 4,
+        "theory": [
+          "What is the difference between unit, integration and end-to-end tests?",
+          "Why is one behaviour per test a good rule?"
+        ],
+        "practical": [
+          "List five things worth testing in a todo app and three not worth testing.",
+          "Write the Arrange, Act, Assert steps for a function that adds two numbers."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Unit Testing with Vitest or Jest",
+      "topics": [
+        {
+          "topicTitle": "Setup & Assertions",
+          "description": "Write and run your first tests.",
+          "subtopics": [
+            "Installing Vitest (Jest syntax is almost identical)",
+            "Running tests and watch mode",
+            "expect and matchers: toBe, toEqual, toContain, toThrow",
+            "Testing pure functions",
+            "Testing edge cases and error paths"
+          ]
+        },
+        {
+          "topicTitle": "Async Code, Mocks & Spies",
+          "description": "Test code that talks to the outside world without really talking to it.",
+          "subtopics": [
+            "Testing promises and async/await",
+            "Mock functions (vi.fn or jest.fn)",
+            "Spying on methods",
+            "Mocking modules and fetch",
+            "Fake timers"
+          ]
+        },
+        {
+          "topicTitle": "Coverage & Good Habits",
+          "description": "Measure what your tests touch, and why 100% is not the goal.",
+          "subtopics": [
+            "Running a coverage report",
+            "Reading uncovered lines",
+            "Avoiding brittle tests that test implementation details",
+            "Test data and fixtures"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "What is the difference between a mock and a spy?",
+          "Why is 100% coverage not a guarantee of quality?"
+        ],
+        "practical": [
+          "Write tests for a calculateTotal function including empty cart and negative price.",
+          "Test an async function that calls an API using a mocked fetch.",
+          "Use fake timers to test a debounce function.",
+          "Generate a coverage report and add tests for uncovered branches."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Testing Node & Express APIs",
+      "topics": [
+        {
+          "topicTitle": "API Tests with Supertest",
+          "description": "Call your routes without starting a real server.",
+          "subtopics": [
+            "Exporting the Express app separately from listen",
+            "Supertest basics: get, post, expect",
+            "Testing status codes, headers and JSON bodies",
+            "Testing validation errors"
+          ]
+        },
+        {
+          "topicTitle": "Databases & Authentication in Tests",
+          "description": "Keep tests isolated and repeatable.",
+          "subtopics": [
+            "Separate test database or in-memory database",
+            "Setup and teardown: beforeAll, afterEach",
+            "Creating test users and tokens",
+            "Testing protected routes and role checks",
+            "Mocking external services like email"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "Why should tests not use your development database?",
+          "What do beforeEach and afterAll help with?"
+        ],
+        "practical": [
+          "Write Supertest tests for all CRUD routes of your Todo API.",
+          "Test that a protected route returns 401 without a token and 200 with one.",
+          "Test that creating a user with a duplicate email returns 409.",
+          "Reset the test database between tests."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Testing React Apps",
+      "topics": [
+        {
+          "topicTitle": "React Testing Library",
+          "description": "Test components the way users use them.",
+          "subtopics": [
+            "Rendering components in tests",
+            "Queries: getByRole, getByText, findBy and queryBy",
+            "user-event for clicks and typing",
+            "Testing what the user sees, not component internals",
+            "Accessibility benefits of role-based queries"
+          ]
+        },
+        {
+          "topicTitle": "Testing Data Fetching & Forms",
+          "description": "Cover the parts that usually break.",
+          "subtopics": [
+            "Mocking API calls with MSW (Mock Service Worker)",
+            "Testing loading, success and error states",
+            "Testing form validation messages",
+            "Testing routing and context (overview)"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "Why prefer getByRole over test ids?",
+          "What does MSW let you do in tests?"
+        ],
+        "practical": [
+          "Test that clicking a counter button increases the number.",
+          "Test a login form: validation errors and successful submit.",
+          "Test a component that fetches data, with MSW handling success and failure.",
+          "Make one test fail on purpose and read the error carefully."
+        ]
+      }
+    },
+    {
+      "chapterId": 5,
+      "chapterTitle": "End-to-End Testing with Playwright",
+      "topics": [
+        {
+          "topicTitle": "Playwright Basics",
+          "description": "Control a real browser the way a user would.",
+          "subtopics": [
+            "Installing and running Playwright",
+            "Locators: getByRole, getByLabel, getByText",
+            "Actions and auto-waiting",
+            "Assertions with expect(page)",
+            "Running headed and headless"
+          ]
+        },
+        {
+          "topicTitle": "Writing Reliable E2E Tests",
+          "description": "Avoid flaky tests, the biggest E2E problem.",
+          "subtopics": [
+            "Test user journeys, not every detail",
+            "Login once and reuse state",
+            "Test data and cleanup",
+            "Debugging with trace viewer and screenshots",
+            "Why E2E tests are slower and fewer"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 5,
+        "theory": [
+          "Why are E2E tests fewer than unit tests?",
+          "What makes a test flaky?"
+        ],
+        "practical": [
+          "Write an E2E test for signup, login and logout.",
+          "Write an E2E test that adds an item to the cart and checks the total.",
+          "Run a test with the trace viewer and find the failing step."
+        ]
+      }
+    },
+    {
+      "chapterId": 6,
+      "chapterTitle": "Testing in CI & Best Practices",
+      "topics": [
+        {
+          "topicTitle": "Tests in GitHub Actions",
+          "description": "Run your tests automatically on every push.",
+          "subtopics": [
+            "Workflow that installs and runs tests",
+            "Running Playwright in CI",
+            "Coverage thresholds (use carefully)",
+            "Blocking merges when tests fail"
+          ]
+        },
+        {
+          "topicTitle": "Best Practices & Mindset",
+          "description": "Keep your test suite useful, fast and trusted.",
+          "subtopics": [
+            "Fix or delete flaky tests, never ignore them",
+            "Keep tests independent and fast",
+            "Testing bug fixes: write the failing test first",
+            "Refactoring with test safety",
+            "Balancing time: what a small team really needs"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 4,
+        "theory": [
+          "Why should a flaky test be fixed quickly?",
+          "What is a good first test to write when you find a bug?"
+        ],
+        "practical": [
+          "Create a GitHub Actions workflow that runs unit and API tests on pull requests.",
+          "Add a failing test for a known bug, then fix the bug."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Test Suite for a Utility Library",
+      "difficulty": "beginner",
+      "concepts": [
+        "Vitest",
+        "Matchers",
+        "Edge Cases"
+      ],
+      "features": [
+        "10+ utility functions with unit tests",
+        "Edge cases and error paths covered",
+        "Coverage report above 85 percent"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Fully Tested Express API",
+      "difficulty": "intermediate",
+      "concepts": [
+        "Supertest",
+        "Test Database",
+        "Auth"
+      ],
+      "features": [
+        "Tests for every route including validation and auth",
+        "Isolated test database with setup and teardown",
+        "Runs in CI on every pull request"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Tested React App with E2E Flow",
+      "difficulty": "advanced",
+      "concepts": [
+        "React Testing Library",
+        "MSW",
+        "Playwright"
+      ],
+      "features": [
+        "Component tests for forms and data fetching using MSW",
+        "Playwright test covering the main user journey",
+        "All tests running in GitHub Actions"
+      ]
+    }
+  ]
+}

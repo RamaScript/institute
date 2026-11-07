@@ -1,0 +1,301 @@
+{
+  "courseId": "auth-security",
+  "courseTitle": "Authentication and Security",
+  "chapters": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Authentication Fundamentals",
+      "topics": [
+        {
+          "topicTitle": "Authentication vs Authorization",
+          "description": "Two different questions: who are you, and what are you allowed to do?",
+          "subtopics": [
+            "Authentication (identity) vs authorization (permission)",
+            "Real examples: login vs admin-only page",
+            "Where auth lives in a full stack app"
+          ]
+        },
+        {
+          "topicTitle": "Password Security",
+          "description": "Never store a plain password. Learn how to store it properly.",
+          "subtopics": [
+            "Hashing vs encryption",
+            "Why passwords need salt",
+            "bcrypt: hash and compare",
+            "Password strength rules (what actually matters)",
+            "What to do if your database leaks"
+          ]
+        },
+        {
+          "topicTitle": "Sessions vs Tokens",
+          "description": "Two ways to remember a logged-in user.",
+          "subtopics": [
+            "How cookies work",
+            "Session-based auth (session id on server)",
+            "Token-based auth (JWT)",
+            "Stateful vs stateless and trade-offs",
+            "Which one to pick"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "Why is hashing used for passwords instead of encryption?",
+          "What does a salt do?",
+          "Compare session auth and JWT auth."
+        ],
+        "practical": [
+          "Hash and compare a password with bcrypt in a Node script.",
+          "Show that hashing the same password twice gives different results.",
+          "Draw the login flow for session auth and for JWT auth."
+        ]
+      }
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "JWT Authentication",
+      "topics": [
+        {
+          "topicTitle": "Register & Login API",
+          "description": "Build the two endpoints every app needs.",
+          "subtopics": [
+            "POST /register: validate, hash, save",
+            "POST /login: find user, compare password, return token",
+            "Never revealing whether email or password was wrong",
+            "Using your database from the earlier courses"
+          ]
+        },
+        {
+          "topicTitle": "JWT Explained",
+          "description": "What is inside a token and how it is trusted.",
+          "subtopics": [
+            "Header, payload and signature",
+            "jsonwebtoken: sign and verify",
+            "Expiry (expiresIn)",
+            "Keeping the secret in .env",
+            "Why you must never put sensitive data in a payload"
+          ]
+        },
+        {
+          "topicTitle": "Auth Middleware & Protected Routes",
+          "description": "Make routes available only to logged-in users.",
+          "subtopics": [
+            "Reading the Authorization: Bearer header",
+            "Verify token middleware",
+            "Attaching req.user",
+            "Handling expired and invalid tokens (401)"
+          ]
+        },
+        {
+          "topicTitle": "Access & Refresh Tokens",
+          "description": "Keep users logged in safely without long-lived access tokens.",
+          "subtopics": [
+            "Short-lived access token and long-lived refresh token",
+            "Refresh endpoint",
+            "httpOnly cookies",
+            "Logout and token revocation (concept)",
+            "localStorage vs httpOnly cookie: XSS and CSRF trade-offs"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 8,
+        "theory": [
+          "What are the three parts of a JWT?",
+          "Why use a refresh token?",
+          "Why is localStorage risky for tokens?"
+        ],
+        "practical": [
+          "Build register and login endpoints with bcrypt and JWT.",
+          "Create a protected /me route using middleware.",
+          "Return 401 for missing, invalid and expired tokens.",
+          "Add a refresh token flow using an httpOnly cookie.",
+          "Connect a plain HTML/JS login form to your API."
+        ]
+      }
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Authorization & Account Flows",
+      "topics": [
+        {
+          "topicTitle": "Roles & Permissions (RBAC)",
+          "description": "Different users, different powers.",
+          "subtopics": [
+            "Adding a role to users (user, admin)",
+            "Role-checking middleware",
+            "Protecting admin routes (403 Forbidden)",
+            "401 vs 403"
+          ]
+        },
+        {
+          "topicTitle": "Ownership Checks",
+          "description": "Stop users from touching other people's data. A very common real-world bug.",
+          "subtopics": [
+            "Checking resource owner before update or delete",
+            "IDOR (Insecure Direct Object Reference) explained",
+            "Filtering queries by the logged-in user"
+          ]
+        },
+        {
+          "topicTitle": "Password Reset & Email Verification",
+          "description": "The flows every real app needs.",
+          "subtopics": [
+            "Reset token flow step by step",
+            "Sending emails with Nodemailer (overview)",
+            "One-time and expiring tokens",
+            "Verification link flow"
+          ]
+        },
+        {
+          "topicTitle": "Login with Google (OAuth Overview)",
+          "description": "How 'Sign in with Google' works, at concept level plus a small demo.",
+          "subtopics": [
+            "What OAuth 2.0 is in simple words",
+            "Authorization code flow overview",
+            "Using Passport or a hosted auth service (overview)",
+            "Pros and cons vs building your own"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 6,
+        "theory": [
+          "Difference between 401 and 403.",
+          "What is IDOR and how do you prevent it?"
+        ],
+        "practical": [
+          "Add roles and an admin-only route.",
+          "Make sure a user can edit and delete only their own notes.",
+          "Implement a password-reset token that expires in 15 minutes.",
+          "Draw the OAuth login flow for Google."
+        ]
+      }
+    },
+    {
+      "chapterId": 4,
+      "chapterTitle": "Web Security Essentials",
+      "topics": [
+        {
+          "topicTitle": "OWASP Top 10 Overview",
+          "description": "The standard list of the most common security problems.",
+          "subtopics": [
+            "What OWASP is",
+            "Walkthrough of the Top 10 in plain language",
+            "Where beginners usually go wrong"
+          ]
+        },
+        {
+          "topicTitle": "Injection & XSS",
+          "description": "Attacks that happen when you trust user input.",
+          "subtopics": [
+            "SQL injection and NoSQL injection",
+            "Cross-site scripting (XSS) and output escaping",
+            "Input validation and sanitization",
+            "Content Security Policy (overview)"
+          ]
+        },
+        {
+          "topicTitle": "CSRF, CORS & Security Headers",
+          "description": "Protect browsers and your API from cross-site tricks.",
+          "subtopics": [
+            "CSRF and SameSite cookies",
+            "Configuring CORS properly (no wildcard in production)",
+            "helmet and key headers",
+            "HTTPS and why it matters"
+          ]
+        },
+        {
+          "topicTitle": "Brute Force, Rate Limiting & Secrets",
+          "description": "Slow attackers down and keep secrets safe.",
+          "subtopics": [
+            "Rate limiting login routes",
+            "Account lockout (concept)",
+            "Keeping secrets out of Git, rotating leaked keys",
+            "npm audit and dependency updates",
+            "Safe error messages and logging without sensitive data"
+          ]
+        }
+      ],
+      "assignment": {
+        "totalQuestions": 7,
+        "theory": [
+          "How does XSS work and how do you prevent it?",
+          "Why is CORS with origin * dangerous for authenticated APIs?",
+          "Why must you run npm audit regularly?"
+        ],
+        "practical": [
+          "Demonstrate a SQL or NoSQL injection on a vulnerable route, then fix it.",
+          "Show an XSS example in a page and fix it with escaping.",
+          "Add helmet, a strict CORS config and rate limiting on /login.",
+          "Run npm audit and fix one vulnerability."
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectTitle": "Register & Login API with JWT",
+      "difficulty": "beginner",
+      "concepts": [
+        "bcrypt",
+        "JWT",
+        "Middleware"
+      ],
+      "features": [
+        "Register and login endpoints with hashed passwords",
+        "Protected /me route",
+        "Proper 400, 401 and 409 responses"
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectTitle": "Role-Based Notes API",
+      "difficulty": "intermediate",
+      "concepts": [
+        "RBAC",
+        "Ownership",
+        "Middleware"
+      ],
+      "features": [
+        "Users see and edit only their own notes",
+        "Admin can view all notes",
+        "401 vs 403 used correctly"
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectTitle": "Secure an Existing API (Security Audit)",
+      "difficulty": "intermediate",
+      "concepts": [
+        "helmet",
+        "Rate Limiting",
+        "Validation",
+        "CORS"
+      ],
+      "features": [
+        "Take your previous API and run a checklist audit",
+        "Add helmet, rate limiting, strict CORS and input validation",
+        "Write a short report of what you found and fixed"
+      ]
+    },
+    {
+      "projectId": 4,
+      "projectTitle": "Complete Auth System",
+      "difficulty": "advanced",
+      "concepts": [
+        "Refresh Tokens",
+        "Email Flows",
+        "Cookies"
+      ],
+      "features": [
+        "Register, login, logout and refresh using httpOnly cookies",
+        "Password reset by email",
+        "Role-based admin area",
+        "Simple frontend connected to the API"
+      ]
+    }
+  ]
+}

@@ -281,6 +281,18 @@ function getCourseTitle(courseId) {
     html: "HTML",
     css: "CSS",
     javascript: "JavaScript",
+    git: "Git and GitHub",
+    nodejs: "Node.js",
+    express: "Express.js",
+    postgresql: "SQL and PostgreSQL",
+    "mongodb": "MongoDB",
+    "auth-security": "Authentication and Security",
+    "typescript": "TypeScript",
+    "docker": "Docker and Deployment",
+    "react": "React",
+    "nextjs": "Next.js",
+    "testing": "Testing",
+    "system-design": "System Design Basics",
     appliedai: "Applied AI Engineering",
   };
   return titles[courseId] || "Course";

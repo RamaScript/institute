@@ -52,6 +52,66 @@ const courseThemes = {
         iconBg: 'rgba(247,223,30,0.14)',
         tagColor: '#b8a900',
     },
+    'git': {
+        gradient: 'linear-gradient(135deg, #f05032 0%, #f78a6b 100%)',
+        iconBg: 'rgba(240,80,50,0.14)',
+        tagColor: '#f05032',
+    },
+    'nodejs': {
+        gradient: 'linear-gradient(135deg, #3c873a 0%, #68a063 100%)',
+        iconBg: 'rgba(60,135,58,0.14)',
+        tagColor: '#3c873a',
+    },
+    'express': {
+        gradient: 'linear-gradient(135deg, #404040 0%, #8a8a8a 100%)',
+        iconBg: 'rgba(100,100,100,0.14)',
+        tagColor: '#555555',
+    },
+    'postgresql': {
+        gradient: 'linear-gradient(135deg, #336791 0%, #5b9bd5 100%)',
+        iconBg: 'rgba(51,103,145,0.14)',
+        tagColor: '#336791',
+    },
+    'mongodb': {
+        gradient: 'linear-gradient(135deg, #00684a 0%, #13aa52 100%)',
+        iconBg: 'rgba(19,170,82,0.14)',
+        tagColor: '#13aa52',
+    },
+    'auth-security': {
+        gradient: 'linear-gradient(135deg, #7c3aed 0%, #4361ee 100%)',
+        iconBg: 'rgba(124,58,237,0.14)',
+        tagColor: '#7c3aed',
+    },
+    'typescript': {
+        gradient: 'linear-gradient(135deg, #3178c6 0%, #6aa5e8 100%)',
+        iconBg: 'rgba(49,120,198,0.14)',
+        tagColor: '#3178c6',
+    },
+    'docker': {
+        gradient: 'linear-gradient(135deg, #2496ed 0%, #7fc4f5 100%)',
+        iconBg: 'rgba(36,150,237,0.14)',
+        tagColor: '#2496ed',
+    },
+    'react': {
+        gradient: 'linear-gradient(135deg, #087ea4 0%, #61dafb 100%)',
+        iconBg: 'rgba(97,218,251,0.14)',
+        tagColor: '#087ea4',
+    },
+    'nextjs': {
+        gradient: 'linear-gradient(135deg, #111111 0%, #555555 100%)',
+        iconBg: 'rgba(80,80,80,0.14)',
+        tagColor: '#444444',
+    },
+    'testing': {
+        gradient: 'linear-gradient(135deg, #c21325 0%, #f4623a 100%)',
+        iconBg: 'rgba(194,19,37,0.14)',
+        tagColor: '#c21325',
+    },
+    'system-design': {
+        gradient: 'linear-gradient(135deg, #0f766e 0%, #14b8a6 100%)',
+        iconBg: 'rgba(15,118,110,0.14)',
+        tagColor: '#0f766e',
+    },
     'appliedai': {
         gradient: 'linear-gradient(135deg, #7c3aed 0%, #4361ee 50%, #06b6d4 100%)',
         iconBg: 'rgba(124, 58, 237, 0.14)',
@@ -94,11 +154,12 @@ function buildNavbar() {
             </div>
 
             <div class="lp-nav-actions">
+                <a href="#courses" class="lp-nav-cta">Start learning ${icons.arrowRight}</a>
                 <button class="lp-theme-btn" id="lp-theme-toggle" aria-label="Toggle colour theme">
                     ${icons.sun}
                     ${icons.moon}
                 </button>
-                <button class="lp-hamburger" id="lp-hamburger" aria-label="Toggle menu">
+                <button class="lp-hamburger" id="lp-hamburger" aria-label="Open menu" aria-controls="lp-mobile-menu" aria-expanded="false">
                     <span></span><span></span><span></span>
                 </button>
             </div>
@@ -133,7 +194,7 @@ function buildHero() {
             <!-- headline -->
             <h1 class="lp-hero-title">
                 Engineering & Applied AI<br>
-                <span class="grad-text">from First Principles</span>
+                <span class="grad-text">from <span class="lp-script-text">First Principles</span></span>
             </h1>
 
             <!-- subtitle -->
@@ -599,28 +660,53 @@ function _initLanding() {
         });
     }
 
+    const updateActiveNavLink = () => {
+        const links = [...document.querySelectorAll('.lp-nav-link')];
+        let activeLink = null;
+
+        links.forEach(link => {
+            const section = document.getElementById(link.getAttribute('href').slice(1));
+            if (section && section.getBoundingClientRect().top <= 160) activeLink = link;
+        });
+
+        links.forEach(link => {
+            const active = link === activeLink;
+            link.classList.toggle('active', active);
+            if (active) link.setAttribute('aria-current', 'location');
+            else link.removeAttribute('aria-current');
+        });
+    };
+
     /* Hamburger / mobile menu */
     const burger = document.getElementById('lp-hamburger');
     const mMenu  = document.getElementById('lp-mobile-menu');
     if (burger && mMenu) {
+        const setMenuOpen = open => {
+            burger.classList.toggle('active', open);
+            burger.setAttribute('aria-expanded', String(open));
+            burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+            mMenu.classList.toggle('active', open);
+        };
+
         burger.addEventListener('click', () => {
-            burger.classList.toggle('active');
-            mMenu.classList.toggle('active');
+            setMenuOpen(!mMenu.classList.contains('active'));
         });
         // Close menu when any link inside it is clicked
         mMenu.querySelectorAll('a').forEach(a => {
-            a.addEventListener('click', () => {
-                burger.classList.remove('active');
-                mMenu.classList.remove('active');
-            });
+            a.addEventListener('click', () => setMenuOpen(false));
         });
         // Close menu when clicking outside
         document.addEventListener('click', (e) => {
             if (mMenu.classList.contains('active') &&
                 !mMenu.contains(e.target) &&
                 !burger.contains(e.target)) {
-                burger.classList.remove('active');
-                mMenu.classList.remove('active');
+                setMenuOpen(false);
+            }
+        });
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && mMenu.classList.contains('active')) {
+                setMenuOpen(false);
+                burger.focus();
             }
         });
     }
@@ -633,6 +719,7 @@ function _initLanding() {
         window.addEventListener('scroll', () => {
             const navbar = document.getElementById('lp-navbar');
             if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 60);
+            updateActiveNavLink();
         }, { passive: true });
 
         /* Hero parallax */
@@ -648,6 +735,7 @@ function _initLanding() {
     /* Fire the scroll callbacks once on init so state is correct immediately */
     const navbar = document.getElementById('lp-navbar');
     if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 60);
+    updateActiveNavLink();
 
     /* Scroll-reveal (IntersectionObserver) */
     const revealEls = document.querySelectorAll('.lp-reveal');
